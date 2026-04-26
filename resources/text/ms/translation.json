@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "source": "Quran.com API / Tanzil.net",
+  "license": "CC-BY-SA-4.0",
+  "language": "ms",
+  "language_name": "Malay",
+  "translator": "Abdullah Muhammad Basmeih",
+  "direction": "ltr",
+  "note": "Run scripts/fetch_resources.py to download full Malay translation from Quran.com API",
+  "fetch_url": "https://api.quran.com/api/v4/quran/translations/{translation_id}",
+  "surahs": []
+}

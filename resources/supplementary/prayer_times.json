@@ -1,0 +1,122 @@
+{
+  "version": "1.0.0",
+  "description": "Prayer time calculation methods and API references",
+  "apis": [
+    {
+      "name": "Al-Adhan Prayer Times API",
+      "url": "https://aladhan.com/prayer-times-api",
+      "documentation": "https://aladhan.com/prayer-times-api#GetTimings",
+      "license": "Free / Open Access",
+      "endpoints": {
+        "timings": "https://api.aladhan.com/v1/timings/{date}?latitude={lat}&longitude={lng}&method={method}",
+        "calendar": "https://api.aladhan.com/v1/calendar/{year}/{month}?latitude={lat}&longitude={lng}&method={method}"
+      }
+    },
+    {
+      "name": "UmmahAPI",
+      "url": "https://ummahapi.com",
+      "documentation": "https://ummahapi.com",
+      "license": "Free / No API key required",
+      "endpoints": {
+        "prayer_times": "https://ummahapi.com/api/prayer-times?lat={lat}&lng={lng}",
+        "qibla": "https://ummahapi.com/api/qibla?lat={lat}&lng={lng}",
+        "hijri": "https://ummahapi.com/api/today-hijri"
+      }
+    }
+  ],
+  "calculation_methods": [
+    {
+      "id": 1,
+      "name": "University of Islamic Sciences, Karachi",
+      "fajr_angle": 18,
+      "isha_angle": 18
+    },
+    {
+      "id": 2,
+      "name": "Islamic Society of North America (ISNA)",
+      "fajr_angle": 15,
+      "isha_angle": 15
+    },
+    {
+      "id": 3,
+      "name": "Muslim World League (MWL)",
+      "fajr_angle": 18,
+      "isha_angle": 17
+    },
+    {
+      "id": 4,
+      "name": "Umm Al-Qura University, Makkah",
+      "fajr_angle": 18.5,
+      "isha_minutes": 90
+    },
+    {
+      "id": 5,
+      "name": "Egyptian General Authority of Survey",
+      "fajr_angle": 19.5,
+      "isha_angle": 17.5
+    },
+    {
+      "id": 7,
+      "name": "Institute of Geophysics, University of Tehran",
+      "fajr_angle": 17.7,
+      "isha_angle": 14
+    },
+    {
+      "id": 8,
+      "name": "Gulf Region",
+      "fajr_angle": 19.5,
+      "isha_minutes": 90
+    },
+    {
+      "id": 9,
+      "name": "Kuwait",
+      "fajr_angle": 18,
+      "isha_angle": 17.5
+    },
+    {
+      "id": 10,
+      "name": "Qatar",
+      "fajr_angle": 18,
+      "isha_minutes": 90
+    },
+    {
+      "id": 11,
+      "name": "Majlis Ugama Islam Singapura",
+      "fajr_angle": 20,
+      "isha_angle": 18
+    },
+    {
+      "id": 12,
+      "name": "Union des Organisations Islamiques de France",
+      "fajr_angle": 12,
+      "isha_angle": 12
+    },
+    {
+      "id": 13,
+      "name": "Diyanet İşleri Başkanlığı, Turkey",
+      "fajr_angle": 18,
+      "isha_angle": 17
+    },
+    {
+      "id": 14,
+      "name": "Spiritual Administration of Muslims of Russia",
+      "fajr_angle": 16,
+      "isha_angle": 15
+    }
+  ],
+  "qibla": {
+    "description": "Qibla direction calculation",
+    "kaaba_coordinates": {
+      "latitude": 21.4225,
+      "longitude": 39.8262
+    },
+    "formula": "atan2(sin(lng_kaaba - lng_user), cos(lat_user) * tan(lat_kaaba) - sin(lat_user) * cos(lng_kaaba - lng_user))"
+  },
+  "hijri_calendar": {
+    "description": "Hijri (Islamic) calendar conversion utilities",
+    "apis": [
+      "https://api.aladhan.com/v1/gToH/{date}",
+      "https://api.aladhan.com/v1/hToG/{date}"
+    ]
+  }
+}

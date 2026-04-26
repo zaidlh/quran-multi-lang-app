@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "note": "Mushaf page images are subject to copyright. Only open-licensed references are included here.",
+  "sources": [
+    {
+      "name": "EveryAyah Quran Page Images (PNG)",
+      "url": "https://everyayah.com/data/quranpngs/",
+      "format": "PNG",
+      "pages": 604,
+      "pattern": "https://everyayah.com/data/quranpngs/{page_number}.png",
+      "license": "Free for personal/educational use",
+      "description": "High-resolution Quran page images (Madani Mushaf)"
+    },
+    {
+      "name": "EveryAyah Quran Page Images (JPG)",
+      "url": "https://everyayah.com/data/QuranText_jpg/",
+      "format": "JPG",
+      "license": "Free for personal/educational use"
+    }
+  ]
+}

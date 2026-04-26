@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "source": "Quran.com API / Tanzil.net",
+  "license": "CC-BY-SA-4.0",
+  "language": "de",
+  "language_name": "German",
+  "translator": "Abu Rida Muhammad ibn Ahmad ibn Rassoul",
+  "direction": "ltr",
+  "note": "Run scripts/fetch_resources.py to download full German translation from Quran.com API",
+  "fetch_url": "https://api.quran.com/api/v4/quran/translations/{translation_id}",
+  "surahs": []
+}
