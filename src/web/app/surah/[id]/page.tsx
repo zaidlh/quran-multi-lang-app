@@ -103,6 +103,7 @@ export default async function SurahPage({
 
       <SurahView
         surahNumber={surahNumber}
+        surahName={surahMeta.name_en}
         arabicVerses={arabic.verses}
         translationVerses={translationVerses}
         currentLang={lang}

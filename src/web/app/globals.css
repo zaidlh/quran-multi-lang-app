@@ -8,6 +8,13 @@
   --gold: #c5a13b;
 }
 
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #2e8b57;
+  --primary-light: #1a3a2a;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -16,15 +23,6 @@
   --color-gold: var(--gold);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #2e8b57;
-    --primary-light: #1a3a2a;
-  }
 }
 
 body {
@@ -38,7 +36,7 @@ body {
 }
 
 .arabic-text {
-  font-family: "Traditional Arabic", "Scheherazade New", "Amiri", serif;
+  font-family: var(--font-arabic), "Traditional Arabic", "Scheherazade New", "Amiri", serif;
   line-height: 2.2;
   font-size: 1.5rem;
 }
@@ -54,4 +52,10 @@ body {
   color: var(--gold);
   font-size: 0.75rem;
   margin: 0 0.25rem;
+}
+
+.verse-highlight {
+  background-color: var(--primary-light);
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
 }
