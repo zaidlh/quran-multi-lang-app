@@ -2,6 +2,8 @@
 
 import { useSyncExternalStore } from "react";
 import Link from "next/link";
+import { useUILanguage } from "./UILanguageProvider";
+import { formatNumber } from "../lib/ui-labels";
 
 interface LastRead {
   surah: number;
@@ -37,6 +39,7 @@ function subscribe(callback: () => void): () => void {
 
 export function LastReadBanner() {
   const lastRead = useSyncExternalStore(subscribe, getLastReadSnapshot, getServerSnapshot);
+  const { t, dir, uiLang } = useUILanguage();
 
   if (!lastRead) return null;
 
@@ -62,13 +65,13 @@ export function LastReadBanner() {
           </svg>
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-sm font-medium">Continue Reading</p>
+          <p className="text-sm font-medium">{t.lastRead.continue}</p>
           <p className="text-xs text-zinc-500 truncate">
-            {lastRead.surahName} — Verse {lastRead.ayah}
+            {lastRead.surahName} — {t.lastRead.ayah} {formatNumber(lastRead.ayah, uiLang)}
           </p>
         </div>
         <svg
-          className="w-5 h-5 text-zinc-400 flex-shrink-0"
+          className={`w-5 h-5 text-zinc-400 flex-shrink-0 ${dir === "rtl" ? "rotate-180" : ""}`}
           fill="none"
           stroke="currentColor"
           strokeWidth={2}

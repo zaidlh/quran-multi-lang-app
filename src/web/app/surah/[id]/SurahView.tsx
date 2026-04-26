@@ -13,6 +13,8 @@ import { VerseNotes } from "../../components/VerseNotes";
 import { TransliterationToggle } from "../../components/TransliterationToggle";
 import { HifzMode } from "../../components/HifzMode";
 import { saveLastRead } from "../../components/LastReadBanner";
+import { useUILanguage } from "../../components/UILanguageProvider";
+import { formatNumber } from "../../lib/ui-labels";
 
 interface Verse {
   number: number;
@@ -41,6 +43,7 @@ export function SurahView({
   const [expandedVerse, setExpandedVerse] = useState<number | null>(null);
   const verseRefs = useRef<Map<number, HTMLDivElement>>(new Map());
   const observerRef = useRef<IntersectionObserver | null>(null);
+  const { t, dir, uiLang } = useUILanguage();
 
   const setVerseRef = useCallback((num: number, el: HTMLDivElement | null) => {
     if (el) {
@@ -113,13 +116,13 @@ export function SurahView({
 
       {surahNumber !== 1 && surahNumber !== 9 && (
         <div className="text-center py-6 arabic-text text-2xl text-primary" dir="rtl">
-          بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+          {t.surah.bismillah}
         </div>
       )}
 
       <div className="space-y-2">
         {arabicVerses.map((verse) => {
-          const trans = translationVerses.find((t) => t.number === verse.number);
+          const trans = translationVerses.find((tv) => tv.number === verse.number);
           const isExpanded = expandedVerse === verse.number;
           return (
             <div
@@ -135,17 +138,15 @@ export function SurahView({
                 <button
                   onClick={() => setExpandedVerse(isExpanded ? null : verse.number)}
                   className="verse-number flex-shrink-0 mt-1 cursor-pointer"
-                  aria-label={`Verse ${verse.number} details`}
+                  aria-label={`${t.surah.verse} ${formatNumber(verse.number, uiLang)}`}
                 >
-                  {verse.number}
+                  {formatNumber(verse.number, uiLang)}
                 </button>
                 <div className="flex-1 min-w-0">
                   <p className="arabic-text text-xl leading-relaxed" dir="rtl">
                     {verse.text}
                   </p>
-                  {trans && (
-                    <p className="text-sm text-muted leading-relaxed mt-2 pl-0">{trans.text}</p>
-                  )}
+                  {trans && <p className="text-sm text-muted leading-relaxed mt-2">{trans.text}</p>}
                 </div>
                 <div className="flex items-center gap-1 flex-shrink-0 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
                   <ShareButton
@@ -162,14 +163,16 @@ export function SurahView({
               {!isExpanded && (
                 <button
                   onClick={() => setExpandedVerse(verse.number)}
-                  className="mt-2 pl-11 text-xs text-muted hover:text-primary transition-colors"
+                  className={`mt-2 ${dir === "rtl" ? "pe-11" : "ps-11"} text-xs text-muted hover:text-primary transition-colors`}
                 >
-                  Show details →
+                  {t.surah.showDetails} {dir === "rtl" ? "←" : "→"}
                 </button>
               )}
 
               {isExpanded && (
-                <div className="pl-11 space-y-3 pt-3 border-t border-border/50 mt-3">
+                <div
+                  className={`${dir === "rtl" ? "pe-11" : "ps-11"} space-y-3 pt-3 border-t border-border/50 mt-3`}
+                >
                   <TajweedText text={verse.text} />
                   <TafsirPanel surahNumber={surahNumber} ayahNumber={verse.number} />
                   <CrossReferences surahNumber={surahNumber} ayahNumber={verse.number} />
@@ -184,7 +187,7 @@ export function SurahView({
                     onClick={() => setExpandedVerse(null)}
                     className="text-xs text-muted hover:text-primary transition-colors"
                   >
-                    ← Hide details
+                    {dir === "rtl" ? "→" : "←"} {t.surah.hideDetails}
                   </button>
                 </div>
               )}
