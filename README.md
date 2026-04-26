@@ -32,6 +32,7 @@
 </p>
 
 <p align="center">
+  <a href="https://quran-multi-lang-app.vercel.app"><strong>Live Demo</strong></a> •
   <a href="#-quick-start">Quick Start</a> •
   <a href="#-features">Features</a> •
   <a href="#-tech-stack">Tech Stack</a> •
@@ -39,6 +40,24 @@
   <a href="#-docker">Docker</a> •
   <a href="#-contributing">Contributing</a> •
   <a href="ROADMAP.md">Roadmap</a>
+</p>
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/home-light.png" alt="Home Page — Light Mode" width="49%" />
+  <img src="docs/screenshots/home-dark.png" alt="Home Page — Dark Mode" width="49%" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/surah-light.png" alt="Surah Page — Light Mode" width="49%" />
+  <img src="docs/screenshots/surah-dark.png" alt="Surah Page — Dark Mode" width="49%" />
+</p>
+
+<p align="center">
+  <em>114 surahs · Bilingual verse display · Audio player · Tajweed · Tafsir · Hifz Mode · Dark/Light themes</em>
 </p>
 
 ---
