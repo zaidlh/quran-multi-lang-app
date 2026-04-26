@@ -1,0 +1,1629 @@
+{
+  "version": "1.0.0",
+  "total_surahs": 114,
+  "total_ayahs": 6236,
+  "total_juz": 30,
+  "total_hizb": 60,
+  "total_rub_el_hizb": 240,
+  "total_manzil": 7,
+  "total_pages": 604,
+  "surahs": [
+    {
+      "number": 1,
+      "name": "الفاتحة",
+      "name_en": "Al-Fatihah",
+      "name_translation": "The Opening",
+      "verses": 7,
+      "revelation_type": "Meccan",
+      "revelation_order": 5,
+      "juz": [
+        1
+      ],
+      "ruku_count": 1,
+      "page_start": 1
+    },
+    {
+      "number": 2,
+      "name": "البقرة",
+      "name_en": "Al-Baqarah",
+      "name_translation": "The Cow",
+      "verses": 286,
+      "revelation_type": "Medinan",
+      "revelation_order": 87,
+      "juz": [
+        1,
+        2,
+        3
+      ],
+      "ruku_count": 40,
+      "page_start": 2
+    },
+    {
+      "number": 3,
+      "name": "آل عمران",
+      "name_en": "Aal-e-Imran",
+      "name_translation": "The Family of Imran",
+      "verses": 200,
+      "revelation_type": "Medinan",
+      "revelation_order": 89,
+      "juz": [
+        3,
+        4
+      ],
+      "ruku_count": 20,
+      "page_start": 50
+    },
+    {
+      "number": 4,
+      "name": "النساء",
+      "name_en": "An-Nisa",
+      "name_translation": "The Women",
+      "verses": 176,
+      "revelation_type": "Medinan",
+      "revelation_order": 92,
+      "juz": [
+        4,
+        5,
+        6
+      ],
+      "ruku_count": 24,
+      "page_start": 77
+    },
+    {
+      "number": 5,
+      "name": "المائدة",
+      "name_en": "Al-Ma'idah",
+      "name_translation": "The Table Spread",
+      "verses": 120,
+      "revelation_type": "Medinan",
+      "revelation_order": 112,
+      "juz": [
+        6,
+        7
+      ],
+      "ruku_count": 16,
+      "page_start": 106
+    },
+    {
+      "number": 6,
+      "name": "الأنعام",
+      "name_en": "Al-An'am",
+      "name_translation": "The Cattle",
+      "verses": 165,
+      "revelation_type": "Meccan",
+      "revelation_order": 55,
+      "juz": [
+        7,
+        8
+      ],
+      "ruku_count": 20,
+      "page_start": 128
+    },
+    {
+      "number": 7,
+      "name": "الأعراف",
+      "name_en": "Al-A'raf",
+      "name_translation": "The Heights",
+      "verses": 206,
+      "revelation_type": "Meccan",
+      "revelation_order": 39,
+      "juz": [
+        8,
+        9
+      ],
+      "ruku_count": 24,
+      "page_start": 151
+    },
+    {
+      "number": 8,
+      "name": "الأنفال",
+      "name_en": "Al-Anfal",
+      "name_translation": "The Spoils of War",
+      "verses": 75,
+      "revelation_type": "Medinan",
+      "revelation_order": 88,
+      "juz": [
+        9,
+        10
+      ],
+      "ruku_count": 10,
+      "page_start": 177
+    },
+    {
+      "number": 9,
+      "name": "التوبة",
+      "name_en": "At-Tawbah",
+      "name_translation": "The Repentance",
+      "verses": 129,
+      "revelation_type": "Medinan",
+      "revelation_order": 113,
+      "juz": [
+        10,
+        11
+      ],
+      "ruku_count": 16,
+      "page_start": 187
+    },
+    {
+      "number": 10,
+      "name": "يونس",
+      "name_en": "Yunus",
+      "name_translation": "Jonah",
+      "verses": 109,
+      "revelation_type": "Meccan",
+      "revelation_order": 51,
+      "juz": [
+        11
+      ],
+      "ruku_count": 11,
+      "page_start": 208
+    },
+    {
+      "number": 11,
+      "name": "هود",
+      "name_en": "Hud",
+      "name_translation": "Hud",
+      "verses": 123,
+      "revelation_type": "Meccan",
+      "revelation_order": 52,
+      "juz": [
+        11,
+        12
+      ],
+      "ruku_count": 10,
+      "page_start": 221
+    },
+    {
+      "number": 12,
+      "name": "يوسف",
+      "name_en": "Yusuf",
+      "name_translation": "Joseph",
+      "verses": 111,
+      "revelation_type": "Meccan",
+      "revelation_order": 53,
+      "juz": [
+        12,
+        13
+      ],
+      "ruku_count": 12,
+      "page_start": 235
+    },
+    {
+      "number": 13,
+      "name": "الرعد",
+      "name_en": "Ar-Ra'd",
+      "name_translation": "The Thunder",
+      "verses": 43,
+      "revelation_type": "Medinan",
+      "revelation_order": 96,
+      "juz": [
+        13
+      ],
+      "ruku_count": 6,
+      "page_start": 249
+    },
+    {
+      "number": 14,
+      "name": "ابراهيم",
+      "name_en": "Ibrahim",
+      "name_translation": "Abraham",
+      "verses": 52,
+      "revelation_type": "Meccan",
+      "revelation_order": 72,
+      "juz": [
+        13
+      ],
+      "ruku_count": 7,
+      "page_start": 255
+    },
+    {
+      "number": 15,
+      "name": "الحجر",
+      "name_en": "Al-Hijr",
+      "name_translation": "The Rocky Tract",
+      "verses": 99,
+      "revelation_type": "Meccan",
+      "revelation_order": 54,
+      "juz": [
+        14
+      ],
+      "ruku_count": 6,
+      "page_start": 262
+    },
+    {
+      "number": 16,
+      "name": "النحل",
+      "name_en": "An-Nahl",
+      "name_translation": "The Bee",
+      "verses": 128,
+      "revelation_type": "Meccan",
+      "revelation_order": 70,
+      "juz": [
+        14
+      ],
+      "ruku_count": 16,
+      "page_start": 267
+    },
+    {
+      "number": 17,
+      "name": "الإسراء",
+      "name_en": "Al-Isra",
+      "name_translation": "The Night Journey",
+      "verses": 111,
+      "revelation_type": "Meccan",
+      "revelation_order": 50,
+      "juz": [
+        15
+      ],
+      "ruku_count": 12,
+      "page_start": 282
+    },
+    {
+      "number": 18,
+      "name": "الكهف",
+      "name_en": "Al-Kahf",
+      "name_translation": "The Cave",
+      "verses": 110,
+      "revelation_type": "Meccan",
+      "revelation_order": 69,
+      "juz": [
+        15,
+        16
+      ],
+      "ruku_count": 12,
+      "page_start": 293
+    },
+    {
+      "number": 19,
+      "name": "مريم",
+      "name_en": "Maryam",
+      "name_translation": "Mary",
+      "verses": 98,
+      "revelation_type": "Meccan",
+      "revelation_order": 44,
+      "juz": [
+        16
+      ],
+      "ruku_count": 6,
+      "page_start": 305
+    },
+    {
+      "number": 20,
+      "name": "طه",
+      "name_en": "Taha",
+      "name_translation": "Ta-Ha",
+      "verses": 135,
+      "revelation_type": "Meccan",
+      "revelation_order": 45,
+      "juz": [
+        16
+      ],
+      "ruku_count": 8,
+      "page_start": 312
+    },
+    {
+      "number": 21,
+      "name": "الأنبياء",
+      "name_en": "Al-Anbiya",
+      "name_translation": "The Prophets",
+      "verses": 112,
+      "revelation_type": "Meccan",
+      "revelation_order": 73,
+      "juz": [
+        17
+      ],
+      "ruku_count": 7,
+      "page_start": 322
+    },
+    {
+      "number": 22,
+      "name": "الحج",
+      "name_en": "Al-Hajj",
+      "name_translation": "The Pilgrimage",
+      "verses": 78,
+      "revelation_type": "Medinan",
+      "revelation_order": 103,
+      "juz": [
+        17
+      ],
+      "ruku_count": 10,
+      "page_start": 332
+    },
+    {
+      "number": 23,
+      "name": "المؤمنون",
+      "name_en": "Al-Mu'minun",
+      "name_translation": "The Believers",
+      "verses": 118,
+      "revelation_type": "Meccan",
+      "revelation_order": 74,
+      "juz": [
+        18
+      ],
+      "ruku_count": 6,
+      "page_start": 342
+    },
+    {
+      "number": 24,
+      "name": "النور",
+      "name_en": "An-Nur",
+      "name_translation": "The Light",
+      "verses": 64,
+      "revelation_type": "Medinan",
+      "revelation_order": 102,
+      "juz": [
+        18
+      ],
+      "ruku_count": 9,
+      "page_start": 350
+    },
+    {
+      "number": 25,
+      "name": "الفرقان",
+      "name_en": "Al-Furqan",
+      "name_translation": "The Criterion",
+      "verses": 77,
+      "revelation_type": "Meccan",
+      "revelation_order": 42,
+      "juz": [
+        18,
+        19
+      ],
+      "ruku_count": 6,
+      "page_start": 359
+    },
+    {
+      "number": 26,
+      "name": "الشعراء",
+      "name_en": "Ash-Shu'ara",
+      "name_translation": "The Poets",
+      "verses": 227,
+      "revelation_type": "Meccan",
+      "revelation_order": 47,
+      "juz": [
+        19
+      ],
+      "ruku_count": 11,
+      "page_start": 367
+    },
+    {
+      "number": 27,
+      "name": "النمل",
+      "name_en": "An-Naml",
+      "name_translation": "The Ant",
+      "verses": 93,
+      "revelation_type": "Meccan",
+      "revelation_order": 48,
+      "juz": [
+        19,
+        20
+      ],
+      "ruku_count": 7,
+      "page_start": 377
+    },
+    {
+      "number": 28,
+      "name": "القصص",
+      "name_en": "Al-Qasas",
+      "name_translation": "The Stories",
+      "verses": 88,
+      "revelation_type": "Meccan",
+      "revelation_order": 49,
+      "juz": [
+        20
+      ],
+      "ruku_count": 9,
+      "page_start": 385
+    },
+    {
+      "number": 29,
+      "name": "العنكبوت",
+      "name_en": "Al-Ankabut",
+      "name_translation": "The Spider",
+      "verses": 69,
+      "revelation_type": "Meccan",
+      "revelation_order": 85,
+      "juz": [
+        20,
+        21
+      ],
+      "ruku_count": 7,
+      "page_start": 396
+    },
+    {
+      "number": 30,
+      "name": "الروم",
+      "name_en": "Ar-Rum",
+      "name_translation": "The Romans",
+      "verses": 60,
+      "revelation_type": "Meccan",
+      "revelation_order": 84,
+      "juz": [
+        21
+      ],
+      "ruku_count": 6,
+      "page_start": 404
+    },
+    {
+      "number": 31,
+      "name": "لقمان",
+      "name_en": "Luqman",
+      "name_translation": "Luqman",
+      "verses": 34,
+      "revelation_type": "Meccan",
+      "revelation_order": 57,
+      "juz": [
+        21
+      ],
+      "ruku_count": 4,
+      "page_start": 411
+    },
+    {
+      "number": 32,
+      "name": "السجدة",
+      "name_en": "As-Sajdah",
+      "name_translation": "The Prostration",
+      "verses": 30,
+      "revelation_type": "Meccan",
+      "revelation_order": 75,
+      "juz": [
+        21
+      ],
+      "ruku_count": 3,
+      "page_start": 415
+    },
+    {
+      "number": 33,
+      "name": "الأحزاب",
+      "name_en": "Al-Ahzab",
+      "name_translation": "The Combined Forces",
+      "verses": 73,
+      "revelation_type": "Medinan",
+      "revelation_order": 90,
+      "juz": [
+        21,
+        22
+      ],
+      "ruku_count": 9,
+      "page_start": 418
+    },
+    {
+      "number": 34,
+      "name": "سبإ",
+      "name_en": "Saba",
+      "name_translation": "Sheba",
+      "verses": 54,
+      "revelation_type": "Meccan",
+      "revelation_order": 58,
+      "juz": [
+        22
+      ],
+      "ruku_count": 6,
+      "page_start": 428
+    },
+    {
+      "number": 35,
+      "name": "فاطر",
+      "name_en": "Fatir",
+      "name_translation": "Originator",
+      "verses": 45,
+      "revelation_type": "Meccan",
+      "revelation_order": 43,
+      "juz": [
+        22
+      ],
+      "ruku_count": 5,
+      "page_start": 434
+    },
+    {
+      "number": 36,
+      "name": "يس",
+      "name_en": "Ya-Sin",
+      "name_translation": "Ya-Sin",
+      "verses": 83,
+      "revelation_type": "Meccan",
+      "revelation_order": 41,
+      "juz": [
+        22,
+        23
+      ],
+      "ruku_count": 5,
+      "page_start": 440
+    },
+    {
+      "number": 37,
+      "name": "الصافات",
+      "name_en": "As-Saffat",
+      "name_translation": "Those who set the Ranks",
+      "verses": 182,
+      "revelation_type": "Meccan",
+      "revelation_order": 56,
+      "juz": [
+        23
+      ],
+      "ruku_count": 5,
+      "page_start": 446
+    },
+    {
+      "number": 38,
+      "name": "ص",
+      "name_en": "Sad",
+      "name_translation": "The Letter Sad",
+      "verses": 88,
+      "revelation_type": "Meccan",
+      "revelation_order": 38,
+      "juz": [
+        23
+      ],
+      "ruku_count": 5,
+      "page_start": 453
+    },
+    {
+      "number": 39,
+      "name": "الزمر",
+      "name_en": "Az-Zumar",
+      "name_translation": "The Troops",
+      "verses": 75,
+      "revelation_type": "Meccan",
+      "revelation_order": 59,
+      "juz": [
+        23,
+        24
+      ],
+      "ruku_count": 8,
+      "page_start": 458
+    },
+    {
+      "number": 40,
+      "name": "غافر",
+      "name_en": "Ghafir",
+      "name_translation": "The Forgiver",
+      "verses": 85,
+      "revelation_type": "Meccan",
+      "revelation_order": 60,
+      "juz": [
+        24
+      ],
+      "ruku_count": 9,
+      "page_start": 467
+    },
+    {
+      "number": 41,
+      "name": "فصلت",
+      "name_en": "Fussilat",
+      "name_translation": "Explained in Detail",
+      "verses": 54,
+      "revelation_type": "Meccan",
+      "revelation_order": 61,
+      "juz": [
+        24,
+        25
+      ],
+      "ruku_count": 6,
+      "page_start": 477
+    },
+    {
+      "number": 42,
+      "name": "الشورى",
+      "name_en": "Ash-Shura",
+      "name_translation": "The Consultation",
+      "verses": 53,
+      "revelation_type": "Meccan",
+      "revelation_order": 62,
+      "juz": [
+        25
+      ],
+      "ruku_count": 5,
+      "page_start": 483
+    },
+    {
+      "number": 43,
+      "name": "الزخرف",
+      "name_en": "Az-Zukhruf",
+      "name_translation": "The Ornaments of Gold",
+      "verses": 89,
+      "revelation_type": "Meccan",
+      "revelation_order": 63,
+      "juz": [
+        25
+      ],
+      "ruku_count": 7,
+      "page_start": 489
+    },
+    {
+      "number": 44,
+      "name": "الدخان",
+      "name_en": "Ad-Dukhan",
+      "name_translation": "The Smoke",
+      "verses": 59,
+      "revelation_type": "Meccan",
+      "revelation_order": 64,
+      "juz": [
+        25
+      ],
+      "ruku_count": 3,
+      "page_start": 496
+    },
+    {
+      "number": 45,
+      "name": "الجاثية",
+      "name_en": "Al-Jathiyah",
+      "name_translation": "The Crouching",
+      "verses": 37,
+      "revelation_type": "Meccan",
+      "revelation_order": 65,
+      "juz": [
+        25
+      ],
+      "ruku_count": 4,
+      "page_start": 499
+    },
+    {
+      "number": 46,
+      "name": "الأحقاف",
+      "name_en": "Al-Ahqaf",
+      "name_translation": "The Wind-Curved Sandhills",
+      "verses": 35,
+      "revelation_type": "Meccan",
+      "revelation_order": 66,
+      "juz": [
+        26
+      ],
+      "ruku_count": 4,
+      "page_start": 502
+    },
+    {
+      "number": 47,
+      "name": "محمد",
+      "name_en": "Muhammad",
+      "name_translation": "Muhammad",
+      "verses": 38,
+      "revelation_type": "Medinan",
+      "revelation_order": 95,
+      "juz": [
+        26
+      ],
+      "ruku_count": 4,
+      "page_start": 507
+    },
+    {
+      "number": 48,
+      "name": "الفتح",
+      "name_en": "Al-Fath",
+      "name_translation": "The Victory",
+      "verses": 29,
+      "revelation_type": "Medinan",
+      "revelation_order": 111,
+      "juz": [
+        26
+      ],
+      "ruku_count": 4,
+      "page_start": 511
+    },
+    {
+      "number": 49,
+      "name": "الحجرات",
+      "name_en": "Al-Hujurat",
+      "name_translation": "The Rooms",
+      "verses": 18,
+      "revelation_type": "Medinan",
+      "revelation_order": 106,
+      "juz": [
+        26
+      ],
+      "ruku_count": 2,
+      "page_start": 515
+    },
+    {
+      "number": 50,
+      "name": "ق",
+      "name_en": "Qaf",
+      "name_translation": "The Letter Qaf",
+      "verses": 45,
+      "revelation_type": "Meccan",
+      "revelation_order": 34,
+      "juz": [
+        26
+      ],
+      "ruku_count": 3,
+      "page_start": 518
+    },
+    {
+      "number": 51,
+      "name": "الذاريات",
+      "name_en": "Adh-Dhariyat",
+      "name_translation": "The Winnowing Winds",
+      "verses": 60,
+      "revelation_type": "Meccan",
+      "revelation_order": 67,
+      "juz": [
+        26,
+        27
+      ],
+      "ruku_count": 3,
+      "page_start": 520
+    },
+    {
+      "number": 52,
+      "name": "الطور",
+      "name_en": "At-Tur",
+      "name_translation": "The Mount",
+      "verses": 49,
+      "revelation_type": "Meccan",
+      "revelation_order": 76,
+      "juz": [
+        27
+      ],
+      "ruku_count": 2,
+      "page_start": 523
+    },
+    {
+      "number": 53,
+      "name": "النجم",
+      "name_en": "An-Najm",
+      "name_translation": "The Star",
+      "verses": 62,
+      "revelation_type": "Meccan",
+      "revelation_order": 23,
+      "juz": [
+        27
+      ],
+      "ruku_count": 3,
+      "page_start": 526
+    },
+    {
+      "number": 54,
+      "name": "القمر",
+      "name_en": "Al-Qamar",
+      "name_translation": "The Moon",
+      "verses": 55,
+      "revelation_type": "Meccan",
+      "revelation_order": 37,
+      "juz": [
+        27
+      ],
+      "ruku_count": 3,
+      "page_start": 528
+    },
+    {
+      "number": 55,
+      "name": "الرحمن",
+      "name_en": "Ar-Rahman",
+      "name_translation": "The Beneficent",
+      "verses": 78,
+      "revelation_type": "Medinan",
+      "revelation_order": 97,
+      "juz": [
+        27
+      ],
+      "ruku_count": 3,
+      "page_start": 531
+    },
+    {
+      "number": 56,
+      "name": "الواقعة",
+      "name_en": "Al-Waqi'ah",
+      "name_translation": "The Inevitable",
+      "verses": 96,
+      "revelation_type": "Meccan",
+      "revelation_order": 46,
+      "juz": [
+        27
+      ],
+      "ruku_count": 3,
+      "page_start": 534
+    },
+    {
+      "number": 57,
+      "name": "الحديد",
+      "name_en": "Al-Hadid",
+      "name_translation": "The Iron",
+      "verses": 29,
+      "revelation_type": "Medinan",
+      "revelation_order": 94,
+      "juz": [
+        27
+      ],
+      "ruku_count": 4,
+      "page_start": 537
+    },
+    {
+      "number": 58,
+      "name": "المجادلة",
+      "name_en": "Al-Mujadila",
+      "name_translation": "The Pleading Woman",
+      "verses": 22,
+      "revelation_type": "Medinan",
+      "revelation_order": 105,
+      "juz": [
+        28
+      ],
+      "ruku_count": 3,
+      "page_start": 542
+    },
+    {
+      "number": 59,
+      "name": "الحشر",
+      "name_en": "Al-Hashr",
+      "name_translation": "The Exile",
+      "verses": 24,
+      "revelation_type": "Medinan",
+      "revelation_order": 101,
+      "juz": [
+        28
+      ],
+      "ruku_count": 3,
+      "page_start": 545
+    },
+    {
+      "number": 60,
+      "name": "الممتحنة",
+      "name_en": "Al-Mumtahanah",
+      "name_translation": "She that is to be examined",
+      "verses": 13,
+      "revelation_type": "Medinan",
+      "revelation_order": 91,
+      "juz": [
+        28
+      ],
+      "ruku_count": 2,
+      "page_start": 549
+    },
+    {
+      "number": 61,
+      "name": "الصف",
+      "name_en": "As-Saff",
+      "name_translation": "The Ranks",
+      "verses": 14,
+      "revelation_type": "Medinan",
+      "revelation_order": 109,
+      "juz": [
+        28
+      ],
+      "ruku_count": 2,
+      "page_start": 551
+    },
+    {
+      "number": 62,
+      "name": "الجمعة",
+      "name_en": "Al-Jumu'ah",
+      "name_translation": "Friday",
+      "verses": 11,
+      "revelation_type": "Medinan",
+      "revelation_order": 110,
+      "juz": [
+        28
+      ],
+      "ruku_count": 2,
+      "page_start": 553
+    },
+    {
+      "number": 63,
+      "name": "المنافقون",
+      "name_en": "Al-Munafiqun",
+      "name_translation": "The Hypocrites",
+      "verses": 11,
+      "revelation_type": "Medinan",
+      "revelation_order": 104,
+      "juz": [
+        28
+      ],
+      "ruku_count": 2,
+      "page_start": 554
+    },
+    {
+      "number": 64,
+      "name": "التغابن",
+      "name_en": "At-Taghabun",
+      "name_translation": "The Mutual Disillusion",
+      "verses": 18,
+      "revelation_type": "Medinan",
+      "revelation_order": 108,
+      "juz": [
+        28
+      ],
+      "ruku_count": 2,
+      "page_start": 556
+    },
+    {
+      "number": 65,
+      "name": "الطلاق",
+      "name_en": "At-Talaq",
+      "name_translation": "The Divorce",
+      "verses": 12,
+      "revelation_type": "Medinan",
+      "revelation_order": 99,
+      "juz": [
+        28
+      ],
+      "ruku_count": 2,
+      "page_start": 558
+    },
+    {
+      "number": 66,
+      "name": "التحريم",
+      "name_en": "At-Tahrim",
+      "name_translation": "The Prohibition",
+      "verses": 12,
+      "revelation_type": "Medinan",
+      "revelation_order": 107,
+      "juz": [
+        28
+      ],
+      "ruku_count": 2,
+      "page_start": 560
+    },
+    {
+      "number": 67,
+      "name": "الملك",
+      "name_en": "Al-Mulk",
+      "name_translation": "The Sovereignty",
+      "verses": 30,
+      "revelation_type": "Meccan",
+      "revelation_order": 77,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 562
+    },
+    {
+      "number": 68,
+      "name": "القلم",
+      "name_en": "Al-Qalam",
+      "name_translation": "The Pen",
+      "verses": 52,
+      "revelation_type": "Meccan",
+      "revelation_order": 2,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 564
+    },
+    {
+      "number": 69,
+      "name": "الحاقة",
+      "name_en": "Al-Haqqah",
+      "name_translation": "The Reality",
+      "verses": 52,
+      "revelation_type": "Meccan",
+      "revelation_order": 78,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 566
+    },
+    {
+      "number": 70,
+      "name": "المعارج",
+      "name_en": "Al-Ma'arij",
+      "name_translation": "The Ascending Stairways",
+      "verses": 44,
+      "revelation_type": "Meccan",
+      "revelation_order": 79,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 568
+    },
+    {
+      "number": 71,
+      "name": "نوح",
+      "name_en": "Nuh",
+      "name_translation": "Noah",
+      "verses": 28,
+      "revelation_type": "Meccan",
+      "revelation_order": 71,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 570
+    },
+    {
+      "number": 72,
+      "name": "الجن",
+      "name_en": "Al-Jinn",
+      "name_translation": "The Jinn",
+      "verses": 28,
+      "revelation_type": "Meccan",
+      "revelation_order": 40,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 572
+    },
+    {
+      "number": 73,
+      "name": "المزمل",
+      "name_en": "Al-Muzzammil",
+      "name_translation": "The Enshrouded One",
+      "verses": 20,
+      "revelation_type": "Meccan",
+      "revelation_order": 3,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 574
+    },
+    {
+      "number": 74,
+      "name": "المدثر",
+      "name_en": "Al-Muddaththir",
+      "name_translation": "The Cloaked One",
+      "verses": 56,
+      "revelation_type": "Meccan",
+      "revelation_order": 4,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 575
+    },
+    {
+      "number": 75,
+      "name": "القيامة",
+      "name_en": "Al-Qiyamah",
+      "name_translation": "The Resurrection",
+      "verses": 40,
+      "revelation_type": "Meccan",
+      "revelation_order": 31,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 577
+    },
+    {
+      "number": 76,
+      "name": "الانسان",
+      "name_en": "Al-Insan",
+      "name_translation": "The Human",
+      "verses": 31,
+      "revelation_type": "Medinan",
+      "revelation_order": 98,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 578
+    },
+    {
+      "number": 77,
+      "name": "المرسلات",
+      "name_en": "Al-Mursalat",
+      "name_translation": "The Emissaries",
+      "verses": 50,
+      "revelation_type": "Meccan",
+      "revelation_order": 33,
+      "juz": [
+        29
+      ],
+      "ruku_count": 2,
+      "page_start": 580
+    },
+    {
+      "number": 78,
+      "name": "النبإ",
+      "name_en": "An-Naba",
+      "name_translation": "The Tidings",
+      "verses": 40,
+      "revelation_type": "Meccan",
+      "revelation_order": 80,
+      "juz": [
+        30
+      ],
+      "ruku_count": 2,
+      "page_start": 582
+    },
+    {
+      "number": 79,
+      "name": "النازعات",
+      "name_en": "An-Nazi'at",
+      "name_translation": "Those who drag forth",
+      "verses": 46,
+      "revelation_type": "Meccan",
+      "revelation_order": 81,
+      "juz": [
+        30
+      ],
+      "ruku_count": 2,
+      "page_start": 583
+    },
+    {
+      "number": 80,
+      "name": "عبس",
+      "name_en": "Abasa",
+      "name_translation": "He Frowned",
+      "verses": 42,
+      "revelation_type": "Meccan",
+      "revelation_order": 24,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 585
+    },
+    {
+      "number": 81,
+      "name": "التكوير",
+      "name_en": "At-Takwir",
+      "name_translation": "The Overthrowing",
+      "verses": 29,
+      "revelation_type": "Meccan",
+      "revelation_order": 7,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 586
+    },
+    {
+      "number": 82,
+      "name": "الإنفطار",
+      "name_en": "Al-Infitar",
+      "name_translation": "The Cleaving",
+      "verses": 19,
+      "revelation_type": "Meccan",
+      "revelation_order": 82,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 587
+    },
+    {
+      "number": 83,
+      "name": "المطففين",
+      "name_en": "Al-Mutaffifin",
+      "name_translation": "The Defrauding",
+      "verses": 36,
+      "revelation_type": "Meccan",
+      "revelation_order": 86,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 587
+    },
+    {
+      "number": 84,
+      "name": "الإنشقاق",
+      "name_en": "Al-Inshiqaq",
+      "name_translation": "The Sundering",
+      "verses": 25,
+      "revelation_type": "Meccan",
+      "revelation_order": 83,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 589
+    },
+    {
+      "number": 85,
+      "name": "البروج",
+      "name_en": "Al-Buruj",
+      "name_translation": "The Mansions of the Stars",
+      "verses": 22,
+      "revelation_type": "Meccan",
+      "revelation_order": 27,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 590
+    },
+    {
+      "number": 86,
+      "name": "الطارق",
+      "name_en": "At-Tariq",
+      "name_translation": "The Nightcomer",
+      "verses": 17,
+      "revelation_type": "Meccan",
+      "revelation_order": 36,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 591
+    },
+    {
+      "number": 87,
+      "name": "الأعلى",
+      "name_en": "Al-A'la",
+      "name_translation": "The Most High",
+      "verses": 19,
+      "revelation_type": "Meccan",
+      "revelation_order": 8,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 591
+    },
+    {
+      "number": 88,
+      "name": "الغاشية",
+      "name_en": "Al-Ghashiyah",
+      "name_translation": "The Overwhelming",
+      "verses": 26,
+      "revelation_type": "Meccan",
+      "revelation_order": 68,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 592
+    },
+    {
+      "number": 89,
+      "name": "الفجر",
+      "name_en": "Al-Fajr",
+      "name_translation": "The Dawn",
+      "verses": 30,
+      "revelation_type": "Meccan",
+      "revelation_order": 10,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 593
+    },
+    {
+      "number": 90,
+      "name": "البلد",
+      "name_en": "Al-Balad",
+      "name_translation": "The City",
+      "verses": 20,
+      "revelation_type": "Meccan",
+      "revelation_order": 35,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 594
+    },
+    {
+      "number": 91,
+      "name": "الشمس",
+      "name_en": "Ash-Shams",
+      "name_translation": "The Sun",
+      "verses": 15,
+      "revelation_type": "Meccan",
+      "revelation_order": 26,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 595
+    },
+    {
+      "number": 92,
+      "name": "الليل",
+      "name_en": "Al-Layl",
+      "name_translation": "The Night",
+      "verses": 21,
+      "revelation_type": "Meccan",
+      "revelation_order": 9,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 595
+    },
+    {
+      "number": 93,
+      "name": "الضحى",
+      "name_en": "Ad-Duhaa",
+      "name_translation": "The Morning Hours",
+      "verses": 11,
+      "revelation_type": "Meccan",
+      "revelation_order": 11,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 596
+    },
+    {
+      "number": 94,
+      "name": "الشرح",
+      "name_en": "Ash-Sharh",
+      "name_translation": "The Relief",
+      "verses": 8,
+      "revelation_type": "Meccan",
+      "revelation_order": 12,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 596
+    },
+    {
+      "number": 95,
+      "name": "التين",
+      "name_en": "At-Tin",
+      "name_translation": "The Fig",
+      "verses": 8,
+      "revelation_type": "Meccan",
+      "revelation_order": 28,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 597
+    },
+    {
+      "number": 96,
+      "name": "العلق",
+      "name_en": "Al-Alaq",
+      "name_translation": "The Clot",
+      "verses": 19,
+      "revelation_type": "Meccan",
+      "revelation_order": 1,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 597
+    },
+    {
+      "number": 97,
+      "name": "القدر",
+      "name_en": "Al-Qadr",
+      "name_translation": "The Power",
+      "verses": 5,
+      "revelation_type": "Meccan",
+      "revelation_order": 25,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 598
+    },
+    {
+      "number": 98,
+      "name": "البينة",
+      "name_en": "Al-Bayyinah",
+      "name_translation": "The Clear Proof",
+      "verses": 8,
+      "revelation_type": "Medinan",
+      "revelation_order": 100,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 598
+    },
+    {
+      "number": 99,
+      "name": "الزلزلة",
+      "name_en": "Az-Zalzalah",
+      "name_translation": "The Earthquake",
+      "verses": 8,
+      "revelation_type": "Medinan",
+      "revelation_order": 93,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 599
+    },
+    {
+      "number": 100,
+      "name": "العاديات",
+      "name_en": "Al-Adiyat",
+      "name_translation": "The Coursers",
+      "verses": 11,
+      "revelation_type": "Meccan",
+      "revelation_order": 14,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 599
+    },
+    {
+      "number": 101,
+      "name": "القارعة",
+      "name_en": "Al-Qari'ah",
+      "name_translation": "The Calamity",
+      "verses": 11,
+      "revelation_type": "Meccan",
+      "revelation_order": 30,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 600
+    },
+    {
+      "number": 102,
+      "name": "التكاثر",
+      "name_en": "At-Takathur",
+      "name_translation": "The Rivalry in world increase",
+      "verses": 8,
+      "revelation_type": "Meccan",
+      "revelation_order": 16,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 600
+    },
+    {
+      "number": 103,
+      "name": "العصر",
+      "name_en": "Al-Asr",
+      "name_translation": "The Declining Day",
+      "verses": 3,
+      "revelation_type": "Meccan",
+      "revelation_order": 13,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 601
+    },
+    {
+      "number": 104,
+      "name": "الهمزة",
+      "name_en": "Al-Humazah",
+      "name_translation": "The Traducer",
+      "verses": 9,
+      "revelation_type": "Meccan",
+      "revelation_order": 32,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 601
+    },
+    {
+      "number": 105,
+      "name": "الفيل",
+      "name_en": "Al-Fil",
+      "name_translation": "The Elephant",
+      "verses": 5,
+      "revelation_type": "Meccan",
+      "revelation_order": 19,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 601
+    },
+    {
+      "number": 106,
+      "name": "قريش",
+      "name_en": "Quraysh",
+      "name_translation": "Quraysh",
+      "verses": 4,
+      "revelation_type": "Meccan",
+      "revelation_order": 29,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 602
+    },
+    {
+      "number": 107,
+      "name": "الماعون",
+      "name_en": "Al-Ma'un",
+      "name_translation": "The Small Kindnesses",
+      "verses": 7,
+      "revelation_type": "Meccan",
+      "revelation_order": 17,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 602
+    },
+    {
+      "number": 108,
+      "name": "الكوثر",
+      "name_en": "Al-Kawthar",
+      "name_translation": "The Abundance",
+      "verses": 3,
+      "revelation_type": "Meccan",
+      "revelation_order": 15,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 602
+    },
+    {
+      "number": 109,
+      "name": "الكافرون",
+      "name_en": "Al-Kafirun",
+      "name_translation": "The Disbelievers",
+      "verses": 6,
+      "revelation_type": "Meccan",
+      "revelation_order": 18,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 603
+    },
+    {
+      "number": 110,
+      "name": "النصر",
+      "name_en": "An-Nasr",
+      "name_translation": "The Divine Support",
+      "verses": 3,
+      "revelation_type": "Medinan",
+      "revelation_order": 114,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 603
+    },
+    {
+      "number": 111,
+      "name": "المسد",
+      "name_en": "Al-Masad",
+      "name_translation": "The Palm Fiber",
+      "verses": 5,
+      "revelation_type": "Meccan",
+      "revelation_order": 6,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 603
+    },
+    {
+      "number": 112,
+      "name": "الإخلاص",
+      "name_en": "Al-Ikhlas",
+      "name_translation": "The Sincerity",
+      "verses": 4,
+      "revelation_type": "Meccan",
+      "revelation_order": 22,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 604
+    },
+    {
+      "number": 113,
+      "name": "الفلق",
+      "name_en": "Al-Falaq",
+      "name_translation": "The Daybreak",
+      "verses": 5,
+      "revelation_type": "Meccan",
+      "revelation_order": 20,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 604
+    },
+    {
+      "number": 114,
+      "name": "الناس",
+      "name_en": "An-Nas",
+      "name_translation": "Mankind",
+      "verses": 6,
+      "revelation_type": "Meccan",
+      "revelation_order": 21,
+      "juz": [
+        30
+      ],
+      "ruku_count": 1,
+      "page_start": 604
+    }
+  ]
+}

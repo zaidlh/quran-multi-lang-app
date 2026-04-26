@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "source": "spa5k/tafsir_api",
+  "license": "MIT",
+  "language": "en",
+  "cdn_base": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir",
+  "tafsirs": [
+    {
+      "id": "en-tafisr-ibn-kathir",
+      "name": "Tafsir Ibn Kathir (English)",
+      "author": "Ibn Kathir (translated)",
+      "language": "en",
+      "total_surahs": 114,
+      "cdn_pattern": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/en-tafisr-ibn-kathir/{surah_number}.json",
+      "example_url": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/en-tafisr-ibn-kathir/1.json"
+    },
+    {
+      "id": "en-tafseer-tafheem",
+      "name": "Tafheem ul-Quran",
+      "author": "Sayyid Abul Ala Maududi",
+      "language": "en",
+      "total_surahs": 114,
+      "cdn_pattern": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/en-tafseer-tafheem/{surah_number}.json",
+      "example_url": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/en-tafseer-tafheem/1.json"
+    }
+  ]
+}

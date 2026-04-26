@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "sources": [
+    {
+      "name": "Quranic Arabic Corpus",
+      "url": "https://corpus.quran.com",
+      "description": "Morphological annotation of the Quran",
+      "license": "CC-BY-SA"
+    },
+    {
+      "name": "mustafa0x/quran-morphology",
+      "url": "https://github.com/mustafa0x/quran-morphology",
+      "description": "Fork of Quranic Arabic Corpus v0.4 with corrections",
+      "license": "Not specified (academic use)"
+    },
+    {
+      "name": "Quran.com API",
+      "url": "https://api.quran.com/api/v4/quran/verses/uthmani",
+      "description": "Word-by-word data via Quran.com API",
+      "license": "Open Access"
+    }
+  ],
+  "schema": {
+    "surah": "integer (1-114)",
+    "ayah": "integer (1-n)",
+    "word_position": "integer (1-n)",
+    "arabic": "string (Arabic word)",
+    "transliteration": "string (Latin transliteration)",
+    "translation": "string (English meaning)",
+    "root": "string (Arabic root letters)",
+    "lemma": "string (dictionary form)",
+    "grammar_tag": "string (POS tag)",
+    "morphology": "string (detailed morphological features)"
+  },
+  "grammar_tags": {
+    "N": "Noun",
+    "PN": "Proper Noun",
+    "ADJ": "Adjective",
+    "V": "Verb",
+    "PRON": "Pronoun",
+    "DEM": "Demonstrative",
+    "REL": "Relative",
+    "INTG": "Interrogative",
+    "P": "Preposition",
+    "CONJ": "Conjunction",
+    "PART": "Particle",
+    "NEG": "Negative",
+    "DET": "Determiner",
+    "EMPH": "Emphatic",
+    "CERT": "Certainty",
+    "RET": "Retraction",
+    "PREV": "Preventive",
+    "ANS": "Answer",
+    "AVR": "Aversion",
+    "CAUS": "Cause",
+    "AMD": "Amendment",
+    "COND": "Conditional",
+    "SUP": "Supplementary",
+    "EXP": "Explanation",
+    "SUR": "Surprise",
+    "INC": "Inceptive",
+    "CIRC": "Circumstantial",
+    "COM": "Comitative",
+    "REM": "Resumption",
+    "EXH": "Exhortative",
+    "EXL": "Exclamation",
+    "VOC": "Vocative",
+    "INL": "Interjectional"
+  },
+  "fetch_instructions": "Run scripts/fetch_resources.py to download complete word-by-word data from the Quran.com API"
+}

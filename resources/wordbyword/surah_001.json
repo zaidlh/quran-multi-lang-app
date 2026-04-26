@@ -1,0 +1,312 @@
+{
+  "surah": 1,
+  "name": "الفاتحة",
+  "name_en": "Al-Fatihah",
+  "source": "Compiled from corpus.quran.com and Quran.com API",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "بِسْمِ",
+          "transliteration": "bismi",
+          "translation": "In (the) name",
+          "root": "س م و",
+          "lemma": "ٱسْم",
+          "tag": "P+N"
+        },
+        {
+          "position": 2,
+          "arabic": "اللَّهِ",
+          "transliteration": "allahi",
+          "translation": "(of) Allah",
+          "root": "ا ل ه",
+          "lemma": "ٱللَّه",
+          "tag": "PN"
+        },
+        {
+          "position": 3,
+          "arabic": "الرَّحْمَٰنِ",
+          "transliteration": "alrrahmani",
+          "translation": "the Most Gracious",
+          "root": "ر ح م",
+          "lemma": "رَحْمَٰن",
+          "tag": "ADJ"
+        },
+        {
+          "position": 4,
+          "arabic": "الرَّحِيمِ",
+          "transliteration": "alrraheemi",
+          "translation": "the Most Merciful",
+          "root": "ر ح م",
+          "lemma": "رَحِيم",
+          "tag": "ADJ"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "الْحَمْدُ",
+          "transliteration": "alhamdu",
+          "translation": "All praises and thanks",
+          "root": "ح م د",
+          "lemma": "حَمْد",
+          "tag": "N"
+        },
+        {
+          "position": 2,
+          "arabic": "لِلَّهِ",
+          "transliteration": "lillahi",
+          "translation": "(be) to Allah",
+          "root": "ا ل ه",
+          "lemma": "ٱللَّه",
+          "tag": "P+PN"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّ",
+          "transliteration": "rabbi",
+          "translation": "(the) Lord",
+          "root": "ر ب ب",
+          "lemma": "رَبّ",
+          "tag": "N"
+        },
+        {
+          "position": 4,
+          "arabic": "الْعَالَمِينَ",
+          "transliteration": "alAAalameena",
+          "translation": "of the worlds",
+          "root": "ع ل م",
+          "lemma": "عَٰلَم",
+          "tag": "N"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "الرَّحْمَٰنِ الرَّحِيمِ",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "الرَّحْمَٰنِ",
+          "transliteration": "alrrahmani",
+          "translation": "The Most Gracious",
+          "root": "ر ح م",
+          "lemma": "رَحْمَٰن",
+          "tag": "ADJ"
+        },
+        {
+          "position": 2,
+          "arabic": "الرَّحِيمِ",
+          "transliteration": "alrraheemi",
+          "translation": "the Most Merciful",
+          "root": "ر ح م",
+          "lemma": "رَحِيم",
+          "tag": "ADJ"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "مَالِكِ يَوْمِ الدِّينِ",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مَالِكِ",
+          "transliteration": "maliki",
+          "translation": "(The) Master",
+          "root": "م ل ك",
+          "lemma": "مَٰلِك",
+          "tag": "N"
+        },
+        {
+          "position": 2,
+          "arabic": "يَوْمِ",
+          "transliteration": "yawmi",
+          "translation": "(of the) Day",
+          "root": "ي و م",
+          "lemma": "يَوْم",
+          "tag": "N"
+        },
+        {
+          "position": 3,
+          "arabic": "الدِّينِ",
+          "transliteration": "alddeeni",
+          "translation": "(of) Judgment",
+          "root": "د ي ن",
+          "lemma": "دِين",
+          "tag": "N"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِيَّاكَ",
+          "transliteration": "iyyaka",
+          "translation": "You alone",
+          "root": "",
+          "lemma": "إِيَّا",
+          "tag": "PRON"
+        },
+        {
+          "position": 2,
+          "arabic": "نَعْبُدُ",
+          "transliteration": "naAAbudu",
+          "translation": "we worship",
+          "root": "ع ب د",
+          "lemma": "عَبَدَ",
+          "tag": "V"
+        },
+        {
+          "position": 3,
+          "arabic": "وَإِيَّاكَ",
+          "transliteration": "waiyyaka",
+          "translation": "and You alone",
+          "root": "",
+          "lemma": "إِيَّا",
+          "tag": "CONJ+PRON"
+        },
+        {
+          "position": 4,
+          "arabic": "نَسْتَعِينُ",
+          "transliteration": "nastaAAeenu",
+          "translation": "we ask for help",
+          "root": "ع و ن",
+          "lemma": "ٱسْتَعَانَ",
+          "tag": "V"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "اهْدِنَا",
+          "transliteration": "ihdina",
+          "translation": "Guide us",
+          "root": "ه د ي",
+          "lemma": "هَدَىٰ",
+          "tag": "V"
+        },
+        {
+          "position": 2,
+          "arabic": "الصِّرَاطَ",
+          "transliteration": "alssirata",
+          "translation": "(to) the path",
+          "root": "ص ر ط",
+          "lemma": "صِرَٰط",
+          "tag": "N"
+        },
+        {
+          "position": 3,
+          "arabic": "الْمُسْتَقِيمَ",
+          "transliteration": "almustaqeema",
+          "translation": "the straight",
+          "root": "ق و م",
+          "lemma": "مُسْتَقِيم",
+          "tag": "ADJ"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "صِرَاطَ",
+          "transliteration": "sirata",
+          "translation": "(The) path",
+          "root": "ص ر ط",
+          "lemma": "صِرَٰط",
+          "tag": "N"
+        },
+        {
+          "position": 2,
+          "arabic": "الَّذِينَ",
+          "transliteration": "allatheena",
+          "translation": "(of) those",
+          "root": "",
+          "lemma": "ٱلَّذِى",
+          "tag": "REL"
+        },
+        {
+          "position": 3,
+          "arabic": "أَنْعَمْتَ",
+          "transliteration": "anAAamta",
+          "translation": "You have bestowed (Your) Favors",
+          "root": "ن ع م",
+          "lemma": "أَنْعَمَ",
+          "tag": "V"
+        },
+        {
+          "position": 4,
+          "arabic": "عَلَيْهِمْ",
+          "transliteration": "AAalayhim",
+          "translation": "on them",
+          "root": "ع ل و",
+          "lemma": "عَلَىٰ",
+          "tag": "P+PRON"
+        },
+        {
+          "position": 5,
+          "arabic": "غَيْرِ",
+          "transliteration": "ghayri",
+          "translation": "not (of)",
+          "root": "غ ي ر",
+          "lemma": "غَيْر",
+          "tag": "N"
+        },
+        {
+          "position": 6,
+          "arabic": "الْمَغْضُوبِ",
+          "transliteration": "almaghdoobi",
+          "translation": "those who earned (Your) wrath",
+          "root": "غ ض ب",
+          "lemma": "مَغْضُوب",
+          "tag": "N"
+        },
+        {
+          "position": 7,
+          "arabic": "عَلَيْهِمْ",
+          "transliteration": "AAalayhim",
+          "translation": "on them",
+          "root": "ع ل و",
+          "lemma": "عَلَىٰ",
+          "tag": "P+PRON"
+        },
+        {
+          "position": 8,
+          "arabic": "وَلَا",
+          "transliteration": "wala",
+          "translation": "and not",
+          "root": "",
+          "lemma": "لَا",
+          "tag": "CONJ+NEG"
+        },
+        {
+          "position": 9,
+          "arabic": "الضَّالِّينَ",
+          "transliteration": "alddalleena",
+          "translation": "those who go astray",
+          "root": "ض ل ل",
+          "lemma": "ضَالّ",
+          "tag": "N"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0"
+}
