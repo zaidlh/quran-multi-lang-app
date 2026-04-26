@@ -15,7 +15,7 @@ function createWindow() {
 
   // In development, load from the Next.js dev server
   // In production, load from the built files or a deployed URL
-  const isDev = process.env.NODE_ENV === "development";
+  const isDev = !app.isPackaged;
   if (isDev) {
     win.loadURL("http://localhost:3000");
     win.webContents.openDevTools();
