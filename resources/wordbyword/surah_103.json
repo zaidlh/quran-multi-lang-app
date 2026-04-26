@@ -1,0 +1,111 @@
+{
+  "surah": 103,
+  "name": "العصر",
+  "name_en": "Al-Asr",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلْعَصْرِ",
+          "transliteration": "wal-ʿaṣri",
+          "translation": "By the time"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْإِنسَـٰنَ",
+          "transliteration": "l-insāna",
+          "translation": "mankind"
+        },
+        {
+          "position": 3,
+          "arabic": "لَفِى",
+          "transliteration": "lafī",
+          "translation": "(is) surely, in"
+        },
+        {
+          "position": 4,
+          "arabic": "خُسْرٍ",
+          "transliteration": "khus'rin",
+          "translation": "loss"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِلَّا",
+          "transliteration": "illā",
+          "translation": "Except"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلَّذِينَ",
+          "transliteration": "alladhīna",
+          "translation": "those who"
+        },
+        {
+          "position": 3,
+          "arabic": "ءَامَنُوا۟",
+          "transliteration": "āmanū",
+          "translation": "believe"
+        },
+        {
+          "position": 4,
+          "arabic": "وَعَمِلُوا۟",
+          "transliteration": "waʿamilū",
+          "translation": "and do"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلصَّـٰلِحَـٰتِ",
+          "transliteration": "l-ṣāliḥāti",
+          "translation": "righteous deeds"
+        },
+        {
+          "position": 6,
+          "arabic": "وَتَوَاصَوْا۟",
+          "transliteration": "watawāṣaw",
+          "translation": "and enjoin (each other)"
+        },
+        {
+          "position": 7,
+          "arabic": "بِٱلْحَقِّ",
+          "transliteration": "bil-ḥaqi",
+          "translation": "to the truth"
+        },
+        {
+          "position": 8,
+          "arabic": "وَتَوَاصَوْا۟",
+          "transliteration": "watawāṣaw",
+          "translation": "and enjoin (each other)"
+        },
+        {
+          "position": 9,
+          "arabic": "بِٱلصَّبْرِ",
+          "transliteration": "bil-ṣabri",
+          "translation": "to [the] patience"
+        }
+      ]
+    }
+  ]
+}

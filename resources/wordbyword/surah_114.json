@@ -1,0 +1,165 @@
+{
+  "surah": 114,
+  "name": "الناس",
+  "name_en": "An-Nas",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "قُلْ",
+          "transliteration": "qul",
+          "translation": "Say"
+        },
+        {
+          "position": 2,
+          "arabic": "أَعُوذُ",
+          "transliteration": "aʿūdhu",
+          "translation": "I seek refuge"
+        },
+        {
+          "position": 3,
+          "arabic": "بِرَبِّ",
+          "transliteration": "birabbi",
+          "translation": "in (the) Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلنَّاسِ",
+          "transliteration": "l-nāsi",
+          "translation": "(of) mankind"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مَلِكِ",
+          "transliteration": "maliki",
+          "translation": "(The) King"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلنَّاسِ",
+          "transliteration": "l-nāsi",
+          "translation": "(of) mankind"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِلَـٰهِ",
+          "transliteration": "ilāhi",
+          "translation": "(The) God"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلنَّاسِ",
+          "transliteration": "l-nāsi",
+          "translation": "(of) mankind"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "From"
+        },
+        {
+          "position": 2,
+          "arabic": "شَرِّ",
+          "transliteration": "sharri",
+          "translation": "(the) evil"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْوَسْوَاسِ",
+          "transliteration": "l-waswāsi",
+          "translation": "(of) the whisperer"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْخَنَّاسِ",
+          "transliteration": "l-khanāsi",
+          "translation": "the one who withdraws"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلَّذِى",
+          "transliteration": "alladhī",
+          "translation": "The one who"
+        },
+        {
+          "position": 2,
+          "arabic": "يُوَسْوِسُ",
+          "transliteration": "yuwaswisu",
+          "translation": "whispers"
+        },
+        {
+          "position": 3,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 4,
+          "arabic": "صُدُورِ",
+          "transliteration": "ṣudūri",
+          "translation": "(the) breasts"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلنَّاسِ",
+          "transliteration": "l-nāsi",
+          "translation": "(of) mankind"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مِنَ",
+          "transliteration": "mina",
+          "translation": "From"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْجِنَّةِ",
+          "transliteration": "l-jinati",
+          "translation": "the jinn"
+        },
+        {
+          "position": 3,
+          "arabic": "وَٱلنَّاسِ",
+          "transliteration": "wal-nāsi",
+          "translation": "and men"
+        }
+      ]
+    }
+  ]
+}

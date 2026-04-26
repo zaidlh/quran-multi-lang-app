@@ -1,0 +1,261 @@
+{
+  "surah": 95,
+  "name": "التين",
+  "name_en": "At-Tin",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلتِّينِ",
+          "transliteration": "wal-tīni",
+          "translation": "By the fig"
+        },
+        {
+          "position": 2,
+          "arabic": "وَٱلزَّيْتُونِ",
+          "transliteration": "wal-zaytūni",
+          "translation": "and the olive"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَطُورِ",
+          "transliteration": "waṭūri",
+          "translation": "And (the) Mount"
+        },
+        {
+          "position": 2,
+          "arabic": "سِينِينَ",
+          "transliteration": "sīnīna",
+          "translation": "Sinai"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَهَـٰذَا",
+          "transliteration": "wahādhā",
+          "translation": "And this"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْبَلَدِ",
+          "transliteration": "l-baladi",
+          "translation": "[the] city"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْأَمِينِ",
+          "transliteration": "l-amīni",
+          "translation": "[the] secure"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "لَقَدْ",
+          "transliteration": "laqad",
+          "translation": "Indeed"
+        },
+        {
+          "position": 2,
+          "arabic": "خَلَقْنَا",
+          "transliteration": "khalaqnā",
+          "translation": "We created"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْإِنسَـٰنَ",
+          "transliteration": "l-insāna",
+          "translation": "man"
+        },
+        {
+          "position": 4,
+          "arabic": "فِىٓ",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 5,
+          "arabic": "أَحْسَنِ",
+          "transliteration": "aḥsani",
+          "translation": "(the) best"
+        },
+        {
+          "position": 6,
+          "arabic": "تَقْوِيمٍۢ",
+          "transliteration": "taqwīmin",
+          "translation": "mould"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ثُمَّ",
+          "transliteration": "thumma",
+          "translation": "Then"
+        },
+        {
+          "position": 2,
+          "arabic": "رَدَدْنَـٰهُ",
+          "transliteration": "radadnāhu",
+          "translation": "We returned him"
+        },
+        {
+          "position": 3,
+          "arabic": "أَسْفَلَ",
+          "transliteration": "asfala",
+          "translation": "(to the) lowest"
+        },
+        {
+          "position": 4,
+          "arabic": "سَـٰفِلِينَ",
+          "transliteration": "sāfilīna",
+          "translation": "(of the) low"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِلَّا",
+          "transliteration": "illā",
+          "translation": "Except"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلَّذِينَ",
+          "transliteration": "alladhīna",
+          "translation": "those who"
+        },
+        {
+          "position": 3,
+          "arabic": "ءَامَنُوا۟",
+          "transliteration": "āmanū",
+          "translation": "believe"
+        },
+        {
+          "position": 4,
+          "arabic": "وَعَمِلُوا۟",
+          "transliteration": "waʿamilū",
+          "translation": "and do"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلصَّـٰلِحَـٰتِ",
+          "transliteration": "l-ṣāliḥāti",
+          "translation": "righteous deeds"
+        },
+        {
+          "position": 6,
+          "arabic": "فَلَهُمْ",
+          "transliteration": "falahum",
+          "translation": "then for them"
+        },
+        {
+          "position": 7,
+          "arabic": "أَجْرٌ",
+          "transliteration": "ajrun",
+          "translation": "(is a) reward"
+        },
+        {
+          "position": 8,
+          "arabic": "غَيْرُ",
+          "transliteration": "ghayru",
+          "translation": "never"
+        },
+        {
+          "position": 9,
+          "arabic": "مَمْنُونٍۢ",
+          "transliteration": "mamnūnin",
+          "translation": "ending"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَمَا",
+          "transliteration": "famā",
+          "translation": "Then what"
+        },
+        {
+          "position": 2,
+          "arabic": "يُكَذِّبُكَ",
+          "transliteration": "yukadhibuka",
+          "translation": "causes you to deny"
+        },
+        {
+          "position": 3,
+          "arabic": "بَعْدُ",
+          "transliteration": "baʿdu",
+          "translation": "after (this)"
+        },
+        {
+          "position": 4,
+          "arabic": "بِٱلدِّينِ",
+          "transliteration": "bil-dīni",
+          "translation": "the judgment"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَلَيْسَ",
+          "transliteration": "alaysa",
+          "translation": "Is not"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱللَّهُ",
+          "transliteration": "l-lahu",
+          "translation": "Allah"
+        },
+        {
+          "position": 3,
+          "arabic": "بِأَحْكَمِ",
+          "transliteration": "bi-aḥkami",
+          "translation": "(the) Most Just"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْحَـٰكِمِينَ",
+          "transliteration": "l-ḥākimīna",
+          "translation": "(of) the Judges"
+        }
+      ]
+    }
+  ]
+}

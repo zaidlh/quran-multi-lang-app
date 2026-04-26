@@ -1,0 +1,87 @@
+{
+  "surah": 108,
+  "name": "الكوثر",
+  "name_en": "Al-Kawthar",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِنَّآ",
+          "transliteration": "innā",
+          "translation": "Indeed, We"
+        },
+        {
+          "position": 2,
+          "arabic": "أَعْطَيْنَـٰكَ",
+          "transliteration": "aʿṭaynāka",
+          "translation": "We have given you"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْكَوْثَرَ",
+          "transliteration": "l-kawthara",
+          "translation": "Al-Kauthar"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَصَلِّ",
+          "transliteration": "faṣalli",
+          "translation": "So pray"
+        },
+        {
+          "position": 2,
+          "arabic": "لِرَبِّكَ",
+          "transliteration": "lirabbika",
+          "translation": "to your Lord"
+        },
+        {
+          "position": 3,
+          "arabic": "وَٱنْحَرْ",
+          "transliteration": "wa-in'ḥar",
+          "translation": "and sacrifice"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 2,
+          "arabic": "شَانِئَكَ",
+          "transliteration": "shāni-aka",
+          "translation": "your enemy "
+        },
+        {
+          "position": 3,
+          "arabic": "هُوَ",
+          "transliteration": "huwa",
+          "translation": "he (is)"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْأَبْتَرُ",
+          "transliteration": "l-abtaru",
+          "translation": "the one cut off"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2583 @@
+{
+  "surah": 55,
+  "name": "الرحمن",
+  "name_en": "Ar-Rahman",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلرَّحْمَـٰنُ",
+          "transliteration": "al-raḥmānu",
+          "translation": "The Most Gracious"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "عَلَّمَ",
+          "transliteration": "ʿallama",
+          "translation": "He taught"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْقُرْءَانَ",
+          "transliteration": "l-qur'āna",
+          "translation": "the Quran"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "خَلَقَ",
+          "transliteration": "khalaqa",
+          "translation": "He created"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْإِنسَـٰنَ",
+          "transliteration": "l-insāna",
+          "translation": "[the] man"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "عَلَّمَهُ",
+          "transliteration": "ʿallamahu",
+          "translation": "He taught him"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْبَيَانَ",
+          "transliteration": "l-bayāna",
+          "translation": "[the] speech"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلشَّمْسُ",
+          "transliteration": "al-shamsu",
+          "translation": "The sun"
+        },
+        {
+          "position": 2,
+          "arabic": "وَٱلْقَمَرُ",
+          "transliteration": "wal-qamaru",
+          "translation": "and the moon"
+        },
+        {
+          "position": 3,
+          "arabic": "بِحُسْبَانٍۢ",
+          "transliteration": "biḥus'bānin",
+          "translation": "by (precise) calculation"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلنَّجْمُ",
+          "transliteration": "wal-najmu",
+          "translation": "And the stars"
+        },
+        {
+          "position": 2,
+          "arabic": "وَٱلشَّجَرُ",
+          "transliteration": "wal-shajaru",
+          "translation": "and the trees"
+        },
+        {
+          "position": 3,
+          "arabic": "يَسْجُدَانِ",
+          "transliteration": "yasjudāni",
+          "translation": "both prostrate"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلسَّمَآءَ",
+          "transliteration": "wal-samāa",
+          "translation": "And the heaven"
+        },
+        {
+          "position": 2,
+          "arabic": "رَفَعَهَا",
+          "transliteration": "rafaʿahā",
+          "translation": "He raised it"
+        },
+        {
+          "position": 3,
+          "arabic": "وَوَضَعَ",
+          "transliteration": "wawaḍaʿa",
+          "translation": "and He has set up"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْمِيزَانَ",
+          "transliteration": "l-mīzāna",
+          "translation": "the balance"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَلَّا",
+          "transliteration": "allā",
+          "translation": "That not"
+        },
+        {
+          "position": 2,
+          "arabic": "تَطْغَوْا۟",
+          "transliteration": "taṭghaw",
+          "translation": "you may transgress"
+        },
+        {
+          "position": 3,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْمِيزَانِ",
+          "transliteration": "l-mīzāni",
+          "translation": "the balance"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَأَقِيمُوا۟",
+          "transliteration": "wa-aqīmū",
+          "translation": "And establish"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْوَزْنَ",
+          "transliteration": "l-wazna",
+          "translation": "the weight"
+        },
+        {
+          "position": 3,
+          "arabic": "بِٱلْقِسْطِ",
+          "transliteration": "bil-qis'ṭi",
+          "translation": "in justice"
+        },
+        {
+          "position": 4,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "and (do) not"
+        },
+        {
+          "position": 5,
+          "arabic": "تُخْسِرُوا۟",
+          "transliteration": "tukh'sirū",
+          "translation": "make deficient"
+        },
+        {
+          "position": 6,
+          "arabic": "ٱلْمِيزَانَ",
+          "transliteration": "l-mīzāna",
+          "translation": "the balance"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلْأَرْضَ",
+          "transliteration": "wal-arḍa",
+          "translation": "And the earth"
+        },
+        {
+          "position": 2,
+          "arabic": "وَضَعَهَا",
+          "transliteration": "waḍaʿahā",
+          "translation": "He laid it"
+        },
+        {
+          "position": 3,
+          "arabic": "لِلْأَنَامِ",
+          "transliteration": "lil'anāmi",
+          "translation": "for the creatures"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فِيهَا",
+          "transliteration": "fīhā",
+          "translation": "Therein"
+        },
+        {
+          "position": 2,
+          "arabic": "فَـٰكِهَةٌۭ",
+          "transliteration": "fākihatun",
+          "translation": "(is) fruit"
+        },
+        {
+          "position": 3,
+          "arabic": "وَٱلنَّخْلُ",
+          "transliteration": "wal-nakhlu",
+          "translation": "and date-palms"
+        },
+        {
+          "position": 4,
+          "arabic": "ذَاتُ",
+          "transliteration": "dhātu",
+          "translation": "having"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْأَكْمَامِ",
+          "transliteration": "l-akmāmi",
+          "translation": "sheaths"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلْحَبُّ",
+          "transliteration": "wal-ḥabu",
+          "translation": "And the grain"
+        },
+        {
+          "position": 2,
+          "arabic": "ذُو",
+          "transliteration": "dhū",
+          "translation": "having"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْعَصْفِ",
+          "transliteration": "l-ʿaṣfi",
+          "translation": "husk"
+        },
+        {
+          "position": 4,
+          "arabic": "وَٱلرَّيْحَانُ",
+          "transliteration": "wal-rayḥānu",
+          "translation": "and scented plants"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "خَلَقَ",
+          "transliteration": "khalaqa",
+          "translation": "He created"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْإِنسَـٰنَ",
+          "transliteration": "l-insāna",
+          "translation": "the man"
+        },
+        {
+          "position": 3,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "from"
+        },
+        {
+          "position": 4,
+          "arabic": "صَلْصَـٰلٍۢ",
+          "transliteration": "ṣalṣālin",
+          "translation": "clay"
+        },
+        {
+          "position": 5,
+          "arabic": "كَٱلْفَخَّارِ",
+          "transliteration": "kal-fakhāri",
+          "translation": "like the pottery"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَخَلَقَ",
+          "transliteration": "wakhalaqa",
+          "translation": "And He created"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْجَآنَّ",
+          "transliteration": "l-jāna",
+          "translation": "the jinn"
+        },
+        {
+          "position": 3,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "from"
+        },
+        {
+          "position": 4,
+          "arabic": "مَّارِجٍۢ",
+          "transliteration": "mārijin",
+          "translation": "a smokeless flame"
+        },
+        {
+          "position": 5,
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "translation": "of"
+        },
+        {
+          "position": 6,
+          "arabic": "نَّارٍۢ",
+          "transliteration": "nārin",
+          "translation": "fire"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "رَبُّ",
+          "transliteration": "rabbu",
+          "translation": "Lord"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْمَشْرِقَيْنِ",
+          "transliteration": "l-mashriqayni",
+          "translation": "(of) the two Easts"
+        },
+        {
+          "position": 3,
+          "arabic": "وَرَبُّ",
+          "transliteration": "warabbu",
+          "translation": "and Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْمَغْرِبَيْنِ",
+          "transliteration": "l-maghribayni",
+          "translation": "(of) the two Wests"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مَرَجَ",
+          "transliteration": "maraja",
+          "translation": "He released"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْبَحْرَيْنِ",
+          "transliteration": "l-baḥrayni",
+          "translation": "the two seas"
+        },
+        {
+          "position": 3,
+          "arabic": "يَلْتَقِيَانِ",
+          "transliteration": "yaltaqiyāni",
+          "translation": "meeting"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "بَيْنَهُمَا",
+          "transliteration": "baynahumā",
+          "translation": "Between both of them"
+        },
+        {
+          "position": 2,
+          "arabic": "بَرْزَخٌۭ",
+          "transliteration": "barzakhun",
+          "translation": "(is) a barrier"
+        },
+        {
+          "position": 3,
+          "arabic": "لَّا",
+          "transliteration": "lā",
+          "translation": "not"
+        },
+        {
+          "position": 4,
+          "arabic": "يَبْغِيَانِ",
+          "transliteration": "yabghiyāni",
+          "translation": "they transgress"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَخْرُجُ",
+          "transliteration": "yakhruju",
+          "translation": "Come forth"
+        },
+        {
+          "position": 2,
+          "arabic": "مِنْهُمَا",
+          "transliteration": "min'humā",
+          "translation": "from both of them"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱللُّؤْلُؤُ",
+          "transliteration": "l-lu'lu-u",
+          "translation": "the pearl"
+        },
+        {
+          "position": 4,
+          "arabic": "وَٱلْمَرْجَانُ",
+          "transliteration": "wal-marjānu",
+          "translation": "and the coral"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَهُ",
+          "transliteration": "walahu",
+          "translation": "And for Him"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْجَوَارِ",
+          "transliteration": "l-jawāri",
+          "translation": "(are) the ships"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْمُنشَـَٔاتُ",
+          "transliteration": "l-munshaātu",
+          "translation": "elevated"
+        },
+        {
+          "position": 4,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْبَحْرِ",
+          "transliteration": "l-baḥri",
+          "translation": "the sea"
+        },
+        {
+          "position": 6,
+          "arabic": "كَٱلْأَعْلَـٰمِ",
+          "transliteration": "kal-aʿlāmi",
+          "translation": "like mountains"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "كُلُّ",
+          "transliteration": "kullu",
+          "translation": "Everyone"
+        },
+        {
+          "position": 2,
+          "arabic": "مَنْ",
+          "transliteration": "man",
+          "translation": "who"
+        },
+        {
+          "position": 3,
+          "arabic": "عَلَيْهَا",
+          "transliteration": "ʿalayhā",
+          "translation": "(is) on it"
+        },
+        {
+          "position": 4,
+          "arabic": "فَانٍۢ",
+          "transliteration": "fānin",
+          "translation": "(will) perish"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَيَبْقَىٰ",
+          "transliteration": "wayabqā",
+          "translation": "But will remain"
+        },
+        {
+          "position": 2,
+          "arabic": "وَجْهُ",
+          "transliteration": "wajhu",
+          "translation": "(the) Face"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكَ",
+          "transliteration": "rabbika",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "ذُو",
+          "transliteration": "dhū",
+          "translation": "(the) Owner"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْجَلَـٰلِ",
+          "transliteration": "l-jalāli",
+          "translation": "(of) Majesty"
+        },
+        {
+          "position": 6,
+          "arabic": "وَٱلْإِكْرَامِ",
+          "transliteration": "wal-ik'rāmi",
+          "translation": "and Honor"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَسْـَٔلُهُۥ",
+          "transliteration": "yasaluhu",
+          "translation": "Asks Him"
+        },
+        {
+          "position": 2,
+          "arabic": "مَن",
+          "transliteration": "man",
+          "translation": "whoever"
+        },
+        {
+          "position": 3,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "(is) in"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلسَّمَـٰوَٰتِ",
+          "transliteration": "l-samāwāti",
+          "translation": "the heavens"
+        },
+        {
+          "position": 5,
+          "arabic": "وَٱلْأَرْضِ ۚ",
+          "transliteration": "wal-arḍi",
+          "translation": "and the earth"
+        },
+        {
+          "position": 6,
+          "arabic": "كُلَّ",
+          "transliteration": "kulla",
+          "translation": "Every"
+        },
+        {
+          "position": 7,
+          "arabic": "يَوْمٍ",
+          "transliteration": "yawmin",
+          "translation": "day"
+        },
+        {
+          "position": 8,
+          "arabic": "هُوَ",
+          "transliteration": "huwa",
+          "translation": "He"
+        },
+        {
+          "position": 9,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "(is) in"
+        },
+        {
+          "position": 10,
+          "arabic": "شَأْنٍۢ",
+          "transliteration": "shanin",
+          "translation": "a matter"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "سَنَفْرُغُ",
+          "transliteration": "sanafrughu",
+          "translation": "Soon We will attend"
+        },
+        {
+          "position": 2,
+          "arabic": "لَكُمْ",
+          "transliteration": "lakum",
+          "translation": "to you"
+        },
+        {
+          "position": 3,
+          "arabic": "أَيُّهَ",
+          "transliteration": "ayyuha",
+          "translation": "O you"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلثَّقَلَانِ",
+          "transliteration": "l-thaqalāni",
+          "translation": "two classes"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَـٰمَعْشَرَ",
+          "transliteration": "yāmaʿshara",
+          "translation": "O assembly"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْجِنِّ",
+          "transliteration": "l-jini",
+          "translation": "(of) the jinn"
+        },
+        {
+          "position": 3,
+          "arabic": "وَٱلْإِنسِ",
+          "transliteration": "wal-insi",
+          "translation": "and the men"
+        },
+        {
+          "position": 4,
+          "arabic": "إِنِ",
+          "transliteration": "ini",
+          "translation": "If"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱسْتَطَعْتُمْ",
+          "transliteration": "is'taṭaʿtum",
+          "translation": "you are able"
+        },
+        {
+          "position": 6,
+          "arabic": "أَن",
+          "transliteration": "an",
+          "translation": "to"
+        },
+        {
+          "position": 7,
+          "arabic": "تَنفُذُوا۟",
+          "transliteration": "tanfudhū",
+          "translation": "pass beyond"
+        },
+        {
+          "position": 8,
+          "arabic": "مِنْ",
+          "transliteration": "min",
+          "translation": "[of]"
+        },
+        {
+          "position": 9,
+          "arabic": "أَقْطَارِ",
+          "transliteration": "aqṭāri",
+          "translation": "(the) regions"
+        },
+        {
+          "position": 10,
+          "arabic": "ٱلسَّمَـٰوَٰتِ",
+          "transliteration": "l-samāwāti",
+          "translation": "(of) the heavens"
+        },
+        {
+          "position": 11,
+          "arabic": "وَٱلْأَرْضِ",
+          "transliteration": "wal-arḍi",
+          "translation": "and the earth"
+        },
+        {
+          "position": 12,
+          "arabic": "فَٱنفُذُوا۟ ۚ",
+          "transliteration": "fa-unfudhū",
+          "translation": "then pass"
+        },
+        {
+          "position": 13,
+          "arabic": "لَا",
+          "transliteration": "lā",
+          "translation": "Not"
+        },
+        {
+          "position": 14,
+          "arabic": "تَنفُذُونَ",
+          "transliteration": "tanfudhūna",
+          "translation": "you (can) pass"
+        },
+        {
+          "position": 15,
+          "arabic": "إِلَّا",
+          "transliteration": "illā",
+          "translation": "except"
+        },
+        {
+          "position": 16,
+          "arabic": "بِسُلْطَـٰنٍۢ",
+          "transliteration": "bisul'ṭānin",
+          "translation": "by authority"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يُرْسَلُ",
+          "transliteration": "yur'salu",
+          "translation": "Will be sent"
+        },
+        {
+          "position": 2,
+          "arabic": "عَلَيْكُمَا",
+          "transliteration": "ʿalaykumā",
+          "translation": "against both of you"
+        },
+        {
+          "position": 3,
+          "arabic": "شُوَاظٌۭ",
+          "transliteration": "shuwāẓun",
+          "translation": "a flame"
+        },
+        {
+          "position": 4,
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "translation": "of"
+        },
+        {
+          "position": 5,
+          "arabic": "نَّارٍۢ",
+          "transliteration": "nārin",
+          "translation": "fire"
+        },
+        {
+          "position": 6,
+          "arabic": "وَنُحَاسٌۭ",
+          "transliteration": "wanuḥāsun",
+          "translation": "and smoke"
+        },
+        {
+          "position": 7,
+          "arabic": "فَلَا",
+          "transliteration": "falā",
+          "translation": "and not"
+        },
+        {
+          "position": 8,
+          "arabic": "تَنتَصِرَانِ",
+          "transliteration": "tantaṣirāni",
+          "translation": "you will (be able to) defend yourselves"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَإِذَا",
+          "transliteration": "fa-idhā",
+          "translation": "Then when"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱنشَقَّتِ",
+          "transliteration": "inshaqqati",
+          "translation": "is split"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلسَّمَآءُ",
+          "transliteration": "l-samāu",
+          "translation": "the heaven"
+        },
+        {
+          "position": 4,
+          "arabic": "فَكَانَتْ",
+          "transliteration": "fakānat",
+          "translation": "and it becomes"
+        },
+        {
+          "position": 5,
+          "arabic": "وَرْدَةًۭ",
+          "transliteration": "wardatan",
+          "translation": "rose-colored"
+        },
+        {
+          "position": 6,
+          "arabic": "كَٱلدِّهَانِ",
+          "transliteration": "kal-dihāni",
+          "translation": "like murky oil"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَيَوْمَئِذٍۢ",
+          "transliteration": "fayawma-idhin",
+          "translation": "Then (on) that Day"
+        },
+        {
+          "position": 2,
+          "arabic": "لَّا",
+          "transliteration": "lā",
+          "translation": "not"
+        },
+        {
+          "position": 3,
+          "arabic": "يُسْـَٔلُ",
+          "transliteration": "yus'alu",
+          "translation": "will be asked"
+        },
+        {
+          "position": 4,
+          "arabic": "عَن",
+          "transliteration": "ʿan",
+          "translation": "about"
+        },
+        {
+          "position": 5,
+          "arabic": "ذَنۢبِهِۦٓ",
+          "transliteration": "dhanbihi",
+          "translation": "his sin"
+        },
+        {
+          "position": 6,
+          "arabic": "إِنسٌۭ",
+          "transliteration": "insun",
+          "translation": "any man"
+        },
+        {
+          "position": 7,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "and not"
+        },
+        {
+          "position": 8,
+          "arabic": "جَآنٌّۭ",
+          "transliteration": "jānnun",
+          "translation": "any jinn"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يُعْرَفُ",
+          "transliteration": "yuʿ'rafu",
+          "translation": "Will be known"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْمُجْرِمُونَ",
+          "transliteration": "l-muj'rimūna",
+          "translation": "the criminals"
+        },
+        {
+          "position": 3,
+          "arabic": "بِسِيمَـٰهُمْ",
+          "transliteration": "bisīmāhum",
+          "translation": "by their marks"
+        },
+        {
+          "position": 4,
+          "arabic": "فَيُؤْخَذُ",
+          "transliteration": "fayu'khadhu",
+          "translation": "and will be seized"
+        },
+        {
+          "position": 5,
+          "arabic": "بِٱلنَّوَٰصِى",
+          "transliteration": "bil-nawāṣī",
+          "translation": "by the forelocks"
+        },
+        {
+          "position": 6,
+          "arabic": "وَٱلْأَقْدَامِ",
+          "transliteration": "wal-aqdāmi",
+          "translation": "and the feet"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "هَـٰذِهِۦ",
+          "transliteration": "hādhihi",
+          "translation": "This"
+        },
+        {
+          "position": 2,
+          "arabic": "جَهَنَّمُ",
+          "transliteration": "jahannamu",
+          "translation": "(is) Hell"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلَّتِى",
+          "transliteration": "allatī",
+          "translation": "which"
+        },
+        {
+          "position": 4,
+          "arabic": "يُكَذِّبُ",
+          "transliteration": "yukadhibu",
+          "translation": "deny"
+        },
+        {
+          "position": 5,
+          "arabic": "بِهَا",
+          "transliteration": "bihā",
+          "translation": "[of it]"
+        },
+        {
+          "position": 6,
+          "arabic": "ٱلْمُجْرِمُونَ",
+          "transliteration": "l-muj'rimūna",
+          "translation": "the criminals"
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَطُوفُونَ",
+          "transliteration": "yaṭūfūna",
+          "translation": "They will go around"
+        },
+        {
+          "position": 2,
+          "arabic": "بَيْنَهَا",
+          "transliteration": "baynahā",
+          "translation": "between it"
+        },
+        {
+          "position": 3,
+          "arabic": "وَبَيْنَ",
+          "transliteration": "wabayna",
+          "translation": "and between"
+        },
+        {
+          "position": 4,
+          "arabic": "حَمِيمٍ",
+          "transliteration": "ḥamīmin",
+          "translation": "scalding water"
+        },
+        {
+          "position": 5,
+          "arabic": "ءَانٍۢ",
+          "transliteration": "ānin",
+          "translation": "heated"
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلِمَنْ",
+          "transliteration": "waliman",
+          "translation": "But for (him) who"
+        },
+        {
+          "position": 2,
+          "arabic": "خَافَ",
+          "transliteration": "khāfa",
+          "translation": "fears"
+        },
+        {
+          "position": 3,
+          "arabic": "مَقَامَ",
+          "transliteration": "maqāma",
+          "translation": "(the) standing"
+        },
+        {
+          "position": 4,
+          "arabic": "رَبِّهِۦ",
+          "transliteration": "rabbihi",
+          "translation": "(before) his Lord"
+        },
+        {
+          "position": 5,
+          "arabic": "جَنَّتَانِ",
+          "transliteration": "jannatāni",
+          "translation": "(are) two gardens"
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ذَوَاتَآ",
+          "transliteration": "dhawātā",
+          "translation": "Having"
+        },
+        {
+          "position": 2,
+          "arabic": "أَفْنَانٍۢ",
+          "transliteration": "afnānin",
+          "translation": "branches"
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فِيهِمَا",
+          "transliteration": "fīhimā",
+          "translation": "In both of them"
+        },
+        {
+          "position": 2,
+          "arabic": "عَيْنَانِ",
+          "transliteration": "ʿaynāni",
+          "translation": "(are) two springs"
+        },
+        {
+          "position": 3,
+          "arabic": "تَجْرِيَانِ",
+          "transliteration": "tajriyāni",
+          "translation": "flowing"
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 52,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فِيهِمَا",
+          "transliteration": "fīhimā",
+          "translation": "In both of them"
+        },
+        {
+          "position": 2,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "[of]"
+        },
+        {
+          "position": 3,
+          "arabic": "كُلِّ",
+          "transliteration": "kulli",
+          "translation": "(are) every"
+        },
+        {
+          "position": 4,
+          "arabic": "فَـٰكِهَةٍۢ",
+          "transliteration": "fākihatin",
+          "translation": "fruits"
+        },
+        {
+          "position": 5,
+          "arabic": "زَوْجَانِ",
+          "transliteration": "zawjāni",
+          "translation": "(in) pairs"
+        }
+      ]
+    },
+    {
+      "number": 53,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 54,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مُتَّكِـِٔينَ",
+          "transliteration": "muttakiīna",
+          "translation": "Reclining"
+        },
+        {
+          "position": 2,
+          "arabic": "عَلَىٰ",
+          "transliteration": "ʿalā",
+          "translation": "on"
+        },
+        {
+          "position": 3,
+          "arabic": "فُرُشٍۭ",
+          "transliteration": "furushin",
+          "translation": "couches"
+        },
+        {
+          "position": 4,
+          "arabic": "بَطَآئِنُهَا",
+          "transliteration": "baṭāinuhā",
+          "translation": "(whose) inner linings"
+        },
+        {
+          "position": 5,
+          "arabic": "مِنْ",
+          "transliteration": "min",
+          "translation": "(are) of"
+        },
+        {
+          "position": 6,
+          "arabic": "إِسْتَبْرَقٍۢ ۚ",
+          "transliteration": "is'tabraqin",
+          "translation": "brocade"
+        },
+        {
+          "position": 7,
+          "arabic": "وَجَنَى",
+          "transliteration": "wajanā",
+          "translation": "and (the) fruit"
+        },
+        {
+          "position": 8,
+          "arabic": "ٱلْجَنَّتَيْنِ",
+          "transliteration": "l-janatayni",
+          "translation": "(of) both the gardens"
+        },
+        {
+          "position": 9,
+          "arabic": "دَانٍۢ",
+          "transliteration": "dānin",
+          "translation": "(is) near"
+        }
+      ]
+    },
+    {
+      "number": 55,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 56,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فِيهِنَّ",
+          "transliteration": "fīhinna",
+          "translation": "In them"
+        },
+        {
+          "position": 2,
+          "arabic": "قَـٰصِرَٰتُ",
+          "transliteration": "qāṣirātu",
+          "translation": "(will be) companions of modest gaze"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلطَّرْفِ",
+          "transliteration": "l-ṭarfi",
+          "translation": "(will be) companions of modest gaze"
+        },
+        {
+          "position": 4,
+          "arabic": "لَمْ",
+          "transliteration": "lam",
+          "translation": "not"
+        },
+        {
+          "position": 5,
+          "arabic": "يَطْمِثْهُنَّ",
+          "transliteration": "yaṭmith'hunna",
+          "translation": "has touched them"
+        },
+        {
+          "position": 6,
+          "arabic": "إِنسٌۭ",
+          "transliteration": "insun",
+          "translation": "any man"
+        },
+        {
+          "position": 7,
+          "arabic": "قَبْلَهُمْ",
+          "transliteration": "qablahum",
+          "translation": "before them"
+        },
+        {
+          "position": 8,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "and not"
+        },
+        {
+          "position": 9,
+          "arabic": "جَآنٌّۭ",
+          "transliteration": "jānnun",
+          "translation": "any jinn"
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "كَأَنَّهُنَّ",
+          "transliteration": "ka-annahunna",
+          "translation": "As if they were"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْيَاقُوتُ",
+          "transliteration": "l-yāqūtu",
+          "translation": "rubies"
+        },
+        {
+          "position": 3,
+          "arabic": "وَٱلْمَرْجَانُ",
+          "transliteration": "wal-marjānu",
+          "translation": "and coral"
+        }
+      ]
+    },
+    {
+      "number": 59,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "هَلْ",
+          "transliteration": "hal",
+          "translation": "Is"
+        },
+        {
+          "position": 2,
+          "arabic": "جَزَآءُ",
+          "transliteration": "jazāu",
+          "translation": "(the) reward"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْإِحْسَـٰنِ",
+          "transliteration": "l-iḥ'sāni",
+          "translation": "for the good"
+        },
+        {
+          "position": 4,
+          "arabic": "إِلَّا",
+          "transliteration": "illā",
+          "translation": "but"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْإِحْسَـٰنُ",
+          "transliteration": "l-iḥ'sānu",
+          "translation": "good"
+        }
+      ]
+    },
+    {
+      "number": 61,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 62,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمِن",
+          "transliteration": "wamin",
+          "translation": "Besides these two"
+        },
+        {
+          "position": 2,
+          "arabic": "دُونِهِمَا",
+          "transliteration": "dūnihimā",
+          "translation": "Besides these two"
+        },
+        {
+          "position": 3,
+          "arabic": "جَنَّتَانِ",
+          "transliteration": "jannatāni",
+          "translation": "(are) two gardens"
+        }
+      ]
+    },
+    {
+      "number": 63,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 64,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مُدْهَآمَّتَانِ",
+          "transliteration": "mud'hāmmatāni",
+          "translation": "Dark green"
+        }
+      ]
+    },
+    {
+      "number": 65,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 66,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فِيهِمَا",
+          "transliteration": "fīhimā",
+          "translation": "In both of them"
+        },
+        {
+          "position": 2,
+          "arabic": "عَيْنَانِ",
+          "transliteration": "ʿaynāni",
+          "translation": "(are) two springs"
+        },
+        {
+          "position": 3,
+          "arabic": "نَضَّاخَتَانِ",
+          "transliteration": "naḍḍākhatāni",
+          "translation": "gushing forth"
+        }
+      ]
+    },
+    {
+      "number": 67,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 68,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فِيهِمَا",
+          "transliteration": "fīhimā",
+          "translation": "In both of them"
+        },
+        {
+          "position": 2,
+          "arabic": "فَـٰكِهَةٌۭ",
+          "transliteration": "fākihatun",
+          "translation": "(are) fruits"
+        },
+        {
+          "position": 3,
+          "arabic": "وَنَخْلٌۭ",
+          "transliteration": "wanakhlun",
+          "translation": "and date-palms"
+        },
+        {
+          "position": 4,
+          "arabic": "وَرُمَّانٌۭ",
+          "transliteration": "warummānun",
+          "translation": "and pomegranates"
+        }
+      ]
+    },
+    {
+      "number": 69,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 70,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فِيهِنَّ",
+          "transliteration": "fīhinna",
+          "translation": "In them"
+        },
+        {
+          "position": 2,
+          "arabic": "خَيْرَٰتٌ",
+          "transliteration": "khayrātun",
+          "translation": "(are) good"
+        },
+        {
+          "position": 3,
+          "arabic": "حِسَانٌۭ",
+          "transliteration": "ḥisānun",
+          "translation": "and beautiful ones"
+        }
+      ]
+    },
+    {
+      "number": 71,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 72,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "حُورٌۭ",
+          "transliteration": "ḥūrun",
+          "translation": "Fair ones"
+        },
+        {
+          "position": 2,
+          "arabic": "مَّقْصُورَٰتٌۭ",
+          "transliteration": "maqṣūrātun",
+          "translation": "restrained"
+        },
+        {
+          "position": 3,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْخِيَامِ",
+          "transliteration": "l-khiyāmi",
+          "translation": "the pavilions"
+        }
+      ]
+    },
+    {
+      "number": 73,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 74,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "لَمْ",
+          "transliteration": "lam",
+          "translation": "Not"
+        },
+        {
+          "position": 2,
+          "arabic": "يَطْمِثْهُنَّ",
+          "transliteration": "yaṭmith'hunna",
+          "translation": "has touched them"
+        },
+        {
+          "position": 3,
+          "arabic": "إِنسٌۭ",
+          "transliteration": "insun",
+          "translation": "any man"
+        },
+        {
+          "position": 4,
+          "arabic": "قَبْلَهُمْ",
+          "transliteration": "qablahum",
+          "translation": "before them"
+        },
+        {
+          "position": 5,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "and not"
+        },
+        {
+          "position": 6,
+          "arabic": "جَآنٌّۭ",
+          "transliteration": "jānnun",
+          "translation": "any jinn"
+        }
+      ]
+    },
+    {
+      "number": 75,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 76,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مُتَّكِـِٔينَ",
+          "transliteration": "muttakiīna",
+          "translation": "Reclining"
+        },
+        {
+          "position": 2,
+          "arabic": "عَلَىٰ",
+          "transliteration": "ʿalā",
+          "translation": "on"
+        },
+        {
+          "position": 3,
+          "arabic": "رَفْرَفٍ",
+          "transliteration": "rafrafin",
+          "translation": "cushions"
+        },
+        {
+          "position": 4,
+          "arabic": "خُضْرٍۢ",
+          "transliteration": "khuḍ'rin",
+          "translation": "green"
+        },
+        {
+          "position": 5,
+          "arabic": "وَعَبْقَرِىٍّ",
+          "transliteration": "waʿabqariyyin",
+          "translation": "and carpets"
+        },
+        {
+          "position": 6,
+          "arabic": "حِسَانٍۢ",
+          "transliteration": "ḥisānin",
+          "translation": "beautiful"
+        }
+      ]
+    },
+    {
+      "number": 77,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَبِأَىِّ",
+          "transliteration": "fabi-ayyi",
+          "translation": "So which"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَالَآءِ",
+          "transliteration": "ālāi",
+          "translation": "(of the) favors"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكُمَا",
+          "transliteration": "rabbikumā",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "تُكَذِّبَانِ",
+          "transliteration": "tukadhibāni",
+          "translation": "will you both deny"
+        }
+      ]
+    },
+    {
+      "number": 78,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "تَبَـٰرَكَ",
+          "transliteration": "tabāraka",
+          "translation": "Blessed is"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱسْمُ",
+          "transliteration": "us'mu",
+          "translation": "(the) name"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكَ",
+          "transliteration": "rabbika",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "ذِى",
+          "transliteration": "dhī",
+          "translation": "Owner"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْجَلَـٰلِ",
+          "transliteration": "l-jalāli",
+          "translation": "(of) Majesty"
+        },
+        {
+          "position": 6,
+          "arabic": "وَٱلْإِكْرَامِ",
+          "transliteration": "wal-ik'rāmi",
+          "translation": "and Honor"
+        }
+      ]
+    }
+  ]
+}

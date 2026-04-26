@@ -67,5 +67,11 @@
     "VOC": "Vocative",
     "INL": "Interjectional"
   },
-  "fetch_instructions": "Run scripts/fetch_resources.py to download complete word-by-word data from the Quran.com API"
+  "coverage": {
+    "surahs": 114,
+    "verses": 6236,
+    "words": 77429,
+    "juz": "1-30 (complete)"
+  },
+  "files": "surah_001.json through surah_114.json"
 }

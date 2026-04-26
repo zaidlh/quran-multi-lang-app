@@ -1,0 +1,423 @@
+{
+  "surah": 91,
+  "name": "الشمس",
+  "name_en": "Ash-Shams",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلشَّمْسِ",
+          "transliteration": "wal-shamsi",
+          "translation": "By the sun"
+        },
+        {
+          "position": 2,
+          "arabic": "وَضُحَىٰهَا",
+          "transliteration": "waḍuḥāhā",
+          "translation": "and its brightness"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلْقَمَرِ",
+          "transliteration": "wal-qamari",
+          "translation": "And the moon"
+        },
+        {
+          "position": 2,
+          "arabic": "إِذَا",
+          "transliteration": "idhā",
+          "translation": "when"
+        },
+        {
+          "position": 3,
+          "arabic": "تَلَىٰهَا",
+          "transliteration": "talāhā",
+          "translation": "it follows it"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلنَّهَارِ",
+          "transliteration": "wal-nahāri",
+          "translation": "And the day"
+        },
+        {
+          "position": 2,
+          "arabic": "إِذَا",
+          "transliteration": "idhā",
+          "translation": "when"
+        },
+        {
+          "position": 3,
+          "arabic": "جَلَّىٰهَا",
+          "transliteration": "jallāhā",
+          "translation": "it displays it"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلَّيْلِ",
+          "transliteration": "wa-al-layli",
+          "translation": "And the night"
+        },
+        {
+          "position": 2,
+          "arabic": "إِذَا",
+          "transliteration": "idhā",
+          "translation": "when"
+        },
+        {
+          "position": 3,
+          "arabic": "يَغْشَىٰهَا",
+          "transliteration": "yaghshāhā",
+          "translation": "it covers it"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلسَّمَآءِ",
+          "transliteration": "wal-samāi",
+          "translation": "And the heaven"
+        },
+        {
+          "position": 2,
+          "arabic": "وَمَا",
+          "transliteration": "wamā",
+          "translation": "and (He) Who"
+        },
+        {
+          "position": 3,
+          "arabic": "بَنَىٰهَا",
+          "transliteration": "banāhā",
+          "translation": "constructed it"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلْأَرْضِ",
+          "transliteration": "wal-arḍi",
+          "translation": "And the earth"
+        },
+        {
+          "position": 2,
+          "arabic": "وَمَا",
+          "transliteration": "wamā",
+          "translation": "and by (He) Who"
+        },
+        {
+          "position": 3,
+          "arabic": "طَحَىٰهَا",
+          "transliteration": "ṭaḥāhā",
+          "translation": "spread it"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَنَفْسٍۢ",
+          "transliteration": "wanafsin",
+          "translation": "And (the) soul"
+        },
+        {
+          "position": 2,
+          "arabic": "وَمَا",
+          "transliteration": "wamā",
+          "translation": "and (He) Who"
+        },
+        {
+          "position": 3,
+          "arabic": "سَوَّىٰهَا",
+          "transliteration": "sawwāhā",
+          "translation": "proportioned it"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَأَلْهَمَهَا",
+          "transliteration": "fa-alhamahā",
+          "translation": "And He inspired it"
+        },
+        {
+          "position": 2,
+          "arabic": "فُجُورَهَا",
+          "transliteration": "fujūrahā",
+          "translation": "(to distinguish) its wickedness"
+        },
+        {
+          "position": 3,
+          "arabic": "وَتَقْوَىٰهَا",
+          "transliteration": "wataqwāhā",
+          "translation": "and its righteousness"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "قَدْ",
+          "transliteration": "qad",
+          "translation": "Indeed"
+        },
+        {
+          "position": 2,
+          "arabic": "أَفْلَحَ",
+          "transliteration": "aflaḥa",
+          "translation": "he succeeds"
+        },
+        {
+          "position": 3,
+          "arabic": "مَن",
+          "transliteration": "man",
+          "translation": "who"
+        },
+        {
+          "position": 4,
+          "arabic": "زَكَّىٰهَا",
+          "transliteration": "zakkāhā",
+          "translation": "purifies it"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَقَدْ",
+          "transliteration": "waqad",
+          "translation": "And indeed"
+        },
+        {
+          "position": 2,
+          "arabic": "خَابَ",
+          "transliteration": "khāba",
+          "translation": "he fails"
+        },
+        {
+          "position": 3,
+          "arabic": "مَن",
+          "transliteration": "man",
+          "translation": "who"
+        },
+        {
+          "position": 4,
+          "arabic": "دَسَّىٰهَا",
+          "transliteration": "dassāhā",
+          "translation": "buries it"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "كَذَّبَتْ",
+          "transliteration": "kadhabat",
+          "translation": "Denied"
+        },
+        {
+          "position": 2,
+          "arabic": "ثَمُودُ",
+          "transliteration": "thamūdu",
+          "translation": "Thamud"
+        },
+        {
+          "position": 3,
+          "arabic": "بِطَغْوَىٰهَآ",
+          "transliteration": "biṭaghwāhā",
+          "translation": "by their transgression"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِذِ",
+          "transliteration": "idhi",
+          "translation": "When"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱنۢبَعَثَ",
+          "transliteration": "inbaʿatha",
+          "translation": "(was) sent forth"
+        },
+        {
+          "position": 3,
+          "arabic": "أَشْقَىٰهَا",
+          "transliteration": "ashqāhā",
+          "translation": "(the) most wicked of them"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَقَالَ",
+          "transliteration": "faqāla",
+          "translation": "But said"
+        },
+        {
+          "position": 2,
+          "arabic": "لَهُمْ",
+          "transliteration": "lahum",
+          "translation": "to them"
+        },
+        {
+          "position": 3,
+          "arabic": "رَسُولُ",
+          "transliteration": "rasūlu",
+          "translation": "(the) Messenger"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "(of) Allah"
+        },
+        {
+          "position": 5,
+          "arabic": "نَاقَةَ",
+          "transliteration": "nāqata",
+          "translation": "(It is the) she-camel"
+        },
+        {
+          "position": 6,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "(of) Allah"
+        },
+        {
+          "position": 7,
+          "arabic": "وَسُقْيَـٰهَا",
+          "transliteration": "wasuq'yāhā",
+          "translation": "and her drink"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَكَذَّبُوهُ",
+          "transliteration": "fakadhabūhu",
+          "translation": "But they denied him"
+        },
+        {
+          "position": 2,
+          "arabic": "فَعَقَرُوهَا",
+          "transliteration": "faʿaqarūhā",
+          "translation": "and they hamstrung her"
+        },
+        {
+          "position": 3,
+          "arabic": "فَدَمْدَمَ",
+          "transliteration": "fadamdama",
+          "translation": "So destroyed"
+        },
+        {
+          "position": 4,
+          "arabic": "عَلَيْهِمْ",
+          "transliteration": "ʿalayhim",
+          "translation": "them"
+        },
+        {
+          "position": 5,
+          "arabic": "رَبُّهُم",
+          "transliteration": "rabbuhum",
+          "translation": "their Lord"
+        },
+        {
+          "position": 6,
+          "arabic": "بِذَنۢبِهِمْ",
+          "transliteration": "bidhanbihim",
+          "translation": "for their sin"
+        },
+        {
+          "position": 7,
+          "arabic": "فَسَوَّىٰهَا",
+          "transliteration": "fasawwāhā",
+          "translation": "and leveled them"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "And not"
+        },
+        {
+          "position": 2,
+          "arabic": "يَخَافُ",
+          "transliteration": "yakhāfu",
+          "translation": "He fears"
+        },
+        {
+          "position": 3,
+          "arabic": "عُقْبَـٰهَا",
+          "transliteration": "ʿuq'bāhā",
+          "translation": "its consequences"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "surah": 99,
+  "name": "الزلزلة",
+  "name_en": "Az-Zalzalah",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِذَا",
+          "transliteration": "idhā",
+          "translation": "When"
+        },
+        {
+          "position": 2,
+          "arabic": "زُلْزِلَتِ",
+          "transliteration": "zul'zilati",
+          "translation": "is shaken"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْأَرْضُ",
+          "transliteration": "l-arḍu",
+          "translation": "the earth"
+        },
+        {
+          "position": 4,
+          "arabic": "زِلْزَالَهَا",
+          "transliteration": "zil'zālahā",
+          "translation": "(with) its earthquake"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَأَخْرَجَتِ",
+          "transliteration": "wa-akhrajati",
+          "translation": "And brings forth"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْأَرْضُ",
+          "transliteration": "l-arḍu",
+          "translation": "the earth"
+        },
+        {
+          "position": 3,
+          "arabic": "أَثْقَالَهَا",
+          "transliteration": "athqālahā",
+          "translation": "its burdens"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَقَالَ",
+          "transliteration": "waqāla",
+          "translation": "And says"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْإِنسَـٰنُ",
+          "transliteration": "l-insānu",
+          "translation": "man"
+        },
+        {
+          "position": 3,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "What"
+        },
+        {
+          "position": 4,
+          "arabic": "لَهَا",
+          "transliteration": "lahā",
+          "translation": "(is) with it"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَوْمَئِذٍۢ",
+          "transliteration": "yawma-idhin",
+          "translation": "That Day"
+        },
+        {
+          "position": 2,
+          "arabic": "تُحَدِّثُ",
+          "transliteration": "tuḥaddithu",
+          "translation": "it will report"
+        },
+        {
+          "position": 3,
+          "arabic": "أَخْبَارَهَا",
+          "transliteration": "akhbārahā",
+          "translation": "its news"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "بِأَنَّ",
+          "transliteration": "bi-anna",
+          "translation": "Because"
+        },
+        {
+          "position": 2,
+          "arabic": "رَبَّكَ",
+          "transliteration": "rabbaka",
+          "translation": "your Lord"
+        },
+        {
+          "position": 3,
+          "arabic": "أَوْحَىٰ",
+          "transliteration": "awḥā",
+          "translation": "inspired"
+        },
+        {
+          "position": 4,
+          "arabic": "لَهَا",
+          "transliteration": "lahā",
+          "translation": "[to] it"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَوْمَئِذٍۢ",
+          "transliteration": "yawma-idhin",
+          "translation": "That Day"
+        },
+        {
+          "position": 2,
+          "arabic": "يَصْدُرُ",
+          "transliteration": "yaṣduru",
+          "translation": "will proceed"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلنَّاسُ",
+          "transliteration": "l-nāsu",
+          "translation": "the mankind"
+        },
+        {
+          "position": 4,
+          "arabic": "أَشْتَاتًۭا",
+          "transliteration": "ashtātan",
+          "translation": "(in) scattered groups"
+        },
+        {
+          "position": 5,
+          "arabic": "لِّيُرَوْا۟",
+          "transliteration": "liyuraw",
+          "translation": "to be shown"
+        },
+        {
+          "position": 6,
+          "arabic": "أَعْمَـٰلَهُمْ",
+          "transliteration": "aʿmālahum",
+          "translation": "their deeds"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَمَن",
+          "transliteration": "faman",
+          "translation": "So whoever"
+        },
+        {
+          "position": 2,
+          "arabic": "يَعْمَلْ",
+          "transliteration": "yaʿmal",
+          "translation": "does"
+        },
+        {
+          "position": 3,
+          "arabic": "مِثْقَالَ",
+          "transliteration": "mith'qāla",
+          "translation": "(equal to the) weight"
+        },
+        {
+          "position": 4,
+          "arabic": "ذَرَّةٍ",
+          "transliteration": "dharratin",
+          "translation": "(of) an atom"
+        },
+        {
+          "position": 5,
+          "arabic": "خَيْرًۭا",
+          "transliteration": "khayran",
+          "translation": "good"
+        },
+        {
+          "position": 6,
+          "arabic": "يَرَهُۥ",
+          "transliteration": "yarahu",
+          "translation": "will see it"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمَن",
+          "transliteration": "waman",
+          "translation": "And whoever"
+        },
+        {
+          "position": 2,
+          "arabic": "يَعْمَلْ",
+          "transliteration": "yaʿmal",
+          "translation": "does"
+        },
+        {
+          "position": 3,
+          "arabic": "مِثْقَالَ",
+          "transliteration": "mith'qāla",
+          "translation": "(equal to the) weight"
+        },
+        {
+          "position": 4,
+          "arabic": "ذَرَّةٍۢ",
+          "transliteration": "dharratin",
+          "translation": "(of) an atom"
+        },
+        {
+          "position": 5,
+          "arabic": "شَرًّۭا",
+          "transliteration": "sharran",
+          "translation": "evil"
+        },
+        {
+          "position": 6,
+          "arabic": "يَرَهُۥ",
+          "transliteration": "yarahu",
+          "translation": "will see it"
+        }
+      ]
+    }
+  ]
+}
