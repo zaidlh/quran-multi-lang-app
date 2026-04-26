@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
-  <rect width="120" height="120" rx="24" fill="#1b6b4a"/>
+  <rect width="120" height="120" rx="24" fill="#0f766e"/>
   <g transform="translate(60,60)">
     <!-- Outer octagonal frame -->
     <polygon points="0,-45 31.8,-31.8 45,0 31.8,31.8 0,45 -31.8,31.8 -45,0 -31.8,-31.8" stroke="#c5a13b" stroke-width="2" fill="none"/>
@@ -9,6 +9,6 @@
     <circle r="14" fill="none" stroke="#ffffff" stroke-width="2"/>
     <!-- Book icon -->
     <path d="M-8,-6 L-8,8 L0,5 L8,8 L8,-6 L0,-3 Z" fill="#ffffff" opacity="0.9"/>
-    <line x1="0" y1="-3" x2="0" y2="5" stroke="#1b6b4a" stroke-width="1"/>
+    <line x1="0" y1="-3" x2="0" y2="5" stroke="#0f766e" stroke-width="1"/>
   </g>
 </svg>
