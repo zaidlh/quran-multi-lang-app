@@ -14,8 +14,8 @@ const TAJWEED_RULES: { pattern: RegExp; className: string; label: string }[] = [
   },
   {
     pattern:
-      /\u0646[\u0652]?[\u0628\u062A\u062B\u062C\u062F\u0630\u0631\u0632\u0633\u0634\u0635\u0636\u0637\u0638\u0641\u0642\u0643\u0644]/g,
-    className: "text-green-600 dark:text-green-400",
+      /\u0646[\u0652]?[\u062A\u062B\u062C\u062F\u0630\u0631\u0632\u0633\u0634\u0635\u0636\u0637\u0638\u0641\u0642\u0643\u0644]/g,
+
     label: "Ikhfa",
   },
   {
