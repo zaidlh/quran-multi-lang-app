@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quran Quick Lookup</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; width: 350px; padding: 16px; background: #fff; color: #1a1a2e; }
+    h1 { font-size: 16px; margin-bottom: 12px; color: #1a6b4a; }
+    .search-box { display: flex; gap: 8px; margin-bottom: 12px; }
+    input { flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+    button { padding: 8px 16px; background: #1a6b4a; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; }
+    button:hover { background: #155a3e; }
+    .result { margin-top: 12px; padding: 12px; background: #f8f9fa; border-radius: 8px; direction: rtl; font-size: 18px; line-height: 2; font-family: "KFGQPC Uthmanic Script HAFS", serif; }
+    .translation { direction: ltr; font-size: 13px; color: #555; margin-top: 8px; line-height: 1.5; font-family: system-ui, sans-serif; }
+    .reference { font-size: 12px; color: #888; margin-top: 8px; direction: ltr; }
+    .empty { color: #888; font-size: 13px; text-align: center; padding: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Quran Quick Lookup</h1>
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Enter surah:ayah (e.g. 2:255)" />
+    <button id="lookup">Go</button>
+  </div>
+  <div id="result">
+    <p class="empty">Enter a verse reference like 2:255 to look up Ayat al-Kursi</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

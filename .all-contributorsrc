@@ -1,0 +1,20 @@
+{
+  "projectName": "quran-multi-lang-app",
+  "projectOwner": "zaidlh",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": ["README.md"],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "zaidlh",
+      "name": "Zaid Lhouch",
+      "avatar_url": "https://github.com/zaidlh.png",
+      "profile": "https://github.com/zaidlh",
+      "contributions": ["code", "doc", "ideas", "projectManagement"]
+    }
+  ],
+  "contributorsPerLine": 7
+}
