@@ -38,6 +38,7 @@ export function SurahView({
 }: SurahViewProps) {
   const router = useRouter();
   const [highlightedAyah, setHighlightedAyah] = useState<number | null>(null);
+  const [expandedVerse, setExpandedVerse] = useState<number | null>(null);
   const verseRefs = useRef<Map<number, HTMLDivElement>>(new Map());
   const observerRef = useRef<IntersectionObserver | null>(null);
 
@@ -90,7 +91,7 @@ export function SurahView({
         <select
           value={currentLang}
           onChange={(e) => router.push(`/surah/${surahNumber}?lang=${e.target.value}`)}
-          className="px-3 py-2 border border-zinc-300 dark:border-zinc-700 rounded-lg bg-white dark:bg-zinc-900 text-sm"
+          className="px-3 py-2 border border-border rounded-lg bg-surface text-sm"
         >
           {languages.map((l) => (
             <option key={l.code} value={l.code}>
@@ -111,32 +112,42 @@ export function SurahView({
       <HifzMode verses={arabicVerses} surahNumber={surahNumber} />
 
       {surahNumber !== 1 && surahNumber !== 9 && (
-        <div className="text-center py-4 arabic-text text-2xl text-primary" dir="rtl">
+        <div className="text-center py-6 arabic-text text-2xl text-primary" dir="rtl">
           بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
         </div>
       )}
 
-      <div className="space-y-6">
+      <div className="space-y-2">
         {arabicVerses.map((verse) => {
           const trans = translationVerses.find((t) => t.number === verse.number);
+          const isExpanded = expandedVerse === verse.number;
           return (
             <div
               key={verse.number}
               id={`verse-${verse.number}`}
               data-ayah={verse.number}
               ref={(el) => setVerseRef(verse.number, el)}
-              className={`border-b border-zinc-100 dark:border-zinc-800 pb-6 transition-colors duration-300 ${
-                highlightedAyah === verse.number ? "verse-highlight p-4 -m-4" : ""
+              className={`group rounded-xl p-4 -mx-4 transition-all ${
+                highlightedAyah === verse.number ? "bg-primary-light" : "hover:bg-surface-elevated"
               }`}
             >
-              <div className="flex items-start gap-2 mb-3">
-                <span className="verse-number flex-shrink-0 mt-2">{verse.number}</span>
-                <div className="flex-1">
-                  <p className="arabic-text text-xl leading-loose" dir="rtl">
+              <div className="flex items-start gap-3">
+                <button
+                  onClick={() => setExpandedVerse(isExpanded ? null : verse.number)}
+                  className="verse-number flex-shrink-0 mt-1 cursor-pointer"
+                  aria-label={`Verse ${verse.number} details`}
+                >
+                  {verse.number}
+                </button>
+                <div className="flex-1 min-w-0">
+                  <p className="arabic-text text-xl leading-relaxed" dir="rtl">
                     {verse.text}
                   </p>
+                  {trans && (
+                    <p className="text-sm text-muted leading-relaxed mt-2 pl-0">{trans.text}</p>
+                  )}
                 </div>
-                <div className="flex items-center gap-1 flex-shrink-0">
+                <div className="flex items-center gap-1 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
                   <ShareButton
                     surahNumber={surahNumber}
                     ayahNumber={verse.number}
@@ -147,24 +158,36 @@ export function SurahView({
                   <BookmarkButton surahNumber={surahNumber} ayahNumber={verse.number} />
                 </div>
               </div>
-              {trans && (
-                <p className="text-zinc-600 dark:text-zinc-400 ml-10 text-sm leading-relaxed">
-                  {trans.text}
-                </p>
+
+              {!isExpanded && (
+                <button
+                  onClick={() => setExpandedVerse(verse.number)}
+                  className="mt-2 pl-11 text-xs text-muted hover:text-primary transition-colors"
+                >
+                  Show details →
+                </button>
               )}
-              <div className="ml-10 space-y-1">
-                <TajweedText text={verse.text} />
-                <TafsirPanel surahNumber={surahNumber} ayahNumber={verse.number} />
-                <CrossReferences surahNumber={surahNumber} ayahNumber={verse.number} />
-                <RecitationComparison surahNumber={surahNumber} ayahNumber={verse.number} />
-                <TransliterationToggle
-                  arabicText={verse.text}
-                  verseNumber={verse.number}
-                  surahNumber={surahNumber}
-                />
-                <TafsirPanel surahNumber={surahNumber} ayahNumber={verse.number} />
-                <VerseNotes surahNumber={surahNumber} ayahNumber={verse.number} />
-              </div>
+
+              {isExpanded && (
+                <div className="pl-11 space-y-3 pt-3 border-t border-border/50 mt-3">
+                  <TajweedText text={verse.text} />
+                  <TafsirPanel surahNumber={surahNumber} ayahNumber={verse.number} />
+                  <CrossReferences surahNumber={surahNumber} ayahNumber={verse.number} />
+                  <RecitationComparison surahNumber={surahNumber} ayahNumber={verse.number} />
+                  <TransliterationToggle
+                    arabicText={verse.text}
+                    verseNumber={verse.number}
+                    surahNumber={surahNumber}
+                  />
+                  <VerseNotes surahNumber={surahNumber} ayahNumber={verse.number} />
+                  <button
+                    onClick={() => setExpandedVerse(null)}
+                    className="text-xs text-muted hover:text-primary transition-colors"
+                  >
+                    ← Hide details
+                  </button>
+                </div>
+              )}
             </div>
           );
         })}
