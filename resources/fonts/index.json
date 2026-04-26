@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "fonts": [
+    {
+      "name": "KFGQPC Uthmanic Script HAFS",
+      "type": "Quran Text",
+      "source": "King Fahd Glorious Quran Printing Complex",
+      "github": "https://github.com/nickaknudson/KFGQPC-Fonts",
+      "license": "Free for Quran-related use",
+      "format": "TTF/OTF",
+      "description": "Official Uthmanic script used in Madani Mushaf"
+    },
+    {
+      "name": "Scheherazade New",
+      "type": "Arabic Text",
+      "source": "SIL International",
+      "github": "https://github.com/nickaknudson/KFGQPC-Fonts",
+      "download": "https://software.sil.org/scheherazade/download/",
+      "license": "SIL Open Font License 1.1",
+      "format": "TTF/OTF/WOFF2",
+      "description": "Smart Unicode Arabic font supporting traditional Arabic script"
+    },
+    {
+      "name": "Amiri",
+      "type": "Arabic Text",
+      "source": "Khaled Hosny",
+      "github": "https://github.com/aliftype/amiri",
+      "license": "SIL Open Font License 1.1",
+      "format": "TTF/OTF/WOFF2",
+      "description": "Classical Arabic typeface based on Bulaq press"
+    },
+    {
+      "name": "QPC Fonts (Quran Page Composition)",
+      "type": "Quran Text",
+      "source": "nuqayah",
+      "github": "https://github.com/nuqayah/qpc-fonts",
+      "license": "Custom (check repository)",
+      "format": "TTF",
+      "description": "Fonts for rendering Quran pages as in Madani Mushaf"
+    }
+  ],
+  "note": "Due to licensing restrictions, font files are not included in this repository. Use the download links or github URLs above to obtain the fonts."
+}

@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "source": "spa5k/tafsir_api",
+  "license": "MIT",
+  "language": "ar",
+  "cdn_base": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir",
+  "tafsirs": [
+    {
+      "id": "ar-tafsir-ibn-kathir",
+      "name": "Tafsir Ibn Kathir",
+      "author": "Ibn Kathir",
+      "language": "ar",
+      "total_surahs": 114,
+      "cdn_pattern": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafsir-ibn-kathir/{surah_number}.json",
+      "example_url": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafsir-ibn-kathir/1.json",
+      "name_ar": "تفسير ابن كثير"
+    },
+    {
+      "id": "ar-tafseer-al-tabari",
+      "name": "Tafsir Al-Tabari",
+      "author": "Al-Tabari",
+      "language": "ar",
+      "total_surahs": 114,
+      "cdn_pattern": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafseer-al-tabari/{surah_number}.json",
+      "example_url": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafseer-al-tabari/1.json",
+      "name_ar": "تفسير الطبري"
+    },
+    {
+      "id": "ar-tafsir-al-jalalayn",
+      "name": "Tafsir Al-Jalalayn",
+      "author": "Jalal ad-Din al-Mahalli & Jalal ad-Din as-Suyuti",
+      "language": "ar",
+      "total_surahs": 114,
+      "cdn_pattern": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafsir-al-jalalayn/{surah_number}.json",
+      "example_url": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafsir-al-jalalayn/1.json",
+      "name_ar": "تفسير الجلالين"
+    },
+    {
+      "id": "ar-tafseer-al-qurtubi",
+      "name": "Tafsir Al-Qurtubi",
+      "author": "Al-Qurtubi",
+      "language": "ar",
+      "total_surahs": 114,
+      "cdn_pattern": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafseer-al-qurtubi/{surah_number}.json",
+      "example_url": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafseer-al-qurtubi/1.json",
+      "name_ar": "تفسير القرطبي"
+    },
+    {
+      "id": "ar-tafseer-al-saddi",
+      "name": "Tafsir As-Sa'di",
+      "author": "As-Sa'di",
+      "language": "ar",
+      "total_surahs": 114,
+      "cdn_pattern": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafseer-al-saddi/{surah_number}.json",
+      "example_url": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafseer-al-saddi/1.json",
+      "name_ar": "تفسير السعدي"
+    },
+    {
+      "id": "ar-tafsir-muyassar",
+      "name": "Tafsir Al-Muyassar",
+      "author": "King Fahd Complex",
+      "language": "ar",
+      "total_surahs": 114,
+      "cdn_pattern": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafsir-muyassar/{surah_number}.json",
+      "example_url": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/ar-tafsir-muyassar/1.json",
+      "name_ar": "التفسير الميسر"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Next.js
+src/web/.next/
+src/web/out/
+
+# React Native
+src/mobile/android/app/build/
+src/mobile/ios/Pods/
+src/mobile/ios/build/
+src/mobile/*.xcworkspace
+src/mobile/*.xcuserdata
+
+# Python
+*.db
+*.sqlite3
+*.egg
+pip-log.txt
+
+# Testing
+coverage/
+.nyc_output/
+.pytest_cache/
+htmlcov/
+
+# Build artifacts
+*.tgz
+*.tar.gz
+*.log
+
+# Audio files (use manifests instead)
+resources/audio/**/*.mp3
+resources/audio/**/*.ogg
+resources/audio/**/*.wav
+
+# Large binary assets
+*.zip
+*.rar

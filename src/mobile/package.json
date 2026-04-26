@@ -1,0 +1,27 @@
+{
+  "name": "quran-mobile",
+  "version": "1.0.0",
+  "description": "Quran Multi-Language Mobile App — React Native starter",
+  "main": "index.js",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.73.0",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/native-stack": "^6.9.17",
+    "react-native-screens": "^3.29.0",
+    "react-native-safe-area-context": "^4.8.2",
+    "react-native-track-player": "^4.0.1",
+    "expo-sqlite": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "typescript": "^5.3.0",
+    "eslint": "^8.56.0"
+  }
+}
