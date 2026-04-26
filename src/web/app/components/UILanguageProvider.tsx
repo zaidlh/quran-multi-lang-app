@@ -1,6 +1,13 @@
 "use client";
 
-import { createContext, useContext, useState, useCallback, useSyncExternalStore } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useCallback,
+  useEffect,
+  useSyncExternalStore,
+} from "react";
 import { UILanguage, UI_LANGUAGES, UI_LABELS } from "../lib/ui-labels";
 
 interface UILanguageContextValue {
@@ -62,6 +69,11 @@ export function UILanguageProvider({ children }: { children: React.ReactNode }) 
   }, []);
 
   const dir = UI_LANGUAGES.find((l) => l.code === uiLang)?.dir || "rtl";
+
+  useEffect(() => {
+    document.documentElement.lang = uiLang;
+    document.documentElement.dir = dir;
+  }, [uiLang, dir]);
 
   return (
     <UILanguageContext.Provider value={{ uiLang, setUILang, dir, t: UI_LABELS[uiLang] }}>

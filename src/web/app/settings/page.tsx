@@ -175,11 +175,7 @@ export default function SettingsPage() {
             onClick={saveSettings}
             className="flex-1 px-6 py-3 bg-primary text-white rounded-xl font-medium hover:opacity-90 transition-opacity"
           >
-            {saved
-              ? `\u2713 ${t.settings.saved}`
-              : t.settings.saved === "Saved"
-                ? "Save Settings"
-                : t.settings.title}
+            {saved ? `\u2713 ${t.settings.saved}` : t.settings.save}
           </button>
           <button
             onClick={resetSettings}
