@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 
 interface RecitationComparisonProps {
   surahNumber: number;
@@ -40,6 +40,15 @@ export function RecitationComparison({ surahNumber, ayahNumber }: RecitationComp
   const [open, setOpen] = useState(false);
   const [playingId, setPlayingId] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
 
   const play = useCallback(
     (reciterId: string, baseUrl: string) => {

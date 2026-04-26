@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+*.md
+.github
+.husky
+.editorconfig
+__pycache__
+*.pyc
+.pytest_cache
+test-plan.md

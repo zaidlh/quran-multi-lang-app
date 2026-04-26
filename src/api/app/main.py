@@ -22,12 +22,18 @@ from typing import Optional
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from strawberry.fastapi import GraphQLRouter
+
+from .graphql_schema import schema
 
 app = FastAPI(
     title="Quran Multi-Language API",
     description="REST API serving Quran text, translations, audio manifests, and supplementary Islamic data.",
     version="1.0.0",
 )
+
+graphql_app = GraphQLRouter(schema)
+app.include_router(graphql_app, prefix="/graphql")
 
 app.add_middleware(
     CORSMiddleware,
