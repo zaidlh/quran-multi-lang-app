@@ -196,6 +196,22 @@ Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before participating.
 
 To report a vulnerability, please see our [Security Policy](SECURITY.md).
 
+## Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for planned features and upcoming releases.
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/zaidlh"><img src="https://github.com/zaidlh.png?size=100" width="100px;" alt="Zaid Lhouch"/><br /><sub><b>Zaid Lhouch</b></sub></a><br />💻 📖 🤔 📆</td>
+    </tr>
+  </tbody>
+</table>
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 ## License
 
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
