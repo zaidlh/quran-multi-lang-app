@@ -14,6 +14,8 @@ Complete catalog of all data sources used in this project, with license and attr
 | Indonesian Translation | Ministry of Religious Affairs via quran-json | CC-BY-SA-4.0 | JSON | 114 surahs, 6236 ayahs | 2022 |
 | Urdu Translation | Ahmed Ali via quran-json | CC-BY-SA-4.0 | JSON | 114 surahs, 6236 ayahs | 2022 |
 | Bengali Translation | Muhiuddin Khan via quran-json | CC-BY-SA-4.0 | JSON | 114 surahs, 6236 ayahs | 2022 |
+| German Translation | Abu Rida Muhammad ibn Ahmad ibn Rassoul via [Tanzil.net](https://tanzil.net) | CC-BY-SA-4.0 | JSON | 114 surahs, 6236 ayahs | 2025 |
+| Malay Translation | Abdullah Muhammad Basmeih via [Tanzil.net](https://tanzil.net) | CC-BY-SA-4.0 | JSON | 114 surahs, 6236 ayahs | 2025 |
 | Surah Metadata | [semarketir/quranjson](https://github.com/semarketir/quranjson) | MIT | JSON | 114 surahs, 30 juz | 2021 |
 | Tafsir (27+ tafsirs) | [spa5k/tafsir_api](https://github.com/spa5k/tafsir_api) | MIT | JSON/CDN | Arabic + English | 2023 |
 | Quran Morphology | [mustafa0x/quran-morphology](https://github.com/mustafa0x/quran-morphology) | CC-BY-SA | TXT/JSON | Full Quran | 2022 |
