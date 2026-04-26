@@ -1,6 +1,7 @@
 import { getSurahs } from "@/lib/quran-data";
 import { SurahSearch } from "./components/SurahSearch";
 import { LastReadBanner } from "./components/LastReadBanner";
+import { VerseOfTheDay } from "./components/VerseOfTheDay";
 
 export default async function Home() {
   const surahs = await getSurahs();
@@ -15,6 +16,7 @@ export default async function Home() {
       </div>
 
       <LastReadBanner />
+      <VerseOfTheDay totalSurahs={surahs} />
 
       <SurahSearch surahs={surahs} />
     </div>

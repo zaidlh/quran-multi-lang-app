@@ -6,6 +6,9 @@ import { AudioPlayer } from "../../components/AudioPlayer";
 import { BookmarkButton } from "../../components/BookmarkButton";
 import { TafsirPanel } from "../../components/TafsirPanel";
 import { ShareButton } from "../../components/ShareButton";
+import { VerseNotes } from "../../components/VerseNotes";
+import { TransliterationToggle } from "../../components/TransliterationToggle";
+import { HifzMode } from "../../components/HifzMode";
 import { saveLastRead } from "../../components/LastReadBanner";
 
 interface Verse {
@@ -102,6 +105,8 @@ export function SurahView({
         onAyahChange={handleAyahChange}
       />
 
+      <HifzMode verses={arabicVerses} surahNumber={surahNumber} />
+
       {surahNumber !== 1 && surahNumber !== 9 && (
         <div className="text-center py-4 arabic-text text-2xl text-primary" dir="rtl">
           بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
@@ -144,8 +149,14 @@ export function SurahView({
                   {trans.text}
                 </p>
               )}
-              <div className="ml-10">
+              <div className="ml-10 space-y-1">
+                <TransliterationToggle
+                  arabicText={verse.text}
+                  verseNumber={verse.number}
+                  surahNumber={surahNumber}
+                />
                 <TafsirPanel surahNumber={surahNumber} ayahNumber={verse.number} />
+                <VerseNotes surahNumber={surahNumber} ayahNumber={verse.number} />
               </div>
             </div>
           );
