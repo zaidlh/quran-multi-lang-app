@@ -87,3 +87,31 @@ export const AVAILABLE_LANGUAGES = [
   { code: "ur", name: "Urdu" },
   { code: "bn", name: "Bengali" },
 ] as const;
+
+export interface JuzInfo {
+  juz: number;
+  surahs: SurahMeta[];
+}
+
+export async function getJuzList(): Promise<JuzInfo[]> {
+  const surahs = await getSurahs();
+  const juzMap = new Map<number, SurahMeta[]>();
+
+  for (const surah of surahs) {
+    for (const j of surah.juz) {
+      if (!juzMap.has(j)) {
+        juzMap.set(j, []);
+      }
+      const existing = juzMap.get(j)!;
+      if (!existing.some((s) => s.number === surah.number)) {
+        existing.push(surah);
+      }
+    }
+  }
+
+  const result: JuzInfo[] = [];
+  for (let j = 1; j <= 30; j++) {
+    result.push({ juz: j, surahs: juzMap.get(j) || [] });
+  }
+  return result;
+}

@@ -1,11 +1,11 @@
 "use client";
 
-import { useRef, useState, useCallback } from "react";
+import { useRef, useState, useCallback, useEffect } from "react";
 
 interface AudioPlayerProps {
   surahNumber: number;
-  ayahNumber?: number;
-  reciterId?: string;
+  totalAyahs?: number;
+  onAyahChange?: (ayahNumber: number | null) => void;
 }
 
 const RECITERS = [
@@ -31,22 +31,50 @@ const RECITERS = [
   },
 ];
 
+type PlayMode = "surah" | "ayah";
+
 export function AudioPlayer({
   surahNumber,
-  ayahNumber,
-  reciterId = "mishary_rashid_alafasy",
+  totalAyahs = 0,
+  onAyahChange,
 }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [currentReciter, setCurrentReciter] = useState(reciterId);
+  const [currentReciter, setCurrentReciter] = useState(RECITERS[0].id);
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
+  const [playMode, setPlayMode] = useState<PlayMode>("surah");
+  const [currentAyah, setCurrentAyah] = useState(1);
 
   const reciter = RECITERS.find((r) => r.id === currentReciter) ?? RECITERS[0];
 
-  const audioUrl = ayahNumber
-    ? `https://everyayah.com/data/${reciter.path}/${String(surahNumber).padStart(3, "0")}${String(ayahNumber).padStart(3, "0")}.mp3`
-    : `https://download.quranicaudio.com/quran/${reciter.path.toLowerCase().replace(/_\d+kbps$/, "")}/${String(surahNumber).padStart(3, "0")}.mp3`;
+  const getAudioUrl = useCallback(
+    (mode: PlayMode, ayah: number) => {
+      if (mode === "ayah") {
+        return `https://everyayah.com/data/${reciter.path}/${String(surahNumber).padStart(3, "0")}${String(ayah).padStart(3, "0")}.mp3`;
+      }
+      return `https://download.quranicaudio.com/quran/${reciter.path.toLowerCase().replace(/_\d+kbps$/, "")}/${String(surahNumber).padStart(3, "0")}.mp3`;
+    },
+    [reciter.path, surahNumber]
+  );
+
+  const audioUrl = getAudioUrl(playMode, currentAyah);
+
+  const prevAyahRef = useRef({ currentAyah, isPlaying, playMode });
+  useEffect(() => {
+    const prev = prevAyahRef.current;
+    const changed =
+      prev.currentAyah !== currentAyah ||
+      prev.isPlaying !== isPlaying ||
+      prev.playMode !== playMode;
+    prevAyahRef.current = { currentAyah, isPlaying, playMode };
+    if (!changed) return;
+    if (playMode === "ayah" && isPlaying) {
+      onAyahChange?.(currentAyah);
+    } else if (!isPlaying) {
+      onAyahChange?.(null);
+    }
+  }, [currentAyah, isPlaying, playMode, onAyahChange]);
 
   const handleReciterChange = useCallback(
     (newReciter: string) => {
@@ -87,6 +115,31 @@ export function AudioPlayer({
     setProgress(parseFloat(e.target.value));
   };
 
+  const handleEnded = useCallback(() => {
+    if (playMode === "ayah" && currentAyah < totalAyahs) {
+      setCurrentAyah((prev) => prev + 1);
+      setTimeout(() => {
+        audioRef.current?.play().catch(() => {});
+      }, 300);
+    } else {
+      setIsPlaying(false);
+      onAyahChange?.(null);
+    }
+  }, [playMode, currentAyah, totalAyahs, onAyahChange]);
+
+  const handleModeToggle = () => {
+    const audio = audioRef.current;
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+    setIsPlaying(false);
+    setProgress(0);
+    onAyahChange?.(null);
+    setPlayMode((prev) => (prev === "surah" ? "ayah" : "surah"));
+    setCurrentAyah(1);
+  };
+
   const formatTime = (s: number) => {
     const m = Math.floor(s / 60);
     const sec = Math.floor(s % 60);
@@ -99,7 +152,7 @@ export function AudioPlayer({
         ref={audioRef}
         src={audioUrl}
         onTimeUpdate={handleTimeUpdate}
-        onEnded={() => setIsPlaying(false)}
+        onEnded={handleEnded}
         onLoadedMetadata={() => {
           if (audioRef.current) setDuration(audioRef.current.duration);
         }}
@@ -142,17 +195,32 @@ export function AudioPlayer({
         </div>
       </div>
 
-      <select
-        value={currentReciter}
-        onChange={(e) => handleReciterChange(e.target.value)}
-        className="w-full text-sm border border-zinc-300 dark:border-zinc-700 rounded px-2 py-1 bg-white dark:bg-zinc-800"
-      >
-        {RECITERS.map((r) => (
-          <option key={r.id} value={r.id}>
-            {r.name}
-          </option>
-        ))}
-      </select>
+      <div className="flex items-center gap-2">
+        <select
+          value={currentReciter}
+          onChange={(e) => handleReciterChange(e.target.value)}
+          className="flex-1 text-sm border border-zinc-300 dark:border-zinc-700 rounded px-2 py-1 bg-white dark:bg-zinc-800"
+        >
+          {RECITERS.map((r) => (
+            <option key={r.id} value={r.id}>
+              {r.name}
+            </option>
+          ))}
+        </select>
+
+        {totalAyahs > 0 && (
+          <button
+            onClick={handleModeToggle}
+            className={`text-xs px-3 py-1 rounded border transition-colors ${
+              playMode === "ayah"
+                ? "bg-primary text-white border-primary"
+                : "border-zinc-300 dark:border-zinc-700 hover:border-primary"
+            }`}
+          >
+            {playMode === "ayah" ? `Ayah ${currentAyah}/${totalAyahs}` : "Verse-by-verse"}
+          </button>
+        )}
+      </div>
     </div>
   );
 }

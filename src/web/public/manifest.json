@@ -1,0 +1,29 @@
+{
+  "name": "Quran Multi-Language App",
+  "short_name": "Quran",
+  "description": "Read the Holy Quran with translations in 10+ languages, listen to recitations, and explore tafsir.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1b6b4a",
+  "orientation": "portrait-primary",
+  "categories": ["education", "books"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
