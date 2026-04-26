@@ -10,14 +10,17 @@ const MOCK_SURAHS = [
   { number: 112, name_en: "Al-Ikhlas", name: "الإخلاص", verses: 4 },
 ];
 
+// Default UI language is Arabic
+const VERSE_OF_DAY_TITLE = "آية اليوم";
+
 describe("VerseOfTheDay", () => {
   afterEach(() => {
     vi.useRealTimers();
   });
 
-  it("renders the 'Verse of the Day' label", () => {
+  it("renders the verse of the day label", () => {
     render(<VerseOfTheDay totalSurahs={MOCK_SURAHS} />);
-    expect(screen.getByText("Verse of the Day")).toBeInTheDocument();
+    expect(screen.getByText(VERSE_OF_DAY_TITLE)).toBeInTheDocument();
   });
 
   it("displays a surah name", () => {
@@ -51,8 +54,7 @@ describe("VerseOfTheDay", () => {
 
   it("shows verse label text", () => {
     render(<VerseOfTheDay totalSurahs={MOCK_SURAHS} />);
-    // At least one notable verse label should be visible
-    const container = screen.getByText("Verse of the Day").closest("a")!;
+    const container = screen.getByText(VERSE_OF_DAY_TITLE).closest("a")!;
     expect(container.textContent).toBeTruthy();
   });
 });
