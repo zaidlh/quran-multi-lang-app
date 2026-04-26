@@ -118,6 +118,11 @@ export function Header() {
             onClick={() => setMenuOpen(false)}
           >
             Mushaf
+            href="/reading-plans"
+            className="hover:text-primary transition-colors"
+            onClick={() => setMenuOpen(false)}
+          >
+            Plans
           </Link>
         </div>
       </nav>

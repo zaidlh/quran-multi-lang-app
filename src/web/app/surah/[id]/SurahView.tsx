@@ -9,6 +9,9 @@ import { ShareButton } from "../../components/ShareButton";
 import { TajweedText } from "../../components/TajweedText";
 import { CrossReferences } from "../../components/CrossReferences";
 import { RecitationComparison } from "../../components/RecitationComparison";
+import { VerseNotes } from "../../components/VerseNotes";
+import { TransliterationToggle } from "../../components/TransliterationToggle";
+import { HifzMode } from "../../components/HifzMode";
 import { saveLastRead } from "../../components/LastReadBanner";
 
 interface Verse {
@@ -105,6 +108,8 @@ export function SurahView({
         onAyahChange={handleAyahChange}
       />
 
+      <HifzMode verses={arabicVerses} surahNumber={surahNumber} />
+
       {surahNumber !== 1 && surahNumber !== 9 && (
         <div className="text-center py-4 arabic-text text-2xl text-primary" dir="rtl">
           بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
@@ -152,6 +157,13 @@ export function SurahView({
                 <TafsirPanel surahNumber={surahNumber} ayahNumber={verse.number} />
                 <CrossReferences surahNumber={surahNumber} ayahNumber={verse.number} />
                 <RecitationComparison surahNumber={surahNumber} ayahNumber={verse.number} />
+                <TransliterationToggle
+                  arabicText={verse.text}
+                  verseNumber={verse.number}
+                  surahNumber={surahNumber}
+                />
+                <TafsirPanel surahNumber={surahNumber} ayahNumber={verse.number} />
+                <VerseNotes surahNumber={surahNumber} ayahNumber={verse.number} />
               </div>
             </div>
           );
