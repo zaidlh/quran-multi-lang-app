@@ -1,9 +1,4 @@
-import {
-  getArabicSurah,
-  getTranslation,
-  getSurahs,
-  AVAILABLE_LANGUAGES,
-} from "@/lib/quran-data";
+import { getArabicSurah, getTranslation, getSurahs, AVAILABLE_LANGUAGES } from "@/lib/quran-data";
 import { SurahView } from "./SurahView";
 import { JsonLd } from "../../components/JsonLd";
 import Link from "next/link";
@@ -13,18 +8,12 @@ export async function generateStaticParams() {
   return surahs.map((s) => ({ id: String(s.number) }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const surahs = await getSurahs();
   const surah = surahs.find((s) => s.number === Number(id));
   return {
-    title: surah
-      ? `${surah.name_en} (${surah.name}) — Quran`
-      : "Surah — Quran",
+    title: surah ? `${surah.name_en} (${surah.name}) — Quran` : "Surah — Quran",
     description: surah
       ? `Read Surah ${surah.name_en} (${surah.name}) with translation. ${surah.verses} verses, ${surah.revelation_type}. ${surah.name_translation}.`
       : undefined,
@@ -114,8 +103,7 @@ export default async function SurahPage({
         </h1>
         <h2 className="text-xl font-semibold">{surahMeta.name_en}</h2>
         <p className="text-zinc-500 text-sm">
-          {surahMeta.name_translation} · {surahMeta.verses} verses ·{" "}
-          {surahMeta.revelation_type}
+          {surahMeta.name_translation} · {surahMeta.verses} verses · {surahMeta.revelation_type}
         </p>
       </div>
 

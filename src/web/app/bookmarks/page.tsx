@@ -12,9 +12,7 @@ interface Bookmark {
 function loadBookmarks(): Bookmark[] {
   if (typeof window === "undefined") return [];
   try {
-    const stored: Bookmark[] = JSON.parse(
-      localStorage.getItem("quran-bookmarks") || "[]"
-    );
+    const stored: Bookmark[] = JSON.parse(localStorage.getItem("quran-bookmarks") || "[]");
     return stored.sort((a, b) => b.timestamp - a.timestamp);
   } catch {
     return [];
@@ -55,9 +53,7 @@ export default function BookmarksPage() {
                 className="hover:text-primary"
               >
                 <span className="font-medium">Surah {bm.surah}</span>
-                {bm.ayah && (
-                  <span className="text-zinc-500">, Ayah {bm.ayah}</span>
-                )}
+                {bm.ayah && <span className="text-zinc-500">, Ayah {bm.ayah}</span>}
                 <span className="text-xs text-zinc-400 ml-3">
                   {new Date(bm.timestamp).toLocaleDateString()}
                 </span>

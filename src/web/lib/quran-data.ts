@@ -51,9 +51,7 @@ export async function getSurahs(): Promise<SurahMeta[]> {
   return metadata.surahs;
 }
 
-export async function getArabicSurah(
-  surahNumber: number
-): Promise<SurahData | null> {
+export async function getArabicSurah(surahNumber: number): Promise<SurahData | null> {
   try {
     const data = await readJson<{ surahs: SurahData[] }>(
       join(RESOURCES_DIR, "text", "ar", "quran_uthmani.json")
@@ -64,10 +62,7 @@ export async function getArabicSurah(
   }
 }
 
-export async function getTranslation(
-  surahNumber: number,
-  lang: string
-): Promise<SurahData | null> {
+export async function getTranslation(surahNumber: number, lang: string): Promise<SurahData | null> {
   try {
     const data = await readJson<{ surahs: SurahData[] }>(
       join(RESOURCES_DIR, "text", lang, "translation.json")

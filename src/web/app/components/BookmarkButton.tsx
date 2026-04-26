@@ -32,17 +32,13 @@ export function BookmarkButton({ surahNumber, ayahNumber }: BookmarkButtonProps)
   const isBookmarked = useMemo(() => {
     void version;
     const bookmarks = getBookmarks();
-    return bookmarks.some(
-      (b) => b.surah === surahNumber && b.ayah === ayahNumber
-    );
+    return bookmarks.some((b) => b.surah === surahNumber && b.ayah === ayahNumber);
   }, [surahNumber, ayahNumber, version]);
 
   const toggle = useCallback(() => {
     const bookmarks = getBookmarks();
     if (isBookmarked) {
-      const filtered = bookmarks.filter(
-        (b) => !(b.surah === surahNumber && b.ayah === ayahNumber)
-      );
+      const filtered = bookmarks.filter((b) => !(b.surah === surahNumber && b.ayah === ayahNumber));
       saveBookmarks(filtered);
     } else {
       bookmarks.push({

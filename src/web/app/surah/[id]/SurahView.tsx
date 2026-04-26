@@ -83,9 +83,7 @@ export function SurahView({
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <select
           value={currentLang}
-          onChange={(e) =>
-            router.push(`/surah/${surahNumber}?lang=${e.target.value}`)
-          }
+          onChange={(e) => router.push(`/surah/${surahNumber}?lang=${e.target.value}`)}
           className="px-3 py-2 border border-zinc-300 dark:border-zinc-700 rounded-lg bg-white dark:bg-zinc-900 text-sm"
         >
           {languages.map((l) => (
@@ -112,9 +110,7 @@ export function SurahView({
 
       <div className="space-y-6">
         {arabicVerses.map((verse) => {
-          const trans = translationVerses.find(
-            (t) => t.number === verse.number
-          );
+          const trans = translationVerses.find((t) => t.number === verse.number);
           return (
             <div
               key={verse.number}
@@ -126,14 +122,9 @@ export function SurahView({
               }`}
             >
               <div className="flex items-start gap-2 mb-3">
-                <span className="verse-number flex-shrink-0 mt-2">
-                  {verse.number}
-                </span>
+                <span className="verse-number flex-shrink-0 mt-2">{verse.number}</span>
                 <div className="flex-1">
-                  <p
-                    className="arabic-text text-xl leading-loose"
-                    dir="rtl"
-                  >
+                  <p className="arabic-text text-xl leading-loose" dir="rtl">
                     {verse.text}
                   </p>
                 </div>
@@ -145,10 +136,7 @@ export function SurahView({
                     arabicText={verse.text}
                     translationText={trans?.text || ""}
                   />
-                  <BookmarkButton
-                    surahNumber={surahNumber}
-                    ayahNumber={verse.number}
-                  />
+                  <BookmarkButton surahNumber={surahNumber} ayahNumber={verse.number} />
                 </div>
               </div>
               {trans && (
@@ -157,10 +145,7 @@ export function SurahView({
                 </p>
               )}
               <div className="ml-10">
-                <TafsirPanel
-                  surahNumber={surahNumber}
-                  ayahNumber={verse.number}
-                />
+                <TafsirPanel surahNumber={surahNumber} ayahNumber={verse.number} />
               </div>
             </div>
           );
