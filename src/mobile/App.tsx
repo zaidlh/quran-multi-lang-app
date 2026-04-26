@@ -100,7 +100,7 @@ const lightTheme = {
   card: "#f5f5f5",
   text: "#1a1a1a",
   secondary: "#666666",
-  primary: "#1b6b4a",
+  primary: "#0f766e",
 };
 
 const darkTheme = {
