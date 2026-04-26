@@ -1,0 +1,291 @@
+{
+  "surah": 101,
+  "name": "القارعة",
+  "name_en": "Al-Qari'ah",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلْقَارِعَةُ",
+          "transliteration": "al-qāriʿatu",
+          "translation": "The Striking Calamity"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "What"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْقَارِعَةُ",
+          "transliteration": "l-qāriʿatu",
+          "translation": "(is) the Striking Calamity"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمَآ",
+          "transliteration": "wamā",
+          "translation": "And what"
+        },
+        {
+          "position": 2,
+          "arabic": "أَدْرَىٰكَ",
+          "transliteration": "adrāka",
+          "translation": "will make you know"
+        },
+        {
+          "position": 3,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْقَارِعَةُ",
+          "transliteration": "l-qāriʿatu",
+          "translation": "(is) the Striking Calamity"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَوْمَ",
+          "transliteration": "yawma",
+          "translation": "(The) Day"
+        },
+        {
+          "position": 2,
+          "arabic": "يَكُونُ",
+          "transliteration": "yakūnu",
+          "translation": "will be"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلنَّاسُ",
+          "transliteration": "l-nāsu",
+          "translation": "the mankind"
+        },
+        {
+          "position": 4,
+          "arabic": "كَٱلْفَرَاشِ",
+          "transliteration": "kal-farāshi",
+          "translation": "like moths"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْمَبْثُوثِ",
+          "transliteration": "l-mabthūthi",
+          "translation": "scattered"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَتَكُونُ",
+          "transliteration": "watakūnu",
+          "translation": "And will be"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْجِبَالُ",
+          "transliteration": "l-jibālu",
+          "translation": "the mountains"
+        },
+        {
+          "position": 3,
+          "arabic": "كَٱلْعِهْنِ",
+          "transliteration": "kal-ʿih'ni",
+          "translation": "like wool"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْمَنفُوشِ",
+          "transliteration": "l-manfūshi",
+          "translation": "fluffed up"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَأَمَّا",
+          "transliteration": "fa-ammā",
+          "translation": "Then as for"
+        },
+        {
+          "position": 2,
+          "arabic": "مَن",
+          "transliteration": "man",
+          "translation": "(him) whose"
+        },
+        {
+          "position": 3,
+          "arabic": "ثَقُلَتْ",
+          "transliteration": "thaqulat",
+          "translation": "(are) heavy"
+        },
+        {
+          "position": 4,
+          "arabic": "مَوَٰزِينُهُۥ",
+          "transliteration": "mawāzīnuhu",
+          "translation": "his scales"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَهُوَ",
+          "transliteration": "fahuwa",
+          "translation": "Then he"
+        },
+        {
+          "position": 2,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "(will be) in"
+        },
+        {
+          "position": 3,
+          "arabic": "عِيشَةٍۢ",
+          "transliteration": "ʿīshatin",
+          "translation": "a life"
+        },
+        {
+          "position": 4,
+          "arabic": "رَّاضِيَةٍۢ",
+          "transliteration": "rāḍiyatin",
+          "translation": "pleasant"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَأَمَّا",
+          "transliteration": "wa-ammā",
+          "translation": "But as for"
+        },
+        {
+          "position": 2,
+          "arabic": "مَنْ",
+          "transliteration": "man",
+          "translation": "(him) whose"
+        },
+        {
+          "position": 3,
+          "arabic": "خَفَّتْ",
+          "transliteration": "khaffat",
+          "translation": "(are) light"
+        },
+        {
+          "position": 4,
+          "arabic": "مَوَٰزِينُهُۥ",
+          "transliteration": "mawāzīnuhu",
+          "translation": "his scales"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَأُمُّهُۥ",
+          "transliteration": "fa-ummuhu",
+          "translation": "His abode"
+        },
+        {
+          "position": 2,
+          "arabic": "هَاوِيَةٌۭ",
+          "transliteration": "hāwiyatun",
+          "translation": "(will be the) Pit"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمَآ",
+          "transliteration": "wamā",
+          "translation": "And what"
+        },
+        {
+          "position": 2,
+          "arabic": "أَدْرَىٰكَ",
+          "transliteration": "adrāka",
+          "translation": "will make you know"
+        },
+        {
+          "position": 3,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 4,
+          "arabic": "هِيَهْ",
+          "transliteration": "hiyah",
+          "translation": "it is"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "نَارٌ",
+          "transliteration": "nārun",
+          "translation": "A Fire"
+        },
+        {
+          "position": 2,
+          "arabic": "حَامِيَةٌۢ",
+          "transliteration": "ḥāmiyatun",
+          "translation": "intensely hot"
+        }
+      ]
+    }
+  ]
+}

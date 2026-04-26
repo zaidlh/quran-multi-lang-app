@@ -1,0 +1,141 @@
+{
+  "surah": 110,
+  "name": "النصر",
+  "name_en": "An-Nasr",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِذَا",
+          "transliteration": "idhā",
+          "translation": "When"
+        },
+        {
+          "position": 2,
+          "arabic": "جَآءَ",
+          "transliteration": "jāa",
+          "translation": "comes"
+        },
+        {
+          "position": 3,
+          "arabic": "نَصْرُ",
+          "transliteration": "naṣru",
+          "translation": "(the) Help"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "(of) Allah"
+        },
+        {
+          "position": 5,
+          "arabic": "وَٱلْفَتْحُ",
+          "transliteration": "wal-fatḥu",
+          "translation": "and the Victory"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَرَأَيْتَ",
+          "transliteration": "wara-ayta",
+          "translation": "And you see"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلنَّاسَ",
+          "transliteration": "l-nāsa",
+          "translation": "the people"
+        },
+        {
+          "position": 3,
+          "arabic": "يَدْخُلُونَ",
+          "transliteration": "yadkhulūna",
+          "translation": "entering"
+        },
+        {
+          "position": 4,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "into"
+        },
+        {
+          "position": 5,
+          "arabic": "دِينِ",
+          "transliteration": "dīni",
+          "translation": "(the) religion"
+        },
+        {
+          "position": 6,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "(of) Allah"
+        },
+        {
+          "position": 7,
+          "arabic": "أَفْوَاجًۭا",
+          "transliteration": "afwājan",
+          "translation": "(in) multitudes"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَسَبِّحْ",
+          "transliteration": "fasabbiḥ",
+          "translation": "Then glorify"
+        },
+        {
+          "position": 2,
+          "arabic": "بِحَمْدِ",
+          "transliteration": "biḥamdi",
+          "translation": "with (the) praises"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكَ",
+          "transliteration": "rabbika",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "وَٱسْتَغْفِرْهُ ۚ",
+          "transliteration": "wa-is'taghfir'hu",
+          "translation": "and ask His forgiveness"
+        },
+        {
+          "position": 5,
+          "arabic": "إِنَّهُۥ",
+          "transliteration": "innahu",
+          "translation": "Indeed, He"
+        },
+        {
+          "position": 6,
+          "arabic": "كَانَ",
+          "transliteration": "kāna",
+          "translation": "is"
+        },
+        {
+          "position": 7,
+          "arabic": "تَوَّابًۢا",
+          "transliteration": "tawwāban",
+          "translation": "Oft-Returning"
+        }
+      ]
+    }
+  ]
+}

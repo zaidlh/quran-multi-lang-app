@@ -1,0 +1,177 @@
+{
+  "surah": 111,
+  "name": "المسد",
+  "name_en": "Al-Masad",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "تَبَّتْ",
+          "transliteration": "tabbat",
+          "translation": "Perish"
+        },
+        {
+          "position": 2,
+          "arabic": "يَدَآ",
+          "transliteration": "yadā",
+          "translation": "(the) hands"
+        },
+        {
+          "position": 3,
+          "arabic": "أَبِى",
+          "transliteration": "abī",
+          "translation": "(of) Abu"
+        },
+        {
+          "position": 4,
+          "arabic": "لَهَبٍۢ",
+          "transliteration": "lahabin",
+          "translation": "Lahab"
+        },
+        {
+          "position": 5,
+          "arabic": "وَتَبَّ",
+          "transliteration": "watabba",
+          "translation": "and perish he"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مَآ",
+          "transliteration": "mā",
+          "translation": "Not"
+        },
+        {
+          "position": 2,
+          "arabic": "أَغْنَىٰ",
+          "transliteration": "aghnā",
+          "translation": "(will) avail"
+        },
+        {
+          "position": 3,
+          "arabic": "عَنْهُ",
+          "transliteration": "ʿanhu",
+          "translation": "him"
+        },
+        {
+          "position": 4,
+          "arabic": "مَالُهُۥ",
+          "transliteration": "māluhu",
+          "translation": "his wealth"
+        },
+        {
+          "position": 5,
+          "arabic": "وَمَا",
+          "transliteration": "wamā",
+          "translation": "and what"
+        },
+        {
+          "position": 6,
+          "arabic": "كَسَبَ",
+          "transliteration": "kasaba",
+          "translation": "he earned"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "سَيَصْلَىٰ",
+          "transliteration": "sayaṣlā",
+          "translation": "He will be burnt"
+        },
+        {
+          "position": 2,
+          "arabic": "نَارًۭا",
+          "transliteration": "nāran",
+          "translation": "(in) a Fire"
+        },
+        {
+          "position": 3,
+          "arabic": "ذَاتَ",
+          "transliteration": "dhāta",
+          "translation": "of"
+        },
+        {
+          "position": 4,
+          "arabic": "لَهَبٍۢ",
+          "transliteration": "lahabin",
+          "translation": "Blazing Flames"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱمْرَأَتُهُۥ",
+          "transliteration": "wa-im'ra-atuhu",
+          "translation": "And his wife"
+        },
+        {
+          "position": 2,
+          "arabic": "حَمَّالَةَ",
+          "transliteration": "ḥammālata",
+          "translation": "(the) carrier"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْحَطَبِ",
+          "transliteration": "l-ḥaṭabi",
+          "translation": "(of) firewood"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "In"
+        },
+        {
+          "position": 2,
+          "arabic": "جِيدِهَا",
+          "transliteration": "jīdihā",
+          "translation": "her neck"
+        },
+        {
+          "position": 3,
+          "arabic": "حَبْلٌۭ",
+          "transliteration": "ḥablun",
+          "translation": "(will be) a rope"
+        },
+        {
+          "position": 4,
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "translation": "of"
+        },
+        {
+          "position": 5,
+          "arabic": "مَّسَدٍۭ",
+          "transliteration": "masadin",
+          "translation": "palm-fiber"
+        }
+      ]
+    }
+  ]
+}

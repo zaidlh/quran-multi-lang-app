@@ -1,0 +1,3489 @@
+{
+  "surah": 31,
+  "name": "لقمان",
+  "name_en": "Luqman",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "الٓمٓ",
+          "transliteration": "alif-lam-meem",
+          "translation": "Alif Lam Meem"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "تِلْكَ",
+          "transliteration": "til'ka",
+          "translation": "These"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَايَـٰتُ",
+          "transliteration": "āyātu",
+          "translation": "(are) Verses"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْكِتَـٰبِ",
+          "transliteration": "l-kitābi",
+          "translation": "(of) the Book"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْحَكِيمِ",
+          "transliteration": "l-ḥakīmi",
+          "translation": "the Wise"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "هُدًۭى",
+          "transliteration": "hudan",
+          "translation": "A guidance"
+        },
+        {
+          "position": 2,
+          "arabic": "وَرَحْمَةًۭ",
+          "transliteration": "waraḥmatan",
+          "translation": "and a mercy"
+        },
+        {
+          "position": 3,
+          "arabic": "لِّلْمُحْسِنِينَ",
+          "transliteration": "lil'muḥ'sinīna",
+          "translation": "for the good-doers"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلَّذِينَ",
+          "transliteration": "alladhīna",
+          "translation": "Those who"
+        },
+        {
+          "position": 2,
+          "arabic": "يُقِيمُونَ",
+          "transliteration": "yuqīmūna",
+          "translation": "establish"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلصَّلَوٰةَ",
+          "transliteration": "l-ṣalata",
+          "translation": "the prayer"
+        },
+        {
+          "position": 4,
+          "arabic": "وَيُؤْتُونَ",
+          "transliteration": "wayu'tūna",
+          "translation": "and give"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلزَّكَوٰةَ",
+          "transliteration": "l-zakata",
+          "translation": "zakah"
+        },
+        {
+          "position": 6,
+          "arabic": "وَهُم",
+          "transliteration": "wahum",
+          "translation": "and they"
+        },
+        {
+          "position": 7,
+          "arabic": "بِٱلْـَٔاخِرَةِ",
+          "transliteration": "bil-ākhirati",
+          "translation": "in the Hereafter"
+        },
+        {
+          "position": 8,
+          "arabic": "هُمْ",
+          "transliteration": "hum",
+          "translation": "[they]"
+        },
+        {
+          "position": 9,
+          "arabic": "يُوقِنُونَ",
+          "transliteration": "yūqinūna",
+          "translation": "believe firmly"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أُو۟لَـٰٓئِكَ",
+          "transliteration": "ulāika",
+          "translation": "Those"
+        },
+        {
+          "position": 2,
+          "arabic": "عَلَىٰ",
+          "transliteration": "ʿalā",
+          "translation": "(are) on"
+        },
+        {
+          "position": 3,
+          "arabic": "هُدًۭى",
+          "transliteration": "hudan",
+          "translation": "guidance"
+        },
+        {
+          "position": 4,
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "translation": "from"
+        },
+        {
+          "position": 5,
+          "arabic": "رَّبِّهِمْ ۖ",
+          "transliteration": "rabbihim",
+          "translation": "their Lord"
+        },
+        {
+          "position": 6,
+          "arabic": "وَأُو۟لَـٰٓئِكَ",
+          "transliteration": "wa-ulāika",
+          "translation": "and those"
+        },
+        {
+          "position": 7,
+          "arabic": "هُمُ",
+          "transliteration": "humu",
+          "translation": "[they]"
+        },
+        {
+          "position": 8,
+          "arabic": "ٱلْمُفْلِحُونَ",
+          "transliteration": "l-muf'liḥūna",
+          "translation": "(are) the successful"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمِنَ",
+          "transliteration": "wamina",
+          "translation": "And of"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلنَّاسِ",
+          "transliteration": "l-nāsi",
+          "translation": "the mankind"
+        },
+        {
+          "position": 3,
+          "arabic": "مَن",
+          "transliteration": "man",
+          "translation": "(is he) who"
+        },
+        {
+          "position": 4,
+          "arabic": "يَشْتَرِى",
+          "transliteration": "yashtarī",
+          "translation": "purchases"
+        },
+        {
+          "position": 5,
+          "arabic": "لَهْوَ",
+          "transliteration": "lahwa",
+          "translation": "idle tales"
+        },
+        {
+          "position": 6,
+          "arabic": "ٱلْحَدِيثِ",
+          "transliteration": "l-ḥadīthi",
+          "translation": "idle tales"
+        },
+        {
+          "position": 7,
+          "arabic": "لِيُضِلَّ",
+          "transliteration": "liyuḍilla",
+          "translation": "to mislead"
+        },
+        {
+          "position": 8,
+          "arabic": "عَن",
+          "transliteration": "ʿan",
+          "translation": "from"
+        },
+        {
+          "position": 9,
+          "arabic": "سَبِيلِ",
+          "transliteration": "sabīli",
+          "translation": "(the) path"
+        },
+        {
+          "position": 10,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "(of) Allah"
+        },
+        {
+          "position": 11,
+          "arabic": "بِغَيْرِ",
+          "transliteration": "bighayri",
+          "translation": "without"
+        },
+        {
+          "position": 12,
+          "arabic": "عِلْمٍۢ",
+          "transliteration": "ʿil'min",
+          "translation": "knowledge"
+        },
+        {
+          "position": 13,
+          "arabic": "وَيَتَّخِذَهَا",
+          "transliteration": "wayattakhidhahā",
+          "translation": "and takes it"
+        },
+        {
+          "position": 14,
+          "arabic": "هُزُوًا ۚ",
+          "transliteration": "huzuwan",
+          "translation": "(in) ridicule"
+        },
+        {
+          "position": 15,
+          "arabic": "أُو۟لَـٰٓئِكَ",
+          "transliteration": "ulāika",
+          "translation": "Those"
+        },
+        {
+          "position": 16,
+          "arabic": "لَهُمْ",
+          "transliteration": "lahum",
+          "translation": "for them"
+        },
+        {
+          "position": 17,
+          "arabic": "عَذَابٌۭ",
+          "transliteration": "ʿadhābun",
+          "translation": "(is) a punishment"
+        },
+        {
+          "position": 18,
+          "arabic": "مُّهِينٌۭ",
+          "transliteration": "muhīnun",
+          "translation": "humiliating"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَإِذَا",
+          "transliteration": "wa-idhā",
+          "translation": "And when"
+        },
+        {
+          "position": 2,
+          "arabic": "تُتْلَىٰ",
+          "transliteration": "tut'lā",
+          "translation": "are recited"
+        },
+        {
+          "position": 3,
+          "arabic": "عَلَيْهِ",
+          "transliteration": "ʿalayhi",
+          "translation": "to him"
+        },
+        {
+          "position": 4,
+          "arabic": "ءَايَـٰتُنَا",
+          "transliteration": "āyātunā",
+          "translation": "Our Verses"
+        },
+        {
+          "position": 5,
+          "arabic": "وَلَّىٰ",
+          "transliteration": "wallā",
+          "translation": "he turns away"
+        },
+        {
+          "position": 6,
+          "arabic": "مُسْتَكْبِرًۭا",
+          "transliteration": "mus'takbiran",
+          "translation": "arrogantly"
+        },
+        {
+          "position": 7,
+          "arabic": "كَأَن",
+          "transliteration": "ka-an",
+          "translation": "as if"
+        },
+        {
+          "position": 8,
+          "arabic": "لَّمْ",
+          "transliteration": "lam",
+          "translation": "not"
+        },
+        {
+          "position": 9,
+          "arabic": "يَسْمَعْهَا",
+          "transliteration": "yasmaʿhā",
+          "translation": "he (had) heard them"
+        },
+        {
+          "position": 10,
+          "arabic": "كَأَنَّ",
+          "transliteration": "ka-anna",
+          "translation": "as if"
+        },
+        {
+          "position": 11,
+          "arabic": "فِىٓ",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 12,
+          "arabic": "أُذُنَيْهِ",
+          "transliteration": "udhunayhi",
+          "translation": "his ears"
+        },
+        {
+          "position": 13,
+          "arabic": "وَقْرًۭا ۖ",
+          "transliteration": "waqran",
+          "translation": "(is) deafness"
+        },
+        {
+          "position": 14,
+          "arabic": "فَبَشِّرْهُ",
+          "transliteration": "fabashir'hu",
+          "translation": "So give him tidings"
+        },
+        {
+          "position": 15,
+          "arabic": "بِعَذَابٍ",
+          "transliteration": "biʿadhābin",
+          "translation": "of a punishment"
+        },
+        {
+          "position": 16,
+          "arabic": "أَلِيمٍ",
+          "transliteration": "alīmin",
+          "translation": "painful"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلَّذِينَ",
+          "transliteration": "alladhīna",
+          "translation": "those who"
+        },
+        {
+          "position": 3,
+          "arabic": "ءَامَنُوا۟",
+          "transliteration": "āmanū",
+          "translation": "believe"
+        },
+        {
+          "position": 4,
+          "arabic": "وَعَمِلُوا۟",
+          "transliteration": "waʿamilū",
+          "translation": "and do"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلصَّـٰلِحَـٰتِ",
+          "transliteration": "l-ṣāliḥāti",
+          "translation": "righteous deeds"
+        },
+        {
+          "position": 6,
+          "arabic": "لَهُمْ",
+          "transliteration": "lahum",
+          "translation": "for them"
+        },
+        {
+          "position": 7,
+          "arabic": "جَنَّـٰتُ",
+          "transliteration": "jannātu",
+          "translation": "(are) Gardens"
+        },
+        {
+          "position": 8,
+          "arabic": "ٱلنَّعِيمِ",
+          "transliteration": "l-naʿīmi",
+          "translation": "(of) Delight"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "خَـٰلِدِينَ",
+          "transliteration": "khālidīna",
+          "translation": "(To) abide forever"
+        },
+        {
+          "position": 2,
+          "arabic": "فِيهَا ۖ",
+          "transliteration": "fīhā",
+          "translation": "in it"
+        },
+        {
+          "position": 3,
+          "arabic": "وَعْدَ",
+          "transliteration": "waʿda",
+          "translation": "(The) Promise of Allah"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "(The) Promise of Allah"
+        },
+        {
+          "position": 5,
+          "arabic": "حَقًّۭا ۚ",
+          "transliteration": "ḥaqqan",
+          "translation": "(is) true"
+        },
+        {
+          "position": 6,
+          "arabic": "وَهُوَ",
+          "transliteration": "wahuwa",
+          "translation": "And He"
+        },
+        {
+          "position": 7,
+          "arabic": "ٱلْعَزِيزُ",
+          "transliteration": "l-ʿazīzu",
+          "translation": "(is) the All-Mighty"
+        },
+        {
+          "position": 8,
+          "arabic": "ٱلْحَكِيمُ",
+          "transliteration": "l-ḥakīmu",
+          "translation": "the All-Wise"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "خَلَقَ",
+          "transliteration": "khalaqa",
+          "translation": "He created"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلسَّمَـٰوَٰتِ",
+          "transliteration": "l-samāwāti",
+          "translation": "the heavens"
+        },
+        {
+          "position": 3,
+          "arabic": "بِغَيْرِ",
+          "transliteration": "bighayri",
+          "translation": "without"
+        },
+        {
+          "position": 4,
+          "arabic": "عَمَدٍۢ",
+          "transliteration": "ʿamadin",
+          "translation": "pillars"
+        },
+        {
+          "position": 5,
+          "arabic": "تَرَوْنَهَا ۖ",
+          "transliteration": "tarawnahā",
+          "translation": "that you see"
+        },
+        {
+          "position": 6,
+          "arabic": "وَأَلْقَىٰ",
+          "transliteration": "wa-alqā",
+          "translation": "and has cast"
+        },
+        {
+          "position": 7,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 8,
+          "arabic": "ٱلْأَرْضِ",
+          "transliteration": "l-arḍi",
+          "translation": "the earth"
+        },
+        {
+          "position": 9,
+          "arabic": "رَوَٰسِىَ",
+          "transliteration": "rawāsiya",
+          "translation": "firm mountains"
+        },
+        {
+          "position": 10,
+          "arabic": "أَن",
+          "transliteration": "an",
+          "translation": "lest"
+        },
+        {
+          "position": 11,
+          "arabic": "تَمِيدَ",
+          "transliteration": "tamīda",
+          "translation": "it (might) shake"
+        },
+        {
+          "position": 12,
+          "arabic": "بِكُمْ",
+          "transliteration": "bikum",
+          "translation": "with you"
+        },
+        {
+          "position": 13,
+          "arabic": "وَبَثَّ",
+          "transliteration": "wabatha",
+          "translation": "and He dispersed"
+        },
+        {
+          "position": 14,
+          "arabic": "فِيهَا",
+          "transliteration": "fīhā",
+          "translation": "in it"
+        },
+        {
+          "position": 15,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "from"
+        },
+        {
+          "position": 16,
+          "arabic": "كُلِّ",
+          "transliteration": "kulli",
+          "translation": "every"
+        },
+        {
+          "position": 17,
+          "arabic": "دَآبَّةٍۢ ۚ",
+          "transliteration": "dābbatin",
+          "translation": "creature"
+        },
+        {
+          "position": 18,
+          "arabic": "وَأَنزَلْنَا",
+          "transliteration": "wa-anzalnā",
+          "translation": "And We sent down"
+        },
+        {
+          "position": 19,
+          "arabic": "مِنَ",
+          "transliteration": "mina",
+          "translation": "from"
+        },
+        {
+          "position": 20,
+          "arabic": "ٱلسَّمَآءِ",
+          "transliteration": "l-samāi",
+          "translation": "the sky"
+        },
+        {
+          "position": 21,
+          "arabic": "مَآءًۭ",
+          "transliteration": "māan",
+          "translation": "water"
+        },
+        {
+          "position": 22,
+          "arabic": "فَأَنۢبَتْنَا",
+          "transliteration": "fa-anbatnā",
+          "translation": "then We caused to grow"
+        },
+        {
+          "position": 23,
+          "arabic": "فِيهَا",
+          "transliteration": "fīhā",
+          "translation": "therein"
+        },
+        {
+          "position": 24,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "of"
+        },
+        {
+          "position": 25,
+          "arabic": "كُلِّ",
+          "transliteration": "kulli",
+          "translation": "every"
+        },
+        {
+          "position": 26,
+          "arabic": "زَوْجٍۢ",
+          "transliteration": "zawjin",
+          "translation": "kind"
+        },
+        {
+          "position": 27,
+          "arabic": "كَرِيمٍ",
+          "transliteration": "karīmin",
+          "translation": "noble"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "هَـٰذَا",
+          "transliteration": "hādhā",
+          "translation": "This"
+        },
+        {
+          "position": 2,
+          "arabic": "خَلْقُ",
+          "transliteration": "khalqu",
+          "translation": "(is the) creation"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "(of) Allah"
+        },
+        {
+          "position": 4,
+          "arabic": "فَأَرُونِى",
+          "transliteration": "fa-arūnī",
+          "translation": "So show Me"
+        },
+        {
+          "position": 5,
+          "arabic": "مَاذَا",
+          "transliteration": "mādhā",
+          "translation": "what"
+        },
+        {
+          "position": 6,
+          "arabic": "خَلَقَ",
+          "transliteration": "khalaqa",
+          "translation": "have created"
+        },
+        {
+          "position": 7,
+          "arabic": "ٱلَّذِينَ",
+          "transliteration": "alladhīna",
+          "translation": "those"
+        },
+        {
+          "position": 8,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "besides Him"
+        },
+        {
+          "position": 9,
+          "arabic": "دُونِهِۦ ۚ",
+          "transliteration": "dūnihi",
+          "translation": "besides Him"
+        },
+        {
+          "position": 10,
+          "arabic": "بَلِ",
+          "transliteration": "bali",
+          "translation": "Nay"
+        },
+        {
+          "position": 11,
+          "arabic": "ٱلظَّـٰلِمُونَ",
+          "transliteration": "l-ẓālimūna",
+          "translation": "the wrongdoers"
+        },
+        {
+          "position": 12,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "(are) in"
+        },
+        {
+          "position": 13,
+          "arabic": "ضَلَـٰلٍۢ",
+          "transliteration": "ḍalālin",
+          "translation": "error"
+        },
+        {
+          "position": 14,
+          "arabic": "مُّبِينٍۢ",
+          "transliteration": "mubīnin",
+          "translation": "clear"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَقَدْ",
+          "transliteration": "walaqad",
+          "translation": "And verily"
+        },
+        {
+          "position": 2,
+          "arabic": "ءَاتَيْنَا",
+          "transliteration": "ātaynā",
+          "translation": "We gave"
+        },
+        {
+          "position": 3,
+          "arabic": "لُقْمَـٰنَ",
+          "transliteration": "luq'māna",
+          "translation": "Luqman"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْحِكْمَةَ",
+          "transliteration": "l-ḥik'mata",
+          "translation": "the wisdom"
+        },
+        {
+          "position": 5,
+          "arabic": "أَنِ",
+          "transliteration": "ani",
+          "translation": "that"
+        },
+        {
+          "position": 6,
+          "arabic": "ٱشْكُرْ",
+          "transliteration": "ush'kur",
+          "translation": "Be grateful"
+        },
+        {
+          "position": 7,
+          "arabic": "لِلَّهِ ۚ",
+          "transliteration": "lillahi",
+          "translation": "to Allah"
+        },
+        {
+          "position": 8,
+          "arabic": "وَمَن",
+          "transliteration": "waman",
+          "translation": "And whoever"
+        },
+        {
+          "position": 9,
+          "arabic": "يَشْكُرْ",
+          "transliteration": "yashkur",
+          "translation": "(is) grateful"
+        },
+        {
+          "position": 10,
+          "arabic": "فَإِنَّمَا",
+          "transliteration": "fa-innamā",
+          "translation": "then only"
+        },
+        {
+          "position": 11,
+          "arabic": "يَشْكُرُ",
+          "transliteration": "yashkuru",
+          "translation": "he is grateful"
+        },
+        {
+          "position": 12,
+          "arabic": "لِنَفْسِهِۦ ۖ",
+          "transliteration": "linafsihi",
+          "translation": "for himself"
+        },
+        {
+          "position": 13,
+          "arabic": "وَمَن",
+          "transliteration": "waman",
+          "translation": "And whoever"
+        },
+        {
+          "position": 14,
+          "arabic": "كَفَرَ",
+          "transliteration": "kafara",
+          "translation": "(is) ungrateful"
+        },
+        {
+          "position": 15,
+          "arabic": "فَإِنَّ",
+          "transliteration": "fa-inna",
+          "translation": "then indeed"
+        },
+        {
+          "position": 16,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 17,
+          "arabic": "غَنِىٌّ",
+          "transliteration": "ghaniyyun",
+          "translation": "(is) Free of need"
+        },
+        {
+          "position": 18,
+          "arabic": "حَمِيدٌۭ",
+          "transliteration": "ḥamīdun",
+          "translation": "Praiseworthy"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَإِذْ",
+          "transliteration": "wa-idh",
+          "translation": "And when"
+        },
+        {
+          "position": 2,
+          "arabic": "قَالَ",
+          "transliteration": "qāla",
+          "translation": "said"
+        },
+        {
+          "position": 3,
+          "arabic": "لُقْمَـٰنُ",
+          "transliteration": "luq'mānu",
+          "translation": "Luqman"
+        },
+        {
+          "position": 4,
+          "arabic": "لِٱبْنِهِۦ",
+          "transliteration": "li-ib'nihi",
+          "translation": "to his son"
+        },
+        {
+          "position": 5,
+          "arabic": "وَهُوَ",
+          "transliteration": "wahuwa",
+          "translation": "while he"
+        },
+        {
+          "position": 6,
+          "arabic": "يَعِظُهُۥ",
+          "transliteration": "yaʿiẓuhu",
+          "translation": "(was) instructing him"
+        },
+        {
+          "position": 7,
+          "arabic": "يَـٰبُنَىَّ",
+          "transliteration": "yābunayya",
+          "translation": "O my son"
+        },
+        {
+          "position": 8,
+          "arabic": "لَا",
+          "transliteration": "lā",
+          "translation": "(Do) not"
+        },
+        {
+          "position": 9,
+          "arabic": "تُشْرِكْ",
+          "transliteration": "tush'rik",
+          "translation": "associate partners"
+        },
+        {
+          "position": 10,
+          "arabic": "بِٱللَّهِ ۖ",
+          "transliteration": "bil-lahi",
+          "translation": "with Allah"
+        },
+        {
+          "position": 11,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 12,
+          "arabic": "ٱلشِّرْكَ",
+          "transliteration": "l-shir'ka",
+          "translation": "associating partners"
+        },
+        {
+          "position": 13,
+          "arabic": "لَظُلْمٌ",
+          "transliteration": "laẓul'mun",
+          "translation": "(is) surely an injustice"
+        },
+        {
+          "position": 14,
+          "arabic": "عَظِيمٌۭ",
+          "transliteration": "ʿaẓīmun",
+          "translation": "great"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَوَصَّيْنَا",
+          "transliteration": "wawaṣṣaynā",
+          "translation": "And We have enjoined"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْإِنسَـٰنَ",
+          "transliteration": "l-insāna",
+          "translation": "(upon) man"
+        },
+        {
+          "position": 3,
+          "arabic": "بِوَٰلِدَيْهِ",
+          "transliteration": "biwālidayhi",
+          "translation": "for his parents "
+        },
+        {
+          "position": 4,
+          "arabic": "حَمَلَتْهُ",
+          "transliteration": "ḥamalathu",
+          "translation": "carried him"
+        },
+        {
+          "position": 5,
+          "arabic": "أُمُّهُۥ",
+          "transliteration": "ummuhu",
+          "translation": "his mother"
+        },
+        {
+          "position": 6,
+          "arabic": "وَهْنًا",
+          "transliteration": "wahnan",
+          "translation": "(in) weakness"
+        },
+        {
+          "position": 7,
+          "arabic": "عَلَىٰ",
+          "transliteration": "ʿalā",
+          "translation": "upon"
+        },
+        {
+          "position": 8,
+          "arabic": "وَهْنٍۢ",
+          "transliteration": "wahnin",
+          "translation": "weakness"
+        },
+        {
+          "position": 9,
+          "arabic": "وَفِصَـٰلُهُۥ",
+          "transliteration": "wafiṣāluhu",
+          "translation": "and his weaning"
+        },
+        {
+          "position": 10,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "(is) in"
+        },
+        {
+          "position": 11,
+          "arabic": "عَامَيْنِ",
+          "transliteration": "ʿāmayni",
+          "translation": "two years"
+        },
+        {
+          "position": 12,
+          "arabic": "أَنِ",
+          "transliteration": "ani",
+          "translation": "that"
+        },
+        {
+          "position": 13,
+          "arabic": "ٱشْكُرْ",
+          "transliteration": "ush'kur",
+          "translation": "Be grateful"
+        },
+        {
+          "position": 14,
+          "arabic": "لِى",
+          "transliteration": "lī",
+          "translation": "to Me"
+        },
+        {
+          "position": 15,
+          "arabic": "وَلِوَٰلِدَيْكَ",
+          "transliteration": "waliwālidayka",
+          "translation": "and to your parents"
+        },
+        {
+          "position": 16,
+          "arabic": "إِلَىَّ",
+          "transliteration": "ilayya",
+          "translation": "towards Me"
+        },
+        {
+          "position": 17,
+          "arabic": "ٱلْمَصِيرُ",
+          "transliteration": "l-maṣīru",
+          "translation": "(is) the destination"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَإِن",
+          "transliteration": "wa-in",
+          "translation": "But if"
+        },
+        {
+          "position": 2,
+          "arabic": "جَـٰهَدَاكَ",
+          "transliteration": "jāhadāka",
+          "translation": "they strive against you"
+        },
+        {
+          "position": 3,
+          "arabic": "عَلَىٰٓ",
+          "transliteration": "ʿalā",
+          "translation": "on"
+        },
+        {
+          "position": 4,
+          "arabic": "أَن",
+          "transliteration": "an",
+          "translation": "that"
+        },
+        {
+          "position": 5,
+          "arabic": "تُشْرِكَ",
+          "transliteration": "tush'rika",
+          "translation": "you associate partners"
+        },
+        {
+          "position": 6,
+          "arabic": "بِى",
+          "transliteration": "bī",
+          "translation": "with Me"
+        },
+        {
+          "position": 7,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 8,
+          "arabic": "لَيْسَ",
+          "transliteration": "laysa",
+          "translation": "not"
+        },
+        {
+          "position": 9,
+          "arabic": "لَكَ",
+          "transliteration": "laka",
+          "translation": "you have"
+        },
+        {
+          "position": 10,
+          "arabic": "بِهِۦ",
+          "transliteration": "bihi",
+          "translation": "of it"
+        },
+        {
+          "position": 11,
+          "arabic": "عِلْمٌۭ",
+          "transliteration": "ʿil'mun",
+          "translation": "any knowledge"
+        },
+        {
+          "position": 12,
+          "arabic": "فَلَا",
+          "transliteration": "falā",
+          "translation": "then (do) not"
+        },
+        {
+          "position": 13,
+          "arabic": "تُطِعْهُمَا ۖ",
+          "transliteration": "tuṭiʿ'humā",
+          "translation": "obey both of them"
+        },
+        {
+          "position": 14,
+          "arabic": "وَصَاحِبْهُمَا",
+          "transliteration": "waṣāḥib'humā",
+          "translation": "But accompany them"
+        },
+        {
+          "position": 15,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 16,
+          "arabic": "ٱلدُّنْيَا",
+          "transliteration": "l-dun'yā",
+          "translation": "the world"
+        },
+        {
+          "position": 17,
+          "arabic": "مَعْرُوفًۭا ۖ",
+          "transliteration": "maʿrūfan",
+          "translation": "(with) kindness"
+        },
+        {
+          "position": 18,
+          "arabic": "وَٱتَّبِعْ",
+          "transliteration": "wa-ittabiʿ",
+          "translation": "and follow"
+        },
+        {
+          "position": 19,
+          "arabic": "سَبِيلَ",
+          "transliteration": "sabīla",
+          "translation": "(the) path"
+        },
+        {
+          "position": 20,
+          "arabic": "مَنْ",
+          "transliteration": "man",
+          "translation": "(of him) who"
+        },
+        {
+          "position": 21,
+          "arabic": "أَنَابَ",
+          "transliteration": "anāba",
+          "translation": "turns"
+        },
+        {
+          "position": 22,
+          "arabic": "إِلَىَّ ۚ",
+          "transliteration": "ilayya",
+          "translation": "to Me"
+        },
+        {
+          "position": 23,
+          "arabic": "ثُمَّ",
+          "transliteration": "thumma",
+          "translation": "Then"
+        },
+        {
+          "position": 24,
+          "arabic": "إِلَىَّ",
+          "transliteration": "ilayya",
+          "translation": "towards Me"
+        },
+        {
+          "position": 25,
+          "arabic": "مَرْجِعُكُمْ",
+          "transliteration": "marjiʿukum",
+          "translation": "(is) your return"
+        },
+        {
+          "position": 26,
+          "arabic": "فَأُنَبِّئُكُم",
+          "transliteration": "fa-unabbi-ukum",
+          "translation": "then I will inform you"
+        },
+        {
+          "position": 27,
+          "arabic": "بِمَا",
+          "transliteration": "bimā",
+          "translation": "of what"
+        },
+        {
+          "position": 28,
+          "arabic": "كُنتُمْ",
+          "transliteration": "kuntum",
+          "translation": "you used (to)"
+        },
+        {
+          "position": 29,
+          "arabic": "تَعْمَلُونَ",
+          "transliteration": "taʿmalūna",
+          "translation": "do"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَـٰبُنَىَّ",
+          "transliteration": "yābunayya",
+          "translation": "O my son"
+        },
+        {
+          "position": 2,
+          "arabic": "إِنَّهَآ",
+          "transliteration": "innahā",
+          "translation": "Indeed it"
+        },
+        {
+          "position": 3,
+          "arabic": "إِن",
+          "transliteration": "in",
+          "translation": "if"
+        },
+        {
+          "position": 4,
+          "arabic": "تَكُ",
+          "transliteration": "taku",
+          "translation": "it be"
+        },
+        {
+          "position": 5,
+          "arabic": "مِثْقَالَ",
+          "transliteration": "mith'qāla",
+          "translation": "(the) weight"
+        },
+        {
+          "position": 6,
+          "arabic": "حَبَّةٍۢ",
+          "transliteration": "ḥabbatin",
+          "translation": "(of) a grain"
+        },
+        {
+          "position": 7,
+          "arabic": "مِّنْ",
+          "transliteration": "min",
+          "translation": "of"
+        },
+        {
+          "position": 8,
+          "arabic": "خَرْدَلٍۢ",
+          "transliteration": "khardalin",
+          "translation": "a mustard seed"
+        },
+        {
+          "position": 9,
+          "arabic": "فَتَكُن",
+          "transliteration": "fatakun",
+          "translation": "and it be"
+        },
+        {
+          "position": 10,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 11,
+          "arabic": "صَخْرَةٍ",
+          "transliteration": "ṣakhratin",
+          "translation": "a rock"
+        },
+        {
+          "position": 12,
+          "arabic": "أَوْ",
+          "transliteration": "aw",
+          "translation": "or"
+        },
+        {
+          "position": 13,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 14,
+          "arabic": "ٱلسَّمَـٰوَٰتِ",
+          "transliteration": "l-samāwāti",
+          "translation": "the heavens"
+        },
+        {
+          "position": 15,
+          "arabic": "أَوْ",
+          "transliteration": "aw",
+          "translation": "or"
+        },
+        {
+          "position": 16,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 17,
+          "arabic": "ٱلْأَرْضِ",
+          "transliteration": "l-arḍi",
+          "translation": "the earth"
+        },
+        {
+          "position": 18,
+          "arabic": "يَأْتِ",
+          "transliteration": "yati",
+          "translation": "Allah will bring it forth"
+        },
+        {
+          "position": 19,
+          "arabic": "بِهَا",
+          "transliteration": "bihā",
+          "translation": "Allah will bring it forth"
+        },
+        {
+          "position": 20,
+          "arabic": "ٱللَّهُ ۚ",
+          "transliteration": "l-lahu",
+          "translation": "Allah will bring it forth"
+        },
+        {
+          "position": 21,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 22,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 23,
+          "arabic": "لَطِيفٌ",
+          "transliteration": "laṭīfun",
+          "translation": "(is) All-Subtle"
+        },
+        {
+          "position": 24,
+          "arabic": "خَبِيرٌۭ",
+          "transliteration": "khabīrun",
+          "translation": "All-Aware"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَـٰبُنَىَّ",
+          "transliteration": "yābunayya",
+          "translation": "O my son"
+        },
+        {
+          "position": 2,
+          "arabic": "أَقِمِ",
+          "transliteration": "aqimi",
+          "translation": "Establish"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلصَّلَوٰةَ",
+          "transliteration": "l-ṣalata",
+          "translation": "the prayer"
+        },
+        {
+          "position": 4,
+          "arabic": "وَأْمُرْ",
+          "transliteration": "wamur",
+          "translation": "and enjoin"
+        },
+        {
+          "position": 5,
+          "arabic": "بِٱلْمَعْرُوفِ",
+          "transliteration": "bil-maʿrūfi",
+          "translation": "[with] the right"
+        },
+        {
+          "position": 6,
+          "arabic": "وَٱنْهَ",
+          "transliteration": "wa-in'ha",
+          "translation": "and forbid"
+        },
+        {
+          "position": 7,
+          "arabic": "عَنِ",
+          "transliteration": "ʿani",
+          "translation": "from"
+        },
+        {
+          "position": 8,
+          "arabic": "ٱلْمُنكَرِ",
+          "transliteration": "l-munkari",
+          "translation": "the wrong"
+        },
+        {
+          "position": 9,
+          "arabic": "وَٱصْبِرْ",
+          "transliteration": "wa-iṣ'bir",
+          "translation": "and be patient"
+        },
+        {
+          "position": 10,
+          "arabic": "عَلَىٰ",
+          "transliteration": "ʿalā",
+          "translation": "over"
+        },
+        {
+          "position": 11,
+          "arabic": "مَآ",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 12,
+          "arabic": "أَصَابَكَ ۖ",
+          "transliteration": "aṣābaka",
+          "translation": "befalls you"
+        },
+        {
+          "position": 13,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 14,
+          "arabic": "ذَٰلِكَ",
+          "transliteration": "dhālika",
+          "translation": "that"
+        },
+        {
+          "position": 15,
+          "arabic": "مِنْ",
+          "transliteration": "min",
+          "translation": "(is) of"
+        },
+        {
+          "position": 16,
+          "arabic": "عَزْمِ",
+          "transliteration": "ʿazmi",
+          "translation": "the matters requiring determination"
+        },
+        {
+          "position": 17,
+          "arabic": "ٱلْأُمُورِ",
+          "transliteration": "l-umūri",
+          "translation": "the matters requiring determination"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "And (do) not"
+        },
+        {
+          "position": 2,
+          "arabic": "تُصَعِّرْ",
+          "transliteration": "tuṣaʿʿir",
+          "translation": "turn"
+        },
+        {
+          "position": 3,
+          "arabic": "خَدَّكَ",
+          "transliteration": "khaddaka",
+          "translation": "your cheek"
+        },
+        {
+          "position": 4,
+          "arabic": "لِلنَّاسِ",
+          "transliteration": "lilnnāsi",
+          "translation": "from men"
+        },
+        {
+          "position": 5,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "and (do) not"
+        },
+        {
+          "position": 6,
+          "arabic": "تَمْشِ",
+          "transliteration": "tamshi",
+          "translation": "walk"
+        },
+        {
+          "position": 7,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 8,
+          "arabic": "ٱلْأَرْضِ",
+          "transliteration": "l-arḍi",
+          "translation": "the earth"
+        },
+        {
+          "position": 9,
+          "arabic": "مَرَحًا ۖ",
+          "transliteration": "maraḥan",
+          "translation": "exultantly"
+        },
+        {
+          "position": 10,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 11,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 12,
+          "arabic": "لَا",
+          "transliteration": "lā",
+          "translation": "(does) not"
+        },
+        {
+          "position": 13,
+          "arabic": "يُحِبُّ",
+          "transliteration": "yuḥibbu",
+          "translation": "like"
+        },
+        {
+          "position": 14,
+          "arabic": "كُلَّ",
+          "transliteration": "kulla",
+          "translation": "every"
+        },
+        {
+          "position": 15,
+          "arabic": "مُخْتَالٍۢ",
+          "transliteration": "mukh'tālin",
+          "translation": "self-conceited"
+        },
+        {
+          "position": 16,
+          "arabic": "فَخُورٍۢ",
+          "transliteration": "fakhūrin",
+          "translation": "boaster"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱقْصِدْ",
+          "transliteration": "wa-iq'ṣid",
+          "translation": "And be moderate"
+        },
+        {
+          "position": 2,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 3,
+          "arabic": "مَشْيِكَ",
+          "transliteration": "mashyika",
+          "translation": "your pace"
+        },
+        {
+          "position": 4,
+          "arabic": "وَٱغْضُضْ",
+          "transliteration": "wa-ugh'ḍuḍ",
+          "translation": "and lower"
+        },
+        {
+          "position": 5,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "[of]"
+        },
+        {
+          "position": 6,
+          "arabic": "صَوْتِكَ ۚ",
+          "transliteration": "ṣawtika",
+          "translation": "your voice"
+        },
+        {
+          "position": 7,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 8,
+          "arabic": "أَنكَرَ",
+          "transliteration": "ankara",
+          "translation": "(the) harshest"
+        },
+        {
+          "position": 9,
+          "arabic": "ٱلْأَصْوَٰتِ",
+          "transliteration": "l-aṣwāti",
+          "translation": "(of all) sounds"
+        },
+        {
+          "position": 10,
+          "arabic": "لَصَوْتُ",
+          "transliteration": "laṣawtu",
+          "translation": "(is) surely (the) voice"
+        },
+        {
+          "position": 11,
+          "arabic": "ٱلْحَمِيرِ",
+          "transliteration": "l-ḥamīri",
+          "translation": "(of) the donkeys"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَلَمْ",
+          "transliteration": "alam",
+          "translation": "Do not"
+        },
+        {
+          "position": 2,
+          "arabic": "تَرَوْا۟",
+          "transliteration": "taraw",
+          "translation": "you see"
+        },
+        {
+          "position": 3,
+          "arabic": "أَنَّ",
+          "transliteration": "anna",
+          "translation": "that"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 5,
+          "arabic": "سَخَّرَ",
+          "transliteration": "sakhara",
+          "translation": "has subjected"
+        },
+        {
+          "position": 6,
+          "arabic": "لَكُم",
+          "transliteration": "lakum",
+          "translation": "to you"
+        },
+        {
+          "position": 7,
+          "arabic": "مَّا",
+          "transliteration": "mā",
+          "translation": "whatever"
+        },
+        {
+          "position": 8,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "(is) in"
+        },
+        {
+          "position": 9,
+          "arabic": "ٱلسَّمَـٰوَٰتِ",
+          "transliteration": "l-samāwāti",
+          "translation": "the heavens"
+        },
+        {
+          "position": 10,
+          "arabic": "وَمَا",
+          "transliteration": "wamā",
+          "translation": "and whatever"
+        },
+        {
+          "position": 11,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "(is) in"
+        },
+        {
+          "position": 12,
+          "arabic": "ٱلْأَرْضِ",
+          "transliteration": "l-arḍi",
+          "translation": "the earth"
+        },
+        {
+          "position": 13,
+          "arabic": "وَأَسْبَغَ",
+          "transliteration": "wa-asbagha",
+          "translation": "and amply bestowed"
+        },
+        {
+          "position": 14,
+          "arabic": "عَلَيْكُمْ",
+          "transliteration": "ʿalaykum",
+          "translation": "upon you"
+        },
+        {
+          "position": 15,
+          "arabic": "نِعَمَهُۥ",
+          "transliteration": "niʿamahu",
+          "translation": "His Bounties"
+        },
+        {
+          "position": 16,
+          "arabic": "ظَـٰهِرَةًۭ",
+          "transliteration": "ẓāhiratan",
+          "translation": "apparent"
+        },
+        {
+          "position": 17,
+          "arabic": "وَبَاطِنَةًۭ ۗ",
+          "transliteration": "wabāṭinatan",
+          "translation": "and hidden"
+        },
+        {
+          "position": 18,
+          "arabic": "وَمِنَ",
+          "transliteration": "wamina",
+          "translation": "But of"
+        },
+        {
+          "position": 19,
+          "arabic": "ٱلنَّاسِ",
+          "transliteration": "l-nāsi",
+          "translation": "the people"
+        },
+        {
+          "position": 20,
+          "arabic": "مَن",
+          "transliteration": "man",
+          "translation": "(is he) who"
+        },
+        {
+          "position": 21,
+          "arabic": "يُجَـٰدِلُ",
+          "transliteration": "yujādilu",
+          "translation": "disputes"
+        },
+        {
+          "position": 22,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "about"
+        },
+        {
+          "position": 23,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "Allah"
+        },
+        {
+          "position": 24,
+          "arabic": "بِغَيْرِ",
+          "transliteration": "bighayri",
+          "translation": "without"
+        },
+        {
+          "position": 25,
+          "arabic": "عِلْمٍۢ",
+          "transliteration": "ʿil'min",
+          "translation": "knowledge"
+        },
+        {
+          "position": 26,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "and not"
+        },
+        {
+          "position": 27,
+          "arabic": "هُدًۭى",
+          "transliteration": "hudan",
+          "translation": "guidance"
+        },
+        {
+          "position": 28,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "and not"
+        },
+        {
+          "position": 29,
+          "arabic": "كِتَـٰبٍۢ",
+          "transliteration": "kitābin",
+          "translation": "a book"
+        },
+        {
+          "position": 30,
+          "arabic": "مُّنِيرٍۢ",
+          "transliteration": "munīrin",
+          "translation": "enlightening"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَإِذَا",
+          "transliteration": "wa-idhā",
+          "translation": "And when"
+        },
+        {
+          "position": 2,
+          "arabic": "قِيلَ",
+          "transliteration": "qīla",
+          "translation": "it is said"
+        },
+        {
+          "position": 3,
+          "arabic": "لَهُمُ",
+          "transliteration": "lahumu",
+          "translation": "to them"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱتَّبِعُوا۟",
+          "transliteration": "ittabiʿū",
+          "translation": "Follow"
+        },
+        {
+          "position": 5,
+          "arabic": "مَآ",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 6,
+          "arabic": "أَنزَلَ",
+          "transliteration": "anzala",
+          "translation": "Allah (has) revealed"
+        },
+        {
+          "position": 7,
+          "arabic": "ٱللَّهُ",
+          "transliteration": "l-lahu",
+          "translation": "Allah (has) revealed"
+        },
+        {
+          "position": 8,
+          "arabic": "قَالُوا۟",
+          "transliteration": "qālū",
+          "translation": "they say"
+        },
+        {
+          "position": 9,
+          "arabic": "بَلْ",
+          "transliteration": "bal",
+          "translation": "Nay"
+        },
+        {
+          "position": 10,
+          "arabic": "نَتَّبِعُ",
+          "transliteration": "nattabiʿu",
+          "translation": "we will follow"
+        },
+        {
+          "position": 11,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 12,
+          "arabic": "وَجَدْنَا",
+          "transliteration": "wajadnā",
+          "translation": "we found"
+        },
+        {
+          "position": 13,
+          "arabic": "عَلَيْهِ",
+          "transliteration": "ʿalayhi",
+          "translation": "on it"
+        },
+        {
+          "position": 14,
+          "arabic": "ءَابَآءَنَآ ۚ",
+          "transliteration": "ābāanā",
+          "translation": "our forefathers"
+        },
+        {
+          "position": 15,
+          "arabic": "أَوَلَوْ",
+          "transliteration": "awalaw",
+          "translation": "Even if"
+        },
+        {
+          "position": 16,
+          "arabic": "كَانَ",
+          "transliteration": "kāna",
+          "translation": "Shaitaan was"
+        },
+        {
+          "position": 17,
+          "arabic": "ٱلشَّيْطَـٰنُ",
+          "transliteration": "l-shayṭānu",
+          "translation": "Shaitaan was"
+        },
+        {
+          "position": 18,
+          "arabic": "يَدْعُوهُمْ",
+          "transliteration": "yadʿūhum",
+          "translation": "(to) call them"
+        },
+        {
+          "position": 19,
+          "arabic": "إِلَىٰ",
+          "transliteration": "ilā",
+          "translation": "to"
+        },
+        {
+          "position": 20,
+          "arabic": "عَذَابِ",
+          "transliteration": "ʿadhābi",
+          "translation": "(the) punishment"
+        },
+        {
+          "position": 21,
+          "arabic": "ٱلسَّعِيرِ",
+          "transliteration": "l-saʿīri",
+          "translation": "(of) the Blaze"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "۞ وَمَن",
+          "transliteration": "waman",
+          "translation": "And whoever"
+        },
+        {
+          "position": 2,
+          "arabic": "يُسْلِمْ",
+          "transliteration": "yus'lim",
+          "translation": "submits"
+        },
+        {
+          "position": 3,
+          "arabic": "وَجْهَهُۥٓ",
+          "transliteration": "wajhahu",
+          "translation": "his face"
+        },
+        {
+          "position": 4,
+          "arabic": "إِلَى",
+          "transliteration": "ilā",
+          "translation": "to"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "Allah"
+        },
+        {
+          "position": 6,
+          "arabic": "وَهُوَ",
+          "transliteration": "wahuwa",
+          "translation": "while he"
+        },
+        {
+          "position": 7,
+          "arabic": "مُحْسِنٌۭ",
+          "transliteration": "muḥ'sinun",
+          "translation": "(is) a good-doer"
+        },
+        {
+          "position": 8,
+          "arabic": "فَقَدِ",
+          "transliteration": "faqadi",
+          "translation": "then indeed"
+        },
+        {
+          "position": 9,
+          "arabic": "ٱسْتَمْسَكَ",
+          "transliteration": "is'tamsaka",
+          "translation": "he has grasped"
+        },
+        {
+          "position": 10,
+          "arabic": "بِٱلْعُرْوَةِ",
+          "transliteration": "bil-ʿur'wati",
+          "translation": "the handhold"
+        },
+        {
+          "position": 11,
+          "arabic": "ٱلْوُثْقَىٰ ۗ",
+          "transliteration": "l-wuth'qā",
+          "translation": "the most trustworthy"
+        },
+        {
+          "position": 12,
+          "arabic": "وَإِلَى",
+          "transliteration": "wa-ilā",
+          "translation": "And to"
+        },
+        {
+          "position": 13,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "Allah"
+        },
+        {
+          "position": 14,
+          "arabic": "عَـٰقِبَةُ",
+          "transliteration": "ʿāqibatu",
+          "translation": "(is the) end"
+        },
+        {
+          "position": 15,
+          "arabic": "ٱلْأُمُورِ",
+          "transliteration": "l-umūri",
+          "translation": "(of) the matters"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمَن",
+          "transliteration": "waman",
+          "translation": "And whoever"
+        },
+        {
+          "position": 2,
+          "arabic": "كَفَرَ",
+          "transliteration": "kafara",
+          "translation": "disbelieves"
+        },
+        {
+          "position": 3,
+          "arabic": "فَلَا",
+          "transliteration": "falā",
+          "translation": "let not"
+        },
+        {
+          "position": 4,
+          "arabic": "يَحْزُنكَ",
+          "transliteration": "yaḥzunka",
+          "translation": "grieve you"
+        },
+        {
+          "position": 5,
+          "arabic": "كُفْرُهُۥٓ ۚ",
+          "transliteration": "kuf'ruhu",
+          "translation": "his disbelief"
+        },
+        {
+          "position": 6,
+          "arabic": "إِلَيْنَا",
+          "transliteration": "ilaynā",
+          "translation": "To Us"
+        },
+        {
+          "position": 7,
+          "arabic": "مَرْجِعُهُمْ",
+          "transliteration": "marjiʿuhum",
+          "translation": "(is) their return"
+        },
+        {
+          "position": 8,
+          "arabic": "فَنُنَبِّئُهُم",
+          "transliteration": "fanunabbi-uhum",
+          "translation": "then We will inform them"
+        },
+        {
+          "position": 9,
+          "arabic": "بِمَا",
+          "transliteration": "bimā",
+          "translation": "of what"
+        },
+        {
+          "position": 10,
+          "arabic": "عَمِلُوٓا۟ ۚ",
+          "transliteration": "ʿamilū",
+          "translation": "they did"
+        },
+        {
+          "position": 11,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 12,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 13,
+          "arabic": "عَلِيمٌۢ",
+          "transliteration": "ʿalīmun",
+          "translation": "(is) the All-Knower"
+        },
+        {
+          "position": 14,
+          "arabic": "بِذَاتِ",
+          "transliteration": "bidhāti",
+          "translation": "of what"
+        },
+        {
+          "position": 15,
+          "arabic": "ٱلصُّدُورِ",
+          "transliteration": "l-ṣudūri",
+          "translation": "(is in) the breasts"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "نُمَتِّعُهُمْ",
+          "transliteration": "numattiʿuhum",
+          "translation": "We grant them enjoyment"
+        },
+        {
+          "position": 2,
+          "arabic": "قَلِيلًۭا",
+          "transliteration": "qalīlan",
+          "translation": "(for) a little"
+        },
+        {
+          "position": 3,
+          "arabic": "ثُمَّ",
+          "transliteration": "thumma",
+          "translation": "then"
+        },
+        {
+          "position": 4,
+          "arabic": "نَضْطَرُّهُمْ",
+          "transliteration": "naḍṭarruhum",
+          "translation": "We will force them"
+        },
+        {
+          "position": 5,
+          "arabic": "إِلَىٰ",
+          "transliteration": "ilā",
+          "translation": "to"
+        },
+        {
+          "position": 6,
+          "arabic": "عَذَابٍ",
+          "transliteration": "ʿadhābin",
+          "translation": "a punishment"
+        },
+        {
+          "position": 7,
+          "arabic": "غَلِيظٍۢ",
+          "transliteration": "ghalīẓin",
+          "translation": "severe"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَئِن",
+          "transliteration": "wala-in",
+          "translation": "And if"
+        },
+        {
+          "position": 2,
+          "arabic": "سَأَلْتَهُم",
+          "transliteration": "sa-altahum",
+          "translation": "you ask them"
+        },
+        {
+          "position": 3,
+          "arabic": "مَّنْ",
+          "transliteration": "man",
+          "translation": "Who"
+        },
+        {
+          "position": 4,
+          "arabic": "خَلَقَ",
+          "transliteration": "khalaqa",
+          "translation": "created"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلسَّمَـٰوَٰتِ",
+          "transliteration": "l-samāwāti",
+          "translation": "the heavens"
+        },
+        {
+          "position": 6,
+          "arabic": "وَٱلْأَرْضَ",
+          "transliteration": "wal-arḍa",
+          "translation": "and the earth"
+        },
+        {
+          "position": 7,
+          "arabic": "لَيَقُولُنَّ",
+          "transliteration": "layaqūlunna",
+          "translation": "They will surely say"
+        },
+        {
+          "position": 8,
+          "arabic": "ٱللَّهُ ۚ",
+          "transliteration": "l-lahu",
+          "translation": "Allah"
+        },
+        {
+          "position": 9,
+          "arabic": "قُلِ",
+          "transliteration": "quli",
+          "translation": "Say"
+        },
+        {
+          "position": 10,
+          "arabic": "ٱلْحَمْدُ",
+          "transliteration": "l-ḥamdu",
+          "translation": "All praises"
+        },
+        {
+          "position": 11,
+          "arabic": "لِلَّهِ ۚ",
+          "transliteration": "lillahi",
+          "translation": "(are) for Allah"
+        },
+        {
+          "position": 12,
+          "arabic": "بَلْ",
+          "transliteration": "bal",
+          "translation": "But"
+        },
+        {
+          "position": 13,
+          "arabic": "أَكْثَرُهُمْ",
+          "transliteration": "aktharuhum",
+          "translation": "most of them"
+        },
+        {
+          "position": 14,
+          "arabic": "لَا",
+          "transliteration": "lā",
+          "translation": "(do) not"
+        },
+        {
+          "position": 15,
+          "arabic": "يَعْلَمُونَ",
+          "transliteration": "yaʿlamūna",
+          "translation": "know"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "لِلَّهِ",
+          "transliteration": "lillahi",
+          "translation": "To Allah (belongs)"
+        },
+        {
+          "position": 2,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "whatever"
+        },
+        {
+          "position": 3,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "(is) in"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلسَّمَـٰوَٰتِ",
+          "transliteration": "l-samāwāti",
+          "translation": "the heavens"
+        },
+        {
+          "position": 5,
+          "arabic": "وَٱلْأَرْضِ ۚ",
+          "transliteration": "wal-arḍi",
+          "translation": "and the earth"
+        },
+        {
+          "position": 6,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 7,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 8,
+          "arabic": "هُوَ",
+          "transliteration": "huwa",
+          "translation": "He"
+        },
+        {
+          "position": 9,
+          "arabic": "ٱلْغَنِىُّ",
+          "transliteration": "l-ghaniyu",
+          "translation": "(is) Free of need"
+        },
+        {
+          "position": 10,
+          "arabic": "ٱلْحَمِيدُ",
+          "transliteration": "l-ḥamīdu",
+          "translation": "the Praiseworthy"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَوْ",
+          "transliteration": "walaw",
+          "translation": "And if"
+        },
+        {
+          "position": 2,
+          "arabic": "أَنَّمَا",
+          "transliteration": "annamā",
+          "translation": "whatever"
+        },
+        {
+          "position": 3,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "(is) in"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْأَرْضِ",
+          "transliteration": "l-arḍi",
+          "translation": "the earth"
+        },
+        {
+          "position": 5,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "of"
+        },
+        {
+          "position": 6,
+          "arabic": "شَجَرَةٍ",
+          "transliteration": "shajaratin",
+          "translation": "(the) trees"
+        },
+        {
+          "position": 7,
+          "arabic": "أَقْلَـٰمٌۭ",
+          "transliteration": "aqlāmun",
+          "translation": "(were) pens"
+        },
+        {
+          "position": 8,
+          "arabic": "وَٱلْبَحْرُ",
+          "transliteration": "wal-baḥru",
+          "translation": "and the sea"
+        },
+        {
+          "position": 9,
+          "arabic": "يَمُدُّهُۥ",
+          "transliteration": "yamudduhu",
+          "translation": "(to) add to it"
+        },
+        {
+          "position": 10,
+          "arabic": "مِنۢ",
+          "transliteration": "min",
+          "translation": "after it"
+        },
+        {
+          "position": 11,
+          "arabic": "بَعْدِهِۦ",
+          "transliteration": "baʿdihi",
+          "translation": "after it"
+        },
+        {
+          "position": 12,
+          "arabic": "سَبْعَةُ",
+          "transliteration": "sabʿatu",
+          "translation": "seven"
+        },
+        {
+          "position": 13,
+          "arabic": "أَبْحُرٍۢ",
+          "transliteration": "abḥurin",
+          "translation": "seas"
+        },
+        {
+          "position": 14,
+          "arabic": "مَّا",
+          "transliteration": "mā",
+          "translation": "not"
+        },
+        {
+          "position": 15,
+          "arabic": "نَفِدَتْ",
+          "transliteration": "nafidat",
+          "translation": "would be exhausted"
+        },
+        {
+          "position": 16,
+          "arabic": "كَلِمَـٰتُ",
+          "transliteration": "kalimātu",
+          "translation": "(the) Words"
+        },
+        {
+          "position": 17,
+          "arabic": "ٱللَّهِ ۗ",
+          "transliteration": "l-lahi",
+          "translation": "(of) Allah"
+        },
+        {
+          "position": 18,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 19,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 20,
+          "arabic": "عَزِيزٌ",
+          "transliteration": "ʿazīzun",
+          "translation": "(is) All-Mighty"
+        },
+        {
+          "position": 21,
+          "arabic": "حَكِيمٌۭ",
+          "transliteration": "ḥakīmun",
+          "translation": "All-Wise"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مَّا",
+          "transliteration": "mā",
+          "translation": "Not"
+        },
+        {
+          "position": 2,
+          "arabic": "خَلْقُكُمْ",
+          "transliteration": "khalqukum",
+          "translation": "(is) your creation"
+        },
+        {
+          "position": 3,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "and not"
+        },
+        {
+          "position": 4,
+          "arabic": "بَعْثُكُمْ",
+          "transliteration": "baʿthukum",
+          "translation": "your resurrection"
+        },
+        {
+          "position": 5,
+          "arabic": "إِلَّا",
+          "transliteration": "illā",
+          "translation": "but"
+        },
+        {
+          "position": 6,
+          "arabic": "كَنَفْسٍۢ",
+          "transliteration": "kanafsin",
+          "translation": "as a soul"
+        },
+        {
+          "position": 7,
+          "arabic": "وَٰحِدَةٍ ۗ",
+          "transliteration": "wāḥidatin",
+          "translation": "single"
+        },
+        {
+          "position": 8,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 9,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 10,
+          "arabic": "سَمِيعٌۢ",
+          "transliteration": "samīʿun",
+          "translation": "(is) All-Hearer"
+        },
+        {
+          "position": 11,
+          "arabic": "بَصِيرٌ",
+          "transliteration": "baṣīrun",
+          "translation": "All-Seer"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَلَمْ",
+          "transliteration": "alam",
+          "translation": "Do not"
+        },
+        {
+          "position": 2,
+          "arabic": "تَرَ",
+          "transliteration": "tara",
+          "translation": "you see"
+        },
+        {
+          "position": 3,
+          "arabic": "أَنَّ",
+          "transliteration": "anna",
+          "translation": "that"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 5,
+          "arabic": "يُولِجُ",
+          "transliteration": "yūliju",
+          "translation": "causes to enter"
+        },
+        {
+          "position": 6,
+          "arabic": "ٱلَّيْلَ",
+          "transliteration": "al-layla",
+          "translation": "the night"
+        },
+        {
+          "position": 7,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "into"
+        },
+        {
+          "position": 8,
+          "arabic": "ٱلنَّهَارِ",
+          "transliteration": "l-nahāri",
+          "translation": "the day"
+        },
+        {
+          "position": 9,
+          "arabic": "وَيُولِجُ",
+          "transliteration": "wayūliju",
+          "translation": "and causes to enter"
+        },
+        {
+          "position": 10,
+          "arabic": "ٱلنَّهَارَ",
+          "transliteration": "l-nahāra",
+          "translation": "the day"
+        },
+        {
+          "position": 11,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "into"
+        },
+        {
+          "position": 12,
+          "arabic": "ٱلَّيْلِ",
+          "transliteration": "al-layli",
+          "translation": "the night"
+        },
+        {
+          "position": 13,
+          "arabic": "وَسَخَّرَ",
+          "transliteration": "wasakhara",
+          "translation": "and has subjected"
+        },
+        {
+          "position": 14,
+          "arabic": "ٱلشَّمْسَ",
+          "transliteration": "l-shamsa",
+          "translation": "the sun"
+        },
+        {
+          "position": 15,
+          "arabic": "وَٱلْقَمَرَ",
+          "transliteration": "wal-qamara",
+          "translation": "and the moon"
+        },
+        {
+          "position": 16,
+          "arabic": "كُلٌّۭ",
+          "transliteration": "kullun",
+          "translation": "each"
+        },
+        {
+          "position": 17,
+          "arabic": "يَجْرِىٓ",
+          "transliteration": "yajrī",
+          "translation": "moving"
+        },
+        {
+          "position": 18,
+          "arabic": "إِلَىٰٓ",
+          "transliteration": "ilā",
+          "translation": "for"
+        },
+        {
+          "position": 19,
+          "arabic": "أَجَلٍۢ",
+          "transliteration": "ajalin",
+          "translation": "a term"
+        },
+        {
+          "position": 20,
+          "arabic": "مُّسَمًّۭى",
+          "transliteration": "musamman",
+          "translation": "appointed"
+        },
+        {
+          "position": 21,
+          "arabic": "وَأَنَّ",
+          "transliteration": "wa-anna",
+          "translation": "and that"
+        },
+        {
+          "position": 22,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 23,
+          "arabic": "بِمَا",
+          "transliteration": "bimā",
+          "translation": "of what"
+        },
+        {
+          "position": 24,
+          "arabic": "تَعْمَلُونَ",
+          "transliteration": "taʿmalūna",
+          "translation": "you do"
+        },
+        {
+          "position": 25,
+          "arabic": "خَبِيرٌۭ",
+          "transliteration": "khabīrun",
+          "translation": "(is) All-Aware"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ذَٰلِكَ",
+          "transliteration": "dhālika",
+          "translation": "That"
+        },
+        {
+          "position": 2,
+          "arabic": "بِأَنَّ",
+          "transliteration": "bi-anna",
+          "translation": "(is) because"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 4,
+          "arabic": "هُوَ",
+          "transliteration": "huwa",
+          "translation": "He"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْحَقُّ",
+          "transliteration": "l-ḥaqu",
+          "translation": "(is) the Truth"
+        },
+        {
+          "position": 6,
+          "arabic": "وَأَنَّ",
+          "transliteration": "wa-anna",
+          "translation": "and that"
+        },
+        {
+          "position": 7,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 8,
+          "arabic": "يَدْعُونَ",
+          "transliteration": "yadʿūna",
+          "translation": "they call"
+        },
+        {
+          "position": 9,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "besides Him"
+        },
+        {
+          "position": 10,
+          "arabic": "دُونِهِ",
+          "transliteration": "dūnihi",
+          "translation": "besides Him"
+        },
+        {
+          "position": 11,
+          "arabic": "ٱلْبَـٰطِلُ",
+          "transliteration": "l-bāṭilu",
+          "translation": "(is) [the] falsehood"
+        },
+        {
+          "position": 12,
+          "arabic": "وَأَنَّ",
+          "transliteration": "wa-anna",
+          "translation": "and that"
+        },
+        {
+          "position": 13,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 14,
+          "arabic": "هُوَ",
+          "transliteration": "huwa",
+          "translation": "He"
+        },
+        {
+          "position": 15,
+          "arabic": "ٱلْعَلِىُّ",
+          "transliteration": "l-ʿaliyu",
+          "translation": "(is) the Most High"
+        },
+        {
+          "position": 16,
+          "arabic": "ٱلْكَبِيرُ",
+          "transliteration": "l-kabīru",
+          "translation": "the Most Great"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَلَمْ",
+          "transliteration": "alam",
+          "translation": "Do not"
+        },
+        {
+          "position": 2,
+          "arabic": "تَرَ",
+          "transliteration": "tara",
+          "translation": "you see"
+        },
+        {
+          "position": 3,
+          "arabic": "أَنَّ",
+          "transliteration": "anna",
+          "translation": "that"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْفُلْكَ",
+          "transliteration": "l-ful'ka",
+          "translation": "the ships"
+        },
+        {
+          "position": 5,
+          "arabic": "تَجْرِى",
+          "transliteration": "tajrī",
+          "translation": "sail"
+        },
+        {
+          "position": 6,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "through"
+        },
+        {
+          "position": 7,
+          "arabic": "ٱلْبَحْرِ",
+          "transliteration": "l-baḥri",
+          "translation": "the sea"
+        },
+        {
+          "position": 8,
+          "arabic": "بِنِعْمَتِ",
+          "transliteration": "biniʿ'mati",
+          "translation": "by (the) Grace"
+        },
+        {
+          "position": 9,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "(of) Allah"
+        },
+        {
+          "position": 10,
+          "arabic": "لِيُرِيَكُم",
+          "transliteration": "liyuriyakum",
+          "translation": "that He may show you"
+        },
+        {
+          "position": 11,
+          "arabic": "مِّنْ",
+          "transliteration": "min",
+          "translation": "of"
+        },
+        {
+          "position": 12,
+          "arabic": "ءَايَـٰتِهِۦٓ ۚ",
+          "transliteration": "āyātihi",
+          "translation": "His Signs"
+        },
+        {
+          "position": 13,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 14,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 15,
+          "arabic": "ذَٰلِكَ",
+          "transliteration": "dhālika",
+          "translation": "that"
+        },
+        {
+          "position": 16,
+          "arabic": "لَـَٔايَـٰتٍۢ",
+          "transliteration": "laāyātin",
+          "translation": "surely (are) Signs"
+        },
+        {
+          "position": 17,
+          "arabic": "لِّكُلِّ",
+          "transliteration": "likulli",
+          "translation": "for everyone"
+        },
+        {
+          "position": 18,
+          "arabic": "صَبَّارٍۢ",
+          "transliteration": "ṣabbārin",
+          "translation": "(who is) patient"
+        },
+        {
+          "position": 19,
+          "arabic": "شَكُورٍۢ",
+          "transliteration": "shakūrin",
+          "translation": "grateful"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَإِذَا",
+          "transliteration": "wa-idhā",
+          "translation": "And when"
+        },
+        {
+          "position": 2,
+          "arabic": "غَشِيَهُم",
+          "transliteration": "ghashiyahum",
+          "translation": "covers them"
+        },
+        {
+          "position": 3,
+          "arabic": "مَّوْجٌۭ",
+          "transliteration": "mawjun",
+          "translation": "a wave"
+        },
+        {
+          "position": 4,
+          "arabic": "كَٱلظُّلَلِ",
+          "transliteration": "kal-ẓulali",
+          "translation": "like canopies"
+        },
+        {
+          "position": 5,
+          "arabic": "دَعَوُا۟",
+          "transliteration": "daʿawū",
+          "translation": "they call"
+        },
+        {
+          "position": 6,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 7,
+          "arabic": "مُخْلِصِينَ",
+          "transliteration": "mukh'liṣīna",
+          "translation": "(being) sincere"
+        },
+        {
+          "position": 8,
+          "arabic": "لَهُ",
+          "transliteration": "lahu",
+          "translation": "to Him"
+        },
+        {
+          "position": 9,
+          "arabic": "ٱلدِّينَ",
+          "transliteration": "l-dīna",
+          "translation": "(in) religion"
+        },
+        {
+          "position": 10,
+          "arabic": "فَلَمَّا",
+          "transliteration": "falammā",
+          "translation": "But when"
+        },
+        {
+          "position": 11,
+          "arabic": "نَجَّىٰهُمْ",
+          "transliteration": "najjāhum",
+          "translation": "He delivers them"
+        },
+        {
+          "position": 12,
+          "arabic": "إِلَى",
+          "transliteration": "ilā",
+          "translation": "to"
+        },
+        {
+          "position": 13,
+          "arabic": "ٱلْبَرِّ",
+          "transliteration": "l-bari",
+          "translation": "the land"
+        },
+        {
+          "position": 14,
+          "arabic": "فَمِنْهُم",
+          "transliteration": "famin'hum",
+          "translation": "then among them"
+        },
+        {
+          "position": 15,
+          "arabic": "مُّقْتَصِدٌۭ ۚ",
+          "transliteration": "muq'taṣidun",
+          "translation": "(some are) moderate"
+        },
+        {
+          "position": 16,
+          "arabic": "وَمَا",
+          "transliteration": "wamā",
+          "translation": "And not"
+        },
+        {
+          "position": 17,
+          "arabic": "يَجْحَدُ",
+          "transliteration": "yajḥadu",
+          "translation": "deny"
+        },
+        {
+          "position": 18,
+          "arabic": "بِـَٔايَـٰتِنَآ",
+          "transliteration": "biāyātinā",
+          "translation": "Our Signs"
+        },
+        {
+          "position": 19,
+          "arabic": "إِلَّا",
+          "transliteration": "illā",
+          "translation": "except"
+        },
+        {
+          "position": 20,
+          "arabic": "كُلُّ",
+          "transliteration": "kullu",
+          "translation": "every"
+        },
+        {
+          "position": 21,
+          "arabic": "خَتَّارٍۢ",
+          "transliteration": "khattārin",
+          "translation": "traitor"
+        },
+        {
+          "position": 22,
+          "arabic": "كَفُورٍۢ",
+          "transliteration": "kafūrin",
+          "translation": "ungrateful"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَـٰٓأَيُّهَا",
+          "transliteration": "yāayyuhā",
+          "translation": "O"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلنَّاسُ",
+          "transliteration": "l-nāsu",
+          "translation": "mankind"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱتَّقُوا۟",
+          "transliteration": "ittaqū",
+          "translation": "Fear"
+        },
+        {
+          "position": 4,
+          "arabic": "رَبَّكُمْ",
+          "transliteration": "rabbakum",
+          "translation": "your Lord"
+        },
+        {
+          "position": 5,
+          "arabic": "وَٱخْشَوْا۟",
+          "transliteration": "wa-ikh'shaw",
+          "translation": "and fear"
+        },
+        {
+          "position": 6,
+          "arabic": "يَوْمًۭا",
+          "transliteration": "yawman",
+          "translation": "a Day"
+        },
+        {
+          "position": 7,
+          "arabic": "لَّا",
+          "transliteration": "lā",
+          "translation": "not"
+        },
+        {
+          "position": 8,
+          "arabic": "يَجْزِى",
+          "transliteration": "yajzī",
+          "translation": "can avail"
+        },
+        {
+          "position": 9,
+          "arabic": "وَالِدٌ",
+          "transliteration": "wālidun",
+          "translation": "a father"
+        },
+        {
+          "position": 10,
+          "arabic": "عَن",
+          "transliteration": "ʿan",
+          "translation": "[for]"
+        },
+        {
+          "position": 11,
+          "arabic": "وَلَدِهِۦ",
+          "transliteration": "waladihi",
+          "translation": "his son"
+        },
+        {
+          "position": 12,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "and not"
+        },
+        {
+          "position": 13,
+          "arabic": "مَوْلُودٌ",
+          "transliteration": "mawlūdun",
+          "translation": "a son"
+        },
+        {
+          "position": 14,
+          "arabic": "هُوَ",
+          "transliteration": "huwa",
+          "translation": "he"
+        },
+        {
+          "position": 15,
+          "arabic": "جَازٍ",
+          "transliteration": "jāzin",
+          "translation": "(can) avail"
+        },
+        {
+          "position": 16,
+          "arabic": "عَن",
+          "transliteration": "ʿan",
+          "translation": "[for]"
+        },
+        {
+          "position": 17,
+          "arabic": "وَالِدِهِۦ",
+          "transliteration": "wālidihi",
+          "translation": "his father"
+        },
+        {
+          "position": 18,
+          "arabic": "شَيْـًٔا ۚ",
+          "transliteration": "shayan",
+          "translation": "anything"
+        },
+        {
+          "position": 19,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 20,
+          "arabic": "وَعْدَ",
+          "transliteration": "waʿda",
+          "translation": "(the) Promise"
+        },
+        {
+          "position": 21,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "(of) Allah"
+        },
+        {
+          "position": 22,
+          "arabic": "حَقٌّۭ ۖ",
+          "transliteration": "ḥaqqun",
+          "translation": "(is) True"
+        },
+        {
+          "position": 23,
+          "arabic": "فَلَا",
+          "transliteration": "falā",
+          "translation": "so let not deceive you"
+        },
+        {
+          "position": 24,
+          "arabic": "تَغُرَّنَّكُمُ",
+          "transliteration": "taghurrannakumu",
+          "translation": "so let not deceive you"
+        },
+        {
+          "position": 25,
+          "arabic": "ٱلْحَيَوٰةُ",
+          "transliteration": "l-ḥayatu",
+          "translation": "the life"
+        },
+        {
+          "position": 26,
+          "arabic": "ٱلدُّنْيَا",
+          "transliteration": "l-dun'yā",
+          "translation": "(of) the world"
+        },
+        {
+          "position": 27,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "and let not deceive you"
+        },
+        {
+          "position": 28,
+          "arabic": "يَغُرَّنَّكُم",
+          "transliteration": "yaghurrannakum",
+          "translation": "and let not deceive you"
+        },
+        {
+          "position": 29,
+          "arabic": "بِٱللَّهِ",
+          "transliteration": "bil-lahi",
+          "translation": "about Allah"
+        },
+        {
+          "position": 30,
+          "arabic": "ٱلْغَرُورُ",
+          "transliteration": "l-gharūru",
+          "translation": "the deceiver"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 3,
+          "arabic": "عِندَهُۥ",
+          "transliteration": "ʿindahu",
+          "translation": "with Him"
+        },
+        {
+          "position": 4,
+          "arabic": "عِلْمُ",
+          "transliteration": "ʿil'mu",
+          "translation": "(is the) knowledge"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلسَّاعَةِ",
+          "transliteration": "l-sāʿati",
+          "translation": "(of) the Hour"
+        },
+        {
+          "position": 6,
+          "arabic": "وَيُنَزِّلُ",
+          "transliteration": "wayunazzilu",
+          "translation": "and He sends down"
+        },
+        {
+          "position": 7,
+          "arabic": "ٱلْغَيْثَ",
+          "transliteration": "l-ghaytha",
+          "translation": "the rain"
+        },
+        {
+          "position": 8,
+          "arabic": "وَيَعْلَمُ",
+          "transliteration": "wayaʿlamu",
+          "translation": "and knows"
+        },
+        {
+          "position": 9,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 10,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "(is) in"
+        },
+        {
+          "position": 11,
+          "arabic": "ٱلْأَرْحَامِ ۖ",
+          "transliteration": "l-arḥāmi",
+          "translation": "the wombs"
+        },
+        {
+          "position": 12,
+          "arabic": "وَمَا",
+          "transliteration": "wamā",
+          "translation": "And not"
+        },
+        {
+          "position": 13,
+          "arabic": "تَدْرِى",
+          "transliteration": "tadrī",
+          "translation": "knows"
+        },
+        {
+          "position": 14,
+          "arabic": "نَفْسٌۭ",
+          "transliteration": "nafsun",
+          "translation": "any soul"
+        },
+        {
+          "position": 15,
+          "arabic": "مَّاذَا",
+          "transliteration": "mādhā",
+          "translation": "what"
+        },
+        {
+          "position": 16,
+          "arabic": "تَكْسِبُ",
+          "transliteration": "taksibu",
+          "translation": "it will earn"
+        },
+        {
+          "position": 17,
+          "arabic": "غَدًۭا ۖ",
+          "transliteration": "ghadan",
+          "translation": "tomorrow"
+        },
+        {
+          "position": 18,
+          "arabic": "وَمَا",
+          "transliteration": "wamā",
+          "translation": "and not"
+        },
+        {
+          "position": 19,
+          "arabic": "تَدْرِى",
+          "transliteration": "tadrī",
+          "translation": "knows"
+        },
+        {
+          "position": 20,
+          "arabic": "نَفْسٌۢ",
+          "transliteration": "nafsun",
+          "translation": "any soul"
+        },
+        {
+          "position": 21,
+          "arabic": "بِأَىِّ",
+          "transliteration": "bi-ayyi",
+          "translation": "in what"
+        },
+        {
+          "position": 22,
+          "arabic": "أَرْضٍۢ",
+          "transliteration": "arḍin",
+          "translation": "land"
+        },
+        {
+          "position": 23,
+          "arabic": "تَمُوتُ ۚ",
+          "transliteration": "tamūtu",
+          "translation": "it will die"
+        },
+        {
+          "position": 24,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 25,
+          "arabic": "ٱللَّهَ",
+          "transliteration": "l-laha",
+          "translation": "Allah"
+        },
+        {
+          "position": 26,
+          "arabic": "عَلِيمٌ",
+          "transliteration": "ʿalīmun",
+          "translation": "(is) All-Knower"
+        },
+        {
+          "position": 27,
+          "arabic": "خَبِيرٌۢ",
+          "transliteration": "khabīrun",
+          "translation": "All-Aware"
+        }
+      ]
+    }
+  ]
+}

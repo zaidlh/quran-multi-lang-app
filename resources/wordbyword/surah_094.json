@@ -1,0 +1,219 @@
+{
+  "surah": 94,
+  "name": "الشرح",
+  "name_en": "Ash-Sharh",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَلَمْ",
+          "transliteration": "alam",
+          "translation": "Have not"
+        },
+        {
+          "position": 2,
+          "arabic": "نَشْرَحْ",
+          "transliteration": "nashraḥ",
+          "translation": "We expanded"
+        },
+        {
+          "position": 3,
+          "arabic": "لَكَ",
+          "transliteration": "laka",
+          "translation": "for you"
+        },
+        {
+          "position": 4,
+          "arabic": "صَدْرَكَ",
+          "transliteration": "ṣadraka",
+          "translation": "your breast"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَوَضَعْنَا",
+          "transliteration": "wawaḍaʿnā",
+          "translation": "And We removed"
+        },
+        {
+          "position": 2,
+          "arabic": "عَنكَ",
+          "transliteration": "ʿanka",
+          "translation": "from you"
+        },
+        {
+          "position": 3,
+          "arabic": "وِزْرَكَ",
+          "transliteration": "wiz'raka",
+          "translation": "your burden"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلَّذِىٓ",
+          "transliteration": "alladhī",
+          "translation": "Which"
+        },
+        {
+          "position": 2,
+          "arabic": "أَنقَضَ",
+          "transliteration": "anqaḍa",
+          "translation": "weighed upon"
+        },
+        {
+          "position": 3,
+          "arabic": "ظَهْرَكَ",
+          "transliteration": "ẓahraka",
+          "translation": "your back"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَرَفَعْنَا",
+          "transliteration": "warafaʿnā",
+          "translation": "And We raised high"
+        },
+        {
+          "position": 2,
+          "arabic": "لَكَ",
+          "transliteration": "laka",
+          "translation": "for you"
+        },
+        {
+          "position": 3,
+          "arabic": "ذِكْرَكَ",
+          "transliteration": "dhik'raka",
+          "translation": "your reputation"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَإِنَّ",
+          "transliteration": "fa-inna",
+          "translation": "So indeed"
+        },
+        {
+          "position": 2,
+          "arabic": "مَعَ",
+          "transliteration": "maʿa",
+          "translation": "with"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْعُسْرِ",
+          "transliteration": "l-ʿus'ri",
+          "translation": "the hardship"
+        },
+        {
+          "position": 4,
+          "arabic": "يُسْرًا",
+          "transliteration": "yus'ran",
+          "translation": "(is) ease"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِنَّ",
+          "transliteration": "inna",
+          "translation": "Indeed"
+        },
+        {
+          "position": 2,
+          "arabic": "مَعَ",
+          "transliteration": "maʿa",
+          "translation": "with"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْعُسْرِ",
+          "transliteration": "l-ʿus'ri",
+          "translation": "the hardship"
+        },
+        {
+          "position": 4,
+          "arabic": "يُسْرًۭا",
+          "transliteration": "yus'ran",
+          "translation": "(is) ease"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَإِذَا",
+          "transliteration": "fa-idhā",
+          "translation": "So when"
+        },
+        {
+          "position": 2,
+          "arabic": "فَرَغْتَ",
+          "transliteration": "faraghta",
+          "translation": "you have finished"
+        },
+        {
+          "position": 3,
+          "arabic": "فَٱنصَبْ",
+          "transliteration": "fa-inṣab",
+          "translation": "then labor hard"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَإِلَىٰ",
+          "transliteration": "wa-ilā",
+          "translation": "And to"
+        },
+        {
+          "position": 2,
+          "arabic": "رَبِّكَ",
+          "transliteration": "rabbika",
+          "translation": "your Lord"
+        },
+        {
+          "position": 3,
+          "arabic": "فَٱرْغَب",
+          "transliteration": "fa-ir'ghab",
+          "translation": "turn your attention"
+        }
+      ]
+    }
+  ]
+}

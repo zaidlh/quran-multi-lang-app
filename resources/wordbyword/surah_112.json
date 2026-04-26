@@ -1,0 +1,123 @@
+{
+  "surah": 112,
+  "name": "الإخلاص",
+  "name_en": "Al-Ikhlas",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "قُلْ",
+          "transliteration": "qul",
+          "translation": "Say"
+        },
+        {
+          "position": 2,
+          "arabic": "هُوَ",
+          "transliteration": "huwa",
+          "translation": "He"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱللَّهُ",
+          "transliteration": "l-lahu",
+          "translation": "(is) Allah"
+        },
+        {
+          "position": 4,
+          "arabic": "أَحَدٌ",
+          "transliteration": "aḥadun",
+          "translation": "the One"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱللَّهُ",
+          "transliteration": "al-lahu",
+          "translation": "Allah"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلصَّمَدُ",
+          "transliteration": "l-ṣamadu",
+          "translation": "the Eternal, the Absolute"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "لَمْ",
+          "transliteration": "lam",
+          "translation": "Not"
+        },
+        {
+          "position": 2,
+          "arabic": "يَلِدْ",
+          "transliteration": "yalid",
+          "translation": "He begets"
+        },
+        {
+          "position": 3,
+          "arabic": "وَلَمْ",
+          "transliteration": "walam",
+          "translation": "and not"
+        },
+        {
+          "position": 4,
+          "arabic": "يُولَدْ",
+          "transliteration": "yūlad",
+          "translation": "He is begotten"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَمْ",
+          "transliteration": "walam",
+          "translation": "And not"
+        },
+        {
+          "position": 2,
+          "arabic": "يَكُن",
+          "transliteration": "yakun",
+          "translation": "is"
+        },
+        {
+          "position": 3,
+          "arabic": "لَّهُۥ",
+          "transliteration": "lahu",
+          "translation": "for Him"
+        },
+        {
+          "position": 4,
+          "arabic": "كُفُوًا",
+          "transliteration": "kufuwan",
+          "translation": "equivalent"
+        },
+        {
+          "position": 5,
+          "arabic": "أَحَدٌۢ",
+          "transliteration": "aḥadun",
+          "translation": "any [one]"
+        }
+      ]
+    }
+  ]
+}

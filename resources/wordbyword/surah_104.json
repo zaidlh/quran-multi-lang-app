@@ -1,0 +1,261 @@
+{
+  "surah": 104,
+  "name": "الهمزة",
+  "name_en": "Al-Humazah",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَيْلٌۭ",
+          "transliteration": "waylun",
+          "translation": "Woe"
+        },
+        {
+          "position": 2,
+          "arabic": "لِّكُلِّ",
+          "transliteration": "likulli",
+          "translation": "to every"
+        },
+        {
+          "position": 3,
+          "arabic": "هُمَزَةٍۢ",
+          "transliteration": "humazatin",
+          "translation": "slanderer"
+        },
+        {
+          "position": 4,
+          "arabic": "لُّمَزَةٍ",
+          "transliteration": "lumazatin",
+          "translation": "backbiter"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلَّذِى",
+          "transliteration": "alladhī",
+          "translation": "The one who"
+        },
+        {
+          "position": 2,
+          "arabic": "جَمَعَ",
+          "transliteration": "jamaʿa",
+          "translation": "collects"
+        },
+        {
+          "position": 3,
+          "arabic": "مَالًۭا",
+          "transliteration": "mālan",
+          "translation": "wealth"
+        },
+        {
+          "position": 4,
+          "arabic": "وَعَدَّدَهُۥ",
+          "transliteration": "waʿaddadahu",
+          "translation": "and counts it"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "يَحْسَبُ",
+          "transliteration": "yaḥsabu",
+          "translation": "Thinking"
+        },
+        {
+          "position": 2,
+          "arabic": "أَنَّ",
+          "transliteration": "anna",
+          "translation": "that"
+        },
+        {
+          "position": 3,
+          "arabic": "مَالَهُۥٓ",
+          "transliteration": "mālahu",
+          "translation": "his wealth"
+        },
+        {
+          "position": 4,
+          "arabic": "أَخْلَدَهُۥ",
+          "transliteration": "akhladahu",
+          "translation": "will make him immortal"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "كَلَّا ۖ",
+          "transliteration": "kallā",
+          "translation": "Nay"
+        },
+        {
+          "position": 2,
+          "arabic": "لَيُنۢبَذَنَّ",
+          "transliteration": "layunbadhanna",
+          "translation": "Surely he will be thrown"
+        },
+        {
+          "position": 3,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْحُطَمَةِ",
+          "transliteration": "l-ḥuṭamati",
+          "translation": "the Crusher"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمَآ",
+          "transliteration": "wamā",
+          "translation": "And what"
+        },
+        {
+          "position": 2,
+          "arabic": "أَدْرَىٰكَ",
+          "transliteration": "adrāka",
+          "translation": "will make you know"
+        },
+        {
+          "position": 3,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْحُطَمَةُ",
+          "transliteration": "l-ḥuṭamatu",
+          "translation": "the Crusher (is)"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "نَارُ",
+          "transliteration": "nāru",
+          "translation": "A Fire"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱللَّهِ",
+          "transliteration": "l-lahi",
+          "translation": "Allah"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْمُوقَدَةُ",
+          "transliteration": "l-mūqadatu",
+          "translation": "kindled"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلَّتِى",
+          "transliteration": "allatī",
+          "translation": "Which"
+        },
+        {
+          "position": 2,
+          "arabic": "تَطَّلِعُ",
+          "transliteration": "taṭṭaliʿu",
+          "translation": "mounts up"
+        },
+        {
+          "position": 3,
+          "arabic": "عَلَى",
+          "transliteration": "ʿalā",
+          "translation": "to"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْأَفْـِٔدَةِ",
+          "transliteration": "l-afidati",
+          "translation": "the hearts"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِنَّهَا",
+          "transliteration": "innahā",
+          "translation": "Indeed, it"
+        },
+        {
+          "position": 2,
+          "arabic": "عَلَيْهِم",
+          "transliteration": "ʿalayhim",
+          "translation": "(will be) upon them"
+        },
+        {
+          "position": 3,
+          "arabic": "مُّؤْصَدَةٌۭ",
+          "transliteration": "mu'ṣadatun",
+          "translation": "closed over"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "In"
+        },
+        {
+          "position": 2,
+          "arabic": "عَمَدٍۢ",
+          "transliteration": "ʿamadin",
+          "translation": "columns"
+        },
+        {
+          "position": 3,
+          "arabic": "مُّمَدَّدَةٍۭ",
+          "transliteration": "mumaddadatin",
+          "translation": "extended"
+        }
+      ]
+    }
+  ]
+}

@@ -19,6 +19,7 @@ Complete catalog of all data sources used in this project, with license and attr
 | Surah Metadata | [semarketir/quranjson](https://github.com/semarketir/quranjson) | MIT | JSON | 114 surahs, 30 juz | 2021 |
 | Tafsir (27+ tafsirs) | [spa5k/tafsir_api](https://github.com/spa5k/tafsir_api) | MIT | JSON/CDN | Arabic + English | 2023 |
 | Quran Morphology | [mustafa0x/quran-morphology](https://github.com/mustafa0x/quran-morphology) | CC-BY-SA | TXT/JSON | Full Quran | 2022 |
+| Word-by-Word Data | [Quran.com API v4](https://api.quran.com) | Open Access | JSON | 114 surahs, 77,429 words, all 30 juz | 2025 |
 | Audio (Alafasy) | [EveryAyah.com](https://everyayah.com) | Free for non-commercial | MP3 URLs | 6236 ayahs | Ongoing |
 | Audio (Abdul Basit) | [EveryAyah.com](https://everyayah.com) | Free for non-commercial | MP3 URLs | 6236 ayahs | Ongoing |
 | Audio (Saad Al-Ghamdi) | [EveryAyah.com](https://everyayah.com) | Free for non-commercial | MP3 URLs | 6236 ayahs | Ongoing |

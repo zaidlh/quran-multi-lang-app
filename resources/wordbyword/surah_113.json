@@ -1,0 +1,177 @@
+{
+  "surah": 113,
+  "name": "الفلق",
+  "name_en": "Al-Falaq",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "قُلْ",
+          "transliteration": "qul",
+          "translation": "Say"
+        },
+        {
+          "position": 2,
+          "arabic": "أَعُوذُ",
+          "transliteration": "aʿūdhu",
+          "translation": "I seek refuge"
+        },
+        {
+          "position": 3,
+          "arabic": "بِرَبِّ",
+          "transliteration": "birabbi",
+          "translation": "in (the) Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْفَلَقِ",
+          "transliteration": "l-falaqi",
+          "translation": "(of) the dawn"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مِن",
+          "transliteration": "min",
+          "translation": "From"
+        },
+        {
+          "position": 2,
+          "arabic": "شَرِّ",
+          "transliteration": "sharri",
+          "translation": "(the) evil"
+        },
+        {
+          "position": 3,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "(of) what"
+        },
+        {
+          "position": 4,
+          "arabic": "خَلَقَ",
+          "transliteration": "khalaqa",
+          "translation": "He created"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمِن",
+          "transliteration": "wamin",
+          "translation": "And from"
+        },
+        {
+          "position": 2,
+          "arabic": "شَرِّ",
+          "transliteration": "sharri",
+          "translation": "(the) evil"
+        },
+        {
+          "position": 3,
+          "arabic": "غَاسِقٍ",
+          "transliteration": "ghāsiqin",
+          "translation": "(of) darkness"
+        },
+        {
+          "position": 4,
+          "arabic": "إِذَا",
+          "transliteration": "idhā",
+          "translation": "when"
+        },
+        {
+          "position": 5,
+          "arabic": "وَقَبَ",
+          "transliteration": "waqaba",
+          "translation": "it spreads"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمِن",
+          "transliteration": "wamin",
+          "translation": "And from"
+        },
+        {
+          "position": 2,
+          "arabic": "شَرِّ",
+          "transliteration": "sharri",
+          "translation": "(the) evil"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلنَّفَّـٰثَـٰتِ",
+          "transliteration": "l-nafāthāti",
+          "translation": "(of) the blowers"
+        },
+        {
+          "position": 4,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْعُقَدِ",
+          "transliteration": "l-ʿuqadi",
+          "translation": "the knots"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمِن",
+          "transliteration": "wamin",
+          "translation": "And from"
+        },
+        {
+          "position": 2,
+          "arabic": "شَرِّ",
+          "transliteration": "sharri",
+          "translation": "(the) evil"
+        },
+        {
+          "position": 3,
+          "arabic": "حَاسِدٍ",
+          "transliteration": "ḥāsidin",
+          "translation": "(of) an envier"
+        },
+        {
+          "position": 4,
+          "arabic": "إِذَا",
+          "transliteration": "idhā",
+          "translation": "when"
+        },
+        {
+          "position": 5,
+          "arabic": "حَسَدَ",
+          "transliteration": "ḥasada",
+          "translation": "he envies"
+        }
+      ]
+    }
+  ]
+}

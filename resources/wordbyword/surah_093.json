@@ -1,0 +1,315 @@
+{
+  "surah": 93,
+  "name": "الضحى",
+  "name_en": "Ad-Duhaa",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلضُّحَىٰ",
+          "transliteration": "wal-ḍuḥā",
+          "translation": "By the morning brightness"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَٱلَّيْلِ",
+          "transliteration": "wa-al-layli",
+          "translation": "And the night"
+        },
+        {
+          "position": 2,
+          "arabic": "إِذَا",
+          "transliteration": "idhā",
+          "translation": "when"
+        },
+        {
+          "position": 3,
+          "arabic": "سَجَىٰ",
+          "transliteration": "sajā",
+          "translation": "it covers with darkness"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "Not"
+        },
+        {
+          "position": 2,
+          "arabic": "وَدَّعَكَ",
+          "transliteration": "waddaʿaka",
+          "translation": "has forsaken you"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبُّكَ",
+          "transliteration": "rabbuka",
+          "translation": "your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "وَمَا",
+          "transliteration": "wamā",
+          "translation": "and not"
+        },
+        {
+          "position": 5,
+          "arabic": "قَلَىٰ",
+          "transliteration": "qalā",
+          "translation": "He is displeased"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَلْـَٔاخِرَةُ",
+          "transliteration": "walalākhiratu",
+          "translation": "And surely the Hereafter"
+        },
+        {
+          "position": 2,
+          "arabic": "خَيْرٌۭ",
+          "transliteration": "khayrun",
+          "translation": "(is) better"
+        },
+        {
+          "position": 3,
+          "arabic": "لَّكَ",
+          "transliteration": "laka",
+          "translation": "for you"
+        },
+        {
+          "position": 4,
+          "arabic": "مِنَ",
+          "transliteration": "mina",
+          "translation": "than"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْأُولَىٰ",
+          "transliteration": "l-ūlā",
+          "translation": "the first"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَسَوْفَ",
+          "transliteration": "walasawfa",
+          "translation": "And soon"
+        },
+        {
+          "position": 2,
+          "arabic": "يُعْطِيكَ",
+          "transliteration": "yuʿ'ṭīka",
+          "translation": "will give you"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبُّكَ",
+          "transliteration": "rabbuka",
+          "translation": "your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "فَتَرْضَىٰٓ",
+          "transliteration": "fatarḍā",
+          "translation": "then you will be satisfied"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَلَمْ",
+          "transliteration": "alam",
+          "translation": "Did not"
+        },
+        {
+          "position": 2,
+          "arabic": "يَجِدْكَ",
+          "transliteration": "yajid'ka",
+          "translation": "He find you"
+        },
+        {
+          "position": 3,
+          "arabic": "يَتِيمًۭا",
+          "transliteration": "yatīman",
+          "translation": "an orphan"
+        },
+        {
+          "position": 4,
+          "arabic": "فَـَٔاوَىٰ",
+          "transliteration": "faāwā",
+          "translation": "and give shelter"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَوَجَدَكَ",
+          "transliteration": "wawajadaka",
+          "translation": "And He found you"
+        },
+        {
+          "position": 2,
+          "arabic": "ضَآلًّۭا",
+          "transliteration": "ḍāllan",
+          "translation": "lost"
+        },
+        {
+          "position": 3,
+          "arabic": "فَهَدَىٰ",
+          "transliteration": "fahadā",
+          "translation": "so He guided"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَوَجَدَكَ",
+          "transliteration": "wawajadaka",
+          "translation": "And He found you"
+        },
+        {
+          "position": 2,
+          "arabic": "عَآئِلًۭا",
+          "transliteration": "ʿāilan",
+          "translation": "in need"
+        },
+        {
+          "position": 3,
+          "arabic": "فَأَغْنَىٰ",
+          "transliteration": "fa-aghnā",
+          "translation": "so He made self-sufficient"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَأَمَّا",
+          "transliteration": "fa-ammā",
+          "translation": "So as for"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْيَتِيمَ",
+          "transliteration": "l-yatīma",
+          "translation": "the orphan"
+        },
+        {
+          "position": 3,
+          "arabic": "فَلَا",
+          "transliteration": "falā",
+          "translation": "then (do) not"
+        },
+        {
+          "position": 4,
+          "arabic": "تَقْهَرْ",
+          "transliteration": "taqhar",
+          "translation": "oppress"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَأَمَّا",
+          "transliteration": "wa-ammā",
+          "translation": "And as for"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلسَّآئِلَ",
+          "transliteration": "l-sāila",
+          "translation": "one who asks"
+        },
+        {
+          "position": 3,
+          "arabic": "فَلَا",
+          "transliteration": "falā",
+          "translation": "then (do) not"
+        },
+        {
+          "position": 4,
+          "arabic": "تَنْهَرْ",
+          "transliteration": "tanhar",
+          "translation": "repel"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَأَمَّا",
+          "transliteration": "wa-ammā",
+          "translation": "But as for"
+        },
+        {
+          "position": 2,
+          "arabic": "بِنِعْمَةِ",
+          "transliteration": "biniʿ'mati",
+          "translation": "(the) Favor"
+        },
+        {
+          "position": 3,
+          "arabic": "رَبِّكَ",
+          "transliteration": "rabbika",
+          "translation": "(of) your Lord"
+        },
+        {
+          "position": 4,
+          "arabic": "فَحَدِّثْ",
+          "transliteration": "faḥaddith",
+          "translation": "narrate"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "surah": 106,
+  "name": "قريش",
+  "name_en": "Quraysh",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "لِإِيلَـٰفِ",
+          "transliteration": "liīlāfi",
+          "translation": "For (the) familiarity"
+        },
+        {
+          "position": 2,
+          "arabic": "قُرَيْشٍ",
+          "transliteration": "qurayshin",
+          "translation": "(of the) Quraish"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِۦلَـٰفِهِمْ",
+          "transliteration": "īlāfihim",
+          "translation": "Their familiarity"
+        },
+        {
+          "position": 2,
+          "arabic": "رِحْلَةَ",
+          "transliteration": "riḥ'lata",
+          "translation": "(with the) journey"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلشِّتَآءِ",
+          "transliteration": "l-shitāi",
+          "translation": "(of) winter"
+        },
+        {
+          "position": 4,
+          "arabic": "وَٱلصَّيْفِ",
+          "transliteration": "wal-ṣayfi",
+          "translation": "and summer"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَلْيَعْبُدُوا۟",
+          "transliteration": "falyaʿbudū",
+          "translation": "So let them worship"
+        },
+        {
+          "position": 2,
+          "arabic": "رَبَّ",
+          "transliteration": "rabba",
+          "translation": "(the) Lord"
+        },
+        {
+          "position": 3,
+          "arabic": "هَـٰذَا",
+          "transliteration": "hādhā",
+          "translation": "(of) this"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْبَيْتِ",
+          "transliteration": "l-bayti",
+          "translation": "House"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلَّذِىٓ",
+          "transliteration": "alladhī",
+          "translation": "The One Who"
+        },
+        {
+          "position": 2,
+          "arabic": "أَطْعَمَهُم",
+          "transliteration": "aṭʿamahum",
+          "translation": "feeds them"
+        },
+        {
+          "position": 3,
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "translation": "[from]"
+        },
+        {
+          "position": 4,
+          "arabic": "جُوعٍۢ",
+          "transliteration": "jūʿin",
+          "translation": "(against) hunger"
+        },
+        {
+          "position": 5,
+          "arabic": "وَءَامَنَهُم",
+          "transliteration": "waāmanahum",
+          "translation": "and gives them security"
+        },
+        {
+          "position": 6,
+          "arabic": "مِّنْ",
+          "transliteration": "min",
+          "translation": "from"
+        },
+        {
+          "position": 7,
+          "arabic": "خَوْفٍۭ",
+          "transliteration": "khawfin",
+          "translation": "fear"
+        }
+      ]
+    }
+  ]
+}

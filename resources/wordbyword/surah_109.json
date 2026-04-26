@@ -1,0 +1,201 @@
+{
+  "surah": 109,
+  "name": "الكافرون",
+  "name_en": "Al-Kafirun",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "قُلْ",
+          "transliteration": "qul",
+          "translation": "Say"
+        },
+        {
+          "position": 2,
+          "arabic": "يَـٰٓأَيُّهَا",
+          "transliteration": "yāayyuhā",
+          "translation": "O"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْكَـٰفِرُونَ",
+          "transliteration": "l-kāfirūna",
+          "translation": "disbelievers"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "لَآ",
+          "transliteration": "lā",
+          "translation": "Not"
+        },
+        {
+          "position": 2,
+          "arabic": "أَعْبُدُ",
+          "transliteration": "aʿbudu",
+          "translation": "I worship"
+        },
+        {
+          "position": 3,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 4,
+          "arabic": "تَعْبُدُونَ",
+          "transliteration": "taʿbudūna",
+          "translation": "you worship"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَآ",
+          "transliteration": "walā",
+          "translation": "And not"
+        },
+        {
+          "position": 2,
+          "arabic": "أَنتُمْ",
+          "transliteration": "antum",
+          "translation": "you"
+        },
+        {
+          "position": 3,
+          "arabic": "عَـٰبِدُونَ",
+          "transliteration": "ʿābidūna",
+          "translation": "(are) worshippers"
+        },
+        {
+          "position": 4,
+          "arabic": "مَآ",
+          "transliteration": "mā",
+          "translation": "(of) what"
+        },
+        {
+          "position": 5,
+          "arabic": "أَعْبُدُ",
+          "transliteration": "aʿbudu",
+          "translation": "I worship"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَآ",
+          "transliteration": "walā",
+          "translation": "And not"
+        },
+        {
+          "position": 2,
+          "arabic": "أَنَا۠",
+          "transliteration": "anā",
+          "translation": "I am"
+        },
+        {
+          "position": 3,
+          "arabic": "عَابِدٌۭ",
+          "transliteration": "ʿābidun",
+          "translation": "a worshipper"
+        },
+        {
+          "position": 4,
+          "arabic": "مَّا",
+          "transliteration": "mā",
+          "translation": "(of) what"
+        },
+        {
+          "position": 5,
+          "arabic": "عَبَدتُّمْ",
+          "transliteration": "ʿabadttum",
+          "translation": "you worship"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَآ",
+          "transliteration": "walā",
+          "translation": "And not"
+        },
+        {
+          "position": 2,
+          "arabic": "أَنتُمْ",
+          "transliteration": "antum",
+          "translation": "you"
+        },
+        {
+          "position": 3,
+          "arabic": "عَـٰبِدُونَ",
+          "transliteration": "ʿābidūna",
+          "translation": "(are) worshippers"
+        },
+        {
+          "position": 4,
+          "arabic": "مَآ",
+          "transliteration": "mā",
+          "translation": "(of) what"
+        },
+        {
+          "position": 5,
+          "arabic": "أَعْبُدُ",
+          "transliteration": "aʿbudu",
+          "translation": "I worship"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "لَكُمْ",
+          "transliteration": "lakum",
+          "translation": "For you"
+        },
+        {
+          "position": 2,
+          "arabic": "دِينُكُمْ",
+          "transliteration": "dīnukum",
+          "translation": "(is) your religion"
+        },
+        {
+          "position": 3,
+          "arabic": "وَلِىَ",
+          "transliteration": "waliya",
+          "translation": "and for me"
+        },
+        {
+          "position": 4,
+          "arabic": "دِينِ",
+          "transliteration": "dīni",
+          "translation": "(is) my religion"
+        }
+      ]
+    }
+  ]
+}

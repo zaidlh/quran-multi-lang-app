@@ -1,0 +1,177 @@
+{
+  "surah": 105,
+  "name": "الفيل",
+  "name_en": "Al-Fil",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَلَمْ",
+          "transliteration": "alam",
+          "translation": "Have not"
+        },
+        {
+          "position": 2,
+          "arabic": "تَرَ",
+          "transliteration": "tara",
+          "translation": "you seen"
+        },
+        {
+          "position": 3,
+          "arabic": "كَيْفَ",
+          "transliteration": "kayfa",
+          "translation": "how"
+        },
+        {
+          "position": 4,
+          "arabic": "فَعَلَ",
+          "transliteration": "faʿala",
+          "translation": "dealt"
+        },
+        {
+          "position": 5,
+          "arabic": "رَبُّكَ",
+          "transliteration": "rabbuka",
+          "translation": "your Lord"
+        },
+        {
+          "position": 6,
+          "arabic": "بِأَصْحَـٰبِ",
+          "transliteration": "bi-aṣḥābi",
+          "translation": "with (the) Companions"
+        },
+        {
+          "position": 7,
+          "arabic": "ٱلْفِيلِ",
+          "transliteration": "l-fīli",
+          "translation": "(of the) Elephant"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَلَمْ",
+          "transliteration": "alam",
+          "translation": "Did not"
+        },
+        {
+          "position": 2,
+          "arabic": "يَجْعَلْ",
+          "transliteration": "yajʿal",
+          "translation": "He make"
+        },
+        {
+          "position": 3,
+          "arabic": "كَيْدَهُمْ",
+          "transliteration": "kaydahum",
+          "translation": "their plan"
+        },
+        {
+          "position": 4,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "go"
+        },
+        {
+          "position": 5,
+          "arabic": "تَضْلِيلٍۢ",
+          "transliteration": "taḍlīlin",
+          "translation": "astray"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَأَرْسَلَ",
+          "transliteration": "wa-arsala",
+          "translation": "And He sent"
+        },
+        {
+          "position": 2,
+          "arabic": "عَلَيْهِمْ",
+          "transliteration": "ʿalayhim",
+          "translation": "against them"
+        },
+        {
+          "position": 3,
+          "arabic": "طَيْرًا",
+          "transliteration": "ṭayran",
+          "translation": "birds"
+        },
+        {
+          "position": 4,
+          "arabic": "أَبَابِيلَ",
+          "transliteration": "abābīla",
+          "translation": "(in) flocks"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "تَرْمِيهِم",
+          "transliteration": "tarmīhim",
+          "translation": "Striking them"
+        },
+        {
+          "position": 2,
+          "arabic": "بِحِجَارَةٍۢ",
+          "transliteration": "biḥijāratin",
+          "translation": "with stones"
+        },
+        {
+          "position": 3,
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "translation": "of"
+        },
+        {
+          "position": 4,
+          "arabic": "سِجِّيلٍۢ",
+          "transliteration": "sijjīlin",
+          "translation": "baked clay"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَجَعَلَهُمْ",
+          "transliteration": "fajaʿalahum",
+          "translation": "Then He made them"
+        },
+        {
+          "position": 2,
+          "arabic": "كَعَصْفٍۢ",
+          "transliteration": "kaʿaṣfin",
+          "translation": "like straw"
+        },
+        {
+          "position": 3,
+          "arabic": "مَّأْكُولٍۭ",
+          "transliteration": "makūlin",
+          "translation": "eaten up"
+        }
+      ]
+    }
+  ]
+}

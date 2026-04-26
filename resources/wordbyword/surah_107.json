@@ -1,0 +1,201 @@
+{
+  "surah": 107,
+  "name": "الماعون",
+  "name_en": "Al-Ma'un",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَرَءَيْتَ",
+          "transliteration": "ara-ayta",
+          "translation": "Have you seen"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلَّذِى",
+          "transliteration": "alladhī",
+          "translation": "the one who"
+        },
+        {
+          "position": 3,
+          "arabic": "يُكَذِّبُ",
+          "transliteration": "yukadhibu",
+          "translation": "denies"
+        },
+        {
+          "position": 4,
+          "arabic": "بِٱلدِّينِ",
+          "transliteration": "bil-dīni",
+          "translation": "the Judgment"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَذَٰلِكَ",
+          "transliteration": "fadhālika",
+          "translation": "Then that"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلَّذِى",
+          "transliteration": "alladhī",
+          "translation": "(is) the one who"
+        },
+        {
+          "position": 3,
+          "arabic": "يَدُعُّ",
+          "transliteration": "yaduʿʿu",
+          "translation": "repulses"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْيَتِيمَ",
+          "transliteration": "l-yatīma",
+          "translation": "the orphan"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَلَا",
+          "transliteration": "walā",
+          "translation": "And (does) not"
+        },
+        {
+          "position": 2,
+          "arabic": "يَحُضُّ",
+          "transliteration": "yaḥuḍḍu",
+          "translation": "feel the urge"
+        },
+        {
+          "position": 3,
+          "arabic": "عَلَىٰ",
+          "transliteration": "ʿalā",
+          "translation": "to"
+        },
+        {
+          "position": 4,
+          "arabic": "طَعَامِ",
+          "transliteration": "ṭaʿāmi",
+          "translation": "feed"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْمِسْكِينِ",
+          "transliteration": "l-mis'kīni",
+          "translation": "the poor"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "فَوَيْلٌۭ",
+          "transliteration": "fawaylun",
+          "translation": "So woe"
+        },
+        {
+          "position": 2,
+          "arabic": "لِّلْمُصَلِّينَ",
+          "transliteration": "lil'muṣallīna",
+          "translation": "to those who pray"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلَّذِينَ",
+          "transliteration": "alladhīna",
+          "translation": "Those who"
+        },
+        {
+          "position": 2,
+          "arabic": "هُمْ",
+          "transliteration": "hum",
+          "translation": "[they]"
+        },
+        {
+          "position": 3,
+          "arabic": "عَن",
+          "transliteration": "ʿan",
+          "translation": "about"
+        },
+        {
+          "position": 4,
+          "arabic": "صَلَاتِهِمْ",
+          "transliteration": "ṣalātihim",
+          "translation": "their prayers"
+        },
+        {
+          "position": 5,
+          "arabic": "سَاهُونَ",
+          "transliteration": "sāhūna",
+          "translation": "(are) neglectful"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ٱلَّذِينَ",
+          "transliteration": "alladhīna",
+          "translation": "Those who"
+        },
+        {
+          "position": 2,
+          "arabic": "هُمْ",
+          "transliteration": "hum",
+          "translation": "[they]"
+        },
+        {
+          "position": 3,
+          "arabic": "يُرَآءُونَ",
+          "transliteration": "yurāūna",
+          "translation": "make show"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَيَمْنَعُونَ",
+          "transliteration": "wayamnaʿūna",
+          "translation": "And they deny"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْمَاعُونَ",
+          "transliteration": "l-māʿūna",
+          "translation": "[the] small kindnesses"
+        }
+      ]
+    }
+  ]
+}

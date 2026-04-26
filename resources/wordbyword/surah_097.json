@@ -1,0 +1,219 @@
+{
+  "surah": 97,
+  "name": "القدر",
+  "name_en": "Al-Qadr",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "إِنَّآ",
+          "transliteration": "innā",
+          "translation": "Indeed, We"
+        },
+        {
+          "position": 2,
+          "arabic": "أَنزَلْنَـٰهُ",
+          "transliteration": "anzalnāhu",
+          "translation": "revealed it"
+        },
+        {
+          "position": 3,
+          "arabic": "فِى",
+          "transliteration": "fī",
+          "translation": "in"
+        },
+        {
+          "position": 4,
+          "arabic": "لَيْلَةِ",
+          "transliteration": "laylati",
+          "translation": "(the) Night"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْقَدْرِ",
+          "transliteration": "l-qadri",
+          "translation": "(of) Power"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "وَمَآ",
+          "transliteration": "wamā",
+          "translation": "And what"
+        },
+        {
+          "position": 2,
+          "arabic": "أَدْرَىٰكَ",
+          "transliteration": "adrāka",
+          "translation": "can make you know"
+        },
+        {
+          "position": 3,
+          "arabic": "مَا",
+          "transliteration": "mā",
+          "translation": "what"
+        },
+        {
+          "position": 4,
+          "arabic": "لَيْلَةُ",
+          "transliteration": "laylatu",
+          "translation": "(the) Night"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْقَدْرِ",
+          "transliteration": "l-qadri",
+          "translation": "(of) Power (is)"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "لَيْلَةُ",
+          "transliteration": "laylatu",
+          "translation": "(The) Night"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْقَدْرِ",
+          "transliteration": "l-qadri",
+          "translation": "(of) Power"
+        },
+        {
+          "position": 3,
+          "arabic": "خَيْرٌۭ",
+          "transliteration": "khayrun",
+          "translation": "(is) better"
+        },
+        {
+          "position": 4,
+          "arabic": "مِّنْ",
+          "transliteration": "min",
+          "translation": "than"
+        },
+        {
+          "position": 5,
+          "arabic": "أَلْفِ",
+          "transliteration": "alfi",
+          "translation": "a thousand"
+        },
+        {
+          "position": 6,
+          "arabic": "شَهْرٍۢ",
+          "transliteration": "shahrin",
+          "translation": "month(s)"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "تَنَزَّلُ",
+          "transliteration": "tanazzalu",
+          "translation": "Descend"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْمَلَـٰٓئِكَةُ",
+          "transliteration": "l-malāikatu",
+          "translation": "the Angels"
+        },
+        {
+          "position": 3,
+          "arabic": "وَٱلرُّوحُ",
+          "transliteration": "wal-rūḥu",
+          "translation": "and the Spirit"
+        },
+        {
+          "position": 4,
+          "arabic": "فِيهَا",
+          "transliteration": "fīhā",
+          "translation": "therein"
+        },
+        {
+          "position": 5,
+          "arabic": "بِإِذْنِ",
+          "transliteration": "bi-idh'ni",
+          "translation": "by (the) permission"
+        },
+        {
+          "position": 6,
+          "arabic": "رَبِّهِم",
+          "transliteration": "rabbihim",
+          "translation": "(of) their Lord"
+        },
+        {
+          "position": 7,
+          "arabic": "مِّن",
+          "transliteration": "min",
+          "translation": "for"
+        },
+        {
+          "position": 8,
+          "arabic": "كُلِّ",
+          "transliteration": "kulli",
+          "translation": "every"
+        },
+        {
+          "position": 9,
+          "arabic": "أَمْرٍۢ",
+          "transliteration": "amrin",
+          "translation": "affair"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "سَلَـٰمٌ",
+          "transliteration": "salāmun",
+          "translation": "Peace"
+        },
+        {
+          "position": 2,
+          "arabic": "هِىَ",
+          "transliteration": "hiya",
+          "translation": "it (is)"
+        },
+        {
+          "position": 3,
+          "arabic": "حَتَّىٰ",
+          "transliteration": "ḥattā",
+          "translation": "until"
+        },
+        {
+          "position": 4,
+          "arabic": "مَطْلَعِ",
+          "transliteration": "maṭlaʿi",
+          "translation": "(the) emergence"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْفَجْرِ",
+          "transliteration": "l-fajri",
+          "translation": "(of) the dawn"
+        }
+      ]
+    }
+  ]
+}

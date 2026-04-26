@@ -1,0 +1,225 @@
+{
+  "surah": 102,
+  "name": "التكاثر",
+  "name_en": "At-Takathur",
+  "source": "Quran.com API v4 (word-by-word)",
+  "version": "1.0.0",
+  "ayahs": [
+    {
+      "number": 1,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "أَلْهَىٰكُمُ",
+          "transliteration": "alhākumu",
+          "translation": "Diverts you"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلتَّكَاثُرُ",
+          "transliteration": "l-takāthuru",
+          "translation": "the competition to increase"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "حَتَّىٰ",
+          "transliteration": "ḥattā",
+          "translation": "Until"
+        },
+        {
+          "position": 2,
+          "arabic": "زُرْتُمُ",
+          "transliteration": "zur'tumu",
+          "translation": "you visit"
+        },
+        {
+          "position": 3,
+          "arabic": "ٱلْمَقَابِرَ",
+          "transliteration": "l-maqābira",
+          "translation": "the graves"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "كَلَّا",
+          "transliteration": "kallā",
+          "translation": "Nay"
+        },
+        {
+          "position": 2,
+          "arabic": "سَوْفَ",
+          "transliteration": "sawfa",
+          "translation": "Soon"
+        },
+        {
+          "position": 3,
+          "arabic": "تَعْلَمُونَ",
+          "transliteration": "taʿlamūna",
+          "translation": "you will know"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ثُمَّ",
+          "transliteration": "thumma",
+          "translation": "Then"
+        },
+        {
+          "position": 2,
+          "arabic": "كَلَّا",
+          "transliteration": "kallā",
+          "translation": "nay"
+        },
+        {
+          "position": 3,
+          "arabic": "سَوْفَ",
+          "transliteration": "sawfa",
+          "translation": "Soon"
+        },
+        {
+          "position": 4,
+          "arabic": "تَعْلَمُونَ",
+          "transliteration": "taʿlamūna",
+          "translation": "you will know"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "كَلَّا",
+          "transliteration": "kallā",
+          "translation": "Nay"
+        },
+        {
+          "position": 2,
+          "arabic": "لَوْ",
+          "transliteration": "law",
+          "translation": "If"
+        },
+        {
+          "position": 3,
+          "arabic": "تَعْلَمُونَ",
+          "transliteration": "taʿlamūna",
+          "translation": "you know"
+        },
+        {
+          "position": 4,
+          "arabic": "عِلْمَ",
+          "transliteration": "ʿil'ma",
+          "translation": "(with) a knowledge"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلْيَقِينِ",
+          "transliteration": "l-yaqīni",
+          "translation": "(of) certainty"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "لَتَرَوُنَّ",
+          "transliteration": "latarawunna",
+          "translation": "Surely you will see"
+        },
+        {
+          "position": 2,
+          "arabic": "ٱلْجَحِيمَ",
+          "transliteration": "l-jaḥīma",
+          "translation": "the Hellfire"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ثُمَّ",
+          "transliteration": "thumma",
+          "translation": "Then"
+        },
+        {
+          "position": 2,
+          "arabic": "لَتَرَوُنَّهَا",
+          "transliteration": "latarawunnahā",
+          "translation": "surely you will see it"
+        },
+        {
+          "position": 3,
+          "arabic": "عَيْنَ",
+          "transliteration": "ʿayna",
+          "translation": "(with the) eye"
+        },
+        {
+          "position": 4,
+          "arabic": "ٱلْيَقِينِ",
+          "transliteration": "l-yaqīni",
+          "translation": "(of) certainty"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "text": "",
+      "words": [
+        {
+          "position": 1,
+          "arabic": "ثُمَّ",
+          "transliteration": "thumma",
+          "translation": "Then"
+        },
+        {
+          "position": 2,
+          "arabic": "لَتُسْـَٔلُنَّ",
+          "transliteration": "latus'alunna",
+          "translation": "surely you will be asked"
+        },
+        {
+          "position": 3,
+          "arabic": "يَوْمَئِذٍ",
+          "transliteration": "yawma-idhin",
+          "translation": "that Day"
+        },
+        {
+          "position": 4,
+          "arabic": "عَنِ",
+          "transliteration": "ʿani",
+          "translation": "about"
+        },
+        {
+          "position": 5,
+          "arabic": "ٱلنَّعِيمِ",
+          "transliteration": "l-naʿīmi",
+          "translation": "the pleasures"
+        }
+      ]
+    }
+  ]
+}
