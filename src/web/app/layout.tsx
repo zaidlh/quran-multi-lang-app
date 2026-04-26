@@ -23,6 +23,20 @@ export const metadata: Metadata = {
   description:
     "Read the Holy Quran with translations in 10+ languages, listen to recitations, and explore tafsir.",
   manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Quran Multi-Language App",
+    description:
+      "Read the Holy Quran with translations in 10+ languages, listen to recitations, and explore tafsir.",
+    siteName: "Quran Multi-Language App",
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {
