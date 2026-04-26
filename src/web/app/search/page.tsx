@@ -73,23 +73,16 @@ export default function SearchPage() {
             className="block p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-primary transition-colors"
           >
             <div className="flex items-center gap-2 mb-2 text-sm text-zinc-500">
-              <span className="font-medium text-foreground">
-                {r.surahName}
-              </span>
+              <span className="font-medium text-foreground">{r.surahName}</span>
               <span>·</span>
               <span>
                 {r.surah}:{r.ayah}
               </span>
             </div>
-            <p
-              className="arabic-text text-lg mb-1"
-              dir="rtl"
-            >
+            <p className="arabic-text text-lg mb-1" dir="rtl">
               {r.text}
             </p>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              {r.translation}
-            </p>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">{r.translation}</p>
           </Link>
         ))}
       </div>

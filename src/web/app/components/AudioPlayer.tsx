@@ -33,11 +33,7 @@ const RECITERS = [
 
 type PlayMode = "surah" | "ayah";
 
-export function AudioPlayer({
-  surahNumber,
-  totalAyahs = 0,
-  onAyahChange,
-}: AudioPlayerProps) {
+export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentReciter, setCurrentReciter] = useState(RECITERS[0].id);
@@ -76,18 +72,15 @@ export function AudioPlayer({
     }
   }, [currentAyah, isPlaying, playMode, onAyahChange]);
 
-  const handleReciterChange = useCallback(
-    (newReciter: string) => {
-      setCurrentReciter(newReciter);
-      setIsPlaying(false);
-      setProgress(0);
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-      }
-    },
-    []
-  );
+  const handleReciterChange = useCallback((newReciter: string) => {
+    setCurrentReciter(newReciter);
+    setIsPlaying(false);
+    setProgress(0);
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+  }, []);
 
   const togglePlay = () => {
     const audio = audioRef.current;
@@ -187,9 +180,7 @@ export function AudioPlayer({
             className="w-full h-1 accent-primary cursor-pointer"
           />
           <div className="flex justify-between text-xs text-zinc-500">
-            <span>
-              {formatTime(duration ? (progress / 100) * duration : 0)}
-            </span>
+            <span>{formatTime(duration ? (progress / 100) * duration : 0)}</span>
             <span>{duration ? formatTime(duration) : "--:--"}</span>
           </div>
         </div>

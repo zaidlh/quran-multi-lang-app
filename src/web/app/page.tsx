@@ -11,9 +11,7 @@ export default async function Home() {
         <h1 className="text-3xl font-bold mb-2 arabic-text">
           بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
         </h1>
-        <p className="text-zinc-500">
-          Read the Holy Quran with translations in 10+ languages
-        </p>
+        <p className="text-zinc-500">Read the Holy Quran with translations in 10+ languages</p>
       </div>
 
       <LastReadBanner />
