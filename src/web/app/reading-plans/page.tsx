@@ -75,16 +75,22 @@ function generateThirtyDayPlan(): Plan {
 
 function generateSixtyDayPlan(): Plan {
   const daily: { surahs: number[]; label: string }[] = [];
-  const surahsPerDay = Math.ceil(114 / 60);
+  const totalSurahs = 114;
+  const totalDays = 60;
+  const base = Math.floor(totalSurahs / totalDays);
+  const extra = totalSurahs % totalDays;
+  let current = 1;
 
-  for (let i = 0; i < 60; i++) {
-    const start = i * surahsPerDay + 1;
-    const end = Math.min((i + 1) * surahsPerDay, 114);
-    const surahs = Array.from({ length: end - start + 1 }, (_, j) => start + j);
+  for (let i = 0; i < totalDays; i++) {
+    const count = base + (i < extra ? 1 : 0);
+    const surahs = Array.from({ length: count }, (_, j) => current + j);
+    const start = current;
+    const end = current + count - 1;
     daily.push({
       surahs,
-      label: `Surahs ${start}–${end}`,
+      label: count === 1 ? `Surah ${start}` : `Surahs ${start}–${end}`,
     });
+    current += count;
   }
 
   return {
