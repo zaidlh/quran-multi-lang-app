@@ -10,10 +10,17 @@ interface LastRead {
   timestamp: number;
 }
 
+let cachedString: string | null = null;
+let cachedValue: LastRead | null = null;
+
 function getLastReadSnapshot(): LastRead | null {
   try {
     const stored = localStorage.getItem("quran-last-read");
-    return stored ? JSON.parse(stored) : null;
+    if (stored !== cachedString) {
+      cachedString = stored;
+      cachedValue = stored ? JSON.parse(stored) : null;
+    }
+    return cachedValue;
   } catch {
     return null;
   }

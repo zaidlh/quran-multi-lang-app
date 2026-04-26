@@ -98,11 +98,12 @@ export function TafsirPanel({ surahNumber, ayahNumber }: TafsirPanelProps) {
           {loading && <p className="text-zinc-500 text-xs">Loading tafsir...</p>}
           {error && <p className="text-red-500 text-xs">{error}</p>}
           {!loading && !error && text && (
-            <div
-              className={`leading-relaxed ${isArabicSource ? "arabic-text text-base" : ""}`}
+            <p
+              className={`leading-relaxed whitespace-pre-wrap ${isArabicSource ? "arabic-text text-base" : ""}`}
               dir={isArabicSource ? "rtl" : "ltr"}
-              dangerouslySetInnerHTML={{ __html: text }}
-            />
+            >
+              {text}
+            </p>
           )}
         </div>
       )}
