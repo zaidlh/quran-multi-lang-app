@@ -1,5 +1,6 @@
 import { getArabicSurah, getTranslation, getSurahs, AVAILABLE_LANGUAGES } from "@/lib/quran-data";
 import { SurahView } from "./SurahView";
+import { JsonLd } from "../../components/JsonLd";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -13,6 +14,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const surah = surahs.find((s) => s.number === Number(id));
   return {
     title: surah ? `${surah.name_en} (${surah.name}) — Quran` : "Surah — Quran",
+    description: surah
+      ? `Read Surah ${surah.name_en} (${surah.name}) with translation. ${surah.verses} verses, ${surah.revelation_type}. ${surah.name_translation}.`
+      : undefined,
   };
 }
 
@@ -55,6 +59,20 @@ export default async function SurahPage({
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-8">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Chapter",
+          name: `Surah ${surahMeta.name_en}`,
+          alternativeHeadline: surahMeta.name,
+          description: `${surahMeta.name_translation} — ${surahMeta.verses} verses, ${surahMeta.revelation_type}`,
+          position: surahMeta.number,
+          isPartOf: {
+            "@type": "Book",
+            name: "The Holy Quran",
+          },
+        }}
+      />
       <div className="flex items-center justify-between mb-6">
         <Link href="/" className="text-primary hover:underline text-sm">
           &larr; All Surahs
