@@ -1,0 +1,33 @@
+{/* @jsxImportSource react */}
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Introduction" />
+
+# Quran Multi-Language App — Component Library
+
+Welcome to the component library for the **Quran Multi-Language App**.
+
+## Components
+
+| Component | Description |
+|-----------|-------------|
+| **SurahSearch** | Searchable, filterable grid of all 114 surahs |
+| **BookmarkButton** | Toggle bookmark for a surah or individual verse |
+| **TajweedText** | Arabic text with optional tajweed color-coding (7 rules) |
+| **HifzMode** | Memorization mode with 4 difficulty levels |
+| **ShareButton** | Share or copy a verse via Web Share API / clipboard |
+| **Skeleton** | Animated loading placeholders |
+| **VerseOfTheDay** | Daily rotating notable verse card |
+
+## Design Principles
+
+- **RTL-first**: Arabic text is always right-to-left with proper Unicode handling
+- **Dark mode**: All components support light and dark themes via Tailwind's `.dark` class
+- **Accessibility**: ARIA labels, keyboard navigation, and focus management
+- **localStorage**: Bookmarks and reading state persist across sessions
+
+## Tech Stack
+
+- **React 19** with TypeScript
+- **Tailwind CSS** for styling
+- **Next.js 16** App Router for the web app
