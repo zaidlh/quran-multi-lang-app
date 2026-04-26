@@ -68,7 +68,7 @@ export default function RootLayout({
             {children}
           </main>
           <footer
-            className="border-t border-zinc-200 dark:border-zinc-800 py-6 text-center text-sm text-zinc-500"
+            className="bg-surface border-t border-border py-6 text-center text-xs text-muted"
             role="contentinfo"
           >
             <p>
