@@ -58,6 +58,18 @@ body {
   text-align: right;
 }
 
+[dir="rtl"] .rtl-mirror {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .ms-auto {
+  margin-inline-start: auto;
+}
+
+[dir="rtl"] .me-auto {
+  margin-inline-end: auto;
+}
+
 .arabic-text {
   font-family: var(--font-arabic), "Traditional Arabic", "Scheherazade New", "Amiri", serif;
   line-height: 2.4;

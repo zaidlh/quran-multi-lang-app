@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useUILanguage } from "./components/UILanguageProvider";
 
 export default function Error({
   error,
@@ -9,6 +10,8 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const { t } = useUILanguage();
+
   return (
     <div className="min-h-[60vh] flex items-center justify-center px-4">
       <div className="text-center">
@@ -27,22 +30,20 @@ export default function Error({
             />
           </svg>
         </div>
-        <h2 className="text-2xl font-bold mb-2">Something went wrong</h2>
-        <p className="text-muted mb-6">
-          {error.message || "An unexpected error occurred. Please try again."}
-        </p>
+        <h2 className="text-2xl font-bold mb-2">{t.common.somethingWrong}</h2>
+        <p className="text-muted mb-6">{error.message || t.common.unexpectedError}</p>
         <div className="flex items-center justify-center gap-3">
           <button
             onClick={reset}
             className="px-5 py-2.5 bg-primary text-white rounded-xl hover:opacity-90 transition-opacity text-sm font-medium"
           >
-            Try Again
+            {t.common.retry}
           </button>
           <Link
             href="/"
             className="px-5 py-2.5 rounded-xl border border-border hover:bg-surface-elevated transition-colors text-sm font-medium"
           >
-            Go Home
+            {t.common.goHome}
           </Link>
         </div>
       </div>

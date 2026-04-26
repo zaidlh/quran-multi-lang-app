@@ -1,6 +1,8 @@
 "use client";
 
 import { useRef, useState, useCallback, useEffect } from "react";
+import { useUILanguage } from "./UILanguageProvider";
+import { formatNumber } from "../lib/ui-labels";
 
 interface AudioPlayerProps {
   surahNumber: number;
@@ -34,6 +36,7 @@ const RECITERS = [
 type PlayMode = "surah" | "ayah";
 
 export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: AudioPlayerProps) {
+  const { t, uiLang } = useUILanguage();
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentReciter, setCurrentReciter] = useState(RECITERS[0].id);
@@ -158,7 +161,7 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
           <button
             onClick={togglePlay}
             className="w-12 h-12 flex items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity flex-shrink-0"
-            aria-label={isPlaying ? "Pause" : "Play"}
+            aria-label={isPlaying ? t.audio.pause : t.audio.play}
           >
             {isPlaying ? (
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -194,7 +197,7 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
                 ? "bg-primary-light text-primary"
                 : "text-muted hover:bg-surface-elevated"
             }`}
-            aria-label="Audio settings"
+            aria-label={t.audio.settings}
           >
             <svg
               className="w-5 h-5"
@@ -242,7 +245,9 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
                     : "bg-surface border border-border hover:border-primary text-muted hover:text-primary"
                 }`}
               >
-                {playMode === "ayah" ? `Ayah ${currentAyah}/${totalAyahs}` : "Verse-by-verse"}
+                {playMode === "ayah"
+                  ? `${t.surah.verse} ${formatNumber(currentAyah, uiLang)}/${formatNumber(totalAyahs, uiLang)}`
+                  : t.audio.ayahMode}
               </button>
             )}
           </div>

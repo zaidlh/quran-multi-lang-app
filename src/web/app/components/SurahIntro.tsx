@@ -1,3 +1,8 @@
+"use client";
+
+import { useUILanguage } from "./UILanguageProvider";
+import { formatNumber } from "../lib/ui-labels";
+
 interface SurahIntroProps {
   surahNumber: number;
   name: string;
@@ -31,6 +36,7 @@ export function SurahIntro({
   verses,
   revelationType,
 }: SurahIntroProps) {
+  const { t, uiLang } = useUILanguage();
   const intro = SURAH_INTROS[surahNumber];
 
   return (
@@ -38,7 +44,7 @@ export function SurahIntro({
       <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-primary/5" />
       <div className="relative flex items-center gap-4 mb-3">
         <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-primary-light text-primary text-2xl font-bold">
-          {surahNumber}
+          {formatNumber(surahNumber, uiLang)}
         </span>
         <div className="flex-1">
           <div className="flex items-center gap-3">
@@ -50,7 +56,9 @@ export function SurahIntro({
           <div className="flex items-center gap-2 text-sm text-muted mt-0.5">
             <span>{nameTranslation}</span>
             <span>·</span>
-            <span>{verses} verses</span>
+            <span>
+              {formatNumber(verses, uiLang)} {t.surah.verses}
+            </span>
             <span>·</span>
             <span
               className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${
@@ -59,7 +67,7 @@ export function SurahIntro({
                   : "bg-green-50 text-green-600 dark:bg-green-950 dark:text-green-400"
               }`}
             >
-              {revelationType}
+              {revelationType === "Meccan" ? t.search.filterMeccan : t.search.filterMedinan}
             </span>
           </div>
         </div>

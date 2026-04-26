@@ -4,6 +4,7 @@ import { Scheherazade_New } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/Header";
 import { ThemeProvider } from "./components/ThemeProvider";
+import { UILanguageProvider } from "./components/UILanguageProvider";
 import { ServiceWorkerRegistration } from "./components/ServiceWorkerRegistration";
 
 const geistSans = Geist({
@@ -19,9 +20,9 @@ const scheherazade = Scheherazade_New({
 });
 
 export const metadata: Metadata = {
-  title: "Quran Multi-Language App",
+  title: "تطبيق القرآن الكريم — Quran Multi-Language App",
   description:
-    "Read the Holy Quran with translations in 10+ languages, listen to recitations, and explore tafsir.",
+    "اقرأ القرآن الكريم مع ترجمات بأكثر من ١٠ لغات، واستمع للتلاوات، واستكشف التفسير. Read the Holy Quran with translations in 10+ languages.",
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -31,9 +32,8 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Quran Multi-Language App",
-    description:
-      "Read the Holy Quran with translations in 10+ languages, listen to recitations, and explore tafsir.",
+    title: "تطبيق القرآن الكريم — Quran Multi-Language App",
+    description: "اقرأ القرآن الكريم مع ترجمات بأكثر من ١٠ لغات، واستمع للتلاوات، واستكشف التفسير.",
     siteName: "Quran Multi-Language App",
     type: "website",
   },
@@ -50,38 +50,41 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ar"
+      dir="rtl"
       className={`${geistSans.variable} ${scheherazade.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
-        <ThemeProvider>
-          <ServiceWorkerRegistration />
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded"
-          >
-            Skip to content
-          </a>
-          <Header />
-          <main id="main-content" className="flex-1" role="main">
-            {children}
-          </main>
-          <footer
-            className="bg-surface border-t border-border py-6 text-center text-xs text-muted"
-            role="contentinfo"
-          >
-            <p>
-              Quran Multi-Language App — Open Source (MIT) —{" "}
-              <a
-                href="https://github.com/zaidlh/quran-multi-lang-app"
-                className="underline hover:text-primary"
-              >
-                GitHub
-              </a>
-            </p>
-          </footer>
-        </ThemeProvider>
+        <UILanguageProvider>
+          <ThemeProvider>
+            <ServiceWorkerRegistration />
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:inline-start-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded"
+            >
+              Skip to content
+            </a>
+            <Header />
+            <main id="main-content" className="flex-1" role="main">
+              {children}
+            </main>
+            <footer
+              className="bg-surface border-t border-border py-6 text-center text-xs text-muted"
+              role="contentinfo"
+            >
+              <p>
+                Quran Multi-Language App — Open Source (MIT) —{" "}
+                <a
+                  href="https://github.com/zaidlh/quran-multi-lang-app"
+                  className="underline hover:text-primary"
+                >
+                  GitHub
+                </a>
+              </p>
+            </footer>
+          </ThemeProvider>
+        </UILanguageProvider>
       </body>
     </html>
   );

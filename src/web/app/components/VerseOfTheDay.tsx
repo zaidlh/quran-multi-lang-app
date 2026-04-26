@@ -2,6 +2,8 @@
 
 import { useMemo } from "react";
 import Link from "next/link";
+import { useUILanguage } from "./UILanguageProvider";
+import { formatNumber } from "../lib/ui-labels";
 
 interface VerseOfTheDayProps {
   totalSurahs: { number: number; name_en: string; name: string; verses: number }[];
@@ -48,6 +50,7 @@ const NOTABLE_VERSES = [
 ];
 
 export function VerseOfTheDay({ totalSurahs }: VerseOfTheDayProps) {
+  const { t, dir, uiLang } = useUILanguage();
   const verse = useMemo(() => {
     const dayIndex = getDayOfYear() % NOTABLE_VERSES.length;
     return NOTABLE_VERSES[dayIndex];
@@ -65,14 +68,15 @@ export function VerseOfTheDay({ totalSurahs }: VerseOfTheDayProps) {
           ✦
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-xs text-primary font-medium mb-1">Verse of the Day</p>
+          <p className="text-xs text-primary font-medium mb-1">{t.verseOfDay.title}</p>
           <p className="font-semibold text-sm">
-            {surah?.name_en ?? `Surah ${verse.surah}`} ({surah?.name ?? ""}) — Verse {verse.ayah}
+            {surah?.name_en ?? `${t.lastRead.surah} ${formatNumber(verse.surah, uiLang)}`} (
+            {surah?.name ?? ""}) — {t.surah.verse} {formatNumber(verse.ayah, uiLang)}
           </p>
           <p className="text-xs text-zinc-500 mt-1">{verse.label}</p>
         </div>
         <svg
-          className="w-5 h-5 text-zinc-400 flex-shrink-0 mt-1"
+          className={`w-5 h-5 text-zinc-400 flex-shrink-0 mt-1 ${dir === "rtl" ? "rotate-180" : ""}`}
           fill="none"
           stroke="currentColor"
           strokeWidth={2}
