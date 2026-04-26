@@ -422,7 +422,7 @@ See [ROADMAP.md](ROADMAP.md) for planned features across v1.1 → v2.0, includin
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/zaidlh"><img src="https://github.com/zaidlh.png?size=100" width="100px;" alt="Zaid Lhouch"/><br /><sub><b>Zaid Lhouch</b></sub></a><br />💻 📖 🤔 📆</td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/zaidlh"><img src="https://github.com/zaidlh.png?size=100" width="100px;" alt="ZA ID LH"/><br /><sub><b>ZA ID LH</b></sub></a><br />💻 📖 🤔 📆</td>
     </tr>
   </tbody>
 </table>

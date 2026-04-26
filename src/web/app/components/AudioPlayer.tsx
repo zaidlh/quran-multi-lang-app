@@ -14,22 +14,26 @@ const RECITERS = [
   {
     id: "mishary_rashid_alafasy",
     name: "Mishary Alafasy",
-    path: "Alafasy_128kbps",
+    ayahPath: "Alafasy_128kbps",
+    surahPath: "mishaari_raashid_al_3afaasee",
   },
   {
     id: "abdul_basit_murattal",
     name: "Abdul Basit",
-    path: "Abdul_Basit_Murattal_192kbps",
+    ayahPath: "Abdul_Basit_Murattal_192kbps",
+    surahPath: "abdul_basit_murattal",
   },
   {
     id: "saad_al_ghamdi",
     name: "Saad Al-Ghamdi",
-    path: "Saad_Al_Ghamdi_128kbps",
+    ayahPath: "Ghamadi_40kbps",
+    surahPath: "sa3d_al-ghaamidi/complete",
   },
   {
     id: "maher_al_muaiqly",
     name: "Maher Al-Muaiqly",
-    path: "MauroHammad_128kbps",
+    ayahPath: "MaherAlMuaiqly128kbps",
+    surahPath: "maher_256",
   },
 ];
 
@@ -51,11 +55,11 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
   const getAudioUrl = useCallback(
     (mode: PlayMode, ayah: number) => {
       if (mode === "ayah") {
-        return `https://everyayah.com/data/${reciter.path}/${String(surahNumber).padStart(3, "0")}${String(ayah).padStart(3, "0")}.mp3`;
+        return `https://everyayah.com/data/${reciter.ayahPath}/${String(surahNumber).padStart(3, "0")}${String(ayah).padStart(3, "0")}.mp3`;
       }
-      return `https://download.quranicaudio.com/quran/${reciter.path.toLowerCase().replace(/_\d+kbps$/, "")}/${String(surahNumber).padStart(3, "0")}.mp3`;
+      return `https://download.quranicaudio.com/quran/${reciter.surahPath}/${String(surahNumber).padStart(3, "0")}.mp3`;
     },
-    [reciter.path, surahNumber]
+    [reciter.ayahPath, reciter.surahPath, surahNumber]
   );
 
   const audioUrl = getAudioUrl(playMode, currentAyah);
