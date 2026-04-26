@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useSyncExternalStore } from "react";
 
 interface VerseNotesProps {
   surahNumber: number;
@@ -11,33 +11,61 @@ function getNoteKey(surah: number, ayah: number): string {
   return `quran-note-${surah}-${ayah}`;
 }
 
-function getSavedNote(surah: number, ayah: number): string {
-  if (typeof window === "undefined") return "";
-  return localStorage.getItem(getNoteKey(surah, ayah)) || "";
+function createNoteStore(surah: number, ayah: number) {
+  const key = getNoteKey(surah, ayah);
+  return {
+    getSnapshot: () => {
+      return localStorage.getItem(key) || "";
+    },
+    getServerSnapshot: () => "",
+    subscribe: (callback: () => void) => {
+      const handler = (e: StorageEvent) => {
+        if (e.key === key) callback();
+      };
+      window.addEventListener("storage", handler);
+      return () => window.removeEventListener("storage", handler);
+    },
+  };
 }
 
 export function VerseNotes({ surahNumber, ayahNumber }: VerseNotesProps) {
   const [open, setOpen] = useState(false);
-  const [note, setNote] = useState(() => getSavedNote(surahNumber, ayahNumber));
   const [saved, setSaved] = useState(false);
+
+  const [store] = useState(() => createNoteStore(surahNumber, ayahNumber));
+  const savedNote = useSyncExternalStore(
+    store.subscribe,
+    store.getSnapshot,
+    store.getServerSnapshot
+  );
+
+  const [draft, setDraft] = useState<string | null>(null);
+  const note = draft !== null ? draft : savedNote;
+
+  const handleOpen = useCallback(() => {
+    setDraft(savedNote);
+    setOpen(true);
+  }, [savedNote]);
 
   const handleSave = useCallback(() => {
     const key = getNoteKey(surahNumber, ayahNumber);
-    if (note.trim()) {
-      localStorage.setItem(key, note);
+    const value = (draft ?? "").trim();
+    if (value) {
+      localStorage.setItem(key, value);
     } else {
       localStorage.removeItem(key);
     }
+    setDraft(null);
     setSaved(true);
     setTimeout(() => setSaved(false), 1500);
-  }, [note, surahNumber, ayahNumber]);
+  }, [draft, surahNumber, ayahNumber]);
 
-  const hasNote = note.trim().length > 0;
+  const hasNote = savedNote.trim().length > 0;
 
   return (
     <div className="mt-1">
       <button
-        onClick={() => setOpen((prev) => !prev)}
+        onClick={() => (open ? setOpen(false) : handleOpen())}
         className="text-xs text-zinc-500 hover:text-primary flex items-center gap-1 transition-colors"
       >
         <svg
@@ -60,7 +88,7 @@ export function VerseNotes({ surahNumber, ayahNumber }: VerseNotesProps) {
         <div className="mt-2 space-y-2">
           <textarea
             value={note}
-            onChange={(e) => setNote(e.target.value)}
+            onChange={(e) => setDraft(e.target.value)}
             placeholder="Write your reflection or note..."
             className="w-full text-sm p-2 border border-zinc-300 dark:border-zinc-700 rounded-lg bg-white dark:bg-zinc-900 resize-y min-h-[60px] focus:outline-none focus:border-primary"
             rows={3}
@@ -73,7 +101,10 @@ export function VerseNotes({ surahNumber, ayahNumber }: VerseNotesProps) {
               {saved ? "Saved" : "Save"}
             </button>
             <button
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                setDraft(null);
+                setOpen(false);
+              }}
               className="text-xs px-3 py-1 border border-zinc-300 dark:border-zinc-700 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             >
               Close
