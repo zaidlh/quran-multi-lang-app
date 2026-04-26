@@ -30,10 +30,21 @@ const MOCK_SURAHS = [
   },
 ];
 
+// Default UI language is Arabic; labels come from UI_LABELS.ar
+// Numbers are formatted with Intl.NumberFormat("ar-SA") → Eastern Arabic numerals
+const AR = {
+  placeholder: "ابحث عن سورة...",
+  results: "نتيجة",
+  meccan: "مكية",
+  medinan: "مدنية",
+  verses: "آيات",
+  num: (n: number) => new Intl.NumberFormat("ar-SA").format(n),
+};
+
 describe("SurahSearch", () => {
   it("renders all surahs by default", () => {
     render(<SurahSearch surahs={MOCK_SURAHS} />);
-    expect(screen.getByText("3 surahs")).toBeInTheDocument();
+    expect(screen.getByText(`${AR.num(3)} ${AR.results}`)).toBeInTheDocument();
     expect(screen.getByText("Al-Fatiha")).toBeInTheDocument();
     expect(screen.getByText("Al-Baqarah")).toBeInTheDocument();
     expect(screen.getByText("An-Nas")).toBeInTheDocument();
@@ -43,10 +54,10 @@ describe("SurahSearch", () => {
     const user = userEvent.setup();
     render(<SurahSearch surahs={MOCK_SURAHS} />);
 
-    const input = screen.getByPlaceholderText("Search surahs by name or number...");
+    const input = screen.getByPlaceholderText(AR.placeholder);
     await user.type(input, "Fatiha");
 
-    expect(screen.getByText("1 surahs")).toBeInTheDocument();
+    expect(screen.getByText(`${AR.num(1)} ${AR.results}`)).toBeInTheDocument();
     expect(screen.getByText("Al-Fatiha")).toBeInTheDocument();
     expect(screen.queryByText("Al-Baqarah")).not.toBeInTheDocument();
   });
@@ -55,10 +66,10 @@ describe("SurahSearch", () => {
     const user = userEvent.setup();
     render(<SurahSearch surahs={MOCK_SURAHS} />);
 
-    const input = screen.getByPlaceholderText("Search surahs by name or number...");
+    const input = screen.getByPlaceholderText(AR.placeholder);
     await user.type(input, "114");
 
-    expect(screen.getByText("1 surahs")).toBeInTheDocument();
+    expect(screen.getByText(`${AR.num(1)} ${AR.results}`)).toBeInTheDocument();
     expect(screen.getByText("An-Nas")).toBeInTheDocument();
   });
 
@@ -66,8 +77,8 @@ describe("SurahSearch", () => {
     const user = userEvent.setup();
     render(<SurahSearch surahs={MOCK_SURAHS} />);
 
-    await user.click(screen.getByRole("button", { name: "Meccan" }));
-    expect(screen.getByText("2 surahs")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: AR.meccan }));
+    expect(screen.getByText(`${AR.num(2)} ${AR.results}`)).toBeInTheDocument();
     expect(screen.getByText("Al-Fatiha")).toBeInTheDocument();
     expect(screen.getByText("An-Nas")).toBeInTheDocument();
     expect(screen.queryByText("Al-Baqarah")).not.toBeInTheDocument();
@@ -77,8 +88,8 @@ describe("SurahSearch", () => {
     const user = userEvent.setup();
     render(<SurahSearch surahs={MOCK_SURAHS} />);
 
-    await user.click(screen.getByRole("button", { name: "Medinan" }));
-    expect(screen.getByText("1 surahs")).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: AR.medinan }));
+    expect(screen.getByText(`${AR.num(1)} ${AR.results}`)).toBeInTheDocument();
     expect(screen.getByText("Al-Baqarah")).toBeInTheDocument();
   });
 
@@ -86,11 +97,11 @@ describe("SurahSearch", () => {
     const user = userEvent.setup();
     render(<SurahSearch surahs={MOCK_SURAHS} />);
 
-    await user.click(screen.getByRole("button", { name: "Meccan" }));
-    const input = screen.getByPlaceholderText("Search surahs by name or number...");
+    await user.click(screen.getByRole("button", { name: AR.meccan }));
+    const input = screen.getByPlaceholderText(AR.placeholder);
     await user.type(input, "Nas");
 
-    expect(screen.getByText("1 surahs")).toBeInTheDocument();
+    expect(screen.getByText(`${AR.num(1)} ${AR.results}`)).toBeInTheDocument();
     expect(screen.getByText("An-Nas")).toBeInTheDocument();
   });
 
@@ -98,26 +109,26 @@ describe("SurahSearch", () => {
     const user = userEvent.setup();
     render(<SurahSearch surahs={MOCK_SURAHS} />);
 
-    const input = screen.getByPlaceholderText("Search surahs by name or number...");
+    const input = screen.getByPlaceholderText(AR.placeholder);
     await user.type(input, "nonexistent");
 
-    expect(screen.getByText("0 surahs")).toBeInTheDocument();
+    expect(screen.getByText(`${AR.num(0)} ${AR.results}`)).toBeInTheDocument();
   });
 
   it("searches by Arabic name", async () => {
     const user = userEvent.setup();
     render(<SurahSearch surahs={MOCK_SURAHS} />);
 
-    const input = screen.getByPlaceholderText("Search surahs by name or number...");
+    const input = screen.getByPlaceholderText(AR.placeholder);
     await user.type(input, "الفاتحة");
 
-    expect(screen.getByText("1 surahs")).toBeInTheDocument();
+    expect(screen.getByText(`${AR.num(1)} ${AR.results}`)).toBeInTheDocument();
     expect(screen.getByText("Al-Fatiha")).toBeInTheDocument();
   });
 
   it("displays verse count and revelation type", () => {
     render(<SurahSearch surahs={MOCK_SURAHS} />);
-    expect(screen.getByText("7 verses")).toBeInTheDocument();
-    expect(screen.getByText("286 verses")).toBeInTheDocument();
+    expect(screen.getByText(`${AR.num(7)} ${AR.verses}`)).toBeInTheDocument();
+    expect(screen.getByText(`${AR.num(286)} ${AR.verses}`)).toBeInTheDocument();
   });
 });

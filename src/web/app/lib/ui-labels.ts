@@ -76,6 +76,7 @@ interface Labels {
     fontSize: string;
     audioSpeed: string;
     reset: string;
+    save: string;
     saved: string;
   };
   common: {
@@ -158,6 +159,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       fontSize: "حجم الخط",
       audioSpeed: "سرعة الصوت",
       reset: "إعادة تعيين",
+      save: "حفظ الإعدادات",
       saved: "تم الحفظ",
     },
     common: {
@@ -238,6 +240,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       fontSize: "Font Size",
       audioSpeed: "Audio Speed",
       reset: "Reset",
+      save: "Save Settings",
       saved: "Saved",
     },
     common: {
@@ -314,6 +317,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       fontSize: "Taille de police",
       audioSpeed: "Vitesse audio",
       reset: "Réinitialiser",
+      save: "Enregistrer",
       saved: "Enregistré",
     },
     common: {
@@ -394,6 +398,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       fontSize: "Tamaño de fuente",
       audioSpeed: "Velocidad de audio",
       reset: "Restablecer",
+      save: "Guardar",
       saved: "Guardado",
     },
     common: {
@@ -474,6 +479,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       fontSize: "Yazı Boyutu",
       audioSpeed: "Ses Hızı",
       reset: "Sıfırla",
+      save: "Kaydet",
       saved: "Kaydedildi",
     },
     common: {
@@ -554,6 +560,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       fontSize: "Ukuran Font",
       audioSpeed: "Kecepatan Audio",
       reset: "Reset",
+      save: "Simpan",
       saved: "Tersimpan",
     },
     common: {
@@ -630,6 +637,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       fontSize: "خط کا سائز",
       audioSpeed: "آڈیو رفتار",
       reset: "دوبارہ ترتیب",
+      save: "محفوظ کریں",
       saved: "محفوظ",
     },
     common: {
@@ -710,6 +718,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       fontSize: "ফন্ট সাইজ",
       audioSpeed: "অডিও গতি",
       reset: "রিসেট",
+      save: "সংরক্ষণ করুন",
       saved: "সংরক্ষিত",
     },
     common: {
@@ -786,6 +795,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       fontSize: "Размер шрифта",
       audioSpeed: "Скорость аудио",
       reset: "Сбросить",
+      save: "Сохранить",
       saved: "Сохранено",
     },
     common: {
@@ -862,6 +872,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       fontSize: "字体大小",
       audioSpeed: "音频速度",
       reset: "重置",
+      save: "保存设置",
       saved: "已保存",
     },
     common: {
@@ -885,7 +896,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
 };
 
 export function formatNumber(num: number, lang: UILanguage): string {
-  if (RTL_LANGS.has(lang)) {
+  if (lang === "ar") {
     return new Intl.NumberFormat("ar-SA").format(num);
   }
   return new Intl.NumberFormat(lang).format(num);
