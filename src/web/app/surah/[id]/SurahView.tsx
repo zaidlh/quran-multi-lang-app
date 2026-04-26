@@ -6,6 +6,9 @@ import { AudioPlayer } from "../../components/AudioPlayer";
 import { BookmarkButton } from "../../components/BookmarkButton";
 import { TafsirPanel } from "../../components/TafsirPanel";
 import { ShareButton } from "../../components/ShareButton";
+import { TajweedText } from "../../components/TajweedText";
+import { CrossReferences } from "../../components/CrossReferences";
+import { RecitationComparison } from "../../components/RecitationComparison";
 import { saveLastRead } from "../../components/LastReadBanner";
 
 interface Verse {
@@ -144,8 +147,11 @@ export function SurahView({
                   {trans.text}
                 </p>
               )}
-              <div className="ml-10">
+              <div className="ml-10 space-y-1">
+                <TajweedText text={verse.text} />
                 <TafsirPanel surahNumber={surahNumber} ayahNumber={verse.number} />
+                <CrossReferences surahNumber={surahNumber} ayahNumber={verse.number} />
+                <RecitationComparison surahNumber={surahNumber} ayahNumber={verse.number} />
               </div>
             </div>
           );

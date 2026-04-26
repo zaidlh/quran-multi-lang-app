@@ -1,6 +1,7 @@
 import { getArabicSurah, getTranslation, getSurahs, AVAILABLE_LANGUAGES } from "@/lib/quran-data";
 import { SurahView } from "./SurahView";
 import { JsonLd } from "../../components/JsonLd";
+import { SurahIntro } from "../../components/SurahIntro";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -97,15 +98,14 @@ export default async function SurahPage({
         </div>
       </div>
 
-      <div className="text-center mb-8 space-y-2">
-        <h1 className="arabic-text text-3xl" dir="rtl">
-          {surahMeta.name}
-        </h1>
-        <h2 className="text-xl font-semibold">{surahMeta.name_en}</h2>
-        <p className="text-zinc-500 text-sm">
-          {surahMeta.name_translation} · {surahMeta.verses} verses · {surahMeta.revelation_type}
-        </p>
-      </div>
+      <SurahIntro
+        surahNumber={surahMeta.number}
+        name={surahMeta.name}
+        nameEn={surahMeta.name_en}
+        nameTranslation={surahMeta.name_translation}
+        verses={surahMeta.verses}
+        revelationType={surahMeta.revelation_type}
+      />
 
       <SurahView
         surahNumber={surahNumber}

@@ -112,6 +112,13 @@ export function Header() {
           >
             Search
           </Link>
+          <Link
+            href="/mushaf"
+            className="hover:text-primary transition-colors"
+            onClick={() => setMenuOpen(false)}
+          >
+            Mushaf
+          </Link>
         </div>
       </nav>
     </header>
