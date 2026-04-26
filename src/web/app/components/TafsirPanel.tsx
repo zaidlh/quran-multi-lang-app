@@ -18,7 +18,8 @@ const TAFSIR_SOURCES: TafsirSource[] = [
 ];
 
 interface TafsirEntry {
-  id: number;
+  ayah: number;
+  surah: number;
   text: string;
 }
 
@@ -44,7 +45,7 @@ export function TafsirPanel({ surahNumber, ayahNumber }: TafsirPanelProps) {
         const res = await fetch(url);
         if (!res.ok) throw new Error("Failed to load tafsir");
         const data: { ayahs: TafsirEntry[] } = await res.json();
-        const entry = data.ayahs?.find((a) => a.id === ayahNumber);
+        const entry = data.ayahs?.find((a) => a.ayah === ayahNumber);
         setText(entry?.text || "Tafsir not available for this verse.");
       } catch {
         setError("Could not load tafsir. Please try again.");
