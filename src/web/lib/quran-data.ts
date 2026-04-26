@@ -77,8 +77,10 @@ export const AVAILABLE_LANGUAGES = [
   { code: "en", name: "English" },
   { code: "fr", name: "French" },
   { code: "es", name: "Spanish" },
+  { code: "de", name: "German" },
   { code: "tr", name: "Turkish" },
   { code: "id", name: "Indonesian" },
+  { code: "ms", name: "Malay" },
   { code: "ur", name: "Urdu" },
   { code: "bn", name: "Bengali" },
 ] as const;

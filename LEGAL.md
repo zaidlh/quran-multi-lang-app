@@ -24,6 +24,8 @@ This project (code, scripts, starter apps) is licensed under the **MIT License**
   - Indonesian: Ministry of Religious Affairs (Kemenag)
   - Urdu: Ahmed Ali
   - Bengali: Muhiuddin Khan
+  - German: Abu Rida Muhammad ibn Ahmad ibn Rassoul (via [Tanzil.net](https://tanzil.net))
+  - Malay: Abdullah Muhammad Basmeih (via [Tanzil.net](https://tanzil.net))
 
 ### Surah Metadata
 - **Source:** [semarketir/quranjson](https://github.com/semarketir/quranjson)
