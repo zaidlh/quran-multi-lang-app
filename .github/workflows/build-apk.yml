@@ -42,12 +42,10 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Create assets directory
-        run: mkdir -p assets
-
       - name: Generate SQLite database
+        working-directory: ${{ github.workspace }}
         run: |
-          cd ../..
+          mkdir -p src/mobile/assets
           pip install -r scripts/requirements.txt || true
           python scripts/generate_sqlite.py --output src/mobile/assets/quran.db
 
