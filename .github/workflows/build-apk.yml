@@ -40,7 +40,9 @@ jobs:
         uses: android-actions/setup-android@v3
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: |
+          npm install --force
+          npm install @react-native-community/cli-platform-android --save-dev --force
 
       - name: Generate SQLite database
         working-directory: ${{ github.workspace }}
