@@ -88,15 +88,15 @@ export function SurahView({
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <select
-            value={currentLang}
-            onChange={(e) => router.push(`/surah/${surahNumber}?lang=${e.target.value}`)}
-            className={`h-10 ${dir === "rtl" ? "pr-9 pl-3" : "pl-9 pr-3"} border border-border rounded-xl bg-surface text-sm font-medium focus:outline-none focus:ring-2 focus:border-primary transition-all appearance-none cursor-pointer`}
-            style={{ focusRingColor: "var(--primary-glow)" }}
-          >
-            {languages.map((l) => (
-              <option key={l.code} value={l.code}>{l.name}</option>
-            ))}
-          </select>
+  value={currentLang}
+  onChange={(e) => router.push(`/surah/${surahNumber}?lang=${e.target.value}`)}
+  className={`h-10 ${dir === "rtl" ? "pr-9 pl-3" : "pl-9 pr-3"} border border-border rounded-xl bg-surface text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[var(--primary-glow)] focus:border-primary transition-all appearance-none cursor-pointer`}
+>
+  {languages.map((l) => (
+    <option key={l.code} value={l.code}>{l.name}</option>
+  ))}
+        </select>
+
         </div>
         <BookmarkButton surahNumber={surahNumber} />
       </div>
