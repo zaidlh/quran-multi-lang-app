@@ -22,8 +22,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: src/mobile/package-lock.json
+          # لا نستخدم cache لتجنب ملفات قديمة
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,10 +38,15 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install dependencies
+      - name: Install dependencies fresh
         run: |
-          npm install --legacy-peer-deps
-          npm install @react-native-community/cli-platform-android --save-dev --legacy-peer-deps
+          rm -rf node_modules package-lock.json
+          npm install --force
+          npm install @react-native-community/cli-platform-android --save-dev --force
+
+      - name: Verify CLI setup
+        run: |
+          ls -la node_modules/@react-native-community/cli-platform-android/native_modules.gradle
 
       - name: Generate SQLite database
         working-directory: ${{ github.workspace }}
