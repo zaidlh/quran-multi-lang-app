@@ -2,22 +2,89 @@
 
 This folder contains Android APK files for the Quran Multi-Language Mobile App.
 
-## Quick Build
+## Current Status
 
-Run the automated build script:
+⚠️ **APK Build Requires Java 21** - Environment has Java 25
+
+The APK cannot be built in this environment due to Java version incompatibility:
+- **Required:** Java 21 (for React Native 0.73.x)
+- **Current:** Java 25.0.2 (incompatible)
+
+## How to Build APK
+
+### Option 1: Build Locally (Recommended)
+
+**Prerequisites:**
+- Java 21 JDK (download from [Adoptium](https://adoptium.net/))
+- Android SDK with platform-tools and build-tools 34.0.0
+- Node.js 18+
+
+**Steps:**
 ```bash
+# Set Java 21 as default
+export JAVA_HOME=/path/to/java21
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Verify Java version
+java -version  # Should show Java 21
+
+# Build APK
 ./apk/build-apk.sh
 ```
 
-This will build the APK and copy it to this folder.
+### Option 2: Use Docker (Alternative)
 
-## Current Status
+```bash
+# Build with Docker (requires Docker)
+./build-apk-docker.sh
+```
 
-❌ **APK Build Failed** - Java Version Compatibility Issue
+### Option 3: Manual Build
 
-The APK could not be built in this environment due to a Java version mismatch:
-- Environment has Java 25.0.2
-- React Native 0.73.x requires Java 21 or earlier
+```bash
+cd src/mobile
+npm install
+cd ../..
+python scripts/generate_sqlite.py --output src/mobile/assets/quran.db
+cd src/mobile
+npx react-native run-android --release
+```
+
+## APK Details
+
+- **Expected Name:** `quran-mobile-release.apk`
+- **Expected Size:** ~50-80 MB
+- **Features:**
+  - Offline Quran text in 9 languages
+  - Audio streaming capability
+  - SQLite database with 22.4 MB of Quran data
+  - React Native 0.73.x
+  - Android API 21+ support
+
+## Troubleshooting
+
+**Java Version Issues:**
+```bash
+# Install Java 21
+# Ubuntu/Debian:
+sudo apt install openjdk-21-jdk
+
+# Set environment variables:
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+**Android SDK Issues:**
+```bash
+# Install Android SDK components
+sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
+```
+
+## Current Files
+
+- `quran-mobile-release.apk` - Placeholder file (replace with real APK)
+- `build-apk.sh` - Local build script
+- `README.md` - This documentation
 
 ## How to Build APK
 
