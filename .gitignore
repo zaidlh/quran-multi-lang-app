@@ -48,6 +48,9 @@ pip-log.txt
 coverage/
 .nyc_output/
 .pytest_cache/
+
+# APK files
+apk/*.apk
 htmlcov/
 
 # Build artifacts

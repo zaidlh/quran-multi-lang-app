@@ -2,6 +2,15 @@
 
 This folder contains Android APK files for the Quran Multi-Language Mobile App.
 
+## Quick Build
+
+Run the automated build script:
+```bash
+./apk/build-apk.sh
+```
+
+This will build the APK and copy it to this folder.
+
 ## Current Status
 
 ❌ **APK Build Failed** - Java Version Compatibility Issue
