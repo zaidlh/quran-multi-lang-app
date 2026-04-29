@@ -43,7 +43,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Create assets directory
-        run: mkdir -p src/mobile/assets
+        run: mkdir -p assets
 
       - name: Generate SQLite database
         run: |
