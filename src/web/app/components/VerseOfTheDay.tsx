@@ -110,7 +110,7 @@ export function VerseOfTheDay({ totalSurahs }: VerseOfTheDayProps) {
 
           {/* Arrow */}
           <svg
-            className={`flex-shrink-0 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 ${dir === "rtl" ? "rotate-180 group-hover:-translate-x-1 group-hover:translate-x-0" : ""}`}
+            className={`flex-shrink-0 w-5 h-5 transition-transform duration-300 ${dir === "rtl" ? "rotate-180 group-hover:-translate-x-1" : "group-hover:translate-x-1"}`}
             style={{ color: "var(--primary)" }}
             fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"
           >
