@@ -39,10 +39,12 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install dependencies
+      - name: Add missing CLI dependency
         run: |
-          npm install --legacy-peer-deps
-          npm install @react-native-community/cli-platform-android --save --legacy-peer-deps
+          npm pkg set devDependencies.@react-native-community/cli-platform-android="^13.0.0"
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
 
       - name: Verify CLI setup
         run: |
