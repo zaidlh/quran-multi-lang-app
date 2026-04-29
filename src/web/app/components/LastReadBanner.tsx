@@ -91,7 +91,7 @@ export function LastReadBanner() {
           className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg transition-all duration-200"
           style={{ background: "var(--primary-light)", color: "var(--primary)" }}
         >
-          {dir === "ar" ? "استمر" : "Resume"}
+          {uiLang === "ar" ? "استمر" : "Resume"}
           <svg className={`w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 ${dir === "rtl" ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
