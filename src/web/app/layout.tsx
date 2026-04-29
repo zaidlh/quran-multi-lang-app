@@ -104,25 +104,23 @@ export default function RootLayout({
                   {/* Nav links */}
                   <nav className="flex items-center flex-wrap justify-center gap-x-5 gap-y-2">
                     {[
-                      { href: "/",              label: "Surahs" },
-                      { href: "/juz",           label: "Juz" },
-                      { href: "/search",        label: "Search" },
-                      { href: "/mushaf",        label: "Mushaf" },
-                      { href: "/reading-plans", label: "Plans" },
-                      { href: "/bookmarks",     label: "Bookmarks" },
-                      { href: "/settings",      label: "Settings" },
-                    ].map((link) => (
-                      <a
-                        key={link.href}
-                        href={link.href}
-                        className="text-xs font-medium transition-colors"
-                        style={{ color: "var(--muted)" }}
-                        onMouseEnter={(e) => (e.currentTarget.style.color = "var(--primary)")}
-                        onMouseLeave={(e) => (e.currentTarget.style.color = "var(--muted)")}
-                      >
-                        {link.label}
-                      </a>
-                    ))}
+  { href: "/",              label: "Surahs" },
+  { href: "/juz",           label: "Juz" },
+  { href: "/search",        label: "Search" },
+  { href: "/mushaf",        label: "Mushaf" },
+  { href: "/reading-plans", label: "Plans" },
+  { href: "/bookmarks",     label: "Bookmarks" },
+  { href: "/settings",      label: "Settings" },
+].map((link) => (
+  <a
+    key={link.href}
+    href={link.href}
+    className="text-xs font-medium transition-colors text-[var(--muted)] hover:text-[var(--primary)]"
+  >
+    {link.label}
+  </a>
+))}
+
                   </nav>
 
                   {/* GitHub */}
