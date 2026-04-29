@@ -39,12 +39,20 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Add missing CLI dependency
+        run: |
+          npm pkg set devDependencies.@react-native-community/cli-platform-android="^13.0.0"
+
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: |
+          npm install --legacy-peer-deps
+          npm install expo-modules-core --legacy-peer-deps
+          npm install react-native-screens@latest --legacy-peer-deps
 
       - name: Generate SQLite database
+        working-directory: ${{ github.workspace }}
         run: |
-          cd ../..
+          mkdir -p src/mobile/assets
           pip install -r scripts/requirements.txt || true
           python scripts/generate_sqlite.py --output src/mobile/assets/quran.db
 
@@ -52,7 +60,7 @@ jobs:
         run: chmod +x android/gradlew
 
       - name: Build Release APK
-        run: cd android && ./gradlew assembleRelease
+        run: cd android && ./gradlew assembleRelease --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
