@@ -54,6 +54,7 @@ jobs:
             cp src/mobile/tsconfig.json temp_build/tsconfig.json
             cp src/mobile/index.js temp_build/index.js 2>/dev/null || true
             cp src/mobile/babel.config.js temp_build/babel.config.js 2>/dev/null || true
+            cp src/mobile/metro.config.js temp_build/metro.config.js 2>/dev/null || true
             # Copy assets
             mkdir -p temp_build/assets
             cp src/mobile/assets/quran.db temp_build/assets/ 2>/dev/null || true
@@ -62,11 +63,17 @@ jobs:
             mv temp_build src/mobile
           fi
 
-      - name: Install dependencies
+      - name: Fix dependencies for RN 0.73 compatibility
         working-directory: src/mobile
         run: |
+          # Install compatible versions
           npm install --legacy-peer-deps
-          npm install expo-modules-core --legacy-peer-deps
+          npm install @react-native/metro-config@0.73 --legacy-peer-deps
+          npm install react-native-screens@3.22.0 --legacy-peer-deps
+          npm install react-native-safe-area-context@4.7.0 --legacy-peer-deps
+          npm install react-native-track-player@3.2.0 --legacy-peer-deps
+          npm install expo-modules-core@1.5.0 --legacy-peer-deps
+          npm install expo-sqlite@11.6.0 --legacy-peer-deps
 
       - name: Make gradlew executable
         working-directory: src/mobile
