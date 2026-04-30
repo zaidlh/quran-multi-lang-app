@@ -46,9 +46,18 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Verify CLI setup
+      - name: Generate Android project if missing
         run: |
-          ls -la node_modules/@react-native-community/cli-platform-android/native_modules.gradle
+          if [ ! -d "android" ]; then
+            echo "Android directory missing, generating from React Native template..."
+            npx react-native@0.73 init temp_android --version 0.73.0 --template react-native-template-typescript --skip-install
+            mv temp_android/android .
+            rm -rf temp_android
+            # Adjust package name in AndroidManifest to match your app
+            sed -i 's/com.temp_android/com.quranmobile/g' android/app/src/main/AndroidManifest.xml
+            sed -i 's/com.temp_android/com.quranmobile/g' android/app/build.gradle
+          fi
+          chmod +x android/gradlew
 
       - name: Generate SQLite database
         working-directory: ${{ github.workspace }}
@@ -56,9 +65,6 @@ jobs:
           mkdir -p src/mobile/assets
           pip install -r scripts/requirements.txt || true
           python scripts/generate_sqlite.py --output src/mobile/assets/quran.db
-
-      - name: Make gradlew executable
-        run: chmod +x android/gradlew
 
       - name: Build Release APK
         run: cd android && ./gradlew assembleRelease --stacktrace
