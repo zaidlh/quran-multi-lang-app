@@ -34,38 +34,43 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Prepare mobile dependencies
-        working-directory: src/mobile
-        run: |
-          rm -rf node_modules package-lock.json
-          npm pkg set devDependencies.@react-native-community/cli-platform-android="^12.0.0"
-          npm pkg set dependencies.expo-modules-core="^1.11.0"
-
-      - name: Install dependencies
-        working-directory: src/mobile
-        run: npm install --legacy-peer-deps
-
-      - name: Generate Android project if missing
-        working-directory: ${{ github.workspace }}
-        run: |
-          if [ ! -d "src/mobile/android" ]; then
-            echo echo "Android directory missing, generating from React Native template..."
-            rm -rf temp_android
-            npx react-native@0.73 init temp_android --version 0.73.0 --package-name com.quranmobile --skip-install
-            mv temp_android/android src/mobile/android
-            rm -rf temp_android
-          fi
-
-      - name: Make gradlew executable
-        working-directory: src/mobile
-        run: chmod +x android/gradlew
-
       - name: Generate SQLite database
         working-directory: ${{ github.workspace }}
         run: |
           mkdir -p src/mobile/assets
           pip install -r scripts/requirements.txt || true
           python scripts/generate_sqlite.py --output src/mobile/assets/quran.db
+
+      - name: Generate full React Native project
+        working-directory: ${{ github.workspace }}
+        run: |
+          if [ ! -d "src/mobile/android" ]; then
+            echo "Android directory missing, generating full React Native project..."
+            rm -rf temp_build
+            npx react-native@0.73 init temp_build --version 0.73.0 --package-name com.quranmobile
+            # Copy our source files
+            cp src/mobile/App.tsx temp_build/App.tsx
+            cp src/mobile/package.json temp_build/package.json
+            cp src/mobile/tsconfig.json temp_build/tsconfig.json
+            cp src/mobile/index.js temp_build/index.js 2>/dev/null || true
+            cp src/mobile/babel.config.js temp_build/babel.config.js 2>/dev/null || true
+            # Copy assets
+            mkdir -p temp_build/assets
+            cp src/mobile/assets/quran.db temp_build/assets/ 2>/dev/null || true
+            # Replace src/mobile with complete project
+            rm -rf src/mobile
+            mv temp_build src/mobile
+          fi
+
+      - name: Install dependencies
+        working-directory: src/mobile
+        run: |
+          npm install --legacy-peer-deps
+          npm install expo-modules-core --legacy-peer-deps
+
+      - name: Make gradlew executable
+        working-directory: src/mobile
+        run: chmod +x android/gradlew
 
       - name: Build Release APK
         working-directory: src/mobile
