@@ -49,8 +49,9 @@ jobs:
         working-directory: ${{ github.workspace }}
         run: |
           if [ ! -d "src/mobile/android" ]; then
-            echo "Android directory missing, generating from React Native template..."
-            npx react-native@0.73 init temp_android --version 0.73.0 --package-name com.quranmobile --skip-install --replace-directory
+            echo echo "Android directory missing, generating from React Native template..."
+            rm -rf temp_android
+            npx react-native@0.73 init temp_android --version 0.73.0 --package-name com.quranmobile --skip-install
             mv temp_android/android src/mobile/android
             rm -rf temp_android
           fi
