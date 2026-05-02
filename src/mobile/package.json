@@ -1,7 +1,7 @@
 {
-  "name": "quran-mobile",
+  "name": "sakinah-mobile",
   "version": "1.0.0",
-  "description": "Quran Multi-Language Mobile App — React Native starter",
+  "description": "Sakinah — Islamic Super App (React Native)",
   "main": "index.js",
   "scripts": {
     "android": "react-native run-android",

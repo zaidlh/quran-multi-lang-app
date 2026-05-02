@@ -10,17 +10,17 @@ function createWindow() {
       contextIsolation: true,
     },
     icon: path.join(__dirname, "../web/public/logo.svg"),
-    title: "Quran Multi-Language",
+    title: "Sakinah — Islamic Super App",
   });
 
   // In development, load from the Next.js dev server
   // In production, load from the built files or a deployed URL
-  const isDev = !app.isPackaged;
+  const isDev = process.env.NODE_ENV !== "production";
   if (isDev) {
     win.loadURL("http://localhost:3000");
     win.webContents.openDevTools();
   } else {
-    win.loadURL("https://quran-multi-lang-app.vercel.app");
+    win.loadURL("https://sakinah.app");
   }
 }
 

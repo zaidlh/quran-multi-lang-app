@@ -1,0 +1,310 @@
+/* ============================================================
+   SAKINAH ISLAMIC SUPER APP — STYLES
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9faf7;
+  color: #1a1c1b;
+}
+
+/* ============================================================
+   DESIGN TOKEN COLORS (CSS custom properties)
+   ============================================================ */
+:root {
+  --primary: #00261a;
+  --on-primary: #ffffff;
+  --primary-container: #0f3d2e;
+  --on-primary-container: #7ba894;
+  --primary-fixed: #beedd7;
+  --primary-fixed-dim: #a2d1bb;
+  --secondary: #745b04;
+  --on-secondary: #ffffff;
+  --secondary-container: #ffdc7e;
+  --secondary-fixed: #ffe08d;
+  --secondary-fixed-dim: #e4c368;
+  --surface: #f9faf7;
+  --surface-dim: #d9dad7;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f3f4f1;
+  --surface-container: #edeeeb;
+  --surface-container-high: #e8e8e5;
+  --surface-container-highest: #e2e3e0;
+  --surface-variant: #e2e3e0;
+  --on-surface: #1a1c1b;
+  --on-surface-variant: #414944;
+  --inverse-surface: #2f312f;
+  --inverse-on-surface: #f0f1ee;
+  --background: #f9faf7;
+  --on-background: #1a1c1b;
+  --outline: #717974;
+  --outline-variant: #c0c8c3;
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-primary-fixed: #002116;
+  --on-primary-fixed-variant: #234f3f;
+  --on-secondary-fixed: #241a00;
+}
+
+/* ============================================================
+   SCREENS
+   ============================================================ */
+.screen { display: none; }
+.screen.active { display: block; }
+.screen-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  overflow-y: auto;
+}
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+#sidebar {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: 260px;
+  background: #F8F6F1;
+  border-right: 1px solid rgba(0,0,0,0.06);
+  z-index: 100;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+#sidebar.open { transform: translateX(0); }
+
+@media (min-width: 1024px) {
+  #sidebar { transform: translateX(0); }
+  #app-wrapper { margin-left: 260px; }
+  #mobile-header { display: none !important; }
+  #bottom-nav { display: none !important; }
+}
+
+#sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 99;
+  backdrop-filter: blur(2px);
+}
+#sidebar-overlay.visible { display: block; }
+
+/* ============================================================
+   MOBILE HEADER
+   ============================================================ */
+#mobile-header {
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  background: #F8F6F1;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+/* ============================================================
+   APP WRAPPER
+   ============================================================ */
+#app-wrapper {
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+@media (min-width: 1024px) {
+  #app-wrapper { padding-bottom: 0; }
+}
+
+/* ============================================================
+   BOTTOM NAV
+   ============================================================ */
+#bottom-nav {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 80;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0 20px;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -8px 24px rgba(15,61,46,0.08);
+}
+
+/* ============================================================
+   GIRIH GEOMETRIC PATTERN
+   ============================================================ */
+.girih {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l20 20-20 20L0 20z' fill='none' stroke='%230f3d2e' stroke-width='0.5' stroke-opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+.arabic { font-family: 'Amiri', serif; direction: rtl; }
+.amiri  { font-family: 'Amiri', serif; }
+
+/* ============================================================
+   MATERIAL ICONS
+   ============================================================ */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.icon-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ============================================================
+   FADE DIVIDER
+   ============================================================ */
+.fade-div {
+  background: linear-gradient(90deg, transparent 0%, #c0c8c3 50%, transparent 100%);
+  height: 1px;
+}
+
+/* ============================================================
+   NAV ITEMS
+   ============================================================ */
+.nav-item { transition: all 0.15s ease; }
+.nav-item:hover { background: rgba(15,61,46,0.05); }
+.nav-item.active {
+  background: rgba(15,61,46,0.08);
+  color: #0f3d2e;
+  font-weight: 600;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.sakinah-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(15,61,46,0.06);
+}
+
+/* ============================================================
+   DARK SCREENS
+   ============================================================ */
+.dark-screen {
+  background: #00261a;
+  color: #fff;
+}
+.dark-screen .material-symbols-outlined { color: inherit; }
+
+/* ============================================================
+   LOADING SPINNER
+   ============================================================ */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid rgba(15,61,46,0.15);
+  border-top-color: #0f3d2e;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* ============================================================
+   TOAST NOTIFICATION
+   ============================================================ */
+#toast {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1c1b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 13px;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+#toast.show { opacity: 1; }
+
+/* ============================================================
+   SKELETON SHIMMER
+   ============================================================ */
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position:  200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #e8e8e5 25%, #f3f4f1 50%, #e8e8e5 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* ============================================================
+   PRAYER PULSING DOT
+   ============================================================ */
+@keyframes pulse-dot {
+  0%,100% { opacity:1; transform:scale(1); }
+  50%      { opacity:0.6; transform:scale(1.2); }
+}
+.pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+
+/* ============================================================
+   COMPASS NEEDLE
+   ============================================================ */
+#compass-needle {
+  transition: transform 0.8s cubic-bezier(0.23,1,0.32,1);
+}
+
+/* ============================================================
+   AUDIO RANGE INPUT
+   ============================================================ */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 4px;
+  background: #e2e3e0;
+  outline: none;
+  width: 100%;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: #ffe08d;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(255,224,141,0.5);
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c0c8c3; border-radius: 4px; }
+
+/* ============================================================
+   MISC UTILITIES
+   ============================================================ */
+.no-select { user-select: none; }
+
+/* Circular progress for fasting */
+#fasting-circle {
+  transition: stroke-dashoffset 1s cubic-bezier(0.4,0,0.2,1);
+}

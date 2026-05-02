@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sakinah — Islamic Super App</title>
+
+<!-- Tailwind CDN (for utility classes) -->
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#00261a', 'on-primary': '#ffffff',
+        'primary-container': '#0f3d2e', 'on-primary-container': '#7ba894',
+        'primary-fixed': '#beedd7', 'primary-fixed-dim': '#a2d1bb',
+        'secondary': '#745b04', 'on-secondary': '#ffffff',
+        'secondary-container': '#ffdc7e',
+        'secondary-fixed': '#ffe08d', 'secondary-fixed-dim': '#e4c368',
+        'surface': '#f9faf7', 'surface-dim': '#d9dad7',
+        'surface-container-lowest': '#ffffff',
+        'surface-container-low': '#f3f4f1',
+        'surface-container': '#edeeeb',
+        'surface-container-high': '#e8e8e5',
+        'surface-container-highest': '#e2e3e0',
+        'surface-variant': '#e2e3e0',
+        'on-surface': '#1a1c1b', 'on-surface-variant': '#414944',
+        'inverse-surface': '#2f312f', 'inverse-on-surface': '#f0f1ee',
+        'background': '#f9faf7', 'on-background': '#1a1c1b',
+        'outline': '#717974', 'outline-variant': '#c0c8c3',
+        'error': '#ba1a1a', 'on-error': '#ffffff', 'error-container': '#ffdad6',
+        'on-primary-fixed': '#002116', 'on-primary-fixed-variant': '#234f3f',
+        'on-secondary-fixed': '#241a00',
+      },
+      fontFamily: { sans: ['Inter','sans-serif'], amiri: ['Amiri','serif'] },
+      boxShadow: {
+        'ambient-1': '0 4px 16px rgba(15,61,46,0.04)',
+        'ambient-2': '0 8px 24px rgba(15,61,46,0.10)',
+        'nav': '0 -8px 24px rgba(15,61,46,0.08)',
+        'card': '0 2px 12px rgba(15,61,46,0.06)',
+      }
+    }
+  }
+}
+</script>
+
+<!-- App stylesheet -->
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ======================================================
+     SIDEBAR
+     ====================================================== -->
+<aside id="sidebar">
+  <!-- Brand -->
+  <div class="flex items-center gap-3 px-5 py-5 border-b border-stone-100">
+    <div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center">
+      <span class="text-white text-sm amiri font-bold">ن</span>
+    </div>
+    <span class="text-xl font-bold text-primary-container" style="font-family:'Georgia',serif;letter-spacing:-0.02em">Sakinah</span>
+  </div>
+
+  <!-- User greeting -->
+  <div class="px-4 py-4 border-b border-stone-100">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container font-bold text-sm">A</div>
+      <div>
+        <div class="text-sm font-semibold text-on-surface">Abdullah</div>
+        <div class="text-xs text-outline" id="sidebar-hijri">Loading date...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="flex-1 px-3 py-3 space-y-0.5">
+    <button onclick="navigate('home')"      class="nav-item active w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-home">
+      <span class="material-symbols-outlined text-xl">home</span> Home
+    </button>
+    <button onclick="navigate('quran')"     class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-quran">
+      <span class="material-symbols-outlined text-xl">menu_book</span> Quran
+    </button>
+    <button onclick="navigate('prayer')"    class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-prayer">
+      <span class="material-symbols-outlined text-xl">schedule</span> Prayer Times
+    </button>
+    <button onclick="navigate('qibla')"     class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-qibla">
+      <span class="material-symbols-outlined text-xl">explore</span> Qibla Finder
+    </button>
+    <button onclick="navigate('hadith')"    class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-hadith">
+      <span class="material-symbols-outlined text-xl">history_edu</span> Hadith Library
+    </button>
+    <button onclick="navigate('adhkar')"    class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-adhkar">
+      <span class="material-symbols-outlined text-xl">auto_awesome</span> Adhkar &amp; Tasbih
+    </button>
+    <button onclick="navigate('calendar')"  class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-calendar">
+      <span class="material-symbols-outlined text-xl">calendar_month</span> Islamic Calendar
+    </button>
+    <button onclick="navigate('fasting')"   class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-fasting">
+      <span class="material-symbols-outlined text-xl">brightness_3</span> Fasting Tracker
+    </button>
+    <button onclick="navigate('radio')"     class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-radio">
+      <span class="material-symbols-outlined text-xl">radio</span> Live Radio
+    </button>
+    <button onclick="navigate('search')"    class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-search">
+      <span class="material-symbols-outlined text-xl">search</span> Search
+    </button>
+    <button onclick="navigate('bookmarks')" class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-bookmarks">
+      <span class="material-symbols-outlined text-xl">bookmark</span> Bookmarks
+    </button>
+    <button onclick="navigate('zakat')"     class="nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm" id="nav-zakat">
+      <span class="material-symbols-outlined text-xl">calculate</span> Zakat Calculator
+    </button>
+  </nav>
+
+  <div class="px-4 py-4 border-t border-stone-100">
+    <div class="text-xs text-outline text-center">بسم الله الرحمن الرحيم</div>
+  </div>
+</aside>
+
+<!-- Sidebar overlay (mobile) -->
+<div id="sidebar-overlay" onclick="closeSidebar()"></div>
+
+<!-- ======================================================
+     MAIN WRAPPER
+     ====================================================== -->
+<div id="app-wrapper">
+
+  <!-- Mobile header -->
+  <header id="mobile-header">
+    <button onclick="openSidebar()" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-stone-100">
+      <span class="material-symbols-outlined text-stone-500">menu</span>
+    </button>
+    <span class="text-lg font-bold text-primary-container" style="font-family:'Georgia',serif">Sakinah</span>
+    <button onclick="navigate('search')" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-stone-100">
+      <span class="material-symbols-outlined text-stone-500">search</span>
+    </button>
+  </header>
+
+  <!-- ====================================================
+       SCREEN: HOME DASHBOARD
+       ==================================================== -->
+  <div id="screen-home" class="screen active px-4 md:px-8 py-6 max-w-5xl mx-auto">
+
+    <div class="mb-6">
+      <h2 class="text-2xl font-semibold text-on-surface">As-salamu alaykum</h2>
+      <p class="text-sm text-outline mt-1 flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-base">calendar_today</span>
+        <span id="home-date">Loading...</span>
+      </p>
+    </div>
+
+    <!-- Prayer hero card -->
+    <div class="relative overflow-hidden rounded-2xl text-white mb-5 min-h-[180px] flex flex-col justify-between p-6"
+         style="background:linear-gradient(135deg,#0f3d2e 0%,#1a5740 100%);">
+      <div class="absolute inset-0 girih opacity-20 pointer-events-none"></div>
+      <div class="relative z-10 flex justify-between items-start">
+        <div>
+          <p class="text-xs font-medium uppercase tracking-widest opacity-70 mb-1">Next Prayer</p>
+          <h3 id="home-next-prayer" class="text-3xl font-bold text-white">—</h3>
+          <p class="amiri text-xl opacity-60 mt-1" id="home-next-prayer-ar">—</p>
+        </div>
+        <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center border border-white/10">
+          <span class="material-symbols-outlined text-white" id="home-prayer-icon">wb_sunny</span>
+        </div>
+      </div>
+      <div class="relative z-10 flex justify-between items-end">
+        <div>
+          <p class="text-2xl font-mono font-semibold text-secondary-fixed-dim" id="home-countdown">--:--:--</p>
+          <p class="text-xs opacity-60 mt-0.5">time remaining</p>
+        </div>
+        <button onclick="navigate('prayer')"
+          class="bg-white/15 hover:bg-white/25 text-white text-xs px-3 py-1.5 rounded-full transition-all border border-white/20">
+          All Times →
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick action icons -->
+    <div class="grid grid-cols-4 gap-3 mb-6">
+      <button onclick="navigate('quran')" class="flex flex-col items-center gap-1.5 group">
+        <div class="w-14 h-14 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-all shadow-ambient-1">
+          <span class="material-symbols-outlined text-2xl">menu_book</span>
+        </div>
+        <span class="text-xs text-outline font-medium">Quran</span>
+      </button>
+      <button onclick="navigate('adhkar')" class="flex flex-col items-center gap-1.5 group">
+        <div class="w-14 h-14 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-all shadow-ambient-1">
+          <span class="material-symbols-outlined text-2xl">auto_awesome</span>
+        </div>
+        <span class="text-xs text-outline font-medium">Adhkar</span>
+      </button>
+      <button onclick="navigate('qibla')" class="flex flex-col items-center gap-1.5 group">
+        <div class="w-14 h-14 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-all shadow-ambient-1">
+          <span class="material-symbols-outlined text-2xl">explore</span>
+        </div>
+        <span class="text-xs text-outline font-medium">Qibla</span>
+      </button>
+      <button onclick="navigate('hadith')" class="flex flex-col items-center gap-1.5 group">
+        <div class="w-14 h-14 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-all shadow-ambient-1">
+          <span class="material-symbols-outlined text-2xl">history_edu</span>
+        </div>
+        <span class="text-xs text-outline font-medium">Hadith</span>
+      </button>
+    </div>
+
+    <!-- Ayah of the Day -->
+    <div class="sakinah-card p-6 mb-5 relative overflow-hidden">
+      <span class="material-symbols-outlined absolute top-3 left-3 text-[80px] text-surface-container opacity-50 rotate-180 select-none">format_quote</span>
+      <div class="relative z-10">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-xs font-semibold uppercase tracking-widest text-secondary">Ayah of the Day</span>
+          <button onclick="shareAyah()" class="text-outline hover:text-primary-container transition-colors">
+            <span class="material-symbols-outlined text-xl">share</span>
+          </button>
+        </div>
+        <p id="home-ayah-arabic" class="arabic text-right text-2xl leading-loose text-on-surface mb-3" dir="rtl">
+          <span class="skeleton inline-block w-full h-8 mb-2 rounded-lg"></span>
+        </p>
+        <p id="home-ayah-english" class="text-sm text-on-surface-variant italic leading-relaxed mb-3">Loading verse...</p>
+        <div class="pt-3 border-t border-outline-variant/20">
+          <span id="home-ayah-ref" class="text-xs font-semibold uppercase tracking-widest text-outline">—</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Today's Prayers -->
+    <div class="sakinah-card p-5 mb-5">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-semibold text-on-surface">Today's Prayers</h3>
+        <div class="flex items-center gap-1 text-xs text-outline">
+          <span class="material-symbols-outlined text-sm">location_on</span>
+          <span id="home-location">Locating...</span>
+        </div>
+      </div>
+      <div id="home-prayers-list" class="space-y-1">
+        <div class="flex justify-between items-center py-2.5 px-3 rounded-xl">
+          <span class="text-sm text-outline">Loading prayer times...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Continue Reading -->
+    <div class="sakinah-card p-5">
+      <div class="flex justify-between items-center mb-3">
+        <h3 class="font-semibold text-on-surface">Continue Reading</h3>
+        <button onclick="navigate('quran')" class="text-xs text-secondary font-medium">All Surahs →</button>
+      </div>
+      <button onclick="openReader(18)" class="w-full flex items-center gap-4 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+        <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center relative">
+          <span class="absolute w-10 h-10 border border-outline/20 rounded-full rotate-45"></span>
+          <span class="text-xs font-bold text-primary-container z-10">18</span>
+        </div>
+        <div class="flex-1 text-left">
+          <p class="font-semibold text-on-surface">Al-Kahf</p>
+          <p class="text-xs text-outline mt-0.5">The Cave • 110 Ayahs</p>
+        </div>
+        <span class="amiri text-xl text-primary-container">الكهف</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: QURAN LIST
+       ==================================================== -->
+  <div id="screen-quran" class="screen px-4 md:px-8 py-6 max-w-4xl mx-auto">
+    <div class="mb-6">
+      <h2 class="text-3xl font-bold text-primary-container mb-1">Quran</h2>
+      <p class="text-sm text-on-surface-variant">Read, listen, and study the Holy Quran.</p>
+    </div>
+
+    <div class="relative mb-5">
+      <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+      <input id="quran-search" type="text" placeholder="Search Surah name or number..." onkeyup="filterSurahs()"
+        class="w-full bg-surface-container-low rounded-xl py-3.5 pl-12 pr-4 text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all text-sm"/>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div class="sakinah-card p-5 relative overflow-hidden cursor-pointer hover:-translate-y-0.5 transition-transform" onclick="openReader(18)">
+        <div class="absolute -right-6 -bottom-6 opacity-5"><span class="material-symbols-outlined" style="font-size:100px">menu_book</span></div>
+        <div class="flex justify-between items-start mb-3">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-widest text-secondary block mb-1">Last Read</span>
+            <h3 class="text-xl font-bold text-primary-container">Al-Kahf</h3>
+          </div>
+          <span class="material-symbols-outlined text-secondary bg-secondary-container/30 p-2 rounded-full">play_arrow</span>
+        </div>
+        <p class="text-sm text-on-surface-variant">Ayah 1 · Page 293</p>
+        <div class="mt-3 h-1 bg-surface-container-high rounded-full overflow-hidden">
+          <div class="h-full bg-secondary w-1/6 rounded-full"></div>
+        </div>
+      </div>
+      <div class="sakinah-card p-5 flex items-center justify-between relative overflow-hidden cursor-pointer" onclick="navigate('adhkar')" style="background:linear-gradient(135deg,#0f3d2e,#1e5042)">
+        <div class="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-bl-full"></div>
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-widest text-primary-fixed block mb-1">Daily Goal</span>
+          <h3 class="text-xl font-bold text-white mb-1">Read 5 Pages</h3>
+          <p class="text-sm text-primary-fixed-dim opacity-80">2 of 5 pages completed</p>
+        </div>
+        <div class="relative w-14 h-14 flex items-center justify-center">
+          <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#e4c368" stroke-dasharray="40,100" stroke-width="3"/>
+          </svg>
+          <span class="absolute text-xs font-bold text-secondary-fixed-dim">40%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sakinah-card overflow-hidden">
+      <div class="flex justify-between items-center px-5 py-4 border-b border-surface-container-high">
+        <h3 class="font-semibold text-primary-container">All 114 Surahs</h3>
+        <span id="surah-count" class="text-xs text-outline">Loading...</span>
+      </div>
+      <div id="surah-list">
+        <div class="flex items-center justify-center py-12"><div class="spinner"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: QURAN READER (dark full-screen)
+       ==================================================== -->
+  <div id="screen-reader" class="screen screen-fullscreen dark-screen">
+    <div class="flex justify-between items-center px-5 h-14 backdrop-blur sticky top-0 z-50 border-b border-white/10" style="background:rgba(15,61,46,0.85);">
+      <button onclick="navigate('quran')" class="p-2 hover:bg-white/10 rounded-full transition-all">
+        <span class="material-symbols-outlined text-white">arrow_back</span>
+      </button>
+      <div class="text-center">
+        <h1 id="reader-surah-name" class="text-white font-bold text-base">—</h1>
+        <p id="reader-surah-info" class="text-white/60 text-xs">—</p>
+      </div>
+      <div class="flex gap-1">
+        <button onclick="toggleTranslation()" id="reader-translate-btn" class="px-2 py-1 rounded-lg text-xs text-white/70 hover:text-white hover:bg-white/10 transition-all">EN</button>
+        <button onclick="openAudio()" class="p-2 hover:bg-white/10 rounded-full transition-all">
+          <span class="material-symbols-outlined text-white text-xl">headphones</span>
+        </button>
+      </div>
+    </div>
+    <div class="max-w-2xl mx-auto px-5 pb-24">
+      <div id="reader-bismillah" class="text-center my-10">
+        <p class="amiri text-3xl text-secondary-fixed-dim leading-loose">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+      </div>
+      <div id="reader-verses" class="space-y-6">
+        <div class="flex items-center justify-center py-16">
+          <div class="spinner" style="border-color:rgba(255,255,255,0.15);border-top-color:#e4c368;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: AUDIO PLAYER (dark full-screen)
+       ==================================================== -->
+  <div id="screen-audio" class="screen screen-fullscreen dark-screen">
+    <div class="max-w-md mx-auto px-5 pt-4 pb-10">
+      <div class="flex justify-between items-center mb-8">
+        <button onclick="navigate('quran')" class="p-2 hover:bg-white/10 rounded-full transition-all">
+          <span class="material-symbols-outlined text-white">keyboard_arrow_down</span>
+        </button>
+        <div class="text-center">
+          <p class="text-white/50 text-xs uppercase tracking-widest mb-0.5">Now Playing</p>
+          <h2 id="audio-title" class="text-white font-semibold text-sm">Al-Fatiha</h2>
+        </div>
+        <button class="p-2 hover:bg-white/10 rounded-full transition-all">
+          <span class="material-symbols-outlined text-white">more_vert</span>
+        </button>
+      </div>
+
+      <div class="w-full aspect-square max-w-[280px] mx-auto mb-10 relative">
+        <div class="absolute inset-0 bg-white/5 rounded-3xl border border-white/5 backdrop-blur-md flex items-center justify-center overflow-hidden" style="box-shadow:0 24px 48px rgba(0,0,0,0.4)">
+          <div class="absolute inset-0 opacity-20" style="background:radial-gradient(circle at center,rgba(197,160,89,0.3) 0%,transparent 70%)"></div>
+          <p id="audio-bismillah" class="amiri text-2xl text-secondary-fixed-dim text-center px-8 leading-loose z-10" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        </div>
+      </div>
+
+      <div class="text-center mb-8">
+        <h3 id="audio-reciter" class="text-xl font-bold text-white mb-1">Mishary Rashid Alafasy</h3>
+        <p id="audio-surah-info" class="text-white/60 text-sm">The Opening • 7 Ayahs</p>
+      </div>
+
+      <div class="mb-8">
+        <div class="flex justify-between text-xs text-white/40 mb-2">
+          <span id="audio-current">0:00</span>
+          <span id="audio-total">0:00</span>
+        </div>
+        <input type="range" id="audio-progress" value="0" min="0" max="100" oninput="seekAudio(this.value)"/>
+      </div>
+
+      <div class="flex items-center justify-between px-4 mb-8">
+        <button id="audio-shuffle-btn" onclick="toggleShuffle()" class="p-3 text-white/40 hover:text-white transition-colors">
+          <span class="material-symbols-outlined">shuffle</span>
+        </button>
+        <button onclick="prevSurah()" class="p-3 text-white hover:text-secondary-fixed-dim transition-colors">
+          <span class="material-symbols-outlined text-3xl icon-fill">skip_previous</span>
+        </button>
+        <button onclick="togglePlay()" id="audio-play-btn"
+          class="flex items-center justify-center rounded-full hover:scale-105 active:scale-95 transition-all"
+          style="width:72px;height:72px;background:#ffe08d;box-shadow:0 8px 32px rgba(255,224,141,0.3)">
+          <span id="play-icon" class="material-symbols-outlined icon-fill text-primary" style="font-size:40px;margin-left:4px;">play_arrow</span>
+        </button>
+        <button onclick="nextSurah()" class="p-3 text-white hover:text-secondary-fixed-dim transition-colors">
+          <span class="material-symbols-outlined text-3xl icon-fill">skip_next</span>
+        </button>
+        <button id="audio-repeat-btn" onclick="toggleRepeat()" class="p-3 text-white/40 hover:text-white transition-colors">
+          <span class="material-symbols-outlined">repeat</span>
+        </button>
+      </div>
+
+      <div class="bg-white/5 rounded-2xl p-4 border border-white/10">
+        <p class="text-xs text-white/40 uppercase tracking-widest mb-2">Reciter</p>
+        <select id="reciter-select" onchange="changeReciter()" class="w-full bg-transparent text-white text-sm outline-none cursor-pointer">
+          <option value="afs">Mishary Rashid Alafasy</option>
+          <option value="husary">Mahmoud Khalil Al-Husary</option>
+          <option value="maher">Maher Al-Muaiqly</option>
+          <option value="thubti">Abdul Rahman Al-Sudais</option>
+        </select>
+      </div>
+
+      <audio id="audio-player"
+        onended="audioEnded()"
+        ontimeupdate="updateAudioProgress()"
+        onloadedmetadata="audioLoaded()">
+      </audio>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: PRAYER TIMES
+       ==================================================== -->
+  <div id="screen-prayer" class="screen px-4 md:px-8 py-6 max-w-3xl mx-auto">
+    <div class="mb-6">
+      <h2 class="text-3xl font-bold text-primary-container mb-1">Prayer Times</h2>
+      <div class="flex items-center gap-1 text-sm text-outline">
+        <span class="material-symbols-outlined text-base">location_on</span>
+        <span id="prayer-location">Detecting location...</span>
+      </div>
+    </div>
+
+    <div class="sakinah-card p-6 mb-5 relative overflow-hidden">
+      <div class="absolute -top-8 -right-8 w-40 h-40 opacity-5">
+        <svg class="w-full h-full fill-primary-container" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50"/></svg>
+      </div>
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 relative z-10">
+        <div>
+          <p class="text-sm text-on-surface-variant mb-1">Next Prayer</p>
+          <h2 id="prayer-next-name" class="text-4xl font-bold text-primary mb-1">—</h2>
+          <p class="amiri text-2xl text-primary-container/60" id="prayer-next-ar">—</p>
+        </div>
+        <div class="text-center md:text-right">
+          <div id="prayer-countdown-big" class="text-4xl font-mono font-bold text-secondary">--:--:--</div>
+          <p class="text-xs text-on-surface-variant uppercase tracking-widest mt-1">Remaining</p>
+        </div>
+      </div>
+      <div class="w-full bg-surface-container-high h-1.5 rounded-full mt-5 overflow-hidden">
+        <div id="prayer-progress-bar" class="bg-primary h-full rounded-full transition-all duration-1000" style="width:0%"></div>
+      </div>
+    </div>
+
+    <div id="prayer-cards" class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
+      <div class="flex items-center justify-center py-12 md:col-span-2"><div class="spinner"></div></div>
+    </div>
+
+    <div class="sakinah-card p-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined text-outline">settings</span>
+        <div>
+          <p class="text-sm font-semibold text-on-surface">Calculation Method</p>
+          <p class="text-xs text-outline">Muslim World League</p>
+        </div>
+      </div>
+      <span class="material-symbols-outlined text-outline">chevron_right</span>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: QIBLA FINDER
+       ==================================================== -->
+  <div id="screen-qibla" class="screen px-4 md:px-8 py-6 max-w-md mx-auto">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold text-primary-container mb-1">Qibla Direction</h2>
+      <p class="text-sm text-outline">Align your device to find Mecca</p>
+    </div>
+
+    <div class="relative w-72 h-72 mx-auto mb-10">
+      <div class="absolute inset-0 rounded-full border-2 border-surface-container-high bg-white shadow-ambient-2"></div>
+      <div class="absolute inset-3 rounded-full border border-surface-variant flex items-center justify-center">
+        <span class="absolute top-3 text-xs font-bold text-primary-container">N</span>
+        <span class="absolute right-3 text-xs font-bold text-outline">E</span>
+        <span class="absolute bottom-3 text-xs font-bold text-outline">S</span>
+        <span class="absolute left-3 text-xs font-bold text-outline">W</span>
+      </div>
+      <div id="compass-needle" class="absolute inset-6 rounded-full bg-surface-container-low flex items-center justify-center" style="transform-origin:center center;">
+        <div class="absolute top-5 flex flex-col items-center">
+          <span class="material-symbols-outlined icon-fill text-3xl text-secondary">navigation</span>
+          <span class="text-xs font-bold text-primary-container mt-1">Qibla</span>
+        </div>
+        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-card">
+          <div class="w-2 h-2 rounded-full bg-primary-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="qibla-angle-display" class="text-center mb-6">
+      <p class="text-4xl font-bold text-primary-container mb-1">—°</p>
+      <p class="text-sm text-outline">from North</p>
+    </div>
+
+    <div class="sakinah-card p-5 flex items-start gap-4 mb-4">
+      <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined text-secondary">screen_rotation</span>
+      </div>
+      <div>
+        <h3 id="qibla-status" class="text-sm font-semibold text-primary-container mb-1">Requesting location...</h3>
+        <p class="text-xs text-outline leading-relaxed" id="qibla-instruction">Please allow location access to calculate the Qibla direction from your position.</p>
+      </div>
+    </div>
+
+    <div class="sakinah-card p-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined text-outline">my_location</span>
+        <span class="text-sm text-on-surface-variant" id="qibla-coords">—</span>
+      </div>
+      <span class="text-xs text-primary-container font-semibold" id="qibla-dist">—</span>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: HADITH LIBRARY
+       ==================================================== -->
+  <div id="screen-hadith" class="screen px-4 md:px-8 py-6 max-w-4xl mx-auto">
+    <div class="mb-6">
+      <h2 class="text-3xl font-bold text-primary mb-1">Hadith Collection</h2>
+      <p class="text-sm text-on-surface-variant max-w-xl">Authentic narrations of the Prophet Muhammad ﷺ</p>
+    </div>
+
+    <div class="relative mb-5">
+      <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-xl">search</span>
+      <input id="hadith-search-input" type="text" placeholder="Search narrations..." onkeyup="filterHadiths()"
+        class="w-full bg-surface-container-low rounded-full py-3 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all"/>
+    </div>
+
+    <h3 class="font-bold text-lg text-primary mb-3">The Authentic Six</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+      <div onclick="loadHadithBook('bukhari')" class="sakinah-card p-6 cursor-pointer hover:shadow-ambient-2 transition-all group relative overflow-hidden">
+        <div class="w-10 h-14 bg-primary-container rounded-lg flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-white text-xl">book_4</span>
+        </div>
+        <h4 class="font-bold text-primary text-lg mb-0.5">Sahih al-Bukhari</h4>
+        <p class="amiri text-secondary text-base text-right mb-2">صحيح البخاري</p>
+        <p class="text-xs text-on-surface-variant mb-3">Most authentic collection of hadith</p>
+        <div class="flex justify-between items-center border-t border-surface-container pt-3">
+          <span class="text-xs text-outline">7,563 Hadiths</span>
+          <span class="text-sm font-medium text-secondary group-hover:text-primary transition-colors">Read →</span>
+        </div>
+      </div>
+      <div onclick="loadHadithBook('muslim')" class="sakinah-card p-6 cursor-pointer hover:shadow-ambient-2 transition-all group relative overflow-hidden">
+        <div class="w-10 h-14 bg-[#1f3a3d] rounded-lg flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-white text-xl">book_4</span>
+        </div>
+        <h4 class="font-bold text-primary text-lg mb-0.5">Sahih Muslim</h4>
+        <p class="amiri text-secondary text-base text-right mb-2">صحيح مسلم</p>
+        <p class="text-xs text-on-surface-variant mb-3">Second most authentic collection</p>
+        <div class="flex justify-between items-center border-t border-surface-container pt-3">
+          <span class="text-xs text-outline">3,033 Hadiths</span>
+          <span class="text-sm font-medium text-secondary group-hover:text-primary transition-colors">Read →</span>
+        </div>
+      </div>
+      <div onclick="loadHadithBook('nasai')" class="sakinah-card p-6 cursor-pointer hover:shadow-ambient-2 transition-all group relative overflow-hidden">
+        <div class="w-10 h-14 bg-[#2d3a2e] rounded-lg flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-white text-xl">book_4</span>
+        </div>
+        <h4 class="font-bold text-primary text-lg mb-0.5">Sunan an-Nasa'i</h4>
+        <p class="amiri text-secondary text-base text-right mb-2">سنن النسائي</p>
+        <p class="text-xs text-on-surface-variant mb-3">Known for strict criteria</p>
+        <div class="flex justify-between items-center border-t border-surface-container pt-3">
+          <span class="text-xs text-outline">5,758 Hadiths</span>
+          <span class="text-sm font-medium text-secondary group-hover:text-primary transition-colors">Read →</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="font-bold text-lg text-primary mb-3">Other Collections</h3>
+    <div class="space-y-2 mb-8">
+      <div onclick="loadHadithBook('abudawud')" class="sakinah-card p-4 flex items-center gap-4 cursor-pointer hover:bg-surface-container-low transition-colors">
+        <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-on-secondary-fixed">import_contacts</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-primary text-sm">Sunan Abi Dawud</h4><p class="text-xs text-outline">5,274 Hadiths</p></div>
+        <p class="amiri text-secondary text-sm">سنن أبي داود</p>
+      </div>
+      <div onclick="loadHadithBook('tirmidhi')" class="sakinah-card p-4 flex items-center gap-4 cursor-pointer hover:bg-surface-container-low transition-colors">
+        <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-on-secondary-fixed">import_contacts</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-primary text-sm">Jami' at-Tirmidhi</h4><p class="text-xs text-outline">3,956 Hadiths</p></div>
+        <p class="amiri text-secondary text-sm">جامع الترمذي</p>
+      </div>
+      <div onclick="loadHadithBook('ibnmajah')" class="sakinah-card p-4 flex items-center gap-4 cursor-pointer hover:bg-surface-container-low transition-colors">
+        <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-on-secondary-fixed">import_contacts</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-primary text-sm">Sunan Ibn Majah</h4><p class="text-xs text-outline">4,341 Hadiths</p></div>
+        <p class="amiri text-secondary text-sm">سنن ابن ماجه</p>
+      </div>
+    </div>
+
+    <div id="hadith-results" class="hidden">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-bold text-lg text-primary" id="hadith-book-title">Book</h3>
+        <button onclick="document.getElementById('hadith-results').classList.add('hidden')" class="text-sm text-outline hover:text-primary-container transition-colors">← Back</button>
+      </div>
+      <div id="hadith-list" class="space-y-3"><div class="flex items-center justify-center py-12"><div class="spinner"></div></div></div>
+      <button id="hadith-load-more" onclick="loadMoreHadiths()" class="w-full mt-4 py-3 text-sm text-secondary font-semibold hover:text-primary transition-colors hidden">Load more hadiths</button>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: ADHKAR & TASBIH
+       ==================================================== -->
+  <div id="screen-adhkar" class="screen px-4 md:px-8 py-6 max-w-4xl mx-auto">
+    <div class="mb-6">
+      <h2 class="text-2xl font-bold text-primary-container mb-1">Adhkar &amp; Duas</h2>
+      <p class="text-sm text-on-surface-variant">Find tranquility in remembrance.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 mb-8">
+      <div class="md:col-span-8 sakinah-card p-8 flex flex-col items-center justify-center relative overflow-hidden min-h-[280px]">
+        <div class="absolute inset-0 girih opacity-50 pointer-events-none"></div>
+        <div class="z-10 flex flex-col items-center gap-4">
+          <span id="tasbih-name-en" class="text-xs font-bold uppercase tracking-widest text-secondary">Subhanallah</span>
+          <p class="amiri text-3xl text-primary-container" id="tasbih-arabic">سُبْحَانَ اللَّهِ</p>
+          <button id="tasbih-btn" onclick="incrementTasbih()"
+            class="w-36 h-36 rounded-full bg-primary-container text-white flex items-center justify-center active:scale-95 transition-all border-4 border-surface-container-low select-none no-select"
+            style="box-shadow:0 8px 32px rgba(15,61,46,0.15)">
+            <span id="tasbih-count" class="text-5xl font-bold">0</span>
+          </button>
+          <div class="flex gap-4 mt-2">
+            <button onclick="resetTasbih()" class="p-3 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors">
+              <span class="material-symbols-outlined">refresh</span>
+            </button>
+            <button onclick="nextDhikr()" class="p-3 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors">
+              <span class="material-symbols-outlined">skip_next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-4 flex flex-col gap-4">
+        <div class="sakinah-card p-4">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Daily Goal</span>
+            <span id="tasbih-goal-pct" class="text-xs font-bold text-secondary">0%</span>
+          </div>
+          <div class="w-full h-2 bg-surface-container rounded-full overflow-hidden mt-2">
+            <div id="tasbih-goal-bar" class="h-full bg-secondary rounded-full transition-all" style="width:0%"></div>
+          </div>
+          <p id="tasbih-goal-text" class="text-xs text-on-surface-variant mt-2">33 remaining</p>
+        </div>
+        <div class="sakinah-card p-4 flex-1">
+          <span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant block mb-2">Progress</span>
+          <p id="tasbih-session-count" class="text-3xl font-bold text-primary-container">0</p>
+          <p class="text-xs text-outline mt-1">this session</p>
+          <div class="mt-3 pt-3 border-t border-surface-container">
+            <p class="text-xs text-outline">Target: <span id="tasbih-target-display" class="font-bold text-on-surface">33</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="font-bold text-lg text-primary-container mb-4">Adhkar Categories</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
+      <button onclick="loadAdhkar('morning')" class="sakinah-card p-4 flex items-center gap-4 hover:bg-surface-container-low transition-colors group text-left">
+        <div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
+          <span class="material-symbols-outlined">wb_sunny</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-on-surface">Morning Supplications</h4><p class="text-xs text-on-surface-variant mt-0.5">4 Duas · 5-10 mins</p></div>
+        <span class="material-symbols-outlined text-outline">chevron_right</span>
+      </button>
+      <button onclick="loadAdhkar('evening')" class="sakinah-card p-4 flex items-center gap-4 hover:bg-surface-container-low transition-colors group text-left">
+        <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-white transition-all">
+          <span class="material-symbols-outlined">nights_stay</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-on-surface">Evening Supplications</h4><p class="text-xs text-on-surface-variant mt-0.5">3 Duas · 5 mins</p></div>
+        <span class="material-symbols-outlined text-outline">chevron_right</span>
+      </button>
+      <button onclick="loadAdhkar('after-prayer')" class="sakinah-card p-4 flex items-center gap-4 hover:bg-surface-container-low transition-colors group text-left">
+        <div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant group-hover:bg-on-surface-variant group-hover:text-surface-container transition-all">
+          <span class="material-symbols-outlined">self_improvement</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-on-surface">After Fard Salah</h4><p class="text-xs text-on-surface-variant mt-0.5">5 Duas · 5 mins</p></div>
+        <span class="material-symbols-outlined text-outline">chevron_right</span>
+      </button>
+      <button onclick="loadAdhkar('general')" class="sakinah-card p-4 flex items-center gap-4 hover:bg-surface-container-low transition-colors group text-left">
+        <div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant group-hover:bg-on-surface-variant group-hover:text-surface-container transition-all">
+          <span class="material-symbols-outlined">menu_book</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-on-surface">General Duas</h4><p class="text-xs text-on-surface-variant mt-0.5">Travel, Illness, Hardship</p></div>
+        <span class="material-symbols-outlined text-outline">chevron_right</span>
+      </button>
+    </div>
+
+    <div id="adhkar-list-area" class="hidden">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-bold text-lg text-primary-container" id="adhkar-cat-title">Morning</h3>
+        <button onclick="document.getElementById('adhkar-list-area').classList.add('hidden')" class="text-sm text-outline">← Back</button>
+      </div>
+      <div id="adhkar-items" class="space-y-4"></div>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: ISLAMIC CALENDAR
+       ==================================================== -->
+  <div id="screen-calendar" class="screen px-4 md:px-8 py-6 max-w-3xl mx-auto">
+    <div class="text-center mb-6">
+      <h2 id="cal-month-name" class="text-3xl font-bold text-on-background">Loading...</h2>
+      <p id="cal-gregorian-range" class="text-sm text-outline mt-1">—</p>
+    </div>
+    <div class="flex justify-between items-center mb-5 bg-surface-container-low rounded-xl p-1">
+      <button onclick="prevMonth()" class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </button>
+      <div class="flex gap-2">
+        <button id="cal-month-btn" onclick="setCalView('month')" class="text-xs font-semibold text-primary-container bg-primary-fixed px-4 py-2 rounded-lg">Month</button>
+        <button id="cal-year-btn"  onclick="setCalView('year')"  class="text-xs font-semibold text-on-surface-variant hover:bg-surface-container-high px-4 py-2 rounded-lg transition-colors">Year</button>
+      </div>
+      <button onclick="nextMonth()" class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
+    </div>
+    <div class="sakinah-card p-4 mb-6">
+      <div class="grid grid-cols-7 gap-1 mb-2 text-center">
+        <div class="text-xs font-bold text-outline py-1">Sun</div>
+        <div class="text-xs font-bold text-outline py-1">Mon</div>
+        <div class="text-xs font-bold text-outline py-1">Tue</div>
+        <div class="text-xs font-bold text-outline py-1">Wed</div>
+        <div class="text-xs font-bold text-outline py-1">Thu</div>
+        <div class="text-xs font-bold text-secondary py-1">Fri</div>
+        <div class="text-xs font-bold text-outline py-1">Sat</div>
+      </div>
+      <div id="calendar-grid" class="grid grid-cols-7 gap-1 text-center">
+        <div class="flex items-center justify-center py-8 col-span-7"><div class="spinner"></div></div>
+      </div>
+    </div>
+    <div id="calendar-events" class="space-y-2">
+      <h3 class="font-bold text-lg text-on-background mb-3">Islamic Dates</h3>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: FASTING TRACKER
+       ==================================================== -->
+  <div id="screen-fasting" class="screen px-4 md:px-8 py-6 max-w-3xl mx-auto girih">
+    <div class="text-center mb-6">
+      <h2 class="text-2xl font-bold text-primary">Ramadan Fasting</h2>
+      <p id="fasting-subtitle" class="text-sm text-on-surface-variant mt-1">Loading...</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+      <div class="sakinah-card p-6 flex flex-col items-center justify-center min-h-[240px] relative overflow-hidden">
+        <div class="relative w-44 h-44 flex items-center justify-center">
+          <svg class="w-full h-full -rotate-90" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="none" stroke="#f3f4f1" stroke-width="6"/>
+            <circle id="fasting-circle" cx="50" cy="50" r="45" fill="none" stroke="#00261a" stroke-width="6"
+              stroke-linecap="round" stroke-dasharray="282.7" stroke-dashoffset="282.7"/>
+          </svg>
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <span id="fasting-day-num" class="text-4xl font-bold text-primary">0</span>
+            <span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Days Done</span>
+          </div>
+        </div>
+        <p id="fasting-remaining" class="text-secondary font-semibold mt-4">— Days Remaining</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="sakinah-card p-4 flex-1 flex items-center">
+          <div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mr-4 shrink-0">
+            <span class="material-symbols-outlined text-primary">clear_night</span>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Suhoor Ends</h3>
+            <p id="fasting-suhoor" class="text-2xl font-bold text-primary mt-1">--:--</p>
+          </div>
+        </div>
+        <div class="sakinah-card p-4 flex-1 flex items-center">
+          <div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mr-4 shrink-0">
+            <span class="material-symbols-outlined text-secondary">wb_twilight</span>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Iftar Starts</h3>
+            <p id="fasting-iftar" class="text-2xl font-bold text-primary mt-1">--:--</p>
+          </div>
+          <span id="fasting-iftar-countdown" class="text-sm text-on-surface-variant bg-surface-container-high px-2 py-1 rounded-full">—</span>
+        </div>
+      </div>
+    </div>
+    <div class="sakinah-card p-5">
+      <h3 class="font-bold text-lg text-primary mb-4">Daily Tracking</h3>
+      <div class="space-y-3">
+        <label class="flex items-center justify-between p-4 bg-background rounded-xl cursor-pointer hover:bg-surface-container transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
+              <span class="material-symbols-outlined icon-fill">check_circle</span>
+            </div>
+            <div>
+              <span class="block font-semibold text-on-surface text-sm">Fard Fast Intention</span>
+              <span class="block text-xs text-on-surface-variant">Niyyah made for today</span>
+            </div>
+          </div>
+          <input type="checkbox" id="fasting-niyyah" class="w-5 h-5 rounded" style="accent-color:#00261a"/>
+        </label>
+        <label class="flex items-center justify-between p-4 bg-background rounded-xl cursor-pointer hover:bg-surface-container transition-colors opacity-70">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+              <span class="material-symbols-outlined">volunteer_activism</span>
+            </div>
+            <div>
+              <span class="block font-semibold text-on-surface text-sm">Voluntary Fast (Sunnah)</span>
+              <span class="block text-xs text-on-surface-variant">Mondays &amp; Thursdays</span>
+            </div>
+          </div>
+          <input type="checkbox" id="fasting-sunnah" class="w-5 h-5 rounded" style="accent-color:#745b04"/>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: LIVE RADIO
+       ==================================================== -->
+  <div id="screen-radio" class="screen px-4 md:px-8 py-6 max-w-4xl mx-auto pb-32">
+    <div class="mb-6">
+      <h2 class="text-2xl font-bold text-on-background mb-1">Live Radio</h2>
+      <p class="text-sm text-on-surface-variant">Continuous Quran recitations and Islamic broadcasts.</p>
+    </div>
+    <div class="sakinah-card overflow-hidden mb-6">
+      <div class="md:flex">
+        <div class="md:w-2/5 h-48 md:h-auto flex items-center justify-center relative overflow-hidden" style="background:linear-gradient(135deg,#0f3d2e,#1e5040)">
+          <div class="absolute inset-0 girih opacity-20"></div>
+          <div class="relative z-10 text-center">
+            <p class="amiri text-4xl text-secondary-fixed-dim mb-2">مكة المكرمة</p>
+            <div class="flex items-center gap-2 justify-center">
+              <span class="w-2 h-2 rounded-full bg-red-400 pulse-dot"></span>
+              <span class="text-xs font-bold text-white/80 uppercase tracking-widest">LIVE</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 md:w-3/5">
+          <span class="text-xs font-bold uppercase tracking-widest text-primary-container block mb-2">Featured</span>
+          <h3 class="text-xl font-bold text-on-background mb-2">Makkah Al-Mukarramah Live</h3>
+          <p class="text-sm text-on-surface-variant mb-4">Direct recitation from Masjid al-Haram. Experience the continuous prayers from the holy city.</p>
+          <button onclick="playRadio('makkah')" class="flex items-center gap-3 w-full">
+            <span class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center hover:bg-primary transition-colors shrink-0">
+              <span class="material-symbols-outlined text-white icon-fill">play_arrow</span>
+            </span>
+            <div class="flex-1 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+              <div id="radio-makkah-bar" class="h-full bg-primary-container w-0 rounded-full transition-all duration-300"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <h3 class="font-bold text-lg text-on-background mb-4">Radio Stations</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+      <div onclick="playRadio('quraneg')" class="sakinah-card p-4 flex items-center gap-4 cursor-pointer hover:bg-surface-container-low transition-colors">
+        <div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+          <span class="material-symbols-outlined text-3xl">radio</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-on-background text-sm">Radio Quran Egypt</h4><p class="text-xs text-on-surface-variant mt-0.5">24/7 Recitation</p></div>
+        <span id="radio-quraneg-indicator" class="w-3 h-3 rounded-full bg-surface-container shrink-0"></span>
+      </div>
+      <div onclick="playRadio('afasy')" class="sakinah-card p-4 flex items-center gap-4 cursor-pointer hover:bg-surface-container-low transition-colors">
+        <div class="w-14 h-14 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary-container shrink-0">
+          <span class="material-symbols-outlined text-3xl">graphic_eq</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-on-background text-sm">Al-Afasy Radio</h4><p class="text-xs text-on-surface-variant mt-0.5">Recitation stream</p></div>
+        <span id="radio-afasy-indicator" class="w-3 h-3 rounded-full bg-surface-container shrink-0"></span>
+      </div>
+      <div onclick="playRadio('madina')" class="sakinah-card p-4 flex items-center gap-4 cursor-pointer hover:bg-surface-container-low transition-colors">
+        <div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+          <span class="material-symbols-outlined text-3xl">mosque</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-on-background text-sm">Madina Al-Munawwara</h4><p class="text-xs text-on-surface-variant mt-0.5">Al-Masjid Al-Nabawi</p></div>
+        <span id="radio-madina-indicator" class="w-3 h-3 rounded-full bg-surface-container shrink-0"></span>
+      </div>
+      <div onclick="playRadio('quranfrance')" class="sakinah-card p-4 flex items-center gap-4 cursor-pointer hover:bg-surface-container-low transition-colors">
+        <div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+          <span class="material-symbols-outlined text-3xl">language</span>
+        </div>
+        <div class="flex-1"><h4 class="font-semibold text-on-background text-sm">Quran International</h4><p class="text-xs text-on-surface-variant mt-0.5">International stream</p></div>
+        <span id="radio-quranfrance-indicator" class="w-3 h-3 rounded-full bg-surface-container shrink-0"></span>
+      </div>
+    </div>
+    <div id="radio-mini-player" class="hidden fixed bottom-16 lg:bottom-4 left-4 right-4 lg:left-auto lg:right-4 lg:w-80 rounded-2xl p-3 border border-surface-container-highest z-50 shadow-ambient-2" style="background:rgba(232,232,229,0.92);backdrop-filter:blur(16px)">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 relative">
+          <span class="material-symbols-outlined text-primary-container">music_note</span>
+          <div class="absolute inset-0 bg-secondary/10 rounded-xl pulse-dot"></div>
+        </div>
+        <div class="flex-1 min-w-0">
+          <p id="radio-now-playing" class="text-sm font-semibold text-on-background truncate">—</p>
+          <p class="text-xs text-outline">Live Radio</p>
+        </div>
+        <button onclick="stopRadio()" class="w-8 h-8 rounded-full flex items-center justify-center text-on-background hover:bg-surface-variant transition-colors">
+          <span class="material-symbols-outlined text-xl icon-fill">stop</span>
+        </button>
+      </div>
+    </div>
+    <audio id="radio-player"></audio>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: SEARCH
+       ==================================================== -->
+  <div id="screen-search" class="screen px-4 md:px-8 py-6 max-w-4xl mx-auto">
+    <div class="relative mb-5">
+      <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+      <input id="search-input" type="text" placeholder="Search Quran, Hadith, Duas..." oninput="runSearch()"
+        class="w-full bg-surface-container-low rounded-xl py-4 pl-12 pr-12 text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all text-sm"/>
+      <button onclick="document.getElementById('search-input').value='';runSearch();" class="absolute right-4 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface transition-colors">
+        <span class="material-symbols-outlined text-xl">close</span>
+      </button>
+    </div>
+    <div class="flex gap-2 mb-6 overflow-x-auto pb-1">
+      <button onclick="setSearchFilter('all')"    id="filter-all"    class="px-4 py-2 rounded-full bg-primary-container text-on-primary text-xs font-bold whitespace-nowrap">All</button>
+      <button onclick="setSearchFilter('quran')"  id="filter-quran"  class="px-4 py-2 rounded-full bg-transparent border border-outline-variant text-on-surface-variant text-xs font-bold whitespace-nowrap hover:bg-surface-container-high transition-colors">Quran</button>
+      <button onclick="setSearchFilter('hadith')" id="filter-hadith" class="px-4 py-2 rounded-full bg-transparent border border-outline-variant text-on-surface-variant text-xs font-bold whitespace-nowrap hover:bg-surface-container-high transition-colors">Hadith</button>
+      <button onclick="setSearchFilter('surah')"  id="filter-surah"  class="px-4 py-2 rounded-full bg-transparent border border-outline-variant text-on-surface-variant text-xs font-bold whitespace-nowrap hover:bg-surface-container-high transition-colors">Surahs</button>
+    </div>
+    <div id="search-default">
+      <div class="text-center py-16">
+        <span class="material-symbols-outlined text-6xl text-outline/30">search</span>
+        <p class="text-on-surface-variant mt-4 text-sm">Search across Quran, Hadith, and more</p>
+      </div>
+    </div>
+    <div id="search-results" class="hidden space-y-6"></div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: BOOKMARKS
+       ==================================================== -->
+  <div id="screen-bookmarks" class="screen px-4 md:px-8 py-6 max-w-3xl mx-auto">
+    <div class="mb-6">
+      <h2 class="text-2xl font-bold text-primary-container mb-1">Bookmarks Library</h2>
+      <p class="text-sm text-on-surface-variant">Your saved Ayahs, Hadiths, and Duas.</p>
+    </div>
+    <div class="flex gap-4 mb-6 border-b border-surface-variant overflow-x-auto">
+      <button onclick="setBookmarkTab('all')"    id="bk-all"    class="text-xs font-bold text-primary border-b-2 border-primary pb-3 px-2 shrink-0">All Saved</button>
+      <button onclick="setBookmarkTab('ayah')"   id="bk-ayah"   class="text-xs font-bold text-outline hover:text-on-surface pb-3 px-2 shrink-0 transition-colors">Ayahs</button>
+      <button onclick="setBookmarkTab('hadith')" id="bk-hadith" class="text-xs font-bold text-outline hover:text-on-surface pb-3 px-2 shrink-0 transition-colors">Hadiths</button>
+      <button onclick="setBookmarkTab('dua')"    id="bk-dua"    class="text-xs font-bold text-outline hover:text-on-surface pb-3 px-2 shrink-0 transition-colors">Duas</button>
+    </div>
+    <div id="bookmarks-list" class="space-y-3"></div>
+    <div id="bookmarks-empty" class="text-center py-16 hidden">
+      <span class="material-symbols-outlined text-5xl text-outline/30">bookmark</span>
+      <p class="text-on-surface-variant mt-3 text-sm">No bookmarks yet</p>
+      <p class="text-xs text-outline mt-1">Save Ayahs and Hadiths from their screens</p>
+    </div>
+  </div>
+
+  <!-- ====================================================
+       SCREEN: ZAKAT CALCULATOR
+       ==================================================== -->
+  <div id="screen-zakat" class="screen px-4 md:px-8 py-6 max-w-2xl mx-auto">
+    <div class="text-center mb-6">
+      <h2 class="text-2xl font-bold text-primary mb-1">Zakat Calculator</h2>
+      <p class="text-sm text-on-surface-variant max-w-sm mx-auto">Calculate your annual obligatory alms.</p>
+    </div>
+    <div class="sakinah-card p-6 mb-6 text-center relative overflow-hidden girih sticky top-16 z-10 border border-outline-variant/20">
+      <span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant block mb-2">Total Zakat Due</span>
+      <div class="flex items-baseline justify-center gap-1 text-primary-container">
+        <span id="zakat-currency" class="text-2xl font-semibold">$</span>
+        <span id="zakat-total" class="text-5xl font-bold tracking-tight">0.00</span>
+      </div>
+      <div class="mt-4 w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+        <div class="bg-secondary-fixed-dim h-full rounded-full" style="width:2.5%"></div>
+      </div>
+      <p class="text-xs text-outline mt-2 uppercase tracking-wider">2.5% of total eligible wealth</p>
+      <div id="zakat-nisab-status" class="mt-3 text-xs text-on-surface-variant"></div>
+    </div>
+    <div class="space-y-4 mb-6">
+      <div class="sakinah-card p-5">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container">
+            <span class="material-symbols-outlined icon-fill">account_balance_wallet</span>
+          </div>
+          <div><h3 class="font-semibold text-on-surface">Cash &amp; Bank Accounts</h3><p class="text-xs text-on-surface-variant">Money at home or in accounts</p></div>
+        </div>
+        <div class="relative">
+          <span class="absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant font-medium">$</span>
+          <input id="z-cash" type="number" placeholder="0.00" oninput="calcZakat()"
+            class="w-full bg-surface-container-low rounded-xl py-3.5 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 transition-all placeholder:text-outline/50"/>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="sakinah-card p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="material-symbols-outlined icon-fill" style="color:#B8860B">diamond</span>
+            <div><h3 class="font-semibold text-on-surface text-sm">Gold &amp; Silver</h3><p class="text-xs text-on-surface-variant">Jewelry value</p></div>
+          </div>
+          <div class="relative">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm font-medium">$</span>
+            <input id="z-gold" type="number" placeholder="0.00" oninput="calcZakat()"
+              class="w-full bg-surface-container-low rounded-xl py-3 pl-8 pr-3 text-sm focus:outline-none focus:ring-2 transition-all placeholder:text-outline/50"/>
+          </div>
+        </div>
+        <div class="sakinah-card p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="material-symbols-outlined icon-fill text-primary-container">trending_up</span>
+            <div><h3 class="font-semibold text-on-surface text-sm">Investments</h3><p class="text-xs text-on-surface-variant">Stocks, funds</p></div>
+          </div>
+          <div class="relative">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm font-medium">$</span>
+            <input id="z-invest" type="number" placeholder="0.00" oninput="calcZakat()"
+              class="w-full bg-surface-container-low rounded-xl py-3 pl-8 pr-3 text-sm focus:outline-none focus:ring-2 transition-all placeholder:text-outline/50"/>
+          </div>
+        </div>
+      </div>
+      <div class="sakinah-card p-5">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:rgba(186,26,26,0.1)">
+            <span class="material-symbols-outlined icon-fill" style="color:#ba1a1a">money_off</span>
+          </div>
+          <div><h3 class="font-semibold text-on-surface">Liabilities (Deductible)</h3><p class="text-xs text-on-surface-variant">Outstanding debts</p></div>
+        </div>
+        <div class="relative">
+          <span class="absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant font-medium">-$</span>
+          <input id="z-debt" type="number" placeholder="0.00" oninput="calcZakat()"
+            class="w-full bg-surface-container-low rounded-xl py-3.5 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 transition-all placeholder:text-outline/50"/>
+        </div>
+      </div>
+    </div>
+    <div class="sakinah-card p-5" style="background:rgba(190,237,215,0.2);border:1px solid #beedd7">
+      <div class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-primary-container mt-0.5">info</span>
+        <div>
+          <p class="text-sm font-semibold text-primary-container mb-1">Nisab Threshold</p>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Zakat is obligatory when wealth exceeds the nisab (equivalent of ~85g gold or ~595g silver) and has been held for one lunar year (hawl).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end app-wrapper -->
+
+<!-- ======================================================
+     MOBILE BOTTOM NAV
+     ====================================================== -->
+<nav id="bottom-nav">
+  <button onclick="navigate('home')"   id="bn-home"   class="flex flex-col items-center gap-1 px-3 text-primary-container">
+    <span class="material-symbols-outlined text-2xl icon-fill" style="font-variation-settings:'FILL' 1">home</span>
+    <span class="text-[9px] font-bold uppercase tracking-widest">Home</span>
+  </button>
+  <button onclick="navigate('quran')"  id="bn-quran"  class="flex flex-col items-center gap-1 px-3 text-stone-400">
+    <span class="material-symbols-outlined text-2xl">menu_book</span>
+    <span class="text-[9px] font-bold uppercase tracking-widest">Quran</span>
+  </button>
+  <button onclick="navigate('prayer')" id="bn-prayer" class="flex flex-col items-center gap-1 px-3 text-stone-400">
+    <span class="material-symbols-outlined text-2xl">schedule</span>
+    <span class="text-[9px] font-bold uppercase tracking-widest">Prayer</span>
+  </button>
+  <button onclick="navigate('qibla')"  id="bn-qibla"  class="flex flex-col items-center gap-1 px-3 text-stone-400">
+    <span class="material-symbols-outlined text-2xl">explore</span>
+    <span class="text-[9px] font-bold uppercase tracking-widest">Qibla</span>
+  </button>
+  <button onclick="navigate('search')" id="bn-search" class="flex flex-col items-center gap-1 px-3 text-stone-400">
+    <span class="material-symbols-outlined text-2xl">search</span>
+    <span class="text-[9px] font-bold uppercase tracking-widest">Search</span>
+  </button>
+</nav>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<!-- ======================================================
+     SCRIPTS — load in dependency order
+     ====================================================== -->
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+<script src="js/quran.js"></script>
+<script src="js/hadith.js"></script>
+<script src="js/features.js"></script>
+
+<script>
+  // Bootstrap
+  document.addEventListener('DOMContentLoaded', () => {
+    loadSurahs();
+    initHome();
+    // Pre-load a slice of Bukhari for search
+    fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/1.json')
+      .then(r => r.json())
+      .then(d => { if (d.hadiths) state.hadithData = d.hadiths.slice(0, 60); })
+      .catch(() => {});
+  });
+</script>
+</body>
+</html>
