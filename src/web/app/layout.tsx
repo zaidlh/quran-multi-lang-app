@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { UILanguageProvider } from "./components/UILanguageProvider";
 import { ServiceWorkerRegistration } from "./components/ServiceWorkerRegistration";
+import { MobileHeader } from "./components/MobileHeader";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -155,47 +156,7 @@ export default function RootLayout({
             {/* Main wrapper */}
             <div id="app-wrapper" className="lg:ml-[260px]">
               {/* Mobile header - only shown on mobile */}
-              <header id="mobile-header" className="mobile-header lg:hidden">
-                <button
-                  onClick={() => {
-                    document.getElementById("sidebar")?.classList.add("open");
-                    document
-                      .getElementById("sidebar-overlay")
-                      ?.classList.add("visible");
-                  }}
-                  className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-stone-100"
-                >
-                  <span className="material-symbols-outlined text-stone-500">
-                    menu
-                  </span>
-                </button>
-                <span
-                  className="text-lg font-bold text-[--primary-container]"
-                  style={{ fontFamily: "'Georgia', serif" }}
-                >
-                  Sakinah
-                </span>
-                <a
-                  href="/search"
-                  className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-stone-100"
-                >
-                  <span className="material-symbols-outlined text-stone-500">
-                    search
-                  </span>
-                </a>
-              </header>
-
-              {/* Mobile sidebar overlay */}
-              <div
-                id="sidebar-overlay"
-                className="lg:hidden fixed inset-0 bg-black/30 z-[99] backdrop-blur-sm hidden"
-                onClick={() => {
-                  document.getElementById("sidebar")?.classList.remove("open");
-                  document
-                    .getElementById("sidebar-overlay")
-                    ?.classList.remove("visible");
-                }}
-              />
+              <MobileHeader />
 
               {/* Main content */}
               <main id="main-content" className="flex-1" role="main">
