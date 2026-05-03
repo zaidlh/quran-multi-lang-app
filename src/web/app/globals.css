@@ -1,101 +1,121 @@
 @import "tailwindcss";
 
-/* SAKINAH DESIGN TOKENS */
+/* ============================================================
+   SAKINAH DESIGN SYSTEM — Material Design 3 Color Tokens
+   ============================================================ */
 :root {
-  /* Primary - Deep Forest Green */
   --primary: #00261a;
   --on-primary: #ffffff;
   --primary-container: #0f3d2e;
   --on-primary-container: #7ba894;
   --primary-fixed: #beedd7;
   --primary-fixed-dim: #a2d1bb;
-  
-  /* Secondary - Golden Amber */
   --secondary: #745b04;
   --on-secondary: #ffffff;
   --secondary-container: #ffdc7e;
   --secondary-fixed: #ffe08d;
   --secondary-fixed-dim: #e4c368;
-  
-  /* Surface - Warm Off-White */
   --surface: #f9faf7;
   --surface-dim: #d9dad7;
   --surface-container-lowest: #ffffff;
-  --surfaceContainerLow: #f3f4f1;
-  --surfaceContainer: #edeeeb;
-  --surfaceContainerHigh: #e8e8e5;
-  --surfaceContainerHighest: #e2e3e0;
-  --surface-variant: #e2e3e0;
-  
-  /* On Surface */
+  --surface-container-low: #f3f4f1;
+  --surface-container: #edeeeb;
+  --surface-container-high: #e8e8e5;
+  --surface-container-highest: #e2e3e0;
   --on-surface: #1a1c1b;
   --on-surface-variant: #414944;
   --inverse-surface: #2f312f;
   --inverse-on-surface: #f0f1ee;
-  
-  /* Background */
   --background: #f9faf7;
   --on-background: #1a1c1b;
-  
-  /* Outline */
   --outline: #717974;
   --outline-variant: #c0c8c3;
-  
-  /* Error */
   --error: #ba1a1a;
   --on-error: #ffffff;
   --error-container: #ffdad6;
-  
-  /* On Primary Fixed */
-  --on-primary-fixed: #002116;
-  --on-primary-fixed-variant: #234f3f;
-  --on-secondary-fixed: #241a00;
+  --foreground: #1a1c1b;
+  --muted: #717974;
+  --border: #e2e3e0;
+  --radius: 1.25rem;
 }
 
 .dark {
-  /* Dark mode - Sakinah style */
-  --background: #00261a;
-  --on-background: #f0f1ee;
-  --primary: #beedd7;
-  --primary-container: #7ba894;
-  --surface: #0f3d2e;
-  --surfaceContainerLow: #1a5740;
-  --surfaceContainer: #153a2f;
-  --surfaceContainerHigh: #123028;
-  --on-surface: #f0f1ee;
+  --primary: #a2d1bb;
+  --on-primary: #003826;
+  --primary-container: #0f3d2e;
+  --on-primary-container: #beedd7;
+  --primary-fixed: #beedd7;
+  --primary-fixed-dim: #a2d1bb;
+  --secondary: #e4c368;
+  --on-secondary: #3e2e00;
+  --secondary-container: #584400;
+  --secondary-fixed: #ffe08d;
+  --secondary-fixed-dim: #e4c368;
+  --surface: #1a1c1b;
+  --surface-dim: #1a1c1b;
+  --surface-container-lowest: #0f1110;
+  --surface-container-low: #1e201f;
+  --surface-container: #222423;
+  --surface-container-high: #2d2f2d;
+  --surface-container-highest: #383a38;
+  --on-surface: #e2e3e0;
   --on-surface-variant: #c0c8c3;
-  --outline: #717974;
+  --inverse-surface: #e2e3e0;
+  --inverse-on-surface: #2f312f;
+  --background: #1a1c1b;
+  --on-background: #e2e3e0;
+  --outline: #8a918c;
+  --outline-variant: #414944;
+  --error: #ffb4ab;
+  --on-error: #690005;
+  --error-container: #93000a;
+  --foreground: #e2e3e0;
+  --muted: #8a918c;
+  --border: #414944;
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-on-background: var(--on-background);
+  --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-on-primary: var(--on-primary);
   --color-primary-container: var(--primary-container);
   --color-on-primary-container: var(--on-primary-container);
+  --color-primary-fixed: var(--primary-fixed);
+  --color-primary-fixed-dim: var(--primary-fixed-dim);
   --color-secondary: var(--secondary);
   --color-on-secondary: var(--on-secondary);
   --color-secondary-container: var(--secondary-container);
+  --color-secondary-fixed: var(--secondary-fixed);
+  --color-secondary-fixed-dim: var(--secondary-fixed-dim);
   --color-surface: var(--surface);
-  --color-surface-container-lowest: var(--surfaceContainerLowest);
-  --color-surface-container-low: var(--surfaceContainerLow);
-  --color-surface-container: var(--surfaceContainer);
-  --color-surface-container-high: var(--surfaceContainerHigh);
+  --color-surface-dim: var(--surface-dim);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
   --color-on-surface: var(--on-surface);
   --color-on-surface-variant: var(--on-surface-variant);
+  --color-inverse-surface: var(--inverse-surface);
+  --color-inverse-on-surface: var(--inverse-on-surface);
   --color-outline: var(--outline);
   --color-outline-variant: var(--outline-variant);
-  --color-gold: var(--secondary);
   --color-error: var(--error);
-  --font-sans: var(--font-geist-sans), 'Inter', sans-serif;
-  --font-arabic: var(--font-arabic), 'Amiri', 'Scheherazade New', serif;
-  --shadow-ambient-1: 0 4px 16px rgba(15,61,46,0.04);
-  --shadow-ambient-2: 0 8px 24px rgba(15,61,46,0.10);
-  --shadow-nav: 0 -8px 24px rgba(15,61,46,0.08);
-  --shadow-card: 0 2px 12px rgba(15,61,46,0.06);
+  --color-on-error: var(--on-error);
+  --color-error-container: var(--error-container);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-gold: var(--secondary);
+  --color-primary-light: var(--primary-fixed);
+  --color-surface-elevated: var(--surface-container-low);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
+/* ============================================================
+   BASE
+   ============================================================ */
 html {
   scroll-behavior: smooth;
 }
@@ -103,14 +123,17 @@ html {
 body {
   background: var(--background);
   color: var(--on-surface);
-  font-family: 'Inter', var(--font-geist-sans), Arial, sans-serif;
+  font-family: "Inter", var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
 ::selection {
   background-color: var(--primary-fixed);
-  color: var(--primary);
+  color: var(--primary-container);
 }
 
+/* ============================================================
+   RTL UTILITIES
+   ============================================================ */
 [dir="rtl"] {
   text-align: right;
 }
@@ -119,161 +142,119 @@ body {
   transform: scaleX(-1);
 }
 
-/* SAKINAH CARD COMPONENT */
-.sakinah-card {
-  background: var(--surfaceContainerLowest, #fff);
-  border-radius: 1.25rem;
-  box-shadow: var(--shadow-card, 0 2px 12px rgba(15,61,46,0.06));
+[dir="rtl"] .ms-auto {
+  margin-inline-start: auto;
 }
 
-/* SIDEBAR */
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 260px;
-  background: #F8F6F1;
-  border-right: 1px solid rgba(0,0,0,0.06);
-  z-index: 100;
-  overflow-y: auto;
+[dir="rtl"] .me-auto {
+  margin-inline-end: auto;
 }
 
-@media (max-width: 1023px) {
-  .sidebar {
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-  }
-  .sidebar.open {
-    transform: translateX(0);
-  }
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+.arabic-text {
+  font-family: var(--font-arabic), "Amiri", "Traditional Arabic", "Scheherazade New", serif;
+  line-height: 2.4;
+  font-size: 1.75rem;
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
 }
 
-@media (min-width: 1024px) {
-  .sidebar {
-    transform: translateX(0);
-  }
-}
-
-/* MOBILE HEADER */
-.mobile-header {
-  position: sticky;
-  top: 0;
-  z-index: 80;
-  background: #F8F6F1;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-}
-
-@media (min-width: 1024px) {
-  .mobile-header {
-    display: none !important;
-  }
-}
-
-/* BOTTOM NAV */
-#bottom-nav, .bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 80;
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(16px);
-  border-top: 1px solid rgba(0,0,0,0.06);
-  display: flex;
-  justify-content: space-around;
-  padding: 8px 0 20px;
-  border-radius: 24px 24px 0 0;
-  box-shadow: var(--shadow-nav, 0 -8px 24px rgba(15,61,46,0.08));
-}
-
-@media (min-width: 1024px) {
-  .bottom-nav {
-    display: none !important;
-  }
-}
-
-/* NAV ITEMS */
-.nav-item {
-  transition: all 0.15s ease;
-}
-.nav-item:hover {
-  background: rgba(15,61,46,0.05);
-}
-.nav-item.active {
-  background: rgba(15,61,46,0.08);
-  color: #0f3d2e;
-  font-weight: 600;
-}
-
-/* APP WRAPPER */
-.app-wrapper {
-  min-height: 100vh;
-}
-
-@media (max-width: 1023px) {
-  .app-wrapper {
-    padding-bottom: 80px;
-  }
-}
-
-/* MATERIAL ICONS */
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
-.icon-fill {
-  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
-
-/* ARABIC TEXT */
-.arabic {
-  font-family: 'Amiri', serif;
-  direction: rtl;
-}
 .amiri {
-  font-family: 'Amiri', serif;
+  font-family: var(--font-arabic), "Amiri", serif;
 }
 
-/* SCREENS */
-.screen {
-  display: none;
-}
-.screen.active {
-  display: block;
+/* ============================================================
+   GIRIH GEOMETRIC PATTERN
+   ============================================================ */
+.girih {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l20 20-20 20L0 20z' fill='none' stroke='%230f3d2e' stroke-width='0.5' stroke-opacity='0.05'/%3E%3C/svg%3E");
 }
 
-/* DARK SCREEN */
+/* ============================================================
+   SAKINAH CARD
+   ============================================================ */
+.sakinah-card {
+  background: var(--surface-container-lowest);
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(15, 61, 46, 0.06);
+}
+
+.dark .sakinah-card {
+  background: var(--surface-container);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================================
+   DARK SCREEN (Reader & Audio)
+   ============================================================ */
 .dark-screen {
   background: #00261a;
   color: #fff;
 }
 
-/* TOAST */
-#toast {
-  position: fixed;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #1a1c1b;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 24px;
-  font-size: 13px;
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.3s;
-  pointer-events: none;
-  white-space: nowrap;
-}
-#toast.show {
-  opacity: 1;
+/* ============================================================
+   VERSE NUMBER
+   ============================================================ */
+.verse-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--surface-container-low);
+  color: var(--primary-container);
+  font-size: 0.75rem;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.2s ease;
 }
 
-/* LOADING SPINNER */
+.verse-number::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 1px solid var(--outline-variant);
+  border-radius: 50%;
+  transform: rotate(45deg);
+  transition: border-color 0.2s;
+}
+
+.verse-number:hover {
+  background-color: var(--primary-container);
+  color: #ffffff;
+}
+
+.verse-number:hover::before {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.verse-highlight {
+  background-color: var(--primary-fixed);
+  border-radius: var(--radius);
+  transition: background-color 0.3s ease;
+}
+
+/* ============================================================
+   NAV ITEMS
+   ============================================================ */
+.nav-item {
+  transition: all 0.15s ease;
+}
+.nav-item:hover {
+  background: rgba(15, 61, 46, 0.05);
+}
+.nav-item.active {
+  background: rgba(15, 61, 46, 0.08);
+  color: var(--primary-container);
+  font-weight: 600;
+}
+
+/* ============================================================
+   LOADING SPINNER
+   ============================================================ */
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -282,15 +263,41 @@ body {
 .spinner {
   width: 28px;
   height: 28px;
-  border: 3px solid rgba(15,61,46,0.15);
-  border-top-color: #0f3d2e;
+  border: 3px solid rgba(15, 61, 46, 0.15);
+  border-top-color: var(--primary-container);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
 
-/* PRAYER PULSING DOT */
+/* ============================================================
+   SKELETON SHIMMER
+   ============================================================ */
+@keyframes shimmer {
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--surface-container-high) 25%,
+    var(--surface-container-low) 50%,
+    var(--surface-container-high) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* ============================================================
+   PULSING DOT
+   ============================================================ */
 @keyframes pulse-dot {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -303,12 +310,32 @@ body {
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
-/* COMPASS NEEDLE */
-#compass-needle {
-  transition: transform 0.8s cubic-bezier(0.23,1,0.32,1);
+/* ============================================================
+   AUDIO RANGE INPUT
+   ============================================================ */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--surface-container-highest);
+  outline: none;
+  width: 100%;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--secondary-fixed);
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(255, 224, 141, 0.5);
 }
 
-/* Custom scrollbar */
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -316,39 +343,162 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #c0c8c3;
+  background: var(--outline-variant);
   border-radius: 4px;
 }
 
-.arabic-text {
-  font-family: var(--font-arabic), "Amiri", serif;
-  line-height: 2.4;
-  font-size: 1.75rem;
-  text-rendering: optimizeLegibility;
+/* ============================================================
+   TOAST
+   ============================================================ */
+.toast {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--inverse-surface);
+  color: var(--inverse-on-surface);
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 13px;
+  z-index: 999;
+  white-space: nowrap;
 }
 
-.verse-number {
-  display: inline-flex;
+/* ============================================================
+   FADE DIVIDER
+   ============================================================ */
+.fade-div {
+  background: linear-gradient(90deg, transparent 0%, var(--outline-variant) 50%, transparent 100%);
+  height: 1px;
+}
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+#sidebar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background: #f8f6f1;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  z-index: 100;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark #sidebar-nav {
+  background: var(--surface-container-low);
+  border-right-color: var(--border);
+}
+
+#sidebar-nav.open {
+  transform: translateX(0);
+}
+
+@media (min-width: 1024px) {
+  #sidebar-nav {
+    transform: translateX(0);
+  }
+  .app-wrapper {
+    margin-left: 260px;
+  }
+  .mobile-header {
+    display: none !important;
+  }
+  .bottom-nav {
+    display: none !important;
+  }
+}
+
+[dir="rtl"] #sidebar-nav {
+  left: auto;
+  right: 0;
+  transform: translateX(100%);
+  border-right: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.dark [dir="rtl"] #sidebar-nav {
+  border-left-color: var(--border);
+}
+
+[dir="rtl"] #sidebar-nav.open {
+  transform: translateX(0);
+}
+
+@media (min-width: 1024px) {
+  [dir="rtl"] #sidebar-nav {
+    transform: translateX(0);
+  }
+  [dir="rtl"] .app-wrapper {
+    margin-left: 0;
+    margin-right: 260px;
+  }
+}
+
+/* ============================================================
+   BOTTOM NAV
+   ============================================================ */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 80;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0 20px;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -8px 24px rgba(15, 61, 46, 0.08);
+}
+
+.dark .bottom-nav {
+  background: rgba(30, 32, 31, 0.92);
+  border-top-color: var(--border);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================================
+   MOBILE HEADER
+   ============================================================ */
+.mobile-header {
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  background: #f8f6f1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  height: 56px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.5rem;
-  background-color: var(--primary-fixed);
-  color: var(--primary-container);
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin: 0 0.25rem;
-  transition: all 0.2s ease;
+  justify-content: space-between;
+  padding: 0 16px;
 }
 
-.verse-number:hover {
-  background-color: var(--primary-container);
-  color: var(--on-primary);
+.dark .mobile-header {
+  background: var(--surface-container-low);
+  border-bottom-color: var(--border);
 }
 
-.verse-highlight {
-  background-color: var(--primary-fixed);
-  border-radius: 0.75rem;
-  transition: background-color 0.3s ease;
+/* ============================================================
+   SIDEBAR OVERLAY
+   ============================================================ */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  backdrop-filter: blur(2px);
+}
+
+.sidebar-overlay.visible {
+  display: block;
 }

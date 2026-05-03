@@ -16,7 +16,7 @@ export function SurahNav({ surahNumber, lang }: SurahNavProps) {
     <div className="flex items-center justify-between mb-6">
       <Link
         href="/"
-        className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-primary transition-colors"
+        className="inline-flex items-center gap-1.5 text-sm text-outline hover:text-primary-container transition-colors"
       >
         <svg
           className={`w-4 h-4 ${dir === "rtl" ? "rotate-180" : ""}`}
@@ -33,7 +33,7 @@ export function SurahNav({ surahNumber, lang }: SurahNavProps) {
         {surahNumber > 1 && (
           <Link
             href={`/surah/${surahNumber - 1}?lang=${lang}`}
-            className="inline-flex items-center gap-1 text-sm px-3 py-1.5 rounded-lg border border-border hover:bg-surface-elevated transition-colors"
+            className="inline-flex items-center gap-1 text-sm px-3 py-1.5 rounded-xl border border-outline-variant hover:bg-surface-container-low transition-colors"
           >
             <svg
               className={`w-3.5 h-3.5 ${dir === "rtl" ? "rotate-180" : ""}`}
@@ -47,13 +47,13 @@ export function SurahNav({ surahNumber, lang }: SurahNavProps) {
             {t.surah.prev}
           </Link>
         )}
-        <span className="text-xs text-muted tabular-nums">
+        <span className="text-xs text-outline tabular-nums">
           {formatNumber(surahNumber, uiLang)} / {formatNumber(114, uiLang)}
         </span>
         {surahNumber < 114 && (
           <Link
             href={`/surah/${surahNumber + 1}?lang=${lang}`}
-            className="inline-flex items-center gap-1 text-sm px-3 py-1.5 rounded-lg border border-border hover:bg-surface-elevated transition-colors"
+            className="inline-flex items-center gap-1 text-sm px-3 py-1.5 rounded-xl border border-outline-variant hover:bg-surface-container-low transition-colors"
           >
             {t.surah.next}
             <svg
@@ -94,10 +94,10 @@ export function SurahNotFound() {
           </svg>
         </div>
         <h1 className="text-2xl font-bold mb-2">{t.common.error}</h1>
-        <p className="text-muted mb-6">{t.search.noResults}</p>
+        <p className="text-outline mb-6">{t.search.noResults}</p>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border hover:bg-surface-elevated transition-colors text-sm font-medium"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-outline-variant hover:bg-surface-container-low transition-colors text-sm font-medium"
         >
           <svg
             className={`w-4 h-4 ${dir === "rtl" ? "rotate-180" : ""}`}

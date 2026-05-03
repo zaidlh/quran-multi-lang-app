@@ -46,10 +46,10 @@ export function LastReadBanner() {
   return (
     <Link
       href={`/surah/${lastRead.surah}?lang=en#verse-${lastRead.ayah}`}
-      className="block mb-6 p-4 rounded-lg bg-primary-light dark:bg-zinc-900 border border-primary/20 hover:border-primary transition-colors"
+      className="sakinah-card block mb-6 p-4 hover:shadow-md transition-shadow"
     >
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold flex-shrink-0">
+        <div className="w-11 h-11 rounded-xl bg-primary-container text-white flex items-center justify-center flex-shrink-0">
           <svg
             className="w-5 h-5"
             fill="none"
@@ -65,13 +65,13 @@ export function LastReadBanner() {
           </svg>
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-sm font-medium">{t.lastRead.continue}</p>
-          <p className="text-xs text-zinc-500 truncate">
+          <p className="text-sm font-semibold text-on-surface">{t.lastRead.continue}</p>
+          <p className="text-xs text-outline truncate">
             {lastRead.surahName} — {t.lastRead.ayah} {formatNumber(lastRead.ayah, uiLang)}
           </p>
         </div>
         <svg
-          className={`w-5 h-5 text-zinc-400 flex-shrink-0 ${dir === "rtl" ? "rotate-180" : ""}`}
+          className={`w-5 h-5 text-outline flex-shrink-0 ${dir === "rtl" ? "rotate-180" : ""}`}
           fill="none"
           stroke="currentColor"
           strokeWidth={2}

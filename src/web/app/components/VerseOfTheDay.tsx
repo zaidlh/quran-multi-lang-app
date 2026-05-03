@@ -61,22 +61,24 @@ export function VerseOfTheDay({ totalSurahs }: VerseOfTheDayProps) {
   return (
     <Link
       href={`/surah/${verse.surah}?lang=en#verse-${verse.ayah}`}
-      className="block mb-6 p-5 rounded-lg bg-gradient-to-r from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 border border-primary/20 hover:border-primary/40 transition-colors"
+      className="sakinah-card block mb-6 p-4 hover:shadow-md transition-shadow"
     >
       <div className="flex items-start gap-3">
-        <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center text-lg flex-shrink-0">
+        <div className="w-11 h-11 rounded-xl bg-secondary-container text-secondary flex items-center justify-center text-lg flex-shrink-0 font-bold">
           ✦
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-xs text-primary font-medium mb-1">{t.verseOfDay.title}</p>
-          <p className="font-semibold text-sm">
+          <p className="text-xs text-secondary font-semibold mb-1 uppercase tracking-wide">
+            {t.verseOfDay.title}
+          </p>
+          <p className="font-semibold text-sm text-on-surface">
             {surah?.name_en ?? `${t.lastRead.surah} ${formatNumber(verse.surah, uiLang)}`} (
             {surah?.name ?? ""}) — {t.surah.verse} {formatNumber(verse.ayah, uiLang)}
           </p>
-          <p className="text-xs text-zinc-500 mt-1">{verse.label}</p>
+          <p className="text-xs text-outline mt-1">{verse.label}</p>
         </div>
         <svg
-          className={`w-5 h-5 text-zinc-400 flex-shrink-0 mt-1 ${dir === "rtl" ? "rotate-180" : ""}`}
+          className={`w-5 h-5 text-outline flex-shrink-0 mt-1 ${dir === "rtl" ? "rotate-180" : ""}`}
           fill="none"
           stroke="currentColor"
           strokeWidth={2}

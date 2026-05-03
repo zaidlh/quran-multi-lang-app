@@ -7,34 +7,55 @@ import { useTheme } from "./ThemeProvider";
 import { useUILanguage } from "./UILanguageProvider";
 import { UI_LANGUAGES } from "../lib/ui-labels";
 
-const NAV_ICONS: Record<string, string> = {
-  "/": "M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z",
-  "/juz":
-    "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
-  "/bookmarks": "M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z",
-  "/search": "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
-  "/mushaf":
-    "M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm0 8a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2zm0 8a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2z",
-  "/reading-plans":
-    "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4",
-  "/settings":
-    "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z",
-};
+const NAV_ITEMS = [
+  {
+    href: "/",
+    icon: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1m-6 0h6",
+    key: "surahs",
+  },
+  {
+    href: "/juz",
+    icon: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
+    key: "juz",
+  },
+  {
+    href: "/bookmarks",
+    icon: "M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z",
+    key: "bookmarks",
+  },
+  { href: "/search", icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z", key: "search" },
+  {
+    href: "/mushaf",
+    icon: "M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm0 8a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2zm0 8a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2z",
+    key: "mushaf",
+  },
+  {
+    href: "/reading-plans",
+    icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4",
+    key: "plans",
+  },
+  {
+    href: "/settings",
+    icon: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z",
+    key: "settings",
+  },
+];
+
+const BOTTOM_NAV_ITEMS = [
+  { href: "/", icon: "home", key: "surahs" },
+  { href: "/search", icon: "search", key: "search" },
+  { href: "/bookmarks", icon: "bookmark", key: "bookmarks" },
+  { href: "/mushaf", icon: "auto_stories", key: "mushaf" },
+  { href: "/settings", icon: "settings", key: "settings" },
+];
 
 export function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
   const { theme, toggleTheme } = useTheme();
-  const { t, dir, uiLang, setUILang } = useUILanguage();
+  const { t, uiLang, setUILang } = useUILanguage();
   const pathname = usePathname();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
@@ -46,123 +67,127 @@ export function Header() {
     return () => document.removeEventListener("mousedown", onClick);
   }, []);
 
+  const prevPathnameRef = useRef(pathname);
+  useEffect(() => {
+    if (prevPathnameRef.current !== pathname) {
+      prevPathnameRef.current = pathname;
+      setSidebarOpen(false);
+    }
+  }, [pathname]);
+
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
 
-  const navItems = [
-    { href: "/", label: t.nav.surahs },
-    { href: "/juz", label: t.nav.juz },
-    { href: "/bookmarks", label: t.nav.bookmarks },
-    { href: "/search", label: t.nav.search },
-    { href: "/mushaf", label: t.nav.mushaf },
-    { href: "/reading-plans", label: t.nav.plans },
-    { href: "/settings", label: t.nav.settings },
-  ];
-
   const currentLangInfo = UI_LANGUAGES.find((l) => l.code === uiLang);
 
   return (
-    <header
-      className={`sticky top-0 z-50 border-b transition-all duration-300 ${
-        scrolled
-          ? "bg-surface/80 backdrop-blur-xl border-border shadow-sm"
-          : "bg-transparent border-transparent"
-      }`}
-    >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white text-lg">
-            ﷽
+    <>
+      {/* ── SIDEBAR ── */}
+      <aside id="sidebar-nav" className={sidebarOpen ? "open" : ""}>
+        {/* Brand */}
+        <div className="flex items-center gap-3 px-5 py-5 border-b border-outline-variant/20">
+          <div className="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center">
+            <span className="text-white text-sm amiri font-bold">ن</span>
+          </div>
+          <span
+            className="text-xl font-bold text-primary-container"
+            style={{ fontFamily: "Georgia, serif", letterSpacing: "-0.02em" }}
+          >
+            {uiLang === "ar" ? "سكينة" : "Sakinah"}
           </span>
-          <span className="text-lg font-bold">
-            {uiLang === "ar" ? (
-              <>
-                تطبيق <span className="text-primary">القرآن</span>
-              </>
-            ) : (
-              <>
-                Quran<span className="text-primary">App</span>
-              </>
-            )}
-          </span>
-        </Link>
+        </div>
 
-        <div className="hidden md:flex items-center gap-1">
-          {navItems.map((item) => (
+        {/* Language switcher */}
+        <div className="px-4 py-3 border-b border-outline-variant/20" ref={langRef}>
+          <button
+            onClick={() => setLangOpen(!langOpen)}
+            className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm hover:bg-surface-container-low transition-colors"
+          >
+            <svg
+              className="w-5 h-5 text-outline"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <span className="flex-1 text-start font-medium text-on-surface">
+              {currentLangInfo?.nameNative || "العربية"}
+            </span>
+            <svg
+              className={`w-4 h-4 text-outline transition-transform ${langOpen ? "rotate-180" : ""}`}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          {langOpen && (
+            <div className="mt-1 max-h-48 overflow-y-auto rounded-xl bg-surface-container-lowest border border-outline-variant/30 shadow-lg">
+              {UI_LANGUAGES.map((l) => (
+                <button
+                  key={l.code}
+                  onClick={() => {
+                    setUILang(l.code);
+                    setLangOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-2 px-3 py-2 text-sm transition-colors text-start ${
+                    uiLang === l.code
+                      ? "bg-primary-fixed/30 text-primary-container font-semibold"
+                      : "hover:bg-surface-container-low"
+                  }`}
+                >
+                  <span>{l.nameNative}</span>
+                  <span className="text-outline text-xs">{l.name}</span>
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Navigation */}
+        <nav className="flex-1 px-3 py-3 space-y-0.5 overflow-y-auto">
+          {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`relative px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                isActive(item.href)
-                  ? "bg-primary-light text-primary"
-                  : "text-muted hover:text-foreground hover:bg-surface-elevated"
+              className={`nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm ${
+                isActive(item.href) ? "active" : "text-on-surface-variant"
               }`}
             >
-              {item.label}
-              {isActive(item.href) && (
-                <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-1 w-1 rounded-full bg-primary" />
-              )}
-            </Link>
-          ))}
-        </div>
-
-        <div className="flex items-center gap-2">
-          <div className="relative" ref={langRef}>
-            <button
-              onClick={() => setLangOpen(!langOpen)}
-              className="flex items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-medium hover:bg-surface-elevated transition-colors"
-              aria-label="Switch language"
-            >
               <svg
-                className="w-4 h-4"
+                className="w-5 h-5"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth={2}
+                strokeWidth={1.5}
                 viewBox="0 0 24 24"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
               </svg>
-              <span>{currentLangInfo?.nameNative || "العربية"}</span>
-            </button>
-            {langOpen && (
-              <div
-                className={`absolute top-full mt-1 ${dir === "rtl" ? "right-0" : "left-0"} w-48 bg-surface border border-border rounded-xl shadow-lg z-50 py-1 max-h-72 overflow-y-auto`}
-              >
-                {UI_LANGUAGES.map((l) => (
-                  <button
-                    key={l.code}
-                    onClick={() => {
-                      setUILang(l.code);
-                      setLangOpen(false);
-                    }}
-                    className={`w-full flex items-center gap-2 px-3 py-2 text-sm transition-colors text-start ${
-                      uiLang === l.code
-                        ? "bg-primary-light text-primary"
-                        : "hover:bg-surface-elevated"
-                    }`}
-                  >
-                    <span className="font-medium">{l.nameNative}</span>
-                    <span className="text-muted text-xs">{l.name}</span>
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
+              {t.nav[item.key as keyof typeof t.nav]}
+            </Link>
+          ))}
+        </nav>
 
+        {/* Footer */}
+        <div className="px-4 py-3 border-t border-outline-variant/20 flex items-center justify-between">
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg hover:bg-surface-elevated transition-colors"
-            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+            className="p-2 rounded-lg hover:bg-surface-container-low transition-colors"
+            aria-label="Toggle theme"
           >
             {theme === "dark" ? (
               <svg
-                className="w-5 h-5"
+                className="w-5 h-5 text-outline"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
@@ -176,7 +201,7 @@ export function Header() {
               </svg>
             ) : (
               <svg
-                className="w-5 h-5"
+                className="w-5 h-5 text-outline"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
@@ -190,70 +215,122 @@ export function Header() {
               </svg>
             )}
           </button>
+          <span className="text-xs text-outline amiri">بسم الله الرحمن الرحيم</span>
+        </div>
+      </aside>
 
-          <button
-            className="md:hidden p-2 rounded-lg hover:bg-surface-elevated transition-colors"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
+      {/* Sidebar overlay (mobile) */}
+      <div
+        className={`sidebar-overlay ${sidebarOpen ? "visible" : ""}`}
+        onClick={() => setSidebarOpen(false)}
+      />
+
+      {/* ── MOBILE HEADER ── */}
+      <header className="mobile-header lg:hidden">
+        <button
+          onClick={() => setSidebarOpen(true)}
+          className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-container-low transition-colors"
+        >
+          <svg
+            className="w-5 h-5 text-outline"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
           >
-            {menuOpen ? (
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
-        </div>
-      </nav>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <span
+          className="text-lg font-bold text-primary-container"
+          style={{ fontFamily: "Georgia, serif" }}
+        >
+          {uiLang === "ar" ? "سكينة" : "Sakinah"}
+        </span>
+        <Link
+          href="/search"
+          className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-container-low transition-colors"
+        >
+          <svg
+            className="w-5 h-5 text-outline"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </Link>
+      </header>
 
-      {menuOpen && (
-        <div className="md:hidden border-t border-border bg-surface animate-in slide-in-from-top">
-          <div className="mx-auto max-w-6xl px-4 py-2 space-y-1">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setMenuOpen(false)}
-                className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
-                  isActive(item.href)
-                    ? "bg-primary-light text-primary"
-                    : "text-muted hover:text-foreground hover:bg-surface-elevated"
-                }`}
-              >
-                <svg
-                  className={`w-4 h-4 ${dir === "rtl" ? "rtl-mirror" : ""}`}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d={NAV_ICONS[item.href] || NAV_ICONS["/"]}
-                  />
-                </svg>
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
-    </header>
+      {/* ── BOTTOM NAV (mobile) ── */}
+      <nav className="bottom-nav lg:hidden">
+        {BOTTOM_NAV_ITEMS.map((item) => {
+          const active = isActive(item.href);
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`flex flex-col items-center gap-1 px-3 ${
+                active ? "text-primary-container" : "text-outline"
+              }`}
+            >
+              <BottomNavIcon name={item.icon} filled={active} />
+              <span className="text-[10px] font-medium">
+                {t.nav[item.key as keyof typeof t.nav]}
+              </span>
+            </Link>
+          );
+        })}
+      </nav>
+    </>
+  );
+}
+
+function BottomNavIcon({ name, filled }: { name: string; filled: boolean }) {
+  const icons: Record<string, { outline: string; filled: string }> = {
+    home: {
+      outline:
+        "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1m-6 0h6",
+      filled:
+        "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1m-6 0h6",
+    },
+    search: {
+      outline: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
+      filled: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
+    },
+    bookmark: {
+      outline: "M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z",
+      filled: "M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z",
+    },
+    auto_stories: {
+      outline:
+        "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
+      filled:
+        "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
+    },
+    settings: {
+      outline:
+        "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z",
+      filled:
+        "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z",
+    },
+  };
+
+  const d = filled ? icons[name]?.filled : icons[name]?.outline;
+  return (
+    <svg
+      className="w-6 h-6"
+      fill={filled ? "currentColor" : "none"}
+      stroke="currentColor"
+      strokeWidth={filled ? 0 : 1.5}
+      viewBox="0 0 24 24"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d={d || ""} />
+    </svg>
   );
 }

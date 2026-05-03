@@ -94,7 +94,7 @@ export function SurahView({
         <select
           value={currentLang}
           onChange={(e) => router.push(`/surah/${surahNumber}?lang=${e.target.value}`)}
-          className="px-3 py-2 border border-border rounded-lg bg-surface text-sm"
+          className="px-3 py-2 border border-outline-variant rounded-xl bg-surface-container-lowest text-sm text-on-surface"
         >
           {languages.map((l) => (
             <option key={l.code} value={l.code}>
@@ -115,12 +115,12 @@ export function SurahView({
       <HifzMode verses={arabicVerses} surahNumber={surahNumber} />
 
       {surahNumber !== 1 && surahNumber !== 9 && (
-        <div className="text-center py-6 arabic-text text-2xl text-primary" dir="rtl">
+        <div className="text-center py-6 arabic-text text-2xl text-primary-container" dir="rtl">
           {t.surah.bismillah}
         </div>
       )}
 
-      <div className="space-y-2">
+      <div className="space-y-1">
         {arabicVerses.map((verse) => {
           const trans = translationVerses.find((tv) => tv.number === verse.number);
           const isExpanded = expandedVerse === verse.number;
@@ -130,8 +130,10 @@ export function SurahView({
               id={`verse-${verse.number}`}
               data-ayah={verse.number}
               ref={(el) => setVerseRef(verse.number, el)}
-              className={`group rounded-xl p-4 -mx-4 transition-all ${
-                highlightedAyah === verse.number ? "bg-primary-light" : "hover:bg-surface-elevated"
+              className={`group rounded-2xl p-4 -mx-2 transition-all ${
+                highlightedAyah === verse.number
+                  ? "bg-primary-fixed/40"
+                  : "hover:bg-surface-container-low"
               }`}
             >
               <div className="flex items-start gap-3">
@@ -143,10 +145,14 @@ export function SurahView({
                   {formatNumber(verse.number, uiLang)}
                 </button>
                 <div className="flex-1 min-w-0">
-                  <p className="arabic-text text-xl leading-relaxed" dir="rtl">
+                  <p className="arabic-text text-xl leading-relaxed text-on-surface" dir="rtl">
                     {verse.text}
                   </p>
-                  {trans && <p className="text-sm text-muted leading-relaxed mt-2">{trans.text}</p>}
+                  {trans && (
+                    <p className="text-sm text-on-surface-variant leading-relaxed mt-2">
+                      {trans.text}
+                    </p>
+                  )}
                 </div>
                 <div className="flex items-center gap-1 flex-shrink-0 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
                   <ShareButton
@@ -163,7 +169,7 @@ export function SurahView({
               {!isExpanded && (
                 <button
                   onClick={() => setExpandedVerse(verse.number)}
-                  className={`mt-2 ${dir === "rtl" ? "pe-11" : "ps-11"} text-xs text-muted hover:text-primary transition-colors`}
+                  className={`mt-2 ${dir === "rtl" ? "pe-11" : "ps-11"} text-xs text-outline hover:text-primary-container transition-colors`}
                 >
                   {t.surah.showDetails} {dir === "rtl" ? "←" : "→"}
                 </button>
@@ -171,7 +177,7 @@ export function SurahView({
 
               {isExpanded && (
                 <div
-                  className={`${dir === "rtl" ? "pe-11" : "ps-11"} space-y-3 pt-3 border-t border-border/50 mt-3`}
+                  className={`${dir === "rtl" ? "pe-11" : "ps-11"} space-y-3 pt-3 border-t border-outline-variant/20 mt-3`}
                 >
                   <TajweedText text={verse.text} />
                   <TafsirPanel surahNumber={surahNumber} ayahNumber={verse.number} />
@@ -185,7 +191,7 @@ export function SurahView({
                   <VerseNotes surahNumber={surahNumber} ayahNumber={verse.number} />
                   <button
                     onClick={() => setExpandedVerse(null)}
-                    className="text-xs text-muted hover:text-primary transition-colors"
+                    className="text-xs text-outline hover:text-primary-container transition-colors"
                   >
                     {dir === "rtl" ? "→" : "←"} {t.surah.hideDetails}
                   </button>

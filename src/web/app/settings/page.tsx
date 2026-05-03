@@ -67,8 +67,8 @@ export default function SettingsPage() {
       <h1 className="text-2xl font-bold mb-8">{t.settings.title}</h1>
 
       <div className="space-y-6">
-        <section className="p-5 rounded-2xl bg-surface border border-border">
-          <h2 className="font-semibold mb-3">{t.settings.uiLang}</h2>
+        <section className="sakinah-card p-5">
+          <h2 className="font-semibold mb-3 text-on-surface">{t.settings.uiLang}</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
             {UI_LANGUAGES.map((l) => (
               <button
@@ -76,31 +76,31 @@ export default function SettingsPage() {
                 onClick={() => setUILang(l.code)}
                 className={`flex items-center gap-2 p-3 rounded-xl border transition-all text-sm ${
                   uiLang === l.code
-                    ? "border-primary bg-primary-light text-primary"
-                    : "border-border hover:border-primary/30"
+                    ? "border-primary-container bg-primary-fixed/30 text-primary-container"
+                    : "border-outline-variant hover:border-primary-container/30"
                 }`}
               >
                 <span className="text-lg">{LANG_FLAGS[l.code] || "\u{1F310}"}</span>
                 <div className="text-start">
                   <div className="font-medium">{l.nameNative}</div>
-                  <div className="text-xs text-muted">{l.name}</div>
+                  <div className="text-xs text-outline">{l.name}</div>
                 </div>
               </button>
             ))}
           </div>
         </section>
 
-        <section className="p-5 rounded-2xl bg-surface border border-border">
-          <h2 className="font-semibold mb-3">{t.settings.quranLang}</h2>
-          <p className="text-sm text-muted">
+        <section className="sakinah-card p-5">
+          <h2 className="font-semibold mb-3 text-on-surface">{t.settings.quranLang}</h2>
+          <p className="text-sm text-outline">
             {uiLang === "ar"
               ? "يمكنك تغيير لغة الترجمة من صفحة السورة"
               : "You can change the translation language from the surah page"}
           </p>
         </section>
 
-        <section className="p-5 rounded-2xl bg-surface border border-border">
-          <h2 className="font-semibold mb-3">{t.settings.theme}</h2>
+        <section className="sakinah-card p-5">
+          <h2 className="font-semibold mb-3 text-on-surface">{t.settings.theme}</h2>
           <div className="flex gap-2">
             {(["light", "dark"] as const).map((tMode) => (
               <button
@@ -110,8 +110,8 @@ export default function SettingsPage() {
                 }}
                 className={`flex-1 p-3 rounded-xl border capitalize text-sm font-medium transition-all ${
                   theme === tMode
-                    ? "border-primary bg-primary-light text-primary"
-                    : "border-border hover:border-primary/30"
+                    ? "border-primary-container bg-primary-fixed/30 text-primary-container"
+                    : "border-outline-variant hover:border-primary-container/30"
                 }`}
               >
                 {tMode === "light"
@@ -126,8 +126,8 @@ export default function SettingsPage() {
           </div>
         </section>
 
-        <section className="p-5 rounded-2xl bg-surface border border-border">
-          <h2 className="font-semibold mb-3">{t.settings.fontSize}</h2>
+        <section className="sakinah-card p-5">
+          <h2 className="font-semibold mb-3 text-on-surface">{t.settings.fontSize}</h2>
           <div className="flex gap-2">
             {(["small", "medium", "large"] as const).map((size) => (
               <button
@@ -135,8 +135,8 @@ export default function SettingsPage() {
                 onClick={() => setFontSize(size)}
                 className={`flex-1 p-3 rounded-xl border text-sm font-medium transition-all ${
                   fontSize === size
-                    ? "border-primary bg-primary-light text-primary"
-                    : "border-border hover:border-primary/30"
+                    ? "border-primary-container bg-primary-fixed/30 text-primary-container"
+                    : "border-outline-variant hover:border-primary-container/30"
                 }`}
               >
                 {size === "small" ? "A" : size === "medium" ? "A+" : "A++"}
@@ -144,7 +144,7 @@ export default function SettingsPage() {
             ))}
           </div>
           <p
-            className="arabic-text mt-4 p-4 rounded-xl bg-surface-elevated text-center"
+            className="arabic-text mt-4 p-4 rounded-xl bg-surface-container text-center"
             dir="rtl"
             style={{ fontSize: fontSizeMap[fontSize] }}
           >
@@ -152,8 +152,8 @@ export default function SettingsPage() {
           </p>
         </section>
 
-        <section className="p-5 rounded-2xl bg-surface border border-border">
-          <h2 className="font-semibold mb-3">{t.settings.audioSpeed}</h2>
+        <section className="sakinah-card p-5">
+          <h2 className="font-semibold mb-3 text-on-surface">{t.settings.audioSpeed}</h2>
           <input
             type="range"
             min={0.5}
@@ -161,11 +161,11 @@ export default function SettingsPage() {
             step={0.25}
             value={audioSpeed}
             onChange={(e) => setAudioSpeed(parseFloat(e.target.value))}
-            className="w-full accent-primary"
+            className="w-full accent-[var(--primary-container)]"
           />
-          <div className="flex justify-between text-xs text-muted mt-1">
+          <div className="flex justify-between text-xs text-outline mt-1">
             <span>0.5x</span>
-            <span className="font-semibold text-primary">{audioSpeed}x</span>
+            <span className="font-semibold text-primary-container">{audioSpeed}x</span>
             <span>2x</span>
           </div>
         </section>
@@ -173,13 +173,13 @@ export default function SettingsPage() {
         <div className="flex items-center gap-3 pt-4">
           <button
             onClick={saveSettings}
-            className="flex-1 px-6 py-3 bg-primary text-white rounded-xl font-medium hover:opacity-90 transition-opacity"
+            className="flex-1 px-6 py-3 bg-primary-container text-white rounded-xl font-medium hover:opacity-90 transition-opacity"
           >
             {saved ? `\u2713 ${t.settings.saved}` : t.settings.save}
           </button>
           <button
             onClick={resetSettings}
-            className="px-6 py-3 border border-border rounded-xl font-medium hover:bg-surface-elevated transition-colors"
+            className="px-6 py-3 border border-outline-variant rounded-xl font-medium hover:bg-surface-container-low transition-colors"
           >
             {t.settings.reset}
           </button>
