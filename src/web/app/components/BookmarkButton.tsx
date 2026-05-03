@@ -54,7 +54,7 @@ export function BookmarkButton({ surahNumber, ayahNumber }: BookmarkButtonProps)
   return (
     <button
       onClick={toggle}
-      className="p-1 hover:scale-110 transition-transform"
+      className={`p-1.5 rounded-lg hover:scale-110 transition-all ${isBookmarked ? "text-secondary" : "text-outline hover:text-on-surface"}`}
       aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
       title={isBookmarked ? "Remove bookmark" : "Add bookmark"}
     >

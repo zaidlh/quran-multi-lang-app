@@ -2,56 +2,60 @@
 
 import { useUILanguage } from "./UILanguageProvider";
 import { formatNumber } from "../lib/ui-labels";
+import { LastReadBanner } from "./LastReadBanner";
+import { VerseOfTheDay } from "./VerseOfTheDay";
 
-export function HeroSection() {
+interface Surah {
+  number: number;
+  name: string;
+  name_en: string;
+  verses: number;
+}
+
+export function HeroSection({ surahs }: { surahs: Surah[] }) {
   const { t, uiLang } = useUILanguage();
 
   return (
-    <section className="relative overflow-hidden border-b border-border">
+    <div className="space-y-4">
+      {/* Greeting + Stats hero */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }}
-      />
-      <div className="relative mx-auto max-w-6xl px-4 py-16 text-center">
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary-light px-4 py-1.5 text-sm font-medium text-primary">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-          </span>
-          {t.home.badge}
-        </div>
-        <h1 className="mb-4">
-          <span className="arabic-text text-primary block mb-2" dir="rtl">
+        className="relative overflow-hidden rounded-2xl text-white min-h-[180px] flex flex-col justify-between p-6"
+        style={{ background: "linear-gradient(135deg,#0f3d2e 0%,#1a5740 100%)" }}
+      >
+        <div className="absolute inset-0 girih opacity-20 pointer-events-none" />
+        <div className="relative z-10">
+          <p className="text-secondary-fixed text-xs font-bold uppercase tracking-widest mb-1">
+            {t.home.badge}
+          </p>
+          <h1 className="text-2xl md:text-3xl font-bold mb-1">{t.home.greeting}</h1>
+          <p className="arabic-text text-lg opacity-80" dir="rtl">
             {t.home.subtitle}
-          </span>
-          <span className="text-3xl font-bold sm:text-4xl">{t.home.title}</span>
-        </h1>
-        <div className="mx-auto mt-8 flex items-center justify-center gap-8 text-sm text-muted">
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-primary" />
-            <span>
-              <strong className="text-foreground">{formatNumber(114, uiLang)}</strong>{" "}
-              {t.home.statsSurahs}
+          </p>
+        </div>
+        <div className="relative z-10 flex items-center gap-6 mt-4">
+          <div className="flex items-center gap-1.5">
+            <span className="w-2 h-2 rounded-full bg-secondary-fixed" />
+            <span className="text-sm opacity-90">
+              {formatNumber(114, uiLang)} {t.home.statsSurahs}
             </span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-gold" />
-            <span>
-              <strong className="text-foreground">{formatNumber(6236, uiLang)}</strong>{" "}
-              {t.home.statsVerses}
+          <div className="flex items-center gap-1.5">
+            <span className="w-2 h-2 rounded-full bg-primary-fixed" />
+            <span className="text-sm opacity-90">
+              {formatNumber(6236, uiLang)} {t.home.statsVerses}
             </span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-primary" />
-            <span>
-              <strong className="text-foreground">{formatNumber(30, uiLang)}</strong>{" "}
-              {t.home.statsJuz}
+          <div className="flex items-center gap-1.5">
+            <span className="w-2 h-2 rounded-full bg-white/60" />
+            <span className="text-sm opacity-90">
+              {formatNumber(30, uiLang)} {t.home.statsJuz}
             </span>
           </div>
         </div>
       </div>
-    </section>
+
+      <LastReadBanner />
+      <VerseOfTheDay totalSurahs={surahs} />
+    </div>
   );
 }

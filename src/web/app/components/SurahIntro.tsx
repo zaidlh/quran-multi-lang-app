@@ -181,26 +181,26 @@ export function SurahIntro({
   const intro = getSurahIntro(surahNumber, uiLang);
 
   return (
-    <div className="relative mb-6 p-5 rounded-2xl bg-surface border border-border overflow-hidden">
-      <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-primary/5" />
+    <div className="sakinah-card relative mb-6 p-5 overflow-hidden">
+      <div className="absolute -top-8 -end-8 h-32 w-32 rounded-full bg-primary-container/10" />
       <div className="relative flex items-center gap-4 mb-3">
-        <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-primary-light text-primary text-2xl font-bold">
+        <span className="flex items-center justify-center w-14 h-14 rounded-xl bg-surface-container-low text-primary-container text-2xl font-bold">
           {formatNumber(surahNumber, uiLang)}
         </span>
         <div className="flex-1">
           <div className="flex items-center gap-3">
-            <h2 className="text-lg font-semibold">{nameEn}</h2>
-            <span className="arabic-text text-lg" dir="rtl">
+            <h2 className="text-lg font-semibold text-on-surface">{nameEn}</h2>
+            <span className="arabic-text text-lg text-on-surface-variant" dir="rtl">
               {name}
             </span>
           </div>
-          <div className="flex items-center gap-2 text-sm text-muted mt-0.5">
+          <div className="flex items-center gap-2 text-sm text-outline mt-0.5">
             <span>{nameTranslation}</span>
-            <span>·</span>
+            <span className="text-outline-variant">·</span>
             <span>
               {formatNumber(verses, uiLang)} {t.surah.verses}
             </span>
-            <span>·</span>
+            <span className="text-outline-variant">·</span>
             <span
               className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${
                 revelationType === "Meccan"
@@ -214,7 +214,9 @@ export function SurahIntro({
         </div>
       </div>
       {intro && (
-        <p className="text-sm text-muted leading-relaxed border-t border-border pt-4">{intro}</p>
+        <p className="text-sm text-outline leading-relaxed border-t border-outline-variant/20 pt-4">
+          {intro}
+        </p>
       )}
     </div>
   );

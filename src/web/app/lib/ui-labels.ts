@@ -31,6 +31,7 @@ interface Labels {
     settings: string;
   };
   home: {
+    greeting: string;
     title: string;
     subtitle: string;
     statsSurahs: string;
@@ -110,6 +111,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       settings: "الإعدادات",
     },
     home: {
+      greeting: "السلام عليكم",
       title: "اقرأ القرآن الكريم",
       subtitle: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       statsSurahs: "سورة",
@@ -191,6 +193,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       settings: "Settings",
     },
     home: {
+      greeting: "Assalamu Alaikum",
       title: "Read the Holy Quran",
       subtitle: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       statsSurahs: "Surahs",
@@ -272,6 +275,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       settings: "Paramètres",
     },
     home: {
+      greeting: "Assalamu Alaikum",
       title: "Lire le Saint Coran",
       subtitle: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       statsSurahs: "Sourates",
@@ -349,6 +353,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       settings: "Ajustes",
     },
     home: {
+      greeting: "Assalamu Alaikum",
       title: "Lee el Sagrado Corán",
       subtitle: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       statsSurahs: "Suras",
@@ -430,6 +435,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       settings: "Ayarlar",
     },
     home: {
+      greeting: "Selamun Aleyküm",
       title: "Kur'an-ı Kerim'i Oku",
       subtitle: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       statsSurahs: "Sure",
@@ -511,6 +517,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       settings: "Pengaturan",
     },
     home: {
+      greeting: "Assalamu Alaikum",
       title: "Baca Al-Quran",
       subtitle: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       statsSurahs: "Surah",
@@ -592,6 +599,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       settings: "ترتیبات",
     },
     home: {
+      greeting: "السلام علیکم",
       title: "قرآن پاک پڑھیں",
       subtitle: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       statsSurahs: "سورتیں",
@@ -669,6 +677,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       settings: "সেটিংস",
     },
     home: {
+      greeting: "আসসালামু আলাইকুম",
       title: "পবিত্র কুরআন পড়ুন",
       subtitle: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       statsSurahs: "সূরা",
@@ -750,6 +759,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       settings: "Настройки",
     },
     home: {
+      greeting: "Ассаламу Алейкум",
       title: "Читайте Священный Коран",
       subtitle: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       statsSurahs: "Сур",
@@ -827,6 +837,7 @@ export const UI_LABELS: Record<UILanguage, Labels> = {
       settings: "设置",
     },
     home: {
+      greeting: "赛俩目",
       title: "阅读古兰经",
       subtitle: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       statsSurahs: "章",

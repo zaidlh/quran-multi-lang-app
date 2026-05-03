@@ -84,7 +84,7 @@ export default function App() {
 
   const renderSurah = ({ item }: { item: Surah }) => (
     <TouchableOpacity
-      style={[styles.surahCard, { backgroundColor: "#fff" }]}
+      style={[styles.surahCard, { backgroundColor: theme.surfaceContainerLow }]}
       activeOpacity={0.7}
     >
       <View style={[styles.surahNumber, { backgroundColor: theme.surfaceContainerLow }]}>

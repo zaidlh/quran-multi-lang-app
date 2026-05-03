@@ -148,7 +148,7 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
   };
 
   return (
-    <div className="rounded-2xl bg-surface border border-border overflow-hidden">
+    <div className="dark-screen rounded-2xl overflow-hidden">
       <audio
         ref={audioRef}
         src={audioUrl}
@@ -160,21 +160,28 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
         preload="none"
       />
 
-      <div className="p-4 space-y-3">
-        <div className="flex items-center gap-3">
+      <div className="p-5 space-y-4">
+        {/* Reciter name + controls */}
+        <div className="text-center">
+          <p className="text-xs uppercase tracking-widest text-white/50 mb-1">{t.audio.reciter}</p>
+          <p className="text-white font-semibold">{reciter.name}</p>
+        </div>
+
+        {/* Play/Pause + progress */}
+        <div className="flex items-center gap-4">
           <button
             onClick={togglePlay}
-            className="w-12 h-12 flex items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity flex-shrink-0"
+            className="w-14 h-14 flex items-center justify-center rounded-full bg-secondary-fixed text-primary-container shadow-lg flex-shrink-0 hover:scale-105 transition-transform"
             aria-label={isPlaying ? t.audio.pause : t.audio.play}
           >
             {isPlaying ? (
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <rect x="6" y="4" width="4" height="16" />
                 <rect x="14" y="4" width="4" height="16" />
               </svg>
             ) : (
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <polygon points="5,3 19,12 5,21" />
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <polygon points="6,3 20,12 6,21" />
               </svg>
             )}
           </button>
@@ -186,9 +193,9 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
               max={100}
               value={progress}
               onChange={handleSeek}
-              className="w-full h-1.5 accent-primary cursor-pointer rounded-full"
+              className="w-full cursor-pointer"
             />
-            <div className="flex justify-between text-xs text-muted">
+            <div className="flex justify-between text-xs text-white/50">
               <span>{formatTime(duration ? (progress / 100) * duration : 0)}</span>
               <span>{duration ? formatTime(duration) : "--:--"}</span>
             </div>
@@ -197,9 +204,7 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
           <button
             onClick={() => setSettingsOpen(!settingsOpen)}
             className={`p-2 rounded-lg transition-colors ${
-              settingsOpen
-                ? "bg-primary-light text-primary"
-                : "text-muted hover:bg-surface-elevated"
+              settingsOpen ? "bg-white/10 text-white" : "text-white/50 hover:text-white"
             }`}
             aria-label={t.audio.settings}
           >
@@ -226,15 +231,15 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
       </div>
 
       {settingsOpen && (
-        <div className="border-t border-border p-4 bg-surface-elevated/50 space-y-3">
+        <div className="border-t border-white/10 p-4 space-y-3">
           <div className="flex items-center gap-2">
             <select
               value={currentReciter}
               onChange={(e) => handleReciterChange(e.target.value)}
-              className="flex-1 text-sm border border-border rounded-lg px-3 py-2 bg-surface-elevated"
+              className="flex-1 text-sm border border-white/10 rounded-lg px-3 py-2 bg-white/5 text-white"
             >
               {RECITERS.map((r) => (
-                <option key={r.id} value={r.id}>
+                <option key={r.id} value={r.id} className="text-black">
                   {r.name}
                 </option>
               ))}
@@ -245,8 +250,8 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
                 onClick={handleModeToggle}
                 className={`text-xs px-3 py-2 rounded-lg font-medium transition-colors ${
                   playMode === "ayah"
-                    ? "bg-primary text-white"
-                    : "bg-surface border border-border hover:border-primary text-muted hover:text-primary"
+                    ? "bg-secondary-fixed text-primary-container"
+                    : "bg-white/5 border border-white/10 text-white/70 hover:text-white"
                 }`}
               >
                 {playMode === "ayah"
