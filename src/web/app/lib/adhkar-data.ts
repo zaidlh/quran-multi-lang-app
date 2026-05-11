@@ -1,5 +1,3 @@
-"use client";
-
 // Adhkar types and data
 export interface Adhkar {
   id: string;

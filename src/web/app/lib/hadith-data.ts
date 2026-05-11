@@ -1,5 +1,3 @@
-"use client";
-
 // Hadith types
 export interface Hadith {
   id: string;
