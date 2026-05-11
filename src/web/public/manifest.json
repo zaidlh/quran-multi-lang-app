@@ -1,14 +1,54 @@
 {
-  "name": "Quran Multi-Language App",
-  "short_name": "Quran",
-  "description": "Read the Holy Quran with translations in 10+ languages, listen to recitations, and explore tafsir.",
+  "name": "Sakinah — Islamic Platform",
+  "short_name": "Sakinah",
+  "description": "Read the Holy Quran with translations in 10+ languages, listen to recitations, explore tafsir, memorize, and learn with AI assistance.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0f766e",
+  "display_override": ["fullscreen", "minimal-ui"],
+  "background_color": "#f9faf7",
+  "theme_color": "#0f3d2e",
   "orientation": "portrait-primary",
-  "categories": ["education", "books"],
+  "categories": ["education", "books", "lifestyle"],
+  " shortcuts": [
+    {
+      "name": "Search Quran",
+      "short_name": "Search",
+      "description": "Search verses in the Quran",
+      "url": "/search",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Bookmarks",
+      "short_name": "Marks",
+      "description": "View saved bookmarks",
+      "url": "/bookmarks",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Mushaf Mode",
+      "short_name": "Mushaf",
+      "description": "Read in Mushaf mode",
+      "url": "/mushaf",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
   "icons": [
+    {
+      "src": "/icon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
     {
       "src": "/icon-192.png",
       "sizes": "192x192",
@@ -25,5 +65,18 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "prefer_related_applications": false,
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "launch_handler": {
+    "client_mode": "focus-or-create"
+  }
 }
