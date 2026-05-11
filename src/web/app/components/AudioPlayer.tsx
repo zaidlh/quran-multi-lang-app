@@ -39,6 +39,15 @@ const RECITERS = [
 
 type PlayMode = "surah" | "ayah";
 
+interface AudioSettings {
+  repeatEnabled: boolean;
+  repeatCount: number;
+  playbackSpeed: number;
+  gapBetweenAyahs: number;
+  loopStart: number | null;
+  loopEnd: number | null;
+}
+
 export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: AudioPlayerProps) {
   const { t, uiLang } = useUILanguage();
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -49,6 +58,20 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
   const [playMode, setPlayMode] = useState<PlayMode>("surah");
   const [currentAyah, setCurrentAyah] = useState(1);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [reciterModalOpen, setReciterModalOpen] = useState(false);
+  
+  // Advanced settings
+  const [audioSettings, setAudioSettings] = useState<AudioSettings>({
+    repeatEnabled: false,
+    repeatCount: 1,
+    playbackSpeed: 1,
+    gapBetweenAyahs: 0,
+    loopStart: null,
+    loopEnd: null,
+  });
+  
+  // Repeat current ayah counter
+  const repeatCountRef = useRef(0);
 
   const reciter = RECITERS.find((r) => r.id === currentReciter) ?? RECITERS[0];
 
@@ -155,7 +178,10 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
         onTimeUpdate={handleTimeUpdate}
         onEnded={handleEnded}
         onLoadedMetadata={() => {
-          if (audioRef.current) setDuration(audioRef.current.duration);
+          if (audioRef.current) {
+            audioRef.current.playbackRate = audioSettings.playbackSpeed;
+            setDuration(audioRef.current.duration);
+          }
         }}
         preload="none"
       />
@@ -231,24 +257,27 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
       </div>
 
       {settingsOpen && (
-        <div className="border-t border-white/10 p-4 space-y-3">
-          <div className="flex items-center gap-2">
-            <select
-              value={currentReciter}
-              onChange={(e) => handleReciterChange(e.target.value)}
-              className="flex-1 text-sm border border-white/10 rounded-lg px-3 py-2 bg-white/5 text-white"
+        <div className="border-t border-white/10 p-4 space-y-4">
+          {/* Reciter selection */}
+          <div>
+            <p className="text-xs uppercase tracking-widest text-white/50 mb-2">{t.audio.reciter}</p>
+            <button
+              onClick={() => setReciterModalOpen(true)}
+              className="w-full flex items-center justify-between text-sm border border-white/10 rounded-lg px-4 py-3 bg-white/5 text-white hover:bg-white/10 transition-colors"
             >
-              {RECITERS.map((r) => (
-                <option key={r.id} value={r.id} className="text-black">
-                  {r.name}
-                </option>
-              ))}
-            </select>
-
-            {totalAyahs > 0 && (
+              <span>{reciter.name}</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          </div>
+          
+          {/* Playback mode */}
+          {totalAyahs > 0 && (
+            <div className="flex items-center gap-2">
               <button
                 onClick={handleModeToggle}
-                className={`text-xs px-3 py-2 rounded-lg font-medium transition-colors ${
+                className={`text-sm px-4 py-2 rounded-lg font-medium transition-colors ${
                   playMode === "ayah"
                     ? "bg-secondary-fixed text-primary-container"
                     : "bg-white/5 border border-white/10 text-white/70 hover:text-white"
@@ -258,7 +287,62 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
                   ? `${t.surah.verse} ${formatNumber(currentAyah, uiLang)}/${formatNumber(totalAyahs, uiLang)}`
                   : t.audio.ayahMode}
               </button>
-            )}
+            </div>
+          )}
+          
+          {/* Advanced controls */}
+          <div className="grid grid-cols-2 gap-3">
+            {/* Playback speed */}
+            <div>
+              <p className="text-xs text-white/50 mb-1">{t.audio.speed}</p>
+              <select
+                value={audioSettings.playbackSpeed}
+                onChange={(e) => setAudioSettings(prev => ({ ...prev, playbackSpeed: Number(e.target.value) }))}
+                className="w-full text-sm border border-white/10 rounded-lg px-3 py-2 bg-white/5 text-white"
+              >
+                <option value={0.5} className="text-black">0.5x</option>
+                <option value={0.75} className="text-black">0.75x</option>
+                <option value={1} className="text-black">1x</option>
+                <option value={1.25} className="text-black">1.25x</option>
+                <option value={1.5} className="text-black">1.5x</option>
+                <option value={2} className="text-black">2x</option>
+              </select>
+            </div>
+            
+            {/* Repeat count */}
+            <div>
+              <p className="text-xs text-white/50 mb-1">{t.audio.repeat}</p>
+              <select
+                value={audioSettings.repeatCount}
+                onChange={(e) => setAudioSettings(prev => ({ ...prev, repeatCount: Number(e.target.value) }))}
+                className="w-full text-sm border border-white/10 rounded-lg px-3 py-2 bg-white/5 text-white"
+              >
+                <option value={1} className="text-black">1x</option>
+                <option value={2} className="text-black">2x</option>
+                <option value={3} className="text-black">3x</option>
+                <option value={5} className="text-black">5x</option>
+                <option value={10} className="text-black">10x</option>
+              </select>
+            </div>
+          </div>
+          
+          {/* Gap between ayat */}
+          <div>
+            <p className="text-xs text-white/50 mb-1">{"Gap between verses"}</p>
+            <input
+              type="range"
+              min={0}
+              max={3000}
+              step={500}
+              value={audioSettings.gapBetweenAyahs}
+              onChange={(e) => setAudioSettings(prev => ({ ...prev, gapBetweenAyahs: Number(e.target.value) }))}
+              className="w-full cursor-pointer"
+            />
+            <div className="flex justify-between text-xs text-white/50 mt-1">
+              <span>0s</span>
+              <span>{audioSettings.gapBetweenAyahs / 1000}s</span>
+              <span>3s</span>
+            </div>
           </div>
         </div>
       )}
