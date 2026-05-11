@@ -1,5 +1,3 @@
-"use client";
-
 // Dua types
 export interface Dua {
   id: string;

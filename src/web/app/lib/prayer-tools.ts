@@ -1,5 +1,3 @@
-"use client";
-
 // Prayer times calculation utilities
 export interface PrayerTimes {
   fajr: Date;
