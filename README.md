@@ -42,36 +42,6 @@
   <a href="ROADMAP.md">Roadmap</a>
 </p>
 
----
-
-## 📸 Screenshots
-
-### Desktop
-
-<p align="center">
-  <img src="docs/screenshots/home-light.png" alt="Home Page — Light Mode (Arabic RTL)" width="49%" />
-  <img src="docs/screenshots/home-dark.png" alt="Home Page — Dark Mode (Arabic RTL)" width="49%" />
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/surah-light.png" alt="Surah Page — Light Mode" width="49%" />
-  <img src="docs/screenshots/surah-dark.png" alt="Surah Page — Dark Mode" width="49%" />
-</p>
-
-### Mobile
-
-<p align="center">
-  <img src="docs/screenshots/mobile-home-light.png" alt="Mobile Home — Light Mode" width="24%" />
-  <img src="docs/screenshots/mobile-home-dark.png" alt="Mobile Home — Dark Mode" width="24%" />
-  <img src="docs/screenshots/mobile-surah-light.png" alt="Mobile Surah — Light Mode" width="24%" />
-</p>
-
-<p align="center">
-  <em>Sakinah Design System · M3 Color Tokens · RTL-first Arabic · 10+ Languages · Dark/Light Themes</em>
-</p>
-
----
-
 ## ✨ Features
 
 ### 📖 Reading Experience
