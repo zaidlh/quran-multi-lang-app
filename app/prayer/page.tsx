@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useUILanguage } from "../components/UILanguageProvider";
 import {
   PRAYER_METHODS,
   PRAYER_ORDER,
@@ -16,6 +17,8 @@ type Coords = { latitude: number; longitude: number };
 const METHOD_STORAGE_KEY = "sakinah-prayer-method";
 
 export default function PrayerPage() {
+  const { uiLang } = useUILanguage();
+  const isArabic = uiLang === "ar";
   const [coords, setCoords] = useState<Coords | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -68,24 +71,39 @@ export default function PrayerPage() {
   const times = coords ? getPrayerTimes(coords.latitude, coords.longitude, method, now) : null;
   const qibla = coords ? getQiblaDirection(coords.latitude, coords.longitude) : null;
   const next = times ? getNextPrayer(times, now) : null;
+  const prayerLabels: Record<string, string> = isArabic
+    ? { fajr: "الفجر", sunrise: "الشروق", dhuhr: "الظهر", asr: "العصر", maghrib: "المغرب", isha: "العشاء" }
+    : { fajr: "Fajr", sunrise: "Sunrise", dhuhr: "Dhuhr", asr: "Asr", maghrib: "Maghrib", isha: "Isha" };
+  const methodLabels: Record<string, string> = isArabic
+    ? Object.fromEntries(Object.entries(PRAYER_METHODS).map(([key, method]) => [key, method.label]))
+    : {
+        MuslimWorldLeague: "Muslim World League",
+        UmmAlQura: "Umm al-Qura (Makkah)",
+        Egyptian: "Egyptian General Authority",
+        Karachi: "University of Islamic Sciences, Karachi",
+        NorthAmerica: "North America (ISNA)",
+        Dubai: "Dubai",
+        Qatar: "Qatar",
+        Kuwait: "Kuwait",
+      };
 
   return (
     <div className="min-h-screen bg-surface-container-lowest">
       <div className="max-w-2xl mx-auto px-4 pb-24 pt-6 space-y-6">
         <div>
-          <h1 className="text-2xl font-bold mb-1">مواقيت الصلاة</h1>
-          <p className="text-outline text-sm">تُحسب على جهازك حسب موقعك، ولا يُرسل موقعك إلى أي خادم.</p>
+          <h1 className="text-2xl font-bold mb-1">{isArabic ? "مواقيت الصلاة" : "Prayer Times"}</h1>
+          <p className="text-outline text-sm">{isArabic ? "تُحسب على جهازك حسب موقعك، ولا يُرسل موقعك إلى أي خادم." : "Calculated on your device; your location is not sent to a server."}</p>
         </div>
 
         {!coords && (
           <div className="p-6 bg-surface-container rounded-xl text-center space-y-4">
-            <p>اسمح بتحديد موقعك لعرض مواقيت الصلاة واتجاه القبلة.</p>
+            <p>{isArabic ? "اسمح بتحديد موقعك لعرض مواقيت الصلاة واتجاه القبلة." : "Allow location access to show prayer times and Qibla direction."}</p>
             <button
               onClick={locate}
               disabled={loading}
               className="px-6 py-3 rounded-xl bg-primary-container text-white font-medium disabled:opacity-60"
             >
-              {loading ? "جارٍ تحديد الموقع…" : "تحديد موقعي"}
+              {loading ? (isArabic ? "جارٍ تحديد الموقع…" : "Locating…") : isArabic ? "تحديد موقعي" : "Use my location"}
             </button>
             {error && <p className="text-sm text-red-600">{error}</p>}
           </div>
@@ -103,14 +121,14 @@ export default function PrayerPage() {
                       : "bg-surface-container"
                   }`}
                 >
-                  <span className="font-medium">{p.label}</span>
+                  <span className="font-medium">{prayerLabels[p.key]}</span>
                   <span>{formatPrayerTime(times[p.key])}</span>
                 </li>
               ))}
             </ul>
 
             <div className="p-6 bg-surface-container rounded-xl text-center">
-              <p className="text-sm text-outline mb-3">اتجاه القبلة</p>
+              <p className="text-sm text-outline mb-3">{isArabic ? "اتجاه القبلة" : "Qibla direction"}</p>
               <div
                 className="mx-auto w-24 h-24 rounded-full border-2 border-outline-variant flex items-center justify-center"
                 aria-hidden="true"
@@ -122,15 +140,15 @@ export default function PrayerPage() {
                   ↑
                 </span>
               </div>
-              <p className="mt-3 font-medium">{Math.round(qibla)}° من الشمال الحقيقي</p>
+              <p className="mt-3 font-medium">{Math.round(qibla)}° {isArabic ? "من الشمال الحقيقي" : "from true north"}</p>
               <p className="text-xs text-outline mt-1">
-                السهم يتجه نحو القبلة إذا وجّهتَ أعلى الشاشة نحو الشمال.
+                {isArabic ? "السهم يتجه نحو القبلة إذا وجّهتَ أعلى الشاشة نحو الشمال." : "The arrow points to the Qibla when the top of your screen faces north."}
               </p>
             </div>
 
             <div className="space-y-2">
               <label htmlFor="method" className="text-sm text-outline">
-                طريقة الحساب
+                {isArabic ? "طريقة الحساب" : "Calculation method"}
               </label>
               <select
                 id="method"
@@ -138,14 +156,14 @@ export default function PrayerPage() {
                 onChange={(e) => changeMethod(e.target.value as PrayerMethodKey)}
                 className="w-full p-3 rounded-xl bg-surface-container border border-outline-variant"
               >
-                {Object.entries(PRAYER_METHODS).map(([key, m]) => (
+                {Object.entries(PRAYER_METHODS).map(([key]) => (
                   <option key={key} value={key}>
-                    {m.label}
+                    {methodLabels[key]}
                   </option>
                 ))}
               </select>
               <p className="text-xs text-outline">
-                قد تختلف المواقيت بدقائق عن التقويم المعتمد في بلدك، فاعتمد تقويم مسجدك المحلي عند الاختلاف.
+                {isArabic ? "قد تختلف المواقيت بدقائق عن التقويم المعتمد في بلدك، فاعتمد تقويم مسجدك المحلي عند الاختلاف." : "Times may differ slightly from local calendars; follow your local mosque when they differ."}
               </p>
             </div>
           </>

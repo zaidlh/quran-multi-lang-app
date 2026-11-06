@@ -1,9 +1,11 @@
 "use client";
+/* eslint-disable react-hooks/set-state-in-effect -- hydrate editable settings from localStorage */
 
 import { useUILanguage } from "../components/UILanguageProvider";
 import { UI_LANGUAGES, UILanguage } from "../lib/ui-labels";
 import { useTheme } from "../components/ThemeProvider";
-import { useState, useSyncExternalStore } from "react";
+import { subscribeToStorage, removeStored, writeStored } from "../lib/client-storage";
+import { useEffect, useState, useSyncExternalStore } from "react";
 
 function getStoredSettings() {
   try {
@@ -30,10 +32,7 @@ export default function SettingsPage() {
   const { uiLang, setUILang, t } = useUILanguage();
   const { theme, toggleTheme } = useTheme();
   const storedSettings = useSyncExternalStore(
-    (cb) => {
-      window.addEventListener("storage", cb);
-      return () => window.removeEventListener("storage", cb);
-    },
+    (cb) => subscribeToStorage("quran-app-settings", cb),
     getStoredSettings,
     () => null
   );
@@ -42,12 +41,15 @@ export default function SettingsPage() {
   );
   const [audioSpeed, setAudioSpeed] = useState(() => storedSettings?.audioSpeed || 1);
   const [saved, setSaved] = useState(false);
+  useEffect(() => {
+    if (!storedSettings) return;
+    // The external snapshot becomes available after hydration; sync the editable form state.
+    setFontSize(storedSettings.fontSize || "medium");
+    setAudioSpeed(storedSettings.audioSpeed || 1);
+  }, [storedSettings]);
 
   const saveSettings = () => {
-    localStorage.setItem(
-      "quran-app-settings",
-      JSON.stringify({ theme, fontSize, audioSpeed, uiLang })
-    );
+    writeStored("quran-app-settings", { theme, fontSize, audioSpeed, uiLang });
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
   };
@@ -56,8 +58,8 @@ export default function SettingsPage() {
     setUILang("ar");
     setFontSize("medium");
     setAudioSpeed(1);
-    localStorage.removeItem("quran-app-settings");
-    localStorage.removeItem("quran-ui-lang");
+    removeStored("quran-app-settings");
+    removeStored("quran-ui-lang");
   };
 
   const fontSizeMap = { small: "1.5rem", medium: "1.75rem", large: "2.25rem" };

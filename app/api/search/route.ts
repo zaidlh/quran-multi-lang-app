@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getAllArabic, getAllTranslations, getSurahs } from "@/lib/quran-data";
+import {
+  getAllArabic,
+  getAllTranslations,
+  getSurahs,
+  isAvailableLanguage,
+} from "@/lib/quran-data";
 
 const MAX_RESULTS = 50;
 const ARABIC_LETTERS = /[\u0600-\u06FF]/;
@@ -21,9 +26,11 @@ export async function GET(request: NextRequest) {
 
   try {
     const isArabic = ARABIC_LETTERS.test(raw);
-    const [arData, enData, surahs] = await Promise.all([
+    const requestedLang = request.nextUrl.searchParams.get("lang") || "en";
+    const translationLang = isAvailableLanguage(requestedLang) ? requestedLang : "en";
+    const [arData, translationData, surahs] = await Promise.all([
       getAllArabic(),
-      isArabic ? Promise.resolve(null) : getAllTranslations("en"),
+      getAllTranslations(translationLang),
       getSurahs(),
     ]);
 
@@ -37,15 +44,21 @@ export async function GET(request: NextRequest) {
     }[] = [];
 
     const q = isArabic ? normalizeArabic(raw) : raw.toLowerCase();
-    const enBySurah = new Map(enData?.surahs.map((s) => [s.number, s]) ?? []);
+    const surahByNumber = new Map(surahs.map((surah) => [surah.number, surah]));
+    const translationBySurah = new Map(
+      translationData?.surahs.map((surah) => [surah.number, surah]) ?? []
+    );
 
     outer: for (const arSurah of arData.surahs) {
-      const meta = surahs.find((s) => s.number === arSurah.number);
-      const enSurah = enBySurah.get(arSurah.number);
+      const meta = surahByNumber.get(arSurah.number);
+      const translationSurah = translationBySurah.get(arSurah.number);
+      const translationByAyah = new Map(
+        translationSurah?.verses.map((verse) => [verse.number, verse]) ?? []
+      );
 
       for (const verse of arSurah.verses) {
-        const enVerse = enSurah?.verses.find((v) => v.number === verse.number);
-        const translation = enVerse?.translation || enVerse?.text || "";
+        const translatedVerse = translationByAyah.get(verse.number);
+        const translation = translatedVerse?.translation || translatedVerse?.text || "";
         const matches = isArabic
           ? normalizeArabic(verse.text).includes(q)
           : translation.toLowerCase().includes(q);

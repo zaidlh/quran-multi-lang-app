@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
+import { readStored, subscribeToStorage, writeStored } from "../lib/client-storage";
 
 interface BookmarkButtonProps {
   surahNumber: number;
@@ -14,20 +15,16 @@ interface Bookmark {
 }
 
 function getBookmarks(): Bookmark[] {
-  if (typeof window === "undefined") return [];
-  try {
-    return JSON.parse(localStorage.getItem("quran-bookmarks") || "[]");
-  } catch {
-    return [];
-  }
+  return readStored<Bookmark[]>("quran-bookmarks", []);
 }
 
 function saveBookmarks(bookmarks: Bookmark[]) {
-  localStorage.setItem("quran-bookmarks", JSON.stringify(bookmarks));
+  writeStored("quran-bookmarks", bookmarks);
 }
 
 export function BookmarkButton({ surahNumber, ayahNumber }: BookmarkButtonProps) {
   const [version, setVersion] = useState(0);
+  useEffect(() => subscribeToStorage("quran-bookmarks", () => setVersion((v) => v + 1)), []);
 
   const isBookmarked = useMemo(() => {
     void version;
@@ -54,8 +51,10 @@ export function BookmarkButton({ surahNumber, ayahNumber }: BookmarkButtonProps)
   return (
     <button
       onClick={toggle}
+      type="button"
       className={`p-1.5 rounded-lg hover:scale-110 transition-all ${isBookmarked ? "text-secondary" : "text-outline hover:text-on-surface"}`}
       aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
+      aria-pressed={isBookmarked}
       title={isBookmarked ? "Remove bookmark" : "Add bookmark"}
     >
       <svg

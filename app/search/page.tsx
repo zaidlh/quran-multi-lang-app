@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { useUILanguage } from "../components/UILanguageProvider";
 
@@ -36,15 +36,22 @@ export default function SearchPage() {
   const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
   const [searched, setSearched] = useState(false);
+  const requestRef = useRef<AbortController | null>(null);
 
   const handleSearch = async () => {
     if (!query.trim()) return;
+    requestRef.current?.abort();
+    const controller = new AbortController();
+    requestRef.current = controller;
     setLoading(true);
     setSearched(true);
     setFailed(false);
 
     try {
-      const res = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+      const res = await fetch(
+        `/api/search?q=${encodeURIComponent(query)}&lang=${encodeURIComponent(uiLang)}`,
+        { signal: controller.signal }
+      );
       if (res.ok) {
         const data = await res.json();
         setResults(data.results ?? []);
@@ -52,11 +59,12 @@ export default function SearchPage() {
         setResults([]);
         setFailed(true);
       }
-    } catch {
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") return;
       setResults([]);
       setFailed(true);
     } finally {
-      setLoading(false);
+      if (requestRef.current === controller) setLoading(false);
     }
   };
 
@@ -64,23 +72,32 @@ export default function SearchPage() {
     <div className="mx-auto max-w-4xl px-4 py-8" dir={dir}>
       <h1 className="text-2xl font-bold mb-6">{L.title}</h1>
 
-      <div className="flex gap-3 mb-6">
+      <form
+        className="flex gap-3 mb-6"
+        onSubmit={(event) => {
+          event.preventDefault();
+          void handleSearch();
+        }}
+      >
+        <label htmlFor="quran-search" className="sr-only">
+          {L.placeholder}
+        </label>
         <input
+          id="quran-search"
           type="text"
           placeholder={L.placeholder}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && handleSearch()}
           className="flex-1 px-4 py-2 border border-zinc-300 dark:border-zinc-700 rounded-lg bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-primary"
         />
         <button
-          onClick={handleSearch}
+          type="submit"
           disabled={loading}
           className="px-6 py-2 bg-primary text-white rounded-lg hover:opacity-90 disabled:opacity-50"
         >
           {loading ? "…" : L.button}
         </button>
-      </div>
+      </form>
 
       {searched && results.length === 0 && !loading && (
         <p className="text-zinc-500 text-center py-8">{failed ? L.error : L.none}</p>

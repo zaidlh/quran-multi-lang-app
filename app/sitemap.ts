@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   const pages = [
     { path: "", priority: 1, changeFrequency: "weekly" },
     { path: "/juz", priority: 0.7, changeFrequency: "monthly" },
@@ -16,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const surahs: MetadataRoute.Sitemap = Array.from({ length: 114 }, (_, i) => ({
     url: `${SITE_URL}/surah/${i + 1}`,
-    lastModified: now,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
@@ -24,7 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...pages.map((p) => ({
       url: `${SITE_URL}${p.path}`,
-      lastModified: now,
       changeFrequency: p.changeFrequency,
       priority: p.priority,
     })),

@@ -58,6 +58,7 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
   const [playMode, setPlayMode] = useState<PlayMode>("surah");
   const [currentAyah, setCurrentAyah] = useState(1);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [audioError, setAudioError] = useState(false);
   
   // Advanced settings
   const [audioSettings, setAudioSettings] = useState<AudioSettings>({
@@ -103,21 +104,29 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
     setCurrentReciter(newReciter);
     setIsPlaying(false);
     setProgress(0);
+    setAudioError(false);
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
     }
   }, []);
 
-  const togglePlay = () => {
+  const togglePlay = async () => {
     const audio = audioRef.current;
     if (!audio) return;
     if (isPlaying) {
       audio.pause();
+      setIsPlaying(false);
     } else {
-      audio.play().catch(() => {});
+      setAudioError(false);
+      try {
+        await audio.play();
+        setIsPlaying(true);
+      } catch {
+        setIsPlaying(false);
+        setAudioError(true);
+      }
     }
-    setIsPlaying(!isPlaying);
   };
 
   const handleTimeUpdate = () => {
@@ -173,6 +182,12 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
         src={audioUrl}
         onTimeUpdate={handleTimeUpdate}
         onEnded={handleEnded}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+        onError={() => {
+          setIsPlaying(false);
+          setAudioError(true);
+        }}
         onLoadedMetadata={() => {
           if (audioRef.current) {
             audioRef.current.playbackRate = audioSettings.playbackSpeed;
@@ -211,6 +226,7 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
           <div className="flex-1 space-y-1">
             <input
               type="range"
+              aria-label={uiLang === "ar" ? "موضع التلاوة" : "Audio progress"}
               min={0}
               max={100}
               value={progress}
@@ -222,6 +238,14 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
               <span>{duration ? formatTime(duration) : "--:--"}</span>
             </div>
           </div>
+
+          {audioError && (
+            <p role="alert" className="text-xs text-red-200">
+              {uiLang === "ar"
+                ? "تعذّر تحميل التلاوة. تحقق من الاتصال وحاول مرة أخرى."
+                : "The recitation could not be loaded. Check your connection and try again."}
+            </p>
+          )}
 
           <button
             onClick={() => setSettingsOpen(!settingsOpen)}
@@ -296,6 +320,7 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
               <p className="text-xs text-white/50 mb-1">{t.audio.speed}</p>
               <select
                 value={audioSettings.playbackSpeed}
+                aria-label={t.audio.speed}
                 onChange={(e) => setAudioSettings(prev => ({ ...prev, playbackSpeed: Number(e.target.value) }))}
                 className="w-full text-sm border border-white/10 rounded-lg px-3 py-2 bg-white/5 text-white"
               >
@@ -313,6 +338,7 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
               <p className="text-xs text-white/50 mb-1">{t.audio.repeat}</p>
               <select
                 value={audioSettings.repeatCount}
+                aria-label={t.audio.repeat}
                 onChange={(e) => setAudioSettings(prev => ({ ...prev, repeatCount: Number(e.target.value) }))}
                 className="w-full text-sm border border-white/10 rounded-lg px-3 py-2 bg-white/5 text-white"
               >
@@ -330,6 +356,7 @@ export function AudioPlayer({ surahNumber, totalAyahs = 0, onAyahChange }: Audio
             <p className="text-xs text-white/50 mb-1">{"Gap between verses"}</p>
             <input
               type="range"
+              aria-label={uiLang === "ar" ? "الفاصل بين الآيات" : "Gap between verses"}
               min={0}
               max={3000}
               step={500}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useCallback, useEffect } from "react";
+import { useUILanguage } from "./UILanguageProvider";
 
 interface RecitationComparisonProps {
   surahNumber: number;
@@ -37,6 +38,8 @@ function getAudioUrl(baseUrl: string, surah: number, ayah: number): string {
 }
 
 export function RecitationComparison({ surahNumber, ayahNumber }: RecitationComparisonProps) {
+  const { uiLang } = useUILanguage();
+  const isArabic = uiLang === "ar";
   const [open, setOpen] = useState(false);
   const [playingId, setPlayingId] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -90,7 +93,7 @@ export function RecitationComparison({ surahNumber, ayahNumber }: RecitationComp
             d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"
           />
         </svg>
-        Compare reciters
+        {isArabic ? "مقارنة القراء" : "Compare reciters"}
       </button>
     );
   }
@@ -98,7 +101,7 @@ export function RecitationComparison({ surahNumber, ayahNumber }: RecitationComp
   return (
     <div className="mt-2 p-3 rounded-lg border border-zinc-200 dark:border-zinc-800 space-y-2">
       <div className="flex items-center justify-between">
-        <span className="text-xs font-medium">Compare Reciters</span>
+        <span className="text-xs font-medium">{isArabic ? "مقارنة القراء" : "Compare Reciters"}</span>
         <button
           onClick={() => {
             if (audioRef.current) {
@@ -110,7 +113,7 @@ export function RecitationComparison({ surahNumber, ayahNumber }: RecitationComp
           }}
           className="text-xs text-zinc-400 hover:text-primary"
         >
-          Close
+          {isArabic ? "إغلاق" : "Close"}
         </button>
       </div>
       <div className="grid grid-cols-2 gap-2">

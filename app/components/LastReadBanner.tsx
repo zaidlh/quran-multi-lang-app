@@ -4,6 +4,7 @@ import { useSyncExternalStore } from "react";
 import Link from "next/link";
 import { useUILanguage } from "./UILanguageProvider";
 import { formatNumber } from "../lib/ui-labels";
+import { readStored, subscribeToStorage, writeStored } from "../lib/client-storage";
 
 interface LastRead {
   surah: number;
@@ -12,20 +13,8 @@ interface LastRead {
   timestamp: number;
 }
 
-let cachedString: string | null = null;
-let cachedValue: LastRead | null = null;
-
 function getLastReadSnapshot(): LastRead | null {
-  try {
-    const stored = localStorage.getItem("quran-last-read");
-    if (stored !== cachedString) {
-      cachedString = stored;
-      cachedValue = stored ? JSON.parse(stored) : null;
-    }
-    return cachedValue;
-  } catch {
-    return null;
-  }
+  return readStored<LastRead | null>("quran-last-read", null);
 }
 
 function getServerSnapshot(): LastRead | null {
@@ -33,8 +22,7 @@ function getServerSnapshot(): LastRead | null {
 }
 
 function subscribe(callback: () => void): () => void {
-  window.addEventListener("storage", callback);
-  return () => window.removeEventListener("storage", callback);
+  return subscribeToStorage("quran-last-read", callback);
 }
 
 export function LastReadBanner() {
@@ -45,7 +33,7 @@ export function LastReadBanner() {
 
   return (
     <Link
-      href={`/surah/${lastRead.surah}?lang=en#verse-${lastRead.ayah}`}
+      href={`/surah/${lastRead.surah}#verse-${lastRead.ayah}`}
       className="sakinah-card block mb-6 p-4 hover:shadow-md transition-shadow"
     >
       <div className="flex items-center gap-3">
@@ -87,5 +75,5 @@ export function LastReadBanner() {
 export function saveLastRead(surah: number, surahName: string, ayah: number) {
   if (typeof window === "undefined") return;
   const data: LastRead = { surah, surahName, ayah, timestamp: Date.now() };
-  localStorage.setItem("quran-last-read", JSON.stringify(data));
+  writeStored("quran-last-read", data);
 }

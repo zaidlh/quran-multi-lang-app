@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useCallback, useSyncExternalStore } from "react";
+import { useState, useCallback, useMemo, useSyncExternalStore } from "react";
+import { readStored, removeStored, subscribeToStorage, writeStored } from "../lib/client-storage";
 
 interface VerseNotesProps {
   surahNumber: number;
@@ -15,16 +16,11 @@ function createNoteStore(surah: number, ayah: number) {
   const key = getNoteKey(surah, ayah);
   return {
     getSnapshot: () => {
-      return localStorage.getItem(key) || "";
+      if (typeof window === "undefined") return "";
+      return readStored<string>(key, "");
     },
     getServerSnapshot: () => "",
-    subscribe: (callback: () => void) => {
-      const handler = (e: StorageEvent) => {
-        if (e.key === key) callback();
-      };
-      window.addEventListener("storage", handler);
-      return () => window.removeEventListener("storage", handler);
-    },
+    subscribe: (callback: () => void) => subscribeToStorage(key, callback),
   };
 }
 
@@ -32,7 +28,7 @@ export function VerseNotes({ surahNumber, ayahNumber }: VerseNotesProps) {
   const [open, setOpen] = useState(false);
   const [saved, setSaved] = useState(false);
 
-  const [store] = useState(() => createNoteStore(surahNumber, ayahNumber));
+  const store = useMemo(() => createNoteStore(surahNumber, ayahNumber), [surahNumber, ayahNumber]);
   const savedNote = useSyncExternalStore(
     store.subscribe,
     store.getSnapshot,
@@ -51,9 +47,9 @@ export function VerseNotes({ surahNumber, ayahNumber }: VerseNotesProps) {
     const key = getNoteKey(surahNumber, ayahNumber);
     const value = (draft ?? "").trim();
     if (value) {
-      localStorage.setItem(key, value);
+      writeStored(key, value);
     } else {
-      localStorage.removeItem(key);
+      removeStored(key);
     }
     setDraft(null);
     setSaved(true);
@@ -66,6 +62,8 @@ export function VerseNotes({ surahNumber, ayahNumber }: VerseNotesProps) {
     <div className="mt-1">
       <button
         onClick={() => (open ? setOpen(false) : handleOpen())}
+        type="button"
+        aria-expanded={open}
         className="text-xs text-zinc-500 hover:text-primary flex items-center gap-1 transition-colors"
       >
         <svg

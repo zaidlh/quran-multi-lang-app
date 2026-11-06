@@ -118,6 +118,9 @@ export function Header() {
         <div className="px-4 py-3 border-b border-outline-variant/20" ref={langRef}>
           <button
             onClick={() => setLangOpen(!langOpen)}
+            type="button"
+            aria-expanded={langOpen}
+            aria-haspopup="menu"
             className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm hover:bg-surface-container-low transition-colors"
           >
             <svg
@@ -175,6 +178,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
+              aria-current={isActive(item.href) ? "page" : undefined}
               className={`nav-item w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm ${
                 isActive(item.href) ? "active" : "text-on-surface-variant"
               }`}
@@ -244,6 +248,9 @@ export function Header() {
       <header className="mobile-header lg:hidden">
         <button
           onClick={() => setSidebarOpen(true)}
+          type="button"
+          aria-expanded={sidebarOpen}
+          aria-controls="sidebar-nav"
           aria-label="Menu"
           className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-container-low transition-colors"
         >
@@ -291,6 +298,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
+              aria-current={active ? "page" : undefined}
               className={`flex flex-col items-center gap-1 px-3 ${
                 active ? "text-primary-container" : "text-outline"
               }`}

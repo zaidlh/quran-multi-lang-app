@@ -44,6 +44,7 @@ export function SurahView({
   const verseRefs = useRef<Map<number, HTMLDivElement>>(new Map());
   const observerRef = useRef<IntersectionObserver | null>(null);
   const { t, dir, uiLang } = useUILanguage();
+  const translationMap = new Map(translationVerses.map((verse) => [verse.number, verse]));
 
   const setVerseRef = useCallback((num: number, el: HTMLDivElement | null) => {
     if (el) {
@@ -91,7 +92,11 @@ export function SurahView({
   return (
     <div className="space-y-6">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <label className="sr-only" htmlFor="translation-language">
+          Translation language
+        </label>
         <select
+          id="translation-language"
           value={currentLang}
           onChange={(e) => router.push(`/surah/${surahNumber}?lang=${e.target.value}`)}
           className="px-3 py-2 border border-outline-variant rounded-xl bg-surface-container-lowest text-sm text-on-surface"
@@ -122,7 +127,7 @@ export function SurahView({
 
       <div className="space-y-1">
         {arabicVerses.map((verse) => {
-          const trans = translationVerses.find((tv) => tv.number === verse.number);
+          const trans = translationMap.get(verse.number);
           const isExpanded = expandedVerse === verse.number;
           return (
             <div
